@@ -59,3 +59,11 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Published `handbook/ATTENTION-DIRECTION-CHECKLIST.md`, `visual-library/ATTENTION-ARTWORK-INDEX.md`, and an original SVG `visual-library/original-studies/attention-choreography.svg`.
 - Access status: institutional source pages and published UX articles reviewed, **not** full books, museum visits, empirical user testing or live UI screenshots. No third-party images copied into repo.
 - Next: legally accessible long-form reading and a repeatable visual experiment tested with real participants; develop deep typography/art direction chapter.
+
+## 2026-11-11 — Release 008: bounded finish line and cross-agent system
+- Added `docs/FINISH_LINE.md`: 5 stage gates for v1.0, including 12 deep case studies, 6 properly scoped reading dossiers, 6 tested component patterns, 24 visual examples, a curated handbook, a Claude skill, and a real sandbox pilot. These are targets, not completed counts.
+- Added `docs/CROSS_AGENT_PROTOCOL.md`: ChatGPT as research/art director and independent critic; Claude as design engineering/prototyping partner; owner has final control and production authority.
+- Added research `research/006-TYPOGRAPHY-AS-ARCHITECTURE.md`: officially sourced Scher, Tschichold, Müller-Brockmann, Lupton and WCAG/web typography references, with explicit access limits.
+- Added `handbook/RESEARCH-TO-DIRECTION.md`, `templates/CREATIVE_BRIEF.md`, and `templates/DESIGN_REVIEW.md`.
+- **Not yet built:** Claude Code design skill, installed skill, live pilot, independent user tests, complete v0.2 archive migration, and compliant screenshot collection. The existing case-study dossiers are mostly published-source reviews, not deep live audits. Do not count them toward completion without upgrading evidence.
+- **Next focus:** curated case-study/reading quality and sandbox pilot. Avoid infinite collection.
