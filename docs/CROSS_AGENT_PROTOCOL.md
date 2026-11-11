@@ -39,3 +39,6 @@ The Creative Intelligence Lab research repo is independent of Faneqo. Use this c
 
 ## Resumption in new chats
 Read `START_HERE.md`, `docs/STATUS.md`, `docs/FINISH_LINE.md`, this contract, latest decision log, handbook and skill status. State present stage, blockers and next smallest deliverable. Don't treat a planned skill or prototype as already installed or tested.
+
+## 2026-11-11 skill complementarity amendment
+Anthropic's `frontend-design` skill is the specialist for actually constructing attractive usable frontend interfaces; do not duplicate it in the Creative Intelligence skill. Our `creative-design-director` skill supplies research-grounded art direction before build, and evidence-based independent critique afterwards. During implementation, Claude may use frontend-design with that direction packet. Read `research/009-FRONTEND-SKILL-COMPARISON.md` and `handbook/DIRECTION-TO-BUILD-CONTRACT.md`. The final isolated Faneqo homepage test must assess whether the extra research layer improves results, not assume success.
