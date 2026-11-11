@@ -1,5 +1,7 @@
 # Roadmap — Creative Intelligence Lab
 
+**Canonical acceptance criteria:** [docs/FINISH_LINE.md](docs/FINISH_LINE.md). This file is a work queue, not an unlimited feature wishlist. Research and skill delivery advance together.
+
 ## Phase A — Durable foundations (now)
 - [x] Repository created by owner.
 - [x] Initial mission and onboarding docs.
@@ -46,3 +48,10 @@
 
 - [ ] Design and run a controlled attention/comprehension study contrasting visually expressive and task-first layouts, with participants and documented methodology.
 - [ ] Create further primary-source, visually annotated chapters on typography, composition, lighting and cinematic pacing.
+
+## Next deliverables — time-box by outcomes, not promises
+1. Upgrade several existing official-source dossiers into deep artifact-based studies with accurate observation scope. Complete a legally accessible primary-source reading note with exact excerpt scope.
+2. Finalize the small design handbook by testing its clarity against three distinct concepts for an invented sandbox product.
+3. Write a scoped Claude Code design skill after core references and contract are stable; use selective retrieval and bounded prompts, not bulk copying of the raw library.
+4. Run a cross-agent sandbox experiment with real implementation, documented responsive/keyboard checks, honest limitations, and user sign-off.
+5. Release v1.0 only after the gates in FINISH_LINE are satisfied.
