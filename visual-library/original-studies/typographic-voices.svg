@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Three typographic directions with identical copy</title>
+<desc id="desc">Original comparison of restrained, expressive, and hybrid typographic treatments. Invented event invitation, not a reproduction of a historical poster or a screenshot.</desc>
+<rect width="1200" height="520" fill="#eae9e4"/>
+<text x="28" y="43" font-family="Arial,sans-serif" fill="#17202c" font-weight="700" font-size="25">SAME WORDS. THREE DIFFERENT VOICES.</text>
+<text x="28" y="65" font-family="Arial,sans-serif" fill="#566272" font-size="13">Original concept comparison · identical content, changing rhythm, weight and arrangement</text>
+<g transform="translate(25 95)">
+<rect width="366" height="379" fill="#fafafa" rx="10"/>
+<text x="20" y="31" font-family="Arial,sans-serif" font-size="12" fill="#727d8b">A / RESTRAINED</text>
+<path d="M20 49H346" stroke="#d4d9e0"/>
+<text x="21" y="103" font-family="Arial,sans-serif" font-size="32" fill="#1f2937" font-weight="600">An evening</text>
+<text x="21" y="139" font-family="Arial,sans-serif" font-size="32" fill="#1f2937" font-weight="600">of sound</text>
+<text x="21" y="190" font-family="Arial,sans-serif" fill="#677283" font-size="14">FRIDAY · 8:00 PM</text>
+<text x="21" y="216" font-family="Arial,sans-serif" fill="#354253" font-size="16">Independent music and conversation.</text>
+<rect x="21" y="280" width="179" height="49" rx="5" fill="#202b3c"/>
+<text x="45" y="311" font-family="Arial,sans-serif" font-size="16" fill="#fff">Explore event</text>
+</g>
+<g transform="translate(417 95)">
+<rect width="366" height="379" fill="#eac632" rx="10"/>
+<text x="20" y="31" font-family="Arial,sans-serif" font-size="12" fill="#2a2440">B / EXPRESSIVE</text>
+<path d="M20 49H346" stroke="#9d861e"/>
+<text x="14" y="119" font-family="Arial,sans-serif" font-size="46" fill="#251b38" font-weight="900" letter-spacing="-3">AN EVENING</text>
+<text x="14" y="163" font-family="Arial,sans-serif" font-size="53" fill="#251b38" font-weight="900" letter-spacing="-3">OF SOUND</text>
+<rect x="19" y="194" width="265" height="27" fill="#251b38"/>
+<text x="26" y="213" font-family="Arial,sans-serif" font-weight="700" fill="#ffe87e" font-size="15">FRIDAY · 8:00 PM</text>
+<text x="20" y="254" font-family="Arial,sans-serif" font-size="16" fill="#251b38">Independent music and conversation.</text>
+<rect x="19" y="280" width="179" height="49" rx="24" fill="#251b38"/>
+<text x="43" y="311" font-family="Arial,sans-serif" font-weight="700" fill="#fff" font-size="16">Explore event</text>
+</g>
+<g transform="translate(809 95)">
+<rect width="366" height="379" fill="#14223b" rx="10"/>
+<text x="20" y="31" font-family="Arial,sans-serif" font-size="12" fill="#a3b7d0">C / EDITORIAL HYBRID</text>
+<path d="M20 49H346" stroke="#415476"/>
+<text x="22" y="112" font-family="Georgia,serif" font-size="43" fill="#f3f1e8" font-weight="normal" font-style="italic">An evening</text>
+<text x="22" y="154" font-family="Georgia,serif" font-size="43" fill="#f3f1e8" font-style="italic">of sound</text>
+<rect x="21" y="183" width="324" height="1" fill="#7788a0"/>
+<text x="21" y="207" font-family="Arial,sans-serif" fill="#9bd7ca" font-size="14" font-weight="700" letter-spacing="2">FRIDAY · 8:00 PM</text>
+<text x="21" y="250" font-family="Arial,sans-serif" fill="#e0e8f3" font-size="15">Independent music and conversation.</text>
+<rect x="21" y="280" width="179" height="49" rx="5" fill="#9bd7ca"/>
+<text x="45" y="311" font-family="Arial,sans-serif" font-size="16" fill="#14223b" font-weight="700">Explore event</text>
+</g>
+<text x="600" y="503" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#69717d">ORIGINAL STUDY · NO FONTS OR ARTWORKS FROM THE REFERENCED DESIGNERS ARE REPRODUCED</text>
+</svg>
