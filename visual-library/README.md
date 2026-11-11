@@ -44,3 +44,6 @@ Record for each image:
 
 ## Why this matters
 Visual education needs artifacts. Text-only research cannot train recognition of typographic hierarchy, cropping, spatial rhythm or component polish. However visual evidence must be honest about its provenance and limitations.
+## New attention research resources (2026-11-11)
+- [Museum artwork index and evidence labels](ATTENTION-ARTWORK-INDEX.md).
+- [Original attention choreography diagram](original-studies/attention-choreography.svg) — invented interface examples, not a captured screenshot.
