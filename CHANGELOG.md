@@ -54,3 +54,9 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added source-grounded first-pass cinematic image-language research (Sugimoto, Crewdson, practitioner cinematography/title design, W3C motion guidance).
 - Added source-attributed visual reference index, compact art-direction card and original storyboard study contrasting stillness, reveal and task feedback.
 - Updated README, STATUS, roadmap and finish-line documentation. No Claude action, runtime test, screenshot capture or production deployment.
+
+## 2026-11-11 — Release 011: Art Direction Field Manual
+- Read and documented accessible original Albers educational writing, with exact access limits; added chronological Pentagram/Public Theater art-system case study.
+- Created 15-part cross-disciplinary field manual, 12 quick decision cards, creative engineering/UX standards and v1.0 gap scorecard.
+- Added two original SVG experiments and an explicit visual provenance registry (8 original SVGs, 0 real captured site screenshots).
+- Updated skill alpha reference map, README, STATUS and ROADMAP. **No Claude execution or Faneqo production edits.**
