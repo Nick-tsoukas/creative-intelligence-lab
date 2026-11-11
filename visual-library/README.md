@@ -47,3 +47,6 @@ Visual education needs artifacts. Text-only research cannot train recognition of
 ## New attention research resources (2026-11-11)
 - [Museum artwork index and evidence labels](ATTENTION-ARTWORK-INDEX.md).
 - [Original attention choreography diagram](original-studies/attention-choreography.svg) — invented interface examples, not a captured screenshot.
+
+## Original typography teaching study (2026-11-11)
+- [Three typographic voices](original-studies/typographic-voices.svg) — three treatments of identical invented event copy, with differing hierarchy/energy. Not an external screenshot or replica of Scher/Tschichold/other designers. Intended for critique of meaning, legibility, reflow and task clarity.
