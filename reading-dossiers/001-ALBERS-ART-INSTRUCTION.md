@@ -1,9 +1,9 @@
 # Reading Dossier 001 — Josef Albers: Teaching Form Through Practice
 
-**2026-11-11 · Primary-source reading (three available original essays).** This is an actual reading of accessible original texts on the Albers Foundation's site, **not** a claim to have read *Interaction of Color* in full.
+**2026-11-11 · Primary-source reading (accessible passages from three original essays).** This is a review of text surfaced from the Albers Foundation pages, **not** a claim to have read each entire essay or *Interaction of Color* in full.
 
 ## Primary texts and exact access scope
-1. Josef Albers, *Concerning Art Instruction* (1934), [Foundation transcription](https://www.albersfoundation.org/alberses/teaching/josef-albers/concerning-art-instruction) — original text reviewed.
+1. Josef Albers, *Concerning Art Instruction* (1934), [Foundation transcription](https://www.albersfoundation.org/alberses/teaching/josef-albers/concerning-art-instruction) — available passages reviewed; complete text not verified line by line.
 2. Josef Albers, *U.S. Specialist Report: Report on a Course in Basic Drawing, Design, and Color Given at the Hochschule für Gestaltung in Ulm* (1954), [Foundation transcription](https://www.albersfoundation.org/alberses/teaching/josef-albers/us-specialist-report-report-on-a-course-in-basic-drawing-design-and-color-given-at-the-hochschule-f%C3%BCr-gestaltung-in-ulm) — source excerpt reviewed, not a claim of line-by-line exhaustive reading.
 3. Josef Albers, *On Education And Art Education* (1939), [Foundation transcription](https://www.albersfoundation.org/alberses/teaching/josef-albers/on-education-and-art-education/) — source excerpt reviewed.
 
