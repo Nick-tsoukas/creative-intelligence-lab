@@ -15,7 +15,7 @@
 - [ ] Continue source status audit, including accessible original text versus summaries.
 
 ## Phase C — Web design, UX, components
-- [ ] 10 deep digital projects with primary links, visual analysis, UX tradeoffs, evidence.
+- [ ] 10 deep digital projects with primary links, visual analysis, UX tradeoffs, evidence. First five **published-source dossiers** completed (three specific project/product cases plus two design-system benchmarks); direct interaction testing remains outstanding.
 - [ ] Expand to 30–50 substantial studies; do not set arbitrary quantity above quality.
 - [ ] Component comparisons: navigation, dialog, forms, image/gallery, dashboard, checkout/payment, loading/feedback.
 - [ ] Accessibility, screen-reader, keyboard and reduced-motion evaluation methods.
