@@ -50,3 +50,8 @@ Visual education needs artifacts. Text-only research cannot train recognition of
 
 ## Original typography teaching study (2026-11-11)
 - [Three typographic voices](original-studies/typographic-voices.svg) — three treatments of identical invented event copy, with differing hierarchy/energy. Not an external screenshot or replica of Scher/Tschichold/other designers. Intended for critique of meaning, legibility, reflow and task clarity.
+
+## Release 011 visual experiments and provenance
+- [Identity invariants](original-studies/identity-invariants.svg) — stable interaction grammar, different event expressions.
+- [Hierarchy tradeoffs](original-studies/hierarchy-tradeoffs.svg) — competing attention versus task clarity.
+- [Visual Registry](REGISTRY.md) — recorded originals, source links, screenshot limitations and required provenance.
