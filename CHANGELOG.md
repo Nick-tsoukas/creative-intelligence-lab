@@ -35,3 +35,9 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added source-backed art and perception chapter, critical attention checklist and institutional visual reference links.
 - Added original SVG illustration comparing competing salience with task-focused hierarchy.
 - Updated roadmap, README, status and visual reference documentation. No production changes or claims of original eye-tracking tests.
+
+## 2026-11-11 — Release 008: typography and the finish line
+- Published Typography as Artistic Architecture, sourced to Pentagram, MoMA, Smithsonian, publisher and W3C material.
+- Defined objective v1.0 stage gates and the role/decision contract for ChatGPT, Claude Code and the owner.
+- Added reusable creative-brief/review templates and a research-to-design-direction guide.
+- Explicitly recorded that the Claude skill and prototype tests are future deliverables, not already completed.
