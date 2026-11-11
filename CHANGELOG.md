@@ -66,3 +66,8 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added research comparison, handoff contract and self-audit of generic design tells in our own Signal Archive source.
 - Revised Creative Intelligence Director skill to v0.2: research and creative direction **before** implementation, independent critique **after** implementation; Anthropic frontend-design retains implementation ownership.
 - No installed skill, Claude execution or Faneqo production changes.
+
+## 2026-11-11 — Release 013: architectural experience
+- Published architectural promenade/light/threshold research, three art case studies, Zumthor primary statement dossier, visual source atlas, direction card and original three-part spatial sequencing diagram.
+- Updated skill reference index and v1.0 status; confirmed this is research/art direction, not duplicative frontend implementation advice.
+- No Claude invocation, screenshot capture, Nuxt/Faneqo modification or deployment.
