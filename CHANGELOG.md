@@ -8,3 +8,7 @@
 - Added visual review framework and case-study template.
 
 These are foundational materials; no Faneqo application code or deployments were changed.
+## 2026-11-11 — First digital research case-study batch
+- Published five case-study dossiers based on official source materials (FinalFinal, David Whyte, Linear 2026, GOV.UK, Adobe Spectrum).
+- Added cross-case synthesis on expressive quality versus operational quality.
+- Annotated case-study atlas and status; recorded missing independent interaction and accessibility validation.
