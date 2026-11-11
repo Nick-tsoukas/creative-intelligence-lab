@@ -8,8 +8,10 @@ Inspired by Faneqo but intentionally **independent of any single app**. Built to
 1. **[START_HERE.md](START_HERE.md)** — canonical onboarding instructions and resumption prompt.
 2. **[docs/STATUS.md](docs/STATUS.md)** — what's actually done and what's not.
 3. **[docs/HANDOFF.md](docs/HANDOFF.md)** — mission, prior decisions, and collaboration context.
-4. **[ROADMAP.md](ROADMAP.md)** — prioritized work and boundaries.
-5. **[docs/RESEARCH_PROTOCOL.md](docs/RESEARCH_PROTOCOL.md)** — evidence status, attribution and quality standards.
+4. **[docs/FINISH_LINE.md](docs/FINISH_LINE.md)** — bounded v1.0 definition of done, stage gates, and release checks.
+5. **[docs/CROSS_AGENT_PROTOCOL.md](docs/CROSS_AGENT_PROTOCOL.md)** — ChatGPT / Claude / owner collaboration contract.
+6. **[ROADMAP.md](ROADMAP.md)** — prioritized work and boundaries.
+7. **[docs/RESEARCH_PROTOCOL.md](docs/RESEARCH_PROTOCOL.md)** — evidence status, attribution and quality standards.
 
 ## Library map
 | Area | Contents |
@@ -58,3 +60,12 @@ Source access and hypotheses are explicitly labeled; this release is not an asse
 - [Attention Direction Checklist](handbook/ATTENTION-DIRECTION-CHECKLIST.md) — task-aware critical framework.
 - [Visual Artwork Reference Index](visual-library/ATTENTION-ARTWORK-INDEX.md) — institutional sources and rights-aware references.
 - [Original Attention Choreography SVG](visual-library/original-studies/attention-choreography.svg) — teaching illustration, **not** a website screenshot.
+
+## Research release 008 — Typography and the path to a design skill
+- [Typographic art direction study](research/006-TYPOGRAPHY-AS-ARCHITECTURE.md) — Scher, Tschichold, Müller-Brockmann, Lupton, and responsive reading constraints.
+- [Finish line and acceptance gates](docs/FINISH_LINE.md) — a bounded v1.0 milestone and pilot.
+- [Cross-agent working contract](docs/CROSS_AGENT_PROTOCOL.md) — ChatGPT directs and critiques, Claude prototypes, owner approves.
+- [Design research to direction](handbook/RESEARCH-TO-DIRECTION.md) — how references become conditional decisions.
+- [Creative brief template](templates/CREATIVE_BRIEF.md) and [design review template](templates/DESIGN_REVIEW.md).
+
+**State:** foundation documents are committed; the final Claude Code skill is **not yet built or validated**.
