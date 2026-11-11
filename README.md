@@ -76,3 +76,10 @@ Source access and hypotheses are explicitly labeled; this release is not an asse
 - [Design acceptance rubric](handbook/DESIGN_ACCEPTANCE_RUBRIC.md) — independent artistic, UX, accessibility, engineering and evidence axes.
 
 Next action: real browser testing, screenshots, and Claude-led authorized iteration before claiming the pilot works.
+
+## Research release 010 — Photography, cinema, and the validation strategy
+- [Research 007: Cinematic Image Language](research/007-CINEMATIC-IMAGE-LANGUAGE.md) — Sugimoto, Crewdson, cinematographic rhythm, title design and accessibility.
+- [Photography and Cinematic Source Atlas](visual-library/CINEMA-PHOTOGRAPHY-SOURCE-ATLAS.md) — official image sources, not copied screenshots.
+- [Original Three Rhythms Storyboard](visual-library/original-studies/three-rhythms.svg) — authored teaching illustration.
+- [Cinematic Art Direction Card](handbook/CINEMATIC-DIRECTION-CARD.md).
+- [Final Pilot Strategy](docs/PILOT-STRATEGY.md) — wait until Claude is free, then evaluate an **isolated Faneqo homepage mockup** with owner oversight, not production changes.
