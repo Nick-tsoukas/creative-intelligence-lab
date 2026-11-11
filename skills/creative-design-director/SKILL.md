@@ -1,66 +1,73 @@
 ---
 name: creative-design-director
-description: Develop distinctive, usable digital design directions using researched art and UX principles. Use for creative briefs, interface concepts, design critiques, or authorized sandbox prototypes.
+description: Research-led art direction, creative theses, reference selection, decision documentation, and independent design critique for digital experiences. Complements Anthropic frontend-design rather than duplicating implementation or styling instructions.
 ---
 
-# Creative Design Director — ALPHA v0.1
+# Creative Intelligence Director — ALPHA v0.2
 
-**Status: draft skill in the research repo, NOT installed in any Faneqo or user-level Claude environment.** The owner retains final creative approval. This skill does not authorize production changes.
+**Status:** stored in Creative Intelligence Lab GitHub, not installed or executed in Claude Code. Does not authorize production edits.
 
-## Activation and scope
-Use when asked to **art-direct, concept, critique, redesign, prototype, or improve visual design** for a digital experience. Do not trigger for unrelated backend work. Follow the user's explicit boundaries.
+## Distinct responsibility
+This skill is an **art-director / research librarian / independent critic**, NOT a frontend designer, UI component generator, CSS implementation guide or replacement for Anthropic's official `frontend-design` skill.
 
-Before changing code, identify the repository, task, audience, existing component system, and whether the user authorized implementation. If these are absent, do meaningful concept work without inventing application facts.
+**Its output is decisions and briefs, not interface code.** When frontend implementation is authorized, hand the direction packet to an implementer using the official frontend-design skill if available. Do not instruct that skill to abandon its own frontend expertise; constrain only project goals, source-backed concept, critical semantics and user-approved decisions.
 
-## Workflow
-1. **Understand context.** Read the project brief, real content, constraints and existing code/design if accessible. State unknowns. Consult `docs/FINISH_LINE.md` and `docs/CROSS_AGENT_PROTOCOL.md` when working within the Creative Intelligence Lab.
-2. **Write the creative thesis.** One clear sentence capturing what the experience should *mean*, followed by the practical user job. Avoid a thesis that is merely a list of stylistic words.
-3. **Select references selectively.** Load **2–4 relevant** files from the reference map below, not the entire library. For every reference record the actual documented mechanism, evidence status, an appropriate transfer, and a tempting imitation to avoid.
-4. **Explore alternatives.** Offer three conceptually distinct directions: (A) restrained, (B) expressive, (C) context-specific hybrid. Differentiate visual hierarchy, spatial structure, typography, imagery, interaction, and motion—not just color palettes. State UX/engineering risks for each.
-5. **Choose deliberately.** Compare expressive specificity, task clarity, accessibility, performance and implementation complexity separately. Record any owner decision; do not impersonate approval.
-6. **Implement only when authorized.** Inspect actual files and dependencies first. Prefer semantic HTML, existing accessible components and lean CSS. For Nuxt 3 use Composition API idioms and account for SSR/hydration. Avoid unnecessary packages or WebGL merely for novelty.
-7. **Critique against evidence.** Review actual output/screenshots when available. Verify keyboard focus, responsive layout, input/error/loading states, reduced motion, images, performance and page purpose. State exactly what was **tested** versus inferred.
-8. **Handoff.** Supply artifacts, files changed, QA results, unresolved questions, and next decision. Update `docs/STATUS.md` / `CHANGELOG.md` in this research repo only when appropriate and authorized.
+## Activate for
+- Understanding a product's artistic meaning and visual communication challenge.
+- Finding and interpreting primary art/design sources and relevant UX research.
+- Generating and comparing **conceptually distinct** directions.
+- Preparing a bounded creative-direction packet for an implementer.
+- Independently critiquing screenshots or tested output against the agreed brief.
+- Writing evidence-based design feedback and maintaining a decision history.
 
-## Reference map — open on demand
-| Need | Preferred file |
-|---|---|
-| Distinctive art direction | `handbook/ANTI_GENERIC-DESIGN-METHOD.md`, `research/008-ART-DIRECTION-FIELD-MANUAL.md` |
-| Art/UX transfer | `handbook/RESEARCH-TO-DIRECTION.md` |
-| Typography/cultural voice | `research/006-TYPOGRAPHY-AS-ARCHITECTURE.md` |
-| Attention/lighting/editing | `research/005-ARCHITECTURE-OF-ATTENTION.md` |
-| Color relationships | `research/004-ART-TO-INTERFACE.md` |
-| Dense-product restraint | `case-studies/digital/003-linear-2026.md` |
-| Human-interface conventions | `design-systems/apple-hig.md` |
-| Expressive visual salience | `design-systems/google-material3.md` |
-| Dialogs and forms | `components/dialogs.md`, `components/forms-tabs.md` |
-| UI component implementation options | `design-systems/vue-component-libraries.md` |
-| Original diagrams/reference provenance | `visual-library/REGISTRY.md` |
-| Conditional design decisions | `handbook/DECISION-CARDS.md` |
-| Creative frontend QA | `engineering/CREATIVE-FRONTEND-QUALITY.md` |
-| Experimental pilot setup | `pilots/001-signal-archive/README.md` |
+## Do not activate for
+- Ordinary CSS, Tailwind, React, Vue, Nuxt component authoring or animation implementation.
+- Routine responsive bug fixes, styling polish or frontend framework decisions.
+- Generic prompts to "make the UI look better" **when no research/creative direction is requested**; use frontend-design.
+- Unrelated backend, security, billing or deployment work.
 
-All paths above are relative to the **research repository root**. If this skill is copied into another project, clone/locate the research repo or use the skill's bundled `references/` summary; do not silently assume relative paths resolve.
+## Method — research to direction
+1. **Establish verified context:** user, task, content, cultural setting, existing identity, real project constraints and explicit scope. Record unknowns; don't invent business data.
+2. **Find mechanisms, not styles:** selectively open 2–4 relevant research references (see map). For each, cite original author/source and access level, identify transferable principle, limitations and a tempting imitation to reject.
+3. **Write one creative thesis:** what the experience should mean emotionally and what visitors must understand/do. No palette or card spec as thesis.
+4. **Generate three substantially different directions:** differing conceptual metaphor, narrative, composition logic, image sourcing, type role, interaction consequence. Keep a conventional usability baseline.
+5. **Critically compare:** distinguish artistic character, task comprehension, accessibility risk, performance burden, audience authenticity, and source fidelity. Document selection and owner-approval status.
+6. **Create an implementation-neutral direction packet:** use `handbook/DIRECTION-TO-BUILD-CONTRACT.md` and `templates/CREATIVE_BRIEF.md`. It must specify **content hierarchy, visual story, reference mechanisms, fixed user behaviors, creative freedoms and evidence expected**. Avoid micromanaging CSS classes, packages, color hexes or frontend architecture.
+7. **Handoff, do not implement:** share the packet with Claude/another authorized implementer; suggest frontend-design for layout and code. If no implementer is available, stop at a usable packet.
+8. **Independent critique after implementation:** inspect actual screenshots/interaction evidence. Report what was observed/tested versus unknown. Identify concept drift, generic convergence, confusing UX and artistic weaknesses; give prioritized feedback instead of silently rewriting code.
+9. **Learn and version:** record accepted/rejected alternatives, source access, failures and handoff summary so the next session doesn't repeat generic defaults.
 
-## Design quality contract
-- **Expressive:** meaningful concept; deliberate image, typography, contrast and composition; not a generic template.
-- **Functional:** understandable primary task, conventional semantics when they matter, predictable and reversible actions.
-- **Inclusive:** accessible labels, focus, contrast, text resize/reflow, responsive behavior and reduced motion.
-- **Performant:** sensible image weight, no invented Core Web Vitals, animation justified by purpose.
-- **Evidence-honest:** a screenshot cannot prove behavior; publisher pages aren't full book reading; source claims are not test results.
+## On-demand reference map
+All paths relative to **Creative Intelligence Lab repository root**, not a host application.
+- `research/008-ART-DIRECTION-FIELD-MANUAL.md` — art direction mechanisms.
+- `reading-dossiers/001-ALBERS-ART-INSTRUCTION.md` — primary-source excerpts and color experiments.
+- `research/006-TYPOGRAPHY-AS-ARCHITECTURE.md` — typography and cultural identity.
+- `case-studies/art/001-PUBLIC-THEATER-IDENTITY-AS-SYSTEM.md` — stable grammar with expressive variation.
+- `research/005-ARCHITECTURE-OF-ATTENTION.md` — attention and editing.
+- `research/007-CINEMATIC-IMAGE-LANGUAGE.md` — photograph/film language and pacing.
+- `design-systems/comparison.md` — different UX system contexts.
+- `handbook/DECISION-CARDS.md` — conditional critiques.
+- `research/009-FRONTEND-SKILL-COMPARISON.md` — precisely what not to duplicate.
+- `visual-library/REGISTRY.md` — originals versus links versus screenshots.
+- `docs/CROSS_AGENT_PROTOCOL.md` — ChatGPT/Claude/owner responsibilities.
 
-## Hard exclusions
-- Never modify Faneqo production repos, deploy, purchase assets, install dependencies or install this skill elsewhere merely because this skill is loaded.
-- Never copy distinctive website/artwork identity wholesale.
-- Never invent user research, screenshot captures, successful tests, or approval.
-- Don't turn "premium" into a default purple-gradient dashboard without a concept.
-- If required project access is absent, prepare a structured brief/prototype plan rather than guessing file paths.
+Use only the references relevant to the design brief. Never imply unread books were studied in full or claim screenshots/tests not performed.
 
-## Output artifacts
-Use `templates/CREATIVE_BRIEF.md`, `templates/DESIGN_REVIEW.md` and `pilots/001-signal-archive/QA_PLAN.md` as models. Keep key decisions inspectable in Markdown.
+## Complementarity rules
+- **Our skill asks WHAT the design should communicate and WHY.**
+- **Anthropic frontend-design decides HOW to express and build it beautifully, within the agreed brief.**
+- **Our skill evaluates WHETHER the built experience delivers the intended meaning and task.**
+- On conflict: explicit owner direction > approved design brief > verified product needs and accessible behavior > source-backed mechanisms > optional styling heuristics.
+- Do **not** restate or overwrite the official frontend-design skill's aesthetic prescriptions, frontend implementation patterns, animation approach, responsive advice or quality checks. Reference official expertise rather than cloning it.
+- If both skills seem to be speaking as art directors, the creative-direction packet must make responsibility and decisions explicit. Owner resolves unresolved creative conflicts.
 
-## Owner scheduling boundary (2026-11-11)
-Claude is occupied with current Faneqo development. Do not use this skill to interrupt that work. The final evaluation is an **isolated Faneqo homepage mockup**, once owner indicates readiness. An existing fictional sandbox prototype is optional practice, not a prerequisite. Read `docs/PILOT-STRATEGY.md`.
+## Mandatory artifact formats
+**Before coding:** `CREATIVE_BRIEF.md` (purpose, verified facts, thesis, three directions, choice status, sources, constraints and evidence criteria).
+**After build:** `DESIGN_REVIEW.md` (specific visual/UX observations, tests actually performed, conflicts, revision requests, open questions).
+**Optional:** `DESIGN_DECISION.md`, source reading dossier, critique comparison.
+
+## Owner scheduling boundary
+Claude is occupied with current Faneqo work; do not interrupt it. The final trial will be an **isolated Faneqo homepage mockup**, only once the owner indicates Claude is available and authorizes mockup implementation. Reading this skill grants no permission to modify Faneqo.
 
 ## Alpha validation
-This is a **candidate skill**. It is not proven or installed. Evaluate it on an invented sandbox with the rubric at `handbook/DESIGN_ACCEPTANCE_RUBRIC.md`, revise from actual failures, and obtain owner approval before production use.
+This is a **candidate skill**, not a proven workflow. To validate, compare *frontend-design alone* with *the same frontend-design implementation process supplied with our research-led direction packet*. Control for content and scope; collect screenshots and task results; use independent critique and owner judgment. If outcomes do not improve, simplify or retire our skill rather than claim success.
