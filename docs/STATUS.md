@@ -85,3 +85,11 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Added `handbook/CINEMATIC-DIRECTION-CARD.md`, `visual-library/CINEMA-PHOTOGRAPHY-SOURCE-ATLAS.md`, and an original `three-rhythms.svg` teaching diagram. No third-party images uploaded.
 - Claude skill draft remains committed, **not installed/tested**. The new docs are committed to the research repo only. No production files changed.
 - Next: continue art/photography/architecture/typography research and make the art-direction handbook selective, then design the final mockup brief against current Faneqo reality when Claude is free.
+
+## 2026-11-11 — Release 011: major cross-disciplinary consolidation
+- Added first original-text reading dossier: `reading-dossiers/001-ALBERS-ART-INSTRUCTION.md`, based on accessible Albers Foundation transcriptions (1934 original text reviewed; 1939/1954 excerpts reviewed). **Not a full reading of Interaction of Color.**
+- Added `research/008-ART-DIRECTION-FIELD-MANUAL.md` (15 conditional design moves), `handbook/DECISION-CARDS.md` (12 cards), `engineering/CREATIVE-FRONTEND-QUALITY.md` (implementation quality and motion), and `case-studies/art/001-PUBLIC-THEATER-IDENTITY-AS-SYSTEM.md` (Pentagram 2014/2016/2026).
+- Added two **original** visual teaching SVGs: identity invariants and competing vs focused event hierarchy; `visual-library/REGISTRY.md` records eight original SVG files and **zero real site screenshots captured**.
+- Updated skill alpha's reference map; **Claude skill is still not installed or executed**. Do not interrupt Claude's existing Faneqo work. Final pilot remains isolated Faneqo homepage mockup, not production.
+- Quality limits: studio-authored case evidence isn't an independent visual/UX test; original SVGs were committed as markup, not inspected in every browser; handbook needs validation.
+- See `docs/RELEASE_011_PLAN_AND_SCORECARD.md` for gaps. Next highest-value work: two further original-source reading dossiers, specific artifact audits, and a measured mockup evaluation after Claude is available.
