@@ -18,3 +18,9 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added major design-system comparison and Vue/Nuxt component ecosystem catalog.
 - Added screenshot reference index, capture/rights protocol, and an original annotated SVG study of restrained versus expressive hierarchy.
 - No live browser screenshots were captured or copied into the public repository in this increment.
+
+## 2026-11-11 — Component anatomy and interaction excellence
+- Added researched anatomy notes for action buttons, dialogs and alerts, field-level and summary errors, and keyboard-operated tabs.
+- Compared authoritative Apple HIG, Fluent 2, GOV.UK and W3C ARIA APG advice and tracked differences and constraints.
+- Added original SVG showing an invented component hierarchy and form error recovery; **not** a screenshot of an existing design system.
+- Updated roadmap and status. No production application changes.
