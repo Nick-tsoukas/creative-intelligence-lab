@@ -92,3 +92,9 @@ Next action: real browser testing, screenshots, and Claude-led authorized iterat
 - [Creative Frontend Quality Contract](engineering/CREATIVE-FRONTEND-QUALITY.md) — practical Vue/Nuxt, accessibility and animation safeguards.
 - [Visual Evidence Registry](visual-library/REGISTRY.md) — eight original teaching SVGs, external artwork references and outstanding real screenshot capture.
 - [Release scorecard](docs/RELEASE_011_PLAN_AND_SCORECARD.md) — v1.0 gaps and next gates.
+
+## Research release 012 — Complementary, not competing skills
+- [Official frontend-design comparison](research/009-FRONTEND-SKILL-COMPARISON.md) — what Anthropic already does well; what our skill uniquely contributes.
+- [Creative direction → build contract](handbook/DIRECTION-TO-BUILD-CONTRACT.md) — a precise, implementation-neutral handoff.
+- [Our own anti-generic self-audit](experiments/001-ANTI-GENERIC-SELF-AUDIT.md) — critical look at cliché convergence in the first pilot.
+- [Creative Intelligence Director alpha v0.2](skills/creative-design-director/SKILL.md) — narrowed to research, concept direction and independent critique; **not installed**.
