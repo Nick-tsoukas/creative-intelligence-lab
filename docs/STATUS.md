@@ -67,3 +67,6 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Added `handbook/RESEARCH-TO-DIRECTION.md`, `templates/CREATIVE_BRIEF.md`, and `templates/DESIGN_REVIEW.md`.
 - **Not yet built:** Claude Code design skill, installed skill, live pilot, independent user tests, complete v0.2 archive migration, and compliant screenshot collection. The existing case-study dossiers are mostly published-source reviews, not deep live audits. Do not count them toward completion without upgrading evidence.
 - **Next focus:** curated case-study/reading quality and sandbox pilot. Avoid infinite collection.
+
+## Release 008 visual supplement
+- Added `visual-library/original-studies/typographic-voices.svg`: three original typographic directions using identical invented content, for future critique and sandbox experiments. Not an external screenshot. Agent onboarding files now reference the finish-line gates and cross-agent protocol.
