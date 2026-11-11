@@ -27,3 +27,8 @@ A source on a list is not the same as a source thoroughly examined. Labels: QUEU
 
 ## Next action
 Select and fully analyze an initial set of outstanding digital experiences with primary project links and clear limitations, then compare against exemplary usability systems. Update bibliography and changelog with each reviewed increment.
+## 2026-11-11 research increment — verified GitHub commit
+- Five published-source dossiers now in `case-studies/digital/`: FinalFinal, David Whyte, Linear's 2026 interface refresh, GOV.UK Design System and Adobe Spectrum.
+- Comparative analysis in `research/003-DIGITAL-EXCELLENCE.md`.
+- **Evidence limits:** official creator/design-system documents inspected; no live mobile, keyboard, screen reader, user testing or measured performance. These are source-grounded first-pass studies, not five completed independent usability audits.
+- Next: direct observed study of exact projects and a dialog/form component pattern comparison; preserve unverified status until actually tested.
