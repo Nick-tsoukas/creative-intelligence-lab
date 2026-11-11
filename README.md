@@ -69,3 +69,10 @@ Source access and hypotheses are explicitly labeled; this release is not an asse
 - [Creative brief template](templates/CREATIVE_BRIEF.md) and [design review template](templates/DESIGN_REVIEW.md).
 
 **State:** foundation documents are committed; the final Claude Code skill is **not yet built or validated**.
+
+## Research release 009 — Skill alpha and first controlled pilot
+- [Creative Design Director — Claude Code skill alpha](skills/creative-design-director/SKILL.md). **Stored in GitHub, not installed or tested by Claude.**
+- [Signal Archive pilot](pilots/001-signal-archive/README.md): fictional design challenge with a [creative brief](pilots/001-signal-archive/BRIEF.md), [three concepts](pilots/001-signal-archive/CONCEPTS.md), [QA plan](pilots/001-signal-archive/QA_PLAN.md), and an [HTML browser prototype](pilots/001-signal-archive/prototype/index.html) (source-code only; not browser-tested).
+- [Design acceptance rubric](handbook/DESIGN_ACCEPTANCE_RUBRIC.md) — independent artistic, UX, accessibility, engineering and evidence axes.
+
+Next action: real browser testing, screenshots, and Claude-led authorized iteration before claiming the pilot works.
