@@ -29,3 +29,6 @@ The owner has final design/deployment authority. ChatGPT directs and independent
 - Alpha skill: `skills/creative-design-director/SKILL.md` (not installed or tested by Claude).
 - Pilot 001: `pilots/001-signal-archive/` has the fictional brief, three visual directions, QA plan, decision log and an HTML source-code prototype (browser testing pending).
 - To resume: inspect `docs/STATUS.md`, then verify the prototype in a browser, record actual responsive/keyboard results and arrange an authorized Claude Code skill test. No production changes.
+
+## Latest owner decision (2026-11-11)
+Claude Code is busy with unrelated Faneqo work; do **not** initiate skill execution or cross-agent prototyping yet. Continue research and GitHub documentation. The **final** test will be an isolated Faneqo homepage mockup, not the live production site. Read `docs/PILOT-STRATEGY.md` and current `docs/STATUS.md`. Owner approves any later implementation or deployment.
