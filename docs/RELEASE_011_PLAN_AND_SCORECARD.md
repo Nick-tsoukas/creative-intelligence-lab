@@ -3,7 +3,7 @@
 **2026-11-11.** This scorecard prevents an infinite library-building project. Counts are approximate until an inventory script audits the repository.
 
 ## New outcomes this release
-- Primary-text reading dossier on Josef Albers's **actual educational writings**, rather than merely a book listing.
+- Primary-text excerpt dossier on Josef Albers's **actual educational writings**, rather than merely a book listing.
 - Art case study tracing Paula Scher's Public Theater identity across 2014, 2016 and 2026 studio records.
 - A cross-disciplinary field manual, frontend technical contract and concise 12-card decision handbook.
 - A rights-aware gallery/storyboard experiment and a source-to-design evaluation protocol.
