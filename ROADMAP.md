@@ -77,3 +77,10 @@
 - [x] Narrow our alpha skill to research direction, evidence selection, distinct concepts, decision handoffs and independent critique.
 - [x] Create a concrete direction-to-build contract and self-audit of the first prototype's generic design risks.
 - [ ] Validate the complement empirically by comparing frontend-design alone versus frontend-design with Creative Intelligence direction, after Claude is free and owner authorizes isolated mockup work.
+
+## Release 013 progress
+- [x] First-pass architecture/art studies: Villa Savoye, Church of the Light, and Serpentine Pavilion with direct source links and limitations.
+- [x] Second scoped primary-text dossier: Peter Zumthor's May 2011 Serpentine architect statement.
+- [x] Original architecture-based teaching illustration and design-director card.
+- [ ] Deepen architectural studies through primary project drawings and legally accessible books; record exact chapters and access limits.
+- [ ] Build rights-aware real site screenshot corpus and interactive UX evidence after tools/permissions allow.
