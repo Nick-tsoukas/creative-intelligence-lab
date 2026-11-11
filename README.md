@@ -14,9 +14,9 @@ Inspired by Faneqo but intentionally **independent of any single app**. Built to
 ## Library map
 | Area | Contents |
 |---|---|
-| [research/](research/002-INVISIBLE_GEOMETRY.md) | Initial synthesis: Leonardo, Mondrian, Müller-Brockmann, Ando and geometry |
+| [research/](research/002-INVISIBLE_GEOMETRY.md) | Visual geometry plus [comparative digital excellence](research/003-DIGITAL-EXCELLENCE.md) |
 | [sources/](sources/FOUNDATIONAL_READING.md) | Source reading queue; do not confuse queued books with fully read texts |
-| [web-design/](web-design/README.md) | World-class digital experiences, UX, components, trends, and source index |
+| [web-design/](web-design/README.md) | World-class digital experiences, UX, components, trends, and source index; [five first-pass digital case studies](web-design/experience-atlas.md) |
 | [frameworks/](frameworks/VISUAL_REVIEW.md) | Repeatable visual and usability critique |
 | [templates/](templates/DIGITAL_CASE_STUDY.md) | Consistent source-backed digital case-study format |
 | [CHANGELOG.md](CHANGELOG.md) | Versioned research and docs changes |
