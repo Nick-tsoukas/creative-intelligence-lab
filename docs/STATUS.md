@@ -77,3 +77,11 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Added a self-contained `pilots/001-signal-archive/prototype/index.html` representing the Field Notes concept, with mock search/filter/favorite interactions, a clear unavailable-audio label, original graphics and reduced-motion CSS. Corrected filter focus restoration in code. **No runtime/browser execution, keyboard testing, Nuxt port, Claude run, screenshots or human user test yet.**
 - v1.0 gate progress: Gate 3 alpha artifact scaffold prepared; Gate 4 brief/concepts prepared; working pilot and QA still unproven. Human approval and actual implementation review pending.
 - Next: execute prototype in a real browser, capture desktop/mobile/focus states, record defects, and have Claude independently inspect/rebuild in a real Nuxt sandbox only after user approval for that work.
+
+## 2026-11-11 — Research 010 and owner pilot strategy
+- Owner instructed that Claude Code remains focused on existing Faneqo development; **do not interrupt it or ask for skill testing now**. Continue independent research.
+- Final applied validation changed to a **separate Faneqo homepage mockup**, only once Claude is available and the owner authorizes mockup implementation. Signal Archive remains an optional internal proof-of-concept; it is not compulsory near-term work. See `docs/PILOT-STRATEGY.md`.
+- Added `research/007-CINEMATIC-IMAGE-LANGUAGE.md`: Sugimoto, Crewdson, Darius Khondji / Bong Joon-ho's cinematographic rhythm, concept-first motion titles, and W3C motion guidance. Evidence: museum, practitioner, and standards documents; not full cinema book reading or direct film analysis.
+- Added `handbook/CINEMATIC-DIRECTION-CARD.md`, `visual-library/CINEMA-PHOTOGRAPHY-SOURCE-ATLAS.md`, and an original `three-rhythms.svg` teaching diagram. No third-party images uploaded.
+- Claude skill draft remains committed, **not installed/tested**. The new docs are committed to the research repo only. No production files changed.
+- Next: continue art/photography/architecture/typography research and make the art-direction handbook selective, then design the final mockup brief against current Faneqo reality when Claude is free.
