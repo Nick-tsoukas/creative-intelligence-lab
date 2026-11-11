@@ -1,6 +1,6 @@
 # Pilot 001 — Signal Archive
 
-**Status:** Brief and three concept directions completed; no application built, browser tested, or human reviewed.
+**Status:** Brief, three concept directions, and a self-contained HTML/CSS/JS prototype committed. **No live browser QA, Nuxt port, accessibility certification, or human review yet.**
 **Setting:** Fictional, standalone **archive of recorded environmental sounds** created solely to evaluate the Creative Intelligence Lab.
 **Not Faneqo:** unrelated product/brand; no production code changes.
 
@@ -8,6 +8,7 @@
 A sound archive allows a meaningful test of art direction without leaning on a familiar SaaS template: sonic identity, photography/abstract imagery, editorial typography, browsing and previewing, accessible audio interactions, and faceted search. It requires **both** an expressive identity and operational UX.
 
 ## Files
+- [Runnable browser prototype](prototype/index.html) — open locally in any modern browser; contains working client-side search, filters, and favorites. No audio is included. Code has not been executed or assessed in a browser as part of this release.
 - [Brief](BRIEF.md) — user task, constraints and evidence.
 - [Three directions](CONCEPTS.md) — distinct concepts with different artistic mechanisms.
 - [Evaluation](../../handbook/DESIGN_ACCEPTANCE_RUBRIC.md) — independent axes, not one arbitrary "beauty number".
@@ -23,5 +24,5 @@ A sound archive allows a meaningful test of art direction without leaning on a f
 6. Run actual keyboard and semantic/accessibility checks; disclose what is not tested.
 7. ChatGPT independently critiques implementation screenshots/live output and requests refinements; owner decides final release.
 
-## No premature claims
-No skill execution, working frontend, screenshots, end-user test, or performance measurement exists for this pilot yet. The documents constitute a testable experimental setup.
+## Current evidence
+A real source-code prototype exists and has been reviewed for a focus-retention issue (filter button focus is explicitly restored). **It has not yet been executed or tested in an actual browser, so interactivity, responsiveness and accessibility remain unverified.** No screenshots, end-user tests or performance measurements were performed. The concept direction remains a proposed candidate, not owner-approved.
