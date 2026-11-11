@@ -21,3 +21,8 @@ For each priority book, acquire the text legally where possible. Record exact ed
 
 ## Current concern
 We have far more source listings than full book readings. Address this deliberately; don't let the library become an overconfident bibliography or a collection of unsourced aphorisms.
+
+## Additional scoped source readings (2026-11-11)
+- [Albers Foundation excerpts](../reading-dossiers/001-ALBERS-ART-INSTRUCTION.md): passages from original educational writing, NOT complete books.
+- [Peter Zumthor, May 2011 Serpentine Pavilion statement](../reading-dossiers/002-ZUMTHOR-SERPENTINE-STATEMENT.md): architect-authored short primary statement reviewed; NOT `Atmospheres`.
+- *Atmospheres* (Peter Zumthor), *The Eyes of the Skin* (Juhani Pallasmaa), and *Architecture: Form, Space, and Order* (Francis D.K. Ching): **QUEUED**, no reading claims.
