@@ -9,7 +9,7 @@
 - [ ] Establish repeatable review process.
 
 ## Phase B — Great works and visual perception
-- [ ] Deeper close readings of Albers, Arnheim, Müller-Brockmann, Lupton, Rand, Bang, Block, Ando.
+- [ ] Deeper close readings of Albers, Arnheim, Müller-Brockmann, Lupton, Rand, Bang, Block, Ando. Initial Albers Foundation/publisher, Block publisher, and Lupton publisher reviews logged; full books remain unread in this cycle.
 - [ ] Chapter 003: architecture of attention; Caravaggio, Vermeer, Saul Bass, James Turrell.
 - [ ] Comparative composition experiments and counterexamples.
 - [ ] Continue source status audit, including accessible original text versus summaries.
@@ -31,10 +31,15 @@
 - [ ] Mobile visual art direction and Core Web Vitals.
 
 ## Phase E — Synthesis & transfer
-- [ ] Human-reviewed Creative Intelligence Handbook.
+- [ ] Human-reviewed Creative Intelligence Handbook. Draft anti-generic methodology published; requires testing, critique, revision.
 - [ ] Critique rubric; worked positive and negative examples.
 - [ ] Design decision journal / reusable creative brief format.
 - [ ] Separate optional Claude Code SKILL.md using selective references, not bulk context.
 - [ ] Trial on a sandbox design exercise before touching production apps.
 
 **Boundary:** No Faneqo redesign unless owner explicitly authorizes it.
+## Next planned research phase
+- [ ] Gather legally available excerpts/full texts for high-priority books; review with page-specific notes and visual examples.
+- [ ] Compare expressive and operational UI on a sample invented product in three distinct directions (no Faneqo implementation).
+- [ ] Enrich visual atlas with source-attributed screenshots, capture metadata and rights checks.
+- [ ] Convert counterexamples and experiments into a falsifiable handbook, not generic prescriptive rules.
