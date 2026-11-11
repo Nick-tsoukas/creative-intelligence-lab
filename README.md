@@ -44,3 +44,11 @@ Deepen the digital experience atlas with **five specific, carefully verified cas
 
 ---
 **Maintainer:** repository owner and AI collaborators under owner direction.
+
+## Research release 006 — Art × UX synthesis (2026-11-11)
+- [Research 004: From Fine Art to Interactive Design](research/004-ART-TO-INTERFACE.md)
+- [Anti-Generic Design Method (draft)](handbook/ANTI_GENERIC-DESIGN-METHOD.md)
+- [Serious Art & Design Reading Tracker](sources/ART-READING-TRACKER.md)
+- [Original Albers-inspired contextual-color illustration](visual-library/original-studies/albers-color-context.svg)
+
+Source access and hypotheses are explicitly labeled; this release is not an assertion of complete book reading or a live website UX test.
