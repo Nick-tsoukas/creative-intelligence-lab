@@ -87,7 +87,7 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Next: continue art/photography/architecture/typography research and make the art-direction handbook selective, then design the final mockup brief against current Faneqo reality when Claude is free.
 
 ## 2026-11-11 — Release 011: major cross-disciplinary consolidation
-- Added first original-text reading dossier: `reading-dossiers/001-ALBERS-ART-INSTRUCTION.md`, based on accessible Albers Foundation transcriptions (1934 original text reviewed; 1939/1954 excerpts reviewed). **Not a full reading of Interaction of Color.**
+- Added first original-text reading dossier: `reading-dossiers/001-ALBERS-ART-INSTRUCTION.md`, based on passages from Albers Foundation transcriptions (1934, 1939 and 1954 excerpts reviewed; complete texts not verified line by line). **Not a full reading of Interaction of Color.**
 - Added `research/008-ART-DIRECTION-FIELD-MANUAL.md` (15 conditional design moves), `handbook/DECISION-CARDS.md` (12 cards), `engineering/CREATIVE-FRONTEND-QUALITY.md` (implementation quality and motion), and `case-studies/art/001-PUBLIC-THEATER-IDENTITY-AS-SYSTEM.md` (Pentagram 2014/2016/2026).
 - Added two **original** visual teaching SVGs: identity invariants and competing vs focused event hierarchy; `visual-library/REGISTRY.md` records eight original SVG files and **zero real site screenshots captured**.
 - Updated skill alpha's reference map; **Claude skill is still not installed or executed**. Do not interrupt Claude's existing Faneqo work. Final pilot remains isolated Faneqo homepage mockup, not production.
