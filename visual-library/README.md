@@ -55,3 +55,7 @@ Visual education needs artifacts. Text-only research cannot train recognition of
 - [Identity invariants](original-studies/identity-invariants.svg) — stable interaction grammar, different event expressions.
 - [Hierarchy tradeoffs](original-studies/hierarchy-tradeoffs.svg) — competing attention versus task clarity.
 - [Visual Registry](REGISTRY.md) — recorded originals, source links, screenshot limitations and required provenance.
+
+## New architecture collection (2026-11-11)
+- [Official linked source gallery](ARCHITECTURE-REFERENCE-ATLAS.md).
+- [Original three spatial sequence models](original-studies/architectural-sequences.svg) — conceptual diagram, not an architectural photograph or a tested UI.
