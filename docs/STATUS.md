@@ -46,3 +46,10 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Created original `visual-library/original-studies/component-anatomy.svg` illustrating generic action hierarchy and form recovery; **this is not a real UI screenshot**.
 - Evidence scope: official documentation reviewed; no interactive browser, keyboard or screen reader audits of shipped products. Research hypotheses remain explicitly labeled.
 - Next: compare Material 3, Fluent, Apple, GOV.UK and Vue implementations of the same components with hands-on captured screenshots; verify behavior in a controlled test environment.
+
+## 2026-11-11 — Art × Interface research release 006
+- Committed `research/004-ART-TO-INTERFACE.md` with first-pass source-grounded analysis of Albers, Block, Lupton, and Google Material expressive research.
+- Committed `handbook/ANTI_GENERIC-DESIGN-METHOD.md`, a **working hypothesis** for producing distinctive, task-effective interfaces; it is not a validated method or an automatic skill.
+- Committed `sources/ART-READING-TRACKER.md` with access-status honesty: official pages and foundation articles were reviewed, **not full books**.
+- Added an original SVG experiment at `visual-library/original-studies/albers-color-context.svg`; it is **not** an artwork copy or a real website screenshot.
+- No Faneqo frontend/backend or production implementation changed. Next: expand primary source access, case studies, and actual visual/browser experiments.
