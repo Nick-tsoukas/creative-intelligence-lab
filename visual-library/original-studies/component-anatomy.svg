@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 730" role="img" aria-labelledby="title description">
+<title id="title">Component anatomy — visual hierarchy and behavioral states</title>
+<desc id="description">Original diagram with example actions, a modal and form validation, showing component structure, hierarchy, and user recovery. Not a screenshot or Apple, Fluent, or GOV.UK product.</desc>
+<rect width="1200" height="730" fill="#eef1f5"/>
+<text x="50" y="62" font-family="Arial,sans-serif" fill="#202a38" font-size="32" font-weight="700">COMPONENT ANATOMY</text>
+<text x="50" y="92" font-family="Arial,sans-serif" fill="#586475" font-size="18">Original teaching diagram — appearance + interaction contract</text>
+<rect x="40" y="125" width="536" height="535" rx="22" fill="#fff" stroke="#ced5df"/>
+<rect x="624" y="125" width="536" height="535" rx="22" fill="#fff" stroke="#ced5df"/>
+<text x="75" y="174" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#222f40">01 — Action hierarchy</text>
+<text x="75" y="205" font-family="Arial,sans-serif" font-size="15" fill="#627083">Button styles signal priority, not arbitrary size.</text>
+<rect x="75" y="251" width="183" height="57" rx="13" fill="#4338ca"/>
+<text x="107" y="287" font-family="Arial,sans-serif" fill="white" font-size="18" font-weight="700">Publish item</text>
+<rect x="274" y="251" width="165" height="57" rx="13" fill="white" stroke="#9ca9c0" stroke-width="2"/>
+<text x="308" y="287" font-family="Arial,sans-serif" fill="#2d3d54" font-size="18">Save draft</text>
+<text x="75" y="340" font-family="Arial,sans-serif" fill="#4338ca" font-size="15" font-weight="700">PRIMARY</text>
+<text x="274" y="340" font-family="Arial,sans-serif" fill="#566679" font-size="15" font-weight="700">SECONDARY</text>
+<text x="75" y="386" font-family="Arial,sans-serif" fill="#283747" font-size="17" font-weight="700">State anatomy</text>
+<rect x="75" y="410" width="130" height="54" rx="12" fill="#4338ca"/>
+<text x="117" y="443" font-family="Arial,sans-serif" fill="white" font-size="16">Rest</text>
+<rect x="222" y="406" width="130" height="62" rx="14" fill="none" stroke="#f59e0b" stroke-width="4"/>
+<rect x="229" y="413" width="116" height="48" rx="10" fill="#4338ca"/>
+<text x="264" y="443" font-family="Arial,sans-serif" fill="white" font-size="16">Focus</text>
+<rect x="370" y="410" width="165" height="54" rx="12" fill="#bcc4d5"/>
+<text x="389" y="443" font-family="Arial,sans-serif" fill="#243244" font-size="16">Checking…</text>
+<text x="75" y="508" font-family="Arial,sans-serif" fill="#6d7785" font-size="16">Labels • focus • pending • success • error</text>
+<rect x="75" y="539" width="458" height="82" rx="12" fill="#f2f5fb"/>
+<text x="96" y="567" font-family="Arial,sans-serif" fill="#283747" font-size="16" font-weight="700">Interaction promise</text>
+<text x="96" y="593" font-family="Arial,sans-serif" fill="#566679" font-size="14">A click causes an understandable, recoverable result.</text>
+<text x="663" y="174" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#222f40">02 — Dialog + error recovery</text>
+<rect x="661" y="211" width="462" height="396" rx="16" fill="#f5f7fb"/>
+<rect x="685" y="231" width="414" height="344" rx="16" fill="#ffffff" stroke="#c6cfde"/>
+<text x="711" y="269" font-family="Arial,sans-serif" fill="#202a38" font-size="21" font-weight="700">Create account</text>
+<text x="711" y="297" font-family="Arial,sans-serif" fill="#657286" font-size="14">A modal needs a title, safe exit, and focus plan.</text>
+<rect x="711" y="320" width="361" height="49" rx="9" fill="#fef2f2" stroke="#dc2626"/>
+<text x="729" y="341" font-family="Arial,sans-serif" fill="#991b1b" font-size="14" font-weight="700">There is a problem</text>
+<text x="729" y="360" font-family="Arial,sans-serif" fill="#b91c1c" font-size="12">Enter an email address</text>
+<text x="711" y="398" font-family="Arial,sans-serif" fill="#283747" font-size="15" font-weight="700">Email</text>
+<rect x="711" y="409" width="361" height="49" rx="9" fill="white" stroke="#dc2626" stroke-width="2"/>
+<text x="729" y="441" font-family="Arial,sans-serif" fill="#8a94a4" font-size="16">name@example.com</text>
+<text x="711" y="481" font-family="Arial,sans-serif" fill="#b91c1c" font-size="13">Enter an email address</text>
+<rect x="711" y="507" width="135" height="42" rx="10" fill="#e7eaf0"/>
+<text x="750" y="533" font-family="Arial,sans-serif" fill="#354254" font-size="15">Cancel</text>
+<rect x="861" y="507" width="211" height="42" rx="10" fill="#4338ca"/>
+<text x="918" y="533" font-family="Arial,sans-serif" fill="white" font-size="15" font-weight="700">Continue</text>
+<text x="668" y="639" font-family="Arial,sans-serif" fill="#5b6778" font-size="14">Focus • keyboard • announcement • return to trigger</text>
+<text x="600" y="705" text-anchor="middle" font-family="Arial,sans-serif" fill="#7a8594" font-size="15">NOT A CAPTURED SCREENSHOT — ALL INTERFACE ELEMENTS ARE ORIGINAL ILLUSTRATIONS</text>
+</svg>
