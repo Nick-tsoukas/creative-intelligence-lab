@@ -30,3 +30,8 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added a working anti-generic design protocol and an explicit book-access tracker.
 - Added an original contextual-color SVG teaching illustration, not a third-party screenshot.
 - Updated README, status and roadmap with sources, limitations and next experiments.
+
+## 2026-11-11 — Research release 007: architecture of attention
+- Added source-backed art and perception chapter, critical attention checklist and institutional visual reference links.
+- Added original SVG illustration comparing competing salience with task-focused hierarchy.
+- Updated roadmap, README, status and visual reference documentation. No production changes or claims of original eye-tracking tests.
