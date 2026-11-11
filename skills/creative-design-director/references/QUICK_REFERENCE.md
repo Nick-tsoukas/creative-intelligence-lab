@@ -25,3 +25,12 @@ FACT (cited), OBSERVATION (actual source inspected), INTERPRETATION (our judgmen
 
 ## Source discipline
 The main library includes first-pass studies drawn from official source pages; this is not equal to completed full-book reading or systematic usability testing.
+
+## Release 011 curated art-direction resources
+- `research/008-ART-DIRECTION-FIELD-MANUAL.md` — broad cross-disciplinary principles and explicit risks (consult before composing a brief).
+- `handbook/DECISION-CARDS.md` — 12 short conditional choices for critique, **not** a fixed visual style.
+- `reading-dossiers/001-ALBERS-ART-INSTRUCTION.md` — original Albers educational writing with exact scope (not the entire book).
+- `case-studies/art/001-PUBLIC-THEATER-IDENTITY-AS-SYSTEM.md` — stable grammar, changing expression across campaigns.
+- `engineering/CREATIVE-FRONTEND-QUALITY.md` — Nuxt/Vue, accessible motion and runtime verification.
+- `visual-library/REGISTRY.md` — distinguish original teaching SVGs from actual captured screenshots.
+Load at most three of these for any one design decision; do not flood context with the complete library.
