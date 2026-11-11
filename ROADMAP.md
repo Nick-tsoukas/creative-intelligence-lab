@@ -84,3 +84,12 @@
 - [x] Original architecture-based teaching illustration and design-director card.
 - [ ] Deepen architectural studies through primary project drawings and legally accessible books; record exact chapters and access limits.
 - [ ] Build rights-aware real site screenshot corpus and interactive UX evidence after tools/permissions allow.
+
+
+## Research increment 014 — Perceptual organization (2026-11-11)
+- [x] Source-grounded Arnheim / Gestalt / Kandinsky / Albers / Kelly synthesis: [research/011-PERCEPTUAL-ORGANIZATION.md](research/011-PERCEPTUAL-ORGANIZATION.md).
+- [x] Implementer-neutral art-direction critique: [handbook/PERCEPTUAL-COMPOSITION-CARD.md](handbook/PERCEPTUAL-COMPOSITION-CARD.md).
+- [ ] Read Arnheim's *Balance* and *Shape* chapters in a lawful edition; attach page-specific primary-source notes (publisher descriptions do not count as full readings).
+- [ ] Draw an original 3-condition perceptual composition study, then test the renders in a browser and record mobile/desktop outcomes.
+- [ ] Compare with counterexamples: ambiguity vs clarity; remarkable visuals vs successful task completion.
+- **Boundary unchanged:** research only; no Faneqo homepage implementation, no production work, no interruption of Claude's engineering tasks.
