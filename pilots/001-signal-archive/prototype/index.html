@@ -74,7 +74,7 @@ const categories=['All','Nature','Human','Mechanical','Weather','Transit'];
 let active='All';const favorites=new Set();
 const filters=document.getElementById('filters'),records=document.getElementById('records'),search=document.getElementById('search'),count=document.getElementById('count'),empty=document.getElementById('empty');
 function element(tag,cls,text){const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x}
-function renderFilters(){filters.replaceChildren();for(const cat of categories){const b=element('button','filter',cat);b.type='button';b.setAttribute('aria-pressed',String(active===cat));b.onclick=()=>{active=cat;renderFilters();renderRecords()};filters.append(b)}}
+function renderFilters(){filters.replaceChildren();for(const cat of categories){const b=element('button','filter',cat);b.type='button';b.setAttribute('aria-pressed',String(active===cat));b.onclick=()=>{active=cat;renderFilters();renderRecords();const selected=[...filters.querySelectorAll('button')].find(x=>x.textContent===cat);selected?.focus()};filters.append(b)}}
 function renderRecords(){
 const q=search.value.trim().toLocaleLowerCase();const shown=data.filter(r=>(active==='All'||r.cat===active)&&(r.title.toLowerCase().includes(q)||r.place.toLowerCase().includes(q)));
 count.textContent=shown.length+' of '+data.length+' recordings';records.replaceChildren();empty.hidden=shown.length!==0;
