@@ -45,6 +45,7 @@ All paths relative to **Creative Intelligence Lab repository root**, not a host 
 - `case-studies/art/001-PUBLIC-THEATER-IDENTITY-AS-SYSTEM.md` — stable grammar with expressive variation.
 - `research/005-ARCHITECTURE-OF-ATTENTION.md` — attention and editing.
 - `research/007-CINEMATIC-IMAGE-LANGUAGE.md` — photograph/film language and pacing.
+- `research/010-ARCHITECTURE-OF-DIGITAL-EXPERIENCE.md` — arrival, spatial sequence, focal events, and user choice (art-direction analogy only).
 - `design-systems/comparison.md` — different UX system contexts.
 - `handbook/DECISION-CARDS.md` — conditional critiques.
 - `research/009-FRONTEND-SKILL-COMPARISON.md` — precisely what not to duplicate.
