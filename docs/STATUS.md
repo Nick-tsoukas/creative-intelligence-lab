@@ -32,3 +32,11 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Comparative analysis in `research/003-DIGITAL-EXCELLENCE.md`.
 - **Evidence limits:** official creator/design-system documents inspected; no live mobile, keyboard, screen reader, user testing or measured performance. These are source-grounded first-pass studies, not five completed independent usability audits.
 - Next: direct observed study of exact projects and a dialog/form component pattern comparison; preserve unverified status until actually tested.
+
+## 2026-11-11 — Design systems and visual evidence expansion
+- Added `design-systems/` with official-source readings of Apple HIG, Google Material 3 Expressive, a cross-system matrix (Fluent 2, Carbon, Polaris, Spectrum, GOV.UK, Atlassian, Primer and more), and Vue/Nuxt component library research.
+- Added `visual-library/` with 10 source-hosted illustrated example links, screenshot capture/provenance protocol, and an original SVG concept illustration (not a screenshot).
+- Original visuals currently committed: **one**. Direct captured screenshots of Apple/Google and component examples: **zero**. See visual-library README for legal and access constraints; do not claim screenshots were captured.
+- Apple/Google official guidance was read online. Google-reported experimental outcomes remain **creator-reported**, not independently validated.
+- No libraries installed; no application code changed.
+- Next: direct screenshot capture using a browser with access, rights checks before public publication, and a component-by-component comparison.
