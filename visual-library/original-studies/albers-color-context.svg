@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 650" role="img" aria-labelledby="title desc">
+<title id="title">Color Context Study: The Same Accent in Different Surroundings</title>
+<desc id="desc">An original teaching illustration inspired by Josef Albers's experimental method. Two interface panels with exactly the same central accent button fill but different surrounding colors. This is not a reproduction of Albers's artwork.</desc>
+<rect width="1180" height="650" rx="22" fill="#f6f4f0"/>
+<text x="46" y="60" font-family="Arial,sans-serif" font-weight="700" font-size="32" fill="#232a35">COLOR IS RELATIONAL</text>
+<text x="46" y="92" font-family="Arial,sans-serif" font-size="18" fill="#5b6778">An original contextual-color experiment — keep the accent constant; change the surroundings</text>
+<rect x="42" y="125" width="530" height="394" rx="18" fill="#182234"/>
+<rect x="606" y="125" width="530" height="394" rx="18" fill="#ecd6e4"/>
+<rect x="70" y="156" width="474" height="334" rx="12" fill="#222d40"/>
+<rect x="634" y="156" width="474" height="334" rx="12" fill="#f5e8ef"/>
+<text x="98" y="208" font-family="Arial,sans-serif" font-size="23" fill="#f5f7fb" font-weight="700">Dark and restrained</text>
+<text x="662" y="208" font-family="Arial,sans-serif" font-size="23" fill="#34253c" font-weight="700">Warm and saturated</text>
+<text x="98" y="245" font-family="Arial,sans-serif" font-size="16" fill="#a9b6c8">Supporting content in a quiet context.</text>
+<text x="662" y="245" font-family="Arial,sans-serif" font-size="16" fill="#73596e">Supporting content in a warm context.</text>
+<rect x="98" y="301" width="228" height="84" rx="19" fill="#A950D4"/>
+<rect x="662" y="301" width="228" height="84" rx="19" fill="#A950D4"/>
+<text x="151" y="352" font-family="Arial,sans-serif" font-size="23" fill="#ffffff" font-weight="700">Continue</text>
+<text x="715" y="352" font-family="Arial,sans-serif" font-size="23" fill="#ffffff" font-weight="700">Continue</text>
+<text x="98" y="437" font-family="Arial,sans-serif" font-size="14" fill="#a9b6c8">Accent: #A950D4</text>
+<text x="662" y="437" font-family="Arial,sans-serif" font-size="14" fill="#73596e">Accent: #A950D4 — identical value</text>
+<rect x="42" y="545" width="1094" height="64" rx="12" fill="#ffffff" stroke="#d8dce1"/>
+<text x="65" y="570" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#263444">Observe, don't assume:</text>
+<text x="65" y="590" font-family="Arial,sans-serif" font-size="14" fill="#566377">Does the purple feel equally dominant in both contexts? Which control draws your eye first?</text>
+<text x="590" y="636" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#78818c">ORIGINAL STUDY — NOT AN APPLE/GOOGLE UI, NOR AN ALBERS REPRODUCTION</text>
+</svg>
