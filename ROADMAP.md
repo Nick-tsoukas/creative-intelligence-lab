@@ -62,3 +62,12 @@
 - [ ] Advance legally accessible primary-source art and film reading with exact excerpt/chapter scope.
 - [ ] Develop a compact art-direction style/photography selection rubric and source-backed creative case studies.
 - [ ] Do not conflate the Faneqo mockup with authorization to edit production.
+
+## Release 011 progress
+- [x] First genuinely source-scoped Albers original-writing dossier.
+- [x] 15-part Art Direction Field Manual and 12-card quick judgment reference.
+- [x] One chronological identity-as-system case study (Scher/Public Theater).
+- [x] Creative frontend quality and accessibility contract for future Nuxt/Vue work.
+- [x] Eight original SVG teaching examples inventoried in visual registry.
+- [ ] Five additional substantial primary-source reading dossiers, deeper art/web case studies, tested component implementations and actual browser captures.
+- [ ] Final skill validation on isolated Faneqo homepage mockup **only after owner indicates Claude is available**.
