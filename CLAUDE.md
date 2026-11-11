@@ -3,7 +3,7 @@
 This repository is a **research knowledge base**, not an application.
 
 On session start:
-1. Read `START_HERE.md`, `docs/STATUS.md`, `docs/HANDOFF.md`, `ROADMAP.md`, and `docs/RESEARCH_PROTOCOL.md`.
+1. Read `START_HERE.md`, `docs/STATUS.md`, `docs/FINISH_LINE.md`, `docs/CROSS_AGENT_PROTOCOL.md`, `docs/HANDOFF.md`, `ROADMAP.md`, and `docs/RESEARCH_PROTOCOL.md`.
 2. State what is verified versus queued or only preliminarily studied.
 3. Ask for explicit authorization before any Faneqo app change, deployment, or skill installation.
 
@@ -19,4 +19,4 @@ When asked to research:
 
 The owner intends a **future optional reusable art-direction skill**. This CLAUDE.md is an onboarding file, **not** that skill.
 
-Focus near-term on high-quality case studies of digital experiences and component patterns, with cited evidence and counterexamples.
+The project has a **bounded v1.0 finish line**. Prioritize deliverables that satisfy the stage gates over adding an endless list of references. ChatGPT supplies research direction and independent art critique; Claude develops only authorized sandbox implementation and reports verified checks; the owner approves production changes. The Claude Code design skill is **planned, not installed**. When asked to design, first use `templates/CREATIVE_BRIEF.md` and propose three contrasting concepts before modifying code.
