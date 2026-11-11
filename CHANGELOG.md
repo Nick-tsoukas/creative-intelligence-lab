@@ -41,3 +41,10 @@ These are foundational materials; no Faneqo application code or deployments were
 - Defined objective v1.0 stage gates and the role/decision contract for ChatGPT, Claude Code and the owner.
 - Added reusable creative-brief/review templates and a research-to-design-direction guide.
 - Explicitly recorded that the Claude skill and prototype tests are future deliverables, not already completed.
+
+## 2026-11-11 — Release 009: skill alpha, pilot brief and prototype
+- Added `skills/creative-design-director/SKILL.md` with minimal metadata and staged source loading, plus quick reference.
+- Defined a fictional Signal Archive challenge, three distinct concepts, evaluation rubric, acceptance checks and decision log.
+- Built source-code-only browser prototype with original visual design, six mock sound records, search, filtering, empty state and favorites; clearly no audio preview. Fixed focus restoration after filter selection.
+- **Not tested:** actual browser operation, responsive/zoom behavior, Nuxt, Claude Code skill execution, accessibility, performance or screenshots.
+- Updated stage-gate status; no production application changes.
