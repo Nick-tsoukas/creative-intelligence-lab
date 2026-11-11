@@ -52,3 +52,9 @@ Deepen the digital experience atlas with **five specific, carefully verified cas
 - [Original Albers-inspired contextual-color illustration](visual-library/original-studies/albers-color-context.svg)
 
 Source access and hypotheses are explicitly labeled; this release is not an assertion of complete book reading or a live website UX test.
+
+## Research release 007 — Architecture of attention (2026-11-11)
+- [Research 005: Architecture of Attention](research/005-ARCHITECTURE-OF-ATTENTION.md) — Caravaggio, Vermeer, Saul Bass, James Turrell and the F-shaped scanning myth.
+- [Attention Direction Checklist](handbook/ATTENTION-DIRECTION-CHECKLIST.md) — task-aware critical framework.
+- [Visual Artwork Reference Index](visual-library/ATTENTION-ARTWORK-INDEX.md) — institutional sources and rights-aware references.
+- [Original Attention Choreography SVG](visual-library/original-studies/attention-choreography.svg) — teaching illustration, **not** a website screenshot.
