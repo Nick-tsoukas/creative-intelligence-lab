@@ -20,3 +20,15 @@ Represent music, culture, editorial, product, commerce, portfolio and highly fun
 
 ## Next batch
 Select five **specific project URLs**, inspect actual pages, document strengths and limitations, include at least one exemplary accessible UI benchmark, and report observed technology only if verified.
+
+## Research batch 001 — source-grounded dossiers (2026-11-11)
+
+The following are **first-pass published-source analyses**, not hands-on UX or performance audits:
+
+- [FinalFinal — Locomotive](../case-studies/digital/001-finalfinal.md) — music workflow meets expressive storytelling; STUDIO-CASE-STUDY-REVIEWED.
+- [David Whyte Experience — Immersive Garden](../case-studies/digital/002-david-whyte.md) — poetry, watercolor and multisensory storytelling; STUDIO-CASE-STUDY-REVIEWED.
+- [Linear 2026 interface refresh](../case-studies/digital/003-linear-2026.md) — hierarchy, lower visual noise, and development tooling; DESIGNER-ACCOUNT-REVIEWED.
+- [GOV.UK component system](../case-studies/digital/004-govuk-components.md) — documented component behavior and implementation examples; DOCUMENTATION-REVIEWED.
+- [Adobe Spectrum](../case-studies/digital/005-adobe-spectrum.md) — coherence and variation across products; DOCUMENTATION-REVIEWED.
+
+See [comparative synthesis](../research/003-DIGITAL-EXCELLENCE.md). The first three are specific design projects or product refreshes; the last two are **design-system exemplars**, not individual artistically immersive websites. No full live testing has been performed. Next: direct browser interaction and accessibility/performance measurements where feasible.
