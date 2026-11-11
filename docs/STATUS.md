@@ -53,3 +53,9 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Committed `sources/ART-READING-TRACKER.md` with access-status honesty: official pages and foundation articles were reviewed, **not full books**.
 - Added an original SVG experiment at `visual-library/original-studies/albers-color-context.svg`; it is **not** an artwork copy or a real website screenshot.
 - No Faneqo frontend/backend or production implementation changed. Next: expand primary source access, case studies, and actual visual/browser experiments.
+
+## 2026-11-11 — Research release 007 (visual attention)
+- Published `research/005-ARCHITECTURE-OF-ATTENTION.md` with source-grounded analyses of Caravaggio, Vermeer, Saul Bass, James Turrell, and NN/g's non-universal F-pattern.
+- Published `handbook/ATTENTION-DIRECTION-CHECKLIST.md`, `visual-library/ATTENTION-ARTWORK-INDEX.md`, and an original SVG `visual-library/original-studies/attention-choreography.svg`.
+- Access status: institutional source pages and published UX articles reviewed, **not** full books, museum visits, empirical user testing or live UI screenshots. No third-party images copied into repo.
+- Next: legally accessible long-form reading and a repeatable visual experiment tested with real participants; develop deep typography/art direction chapter.
