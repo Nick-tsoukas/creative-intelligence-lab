@@ -25,3 +25,7 @@ The owner has final design/deployment authority. ChatGPT directs and independent
 
 ## Resumption prompt
 "Open the creative-intelligence-lab repository. Read START_HERE.md, docs/STATUS.md, docs/HANDOFF.md, ROADMAP.md and docs/RESEARCH_PROTOCOL.md. Summarize the actual current state and identify the highest-value source-backed next task. Do not redesign Faneqo or touch production code without permission. Update documentation as you work."
+## Current pilot and skill — do not confuse drafted with validated
+- Alpha skill: `skills/creative-design-director/SKILL.md` (not installed or tested by Claude).
+- Pilot 001: `pilots/001-signal-archive/` has the fictional brief, three visual directions, QA plan, decision log and an HTML source-code prototype (browser testing pending).
+- To resume: inspect `docs/STATUS.md`, then verify the prototype in a browser, record actual responsive/keyboard results and arrange an authorized Claude Code skill test. No production changes.
