@@ -34,3 +34,9 @@ The main library includes first-pass studies drawn from official source pages; t
 - `engineering/CREATIVE-FRONTEND-QUALITY.md` — Nuxt/Vue, accessible motion and runtime verification.
 - `visual-library/REGISTRY.md` — distinguish original teaching SVGs from actual captured screenshots.
 Load at most three of these for any one design decision; do not flood context with the complete library.
+
+## Spatial/art-direction source (Release 013)
+- `research/010-ARCHITECTURE-OF-DIGITAL-EXPERIENCE.md`: three architectural mechanisms; use selectively for visual narrative, not scroll or frontend implementation mechanics.
+- `handbook/ARCHITECTURE-TO-UX-CARD.md`: a brief-ready checklist for arrival, circulation, focal event, thresholds, and skipping.
+- `reading-dossiers/002-ZUMTHOR-SERPENTINE-STATEMENT.md`: author statement on refuge and threshold, not the full book `Atmospheres`.
+Do not turn architecture analogies into required UI interactions. Leave implementation to Anthropic frontend-design.
