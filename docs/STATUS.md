@@ -70,3 +70,10 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 
 ## Release 008 visual supplement
 - Added `visual-library/original-studies/typographic-voices.svg`: three original typographic directions using identical invented content, for future critique and sandbox experiments. Not an external screenshot. Agent onboarding files now reference the finish-line gates and cross-agent protocol.
+
+## 2026-11-11 — Release 009: operational alpha skill and first pilot
+- Created `skills/creative-design-director/SKILL.md` and a small on-demand reference file. **It is a candidate skill stored in GitHub, not installed in Claude Code or validated through a Claude run.** Structure is aligned with official Anthropic skill authoring guidance.
+- Created pilot `pilots/001-signal-archive/`: fictional sound-archive brief, three distinct directions, explicit task/QA matrix, decision log, and a research-based independent rubric.
+- Added a self-contained `pilots/001-signal-archive/prototype/index.html` representing the Field Notes concept, with mock search/filter/favorite interactions, a clear unavailable-audio label, original graphics and reduced-motion CSS. Corrected filter focus restoration in code. **No runtime/browser execution, keyboard testing, Nuxt port, Claude run, screenshots or human user test yet.**
+- v1.0 gate progress: Gate 3 alpha artifact scaffold prepared; Gate 4 brief/concepts prepared; working pilot and QA still unproven. Human approval and actual implementation review pending.
+- Next: execute prototype in a real browser, capture desktop/mobile/focus states, record defects, and have Claude independently inspect/rebuild in a real Nuxt sandbox only after user approval for that work.
