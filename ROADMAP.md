@@ -53,5 +53,12 @@
 1. Upgrade several existing official-source dossiers into deep artifact-based studies with accurate observation scope. Complete a legally accessible primary-source reading note with exact excerpt scope.
 2. Finalize the small design handbook by testing its clarity against three distinct concepts for an invented sandbox product.
 3. Write a scoped Claude Code design skill after core references and contract are stable; use selective retrieval and bounded prompts, not bulk copying of the raw library.
-4. Run a cross-agent sandbox experiment with real implementation, documented responsive/keyboard checks, honest limitations, and user sign-off.
+4. **Per owner decision (2026-11-11):** keep Claude focused on current Faneqo work. When free, evaluate an isolated Faneqo homepage mockup as the final cross-agent test, with real responsive/keyboard/visual evidence and owner sign-off. Signal Archive remains optional preliminary work. See docs/PILOT-STRATEGY.md.
 5. Release v1.0 only after the gates in FINISH_LINE are satisfied.
+
+## Research while Claude is unavailable
+- [x] First-pass source review of photography, cinematic lighting, visual pacing and title design (research/007).
+- [x] Source-attributed cinema/photo reference links and original storyboard illustration.
+- [ ] Advance legally accessible primary-source art and film reading with exact excerpt/chapter scope.
+- [ ] Develop a compact art-direction style/photography selection rubric and source-backed creative case studies.
+- [ ] Do not conflate the Faneqo mockup with authorization to edit production.
