@@ -60,3 +60,9 @@ These are foundational materials; no Faneqo application code or deployments were
 - Created 15-part cross-disciplinary field manual, 12 quick decision cards, creative engineering/UX standards and v1.0 gap scorecard.
 - Added two original SVG experiments and an explicit visual provenance registry (8 original SVGs, 0 real captured site screenshots).
 - Updated skill alpha reference map, README, STATUS and ROADMAP. **No Claude execution or Faneqo production edits.**
+
+## 2026-11-11 — Release 012: complementary creative direction skill
+- Compared the actual Anthropic frontend-design skill instructions against our alpha; acknowledged major overlap and removed it from our skill.
+- Added research comparison, handoff contract and self-audit of generic design tells in our own Signal Archive source.
+- Revised Creative Intelligence Director skill to v0.2: research and creative direction **before** implementation, independent critique **after** implementation; Anthropic frontend-design retains implementation ownership.
+- No installed skill, Claude execution or Faneqo production changes.
