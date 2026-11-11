@@ -83,3 +83,12 @@ Next action: real browser testing, screenshots, and Claude-led authorized iterat
 - [Original Three Rhythms Storyboard](visual-library/original-studies/three-rhythms.svg) — authored teaching illustration.
 - [Cinematic Art Direction Card](handbook/CINEMATIC-DIRECTION-CARD.md).
 - [Final Pilot Strategy](docs/PILOT-STRATEGY.md) — wait until Claude is free, then evaluate an **isolated Faneqo homepage mockup** with owner oversight, not production changes.
+
+## Release 011 — Major Art Direction Field Manual
+- [Art Direction Field Manual](research/008-ART-DIRECTION-FIELD-MANUAL.md) — 15 applied principles connecting fine art, identity, photography, UX, motion and engineering.
+- [Original Josef Albers reading dossier](reading-dossiers/001-ALBERS-ART-INSTRUCTION.md) — original educational texts, not a claim of full book reading.
+- [Paula Scher/Public Theater art case study](case-studies/art/001-PUBLIC-THEATER-IDENTITY-AS-SYSTEM.md) — brand invariants versus seasonal expression.
+- [12 Creative Decision Cards](handbook/DECISION-CARDS.md) — compact conditional design direction.
+- [Creative Frontend Quality Contract](engineering/CREATIVE-FRONTEND-QUALITY.md) — practical Vue/Nuxt, accessibility and animation safeguards.
+- [Visual Evidence Registry](visual-library/REGISTRY.md) — eight original teaching SVGs, external artwork references and outstanding real screenshot capture.
+- [Release scorecard](docs/RELEASE_011_PLAN_AND_SCORECARD.md) — v1.0 gaps and next gates.
