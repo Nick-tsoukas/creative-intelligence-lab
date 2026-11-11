@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 460" role="img" aria-labelledby="t d">
+<title id="t">Attention versus restraint — generic design-system study</title>
+<desc id="d">Two invented interface designs. The left uses quiet navigation and strong content. The right uses prominent task action, shapes and contrast. Not screenshots of Apple or Google.</desc>
+<rect width="1120" height="460" rx="18" fill="#edf0f4"/>
+<g transform="translate(24 24)">
+<rect width="520" height="390" rx="13" fill="#fff" stroke="#ced5df"/>
+<rect x="0" y="0" width="520" height="48" rx="13" fill="#fff"/>
+<text x="22" y="30" font-size="15" font-family="sans-serif" font-weight="700" fill="#202b35">Study A · restrained hierarchy</text>
+<path d="M0 48H520" stroke="#e1e6eb"/>
+<rect x="15" y="62" width="110" height="312" rx="10" fill="#f2f5f8"/>
+<g fill="#adb8c3"><rect x="27" y="89" width="70" height="8" rx="4"/><rect x="27" y="120" width="57" height="8" rx="4"/><rect x="27" y="150" width="70" height="8" rx="4"/><rect x="27" y="180" width="55" height="8" rx="4"/></g>
+<text x="148" y="104" font-size="24" font-family="sans-serif" font-weight="700" fill="#1b2635">Your workspace</text>
+<text x="148" y="130" font-size="12" font-family="sans-serif" fill="#728092">Clear structure lets content lead.</text>
+<rect x="148" y="160" width="345" height="85" rx="11" fill="#f5f7fa" stroke="#e0e4ea"/>
+<rect x="163" y="178" width="85" height="12" rx="6" fill="#b7c5d4"/>
+<rect x="163" y="205" width="300" height="8" rx="4" fill="#d4dfe9"/>
+<rect x="148" y="262" width="345" height="85" rx="11" fill="#f5f7fa" stroke="#e0e4ea"/>
+<rect x="163" y="280" width="110" height="12" rx="6" fill="#b7c5d4"/>
+<rect x="163" y="307" width="240" height="8" rx="4" fill="#d4dfe9"/>
+</g>
+<g transform="translate(576 24)">
+<rect width="520" height="390" rx="13" fill="#f8f5ff" stroke="#d6cfea"/>
+<text x="22" y="30" font-size="15" font-family="sans-serif" font-weight="700" fill="#302051">Study B · expressive task salience</text>
+<path d="M0 48H520" stroke="#ddd1ed"/>
+<rect x="20" y="68" width="480" height="285" rx="24" fill="#eadcff"/>
+<circle cx="411" cy="122" r="62" fill="#e0b6fc"/>
+<circle cx="451" cy="93" r="26" fill="#c7e8e6"/>
+<text x="48" y="138" font-size="28" font-family="sans-serif" font-weight="800" fill="#302051">Create something</text>
+<text x="48" y="172" font-size="28" font-family="sans-serif" font-weight="800" fill="#302051">remarkable.</text>
+<text x="48" y="211" font-size="13" font-family="sans-serif" fill="#5a4b72">A conspicuous next action near the task.</text>
+<rect x="48" y="238" width="187" height="55" rx="27.5" fill="#6430b3"/>
+<text x="81" y="272" font-family="sans-serif" fill="#fff" font-size="16" font-weight="700">Start creating</text>
+<rect x="255" y="246" width="104" height="38" rx="19" fill="#fff" stroke="#c1a6e2"/>
+<text x="275" y="270" font-family="sans-serif" fill="#674e80" font-size="13">Learn more</text>
+</g>
+<text x="560" y="439" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#64748b">ORIGINAL CONCEPT DIAGRAM — NOT ACTUAL APPLE OR GOOGLE INTERFACES</text>
+</svg>
