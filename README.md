@@ -98,3 +98,10 @@ Next action: real browser testing, screenshots, and Claude-led authorized iterat
 - [Creative direction → build contract](handbook/DIRECTION-TO-BUILD-CONTRACT.md) — a precise, implementation-neutral handoff.
 - [Our own anti-generic self-audit](experiments/001-ANTI-GENERIC-SELF-AUDIT.md) — critical look at cliché convergence in the first pilot.
 - [Creative Intelligence Director alpha v0.2](skills/creative-design-director/SKILL.md) — narrowed to research, concept direction and independent critique; **not installed**.
+
+## Release 013 — Architecture, perception and UX
+- [Research 010: Architecture of Digital Experience](research/010-ARCHITECTURE-OF-DIGITAL-EXPERIENCE.md) — Villa Savoye, Church of the Light, Serpentine Pavilion and navigable digital sequences.
+- [Zumthor architect-statement dossier](reading-dossiers/002-ZUMTHOR-SERPENTINE-STATEMENT.md) — verified short statement rather than claimed full book reading.
+- [Architecture case studies](case-studies/art/002-VILLA-SAVOYE-PROMENADE.md) — three independently documented works in `case-studies/art/`.
+- [Architecture-to-UX direction card](handbook/ARCHITECTURE-TO-UX-CARD.md) — an implementation-neutral creative briefing tool.
+- [Visual architecture reference atlas](visual-library/ARCHITECTURE-REFERENCE-ATLAS.md) and [original three-sequence SVG](visual-library/original-studies/architectural-sequences.svg).
