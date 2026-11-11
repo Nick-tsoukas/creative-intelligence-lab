@@ -48,3 +48,9 @@ These are foundational materials; no Faneqo application code or deployments were
 - Built source-code-only browser prototype with original visual design, six mock sound records, search, filtering, empty state and favorites; clearly no audio preview. Fixed focus restoration after filter selection.
 - **Not tested:** actual browser operation, responsive/zoom behavior, Nuxt, Claude Code skill execution, accessibility, performance or screenshots.
 - Updated stage-gate status; no production application changes.
+
+## 2026-11-11 — Research release 010: cinema / photography + final pilot strategy
+- Recorded owner-approved deferral of Claude testing and final validation via an isolated Faneqo homepage mockup; production changes remain prohibited.
+- Added source-grounded first-pass cinematic image-language research (Sugimoto, Crewdson, practitioner cinematography/title design, W3C motion guidance).
+- Added source-attributed visual reference index, compact art-direction card and original storyboard study contrasting stillness, reveal and task feedback.
+- Updated README, STATUS, roadmap and finish-line documentation. No Claude action, runtime test, screenshot capture or production deployment.
