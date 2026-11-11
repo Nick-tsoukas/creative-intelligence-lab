@@ -30,14 +30,14 @@ These are planning thresholds and may be refined explicitly based on evidence. Q
 [ ] Prompt and brief schema can be used by a fresh session without undocumented context.
 
 ### Gate 3: Claude design skill — alpha
-[ ] A packaged skill entry point exists in `skills/creative-design-director/SKILL.md`.
-[ ] It names only stable curated references, not every raw article.
-[ ] The skill produces alternatives before selecting a solution, distinguishes facts from aesthetic judgment, and reads actual project code before implementation.
-[ ] Automated and manual sandbox QA checklist is specified.
+[x] An **alpha candidate** entry point exists in `skills/creative-design-director/SKILL.md` (not installed, not validated).
+[x] Alpha skill uses selective reference mapping rather than copying the whole library.
+[x] Alpha skill instructs generation of alternatives, evidence distinction, and inspection of code before authorized implementation; execution has not been validated.
+[x] QA checklist is specified at `pilots/001-signal-archive/QA_PLAN.md`; **not yet executed**.
 
 ### Gate 4: Cross-agent pilot
-[ ] ChatGPT generates a context-specific brief and three nontrivially different concepts.
-[ ] Claude reports the repo/code it inspected, builds only a sandbox prototype, captures artifacts where allowed and documents open questions.
+[x] Pilot 001 includes fictional context-specific brief and three conceptually different directions (unreviewed).
+[ ] Claude has not run this skill or built a prototype. A **ChatGPT-authored standalone HTML sandbox prototype** exists, but is not a Nuxt build or an executed Claude artifact; browser captures/testing pending.
 [ ] ChatGPT independently critiques output against original concept and constraints; Claude revises.
 [ ] Owner approves the chosen direction or rejects it, with reasons retained in a decision log.
 [ ] Human keyboard/responsive inspection is actually performed or marked pending. No fictional test results.
