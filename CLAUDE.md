@@ -17,6 +17,6 @@ When asked to research:
 - Do not copy other studios' visual identity; synthesize principles.
 - Do not commit third-party copyrighted source files without permission.
 
-The owner intends a **future optional reusable art-direction skill**. This CLAUDE.md is an onboarding file, **not** that skill.
+An **alpha candidate skill** now exists at `skills/creative-design-director/SKILL.md`; it is stored in this research repository but **not installed, executed or validated** in Claude. This CLAUDE.md is only the research repository onboarding file.
 
-The project has a **bounded v1.0 finish line**. Prioritize deliverables that satisfy the stage gates over adding an endless list of references. ChatGPT supplies research direction and independent art critique; Claude develops only authorized sandbox implementation and reports verified checks; the owner approves production changes. The Claude Code design skill is **planned, not installed**. When asked to design, first use `templates/CREATIVE_BRIEF.md` and propose three contrasting concepts before modifying code.
+The project has a **bounded v1.0 finish line**. Prioritize deliverables that satisfy the stage gates over adding an endless list of references. ChatGPT supplies research direction and independent art critique; Claude develops only authorized sandbox implementation and reports verified checks; the owner approves production changes. The Claude Code design skill is **drafted as an alpha, not installed or validated**. When asked to design, first use `templates/CREATIVE_BRIEF.md` and propose three contrasting concepts before modifying code.
