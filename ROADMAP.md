@@ -17,9 +17,12 @@
 ## Phase C — Web design, UX, components
 - [ ] 10 deep digital projects with primary links, visual analysis, UX tradeoffs, evidence. First five **published-source dossiers** completed (three specific project/product cases plus two design-system benchmarks); direct interaction testing remains outstanding.
 - [ ] Expand to 30–50 substantial studies; do not set arbitrary quantity above quality.
-- [ ] Component comparisons: navigation, dialog, forms, image/gallery, dashboard, checkout/payment, loading/feedback.
+- [ ] Component comparisons: navigation, dialog, forms, image/gallery, dashboard, checkout/payment, loading/feedback. **Cross-system/source catalog created**; component-level testing pending.
 - [ ] Accessibility, screen-reader, keyboard and reduced-motion evaluation methods.
 - [ ] Maintain dated 2026 trend hypotheses and independent case studies; never claim trends universally adopted.
+- [x] Add Apple HIG / Material 3 first-pass readings and multi-system design library atlas.
+- [x] Create visual evidence and screenshot provenance process plus original concept study.
+- [ ] Capture and evaluate real desktop/mobile screenshots with exact URLs, dates, rights checks and browser details.
 
 ## Phase D — Motion, storytelling, engineering
 - [ ] Animation timing, pacing, continuity, gesture, frame stability.
