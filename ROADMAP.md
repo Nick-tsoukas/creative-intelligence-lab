@@ -10,7 +10,7 @@
 
 ## Phase B — Great works and visual perception
 - [ ] Deeper close readings of Albers, Arnheim, Müller-Brockmann, Lupton, Rand, Bang, Block, Ando. Initial Albers Foundation/publisher, Block publisher, and Lupton publisher reviews logged; full books remain unread in this cycle.
-- [ ] Chapter 003: architecture of attention; Caravaggio, Vermeer, Saul Bass, James Turrell.
+- [x] First-pass source-backed attention chapter on Caravaggio, Vermeer, Saul Bass, James Turrell, and web scanning. See research/005-ARCHITECTURE-OF-ATTENTION.md. Deep reading and practical testing remain to do.
 - [ ] Comparative composition experiments and counterexamples.
 - [ ] Continue source status audit, including accessible original text versus summaries.
 
@@ -43,3 +43,6 @@
 - [ ] Compare expressive and operational UI on a sample invented product in three distinct directions (no Faneqo implementation).
 - [ ] Enrich visual atlas with source-attributed screenshots, capture metadata and rights checks.
 - [ ] Convert counterexamples and experiments into a falsifiable handbook, not generic prescriptive rules.
+
+- [ ] Design and run a controlled attention/comprehension study contrasting visually expressive and task-first layouts, with participants and documented methodology.
+- [ ] Create further primary-source, visually annotated chapters on typography, composition, lighting and cinematic pacing.
