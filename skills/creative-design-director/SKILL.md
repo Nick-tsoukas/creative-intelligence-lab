@@ -25,7 +25,7 @@ Before changing code, identify the repository, task, audience, existing componen
 ## Reference map — open on demand
 | Need | Preferred file |
 |---|---|
-| Distinctive art direction | `handbook/ANTI_GENERIC-DESIGN-METHOD.md` |
+| Distinctive art direction | `handbook/ANTI_GENERIC-DESIGN-METHOD.md`, `research/008-ART-DIRECTION-FIELD-MANUAL.md` |
 | Art/UX transfer | `handbook/RESEARCH-TO-DIRECTION.md` |
 | Typography/cultural voice | `research/006-TYPOGRAPHY-AS-ARCHITECTURE.md` |
 | Attention/lighting/editing | `research/005-ARCHITECTURE-OF-ATTENTION.md` |
@@ -35,7 +35,9 @@ Before changing code, identify the repository, task, audience, existing componen
 | Expressive visual salience | `design-systems/google-material3.md` |
 | Dialogs and forms | `components/dialogs.md`, `components/forms-tabs.md` |
 | UI component implementation options | `design-systems/vue-component-libraries.md` |
-| Original diagrams/reference provenance | `visual-library/README.md` |
+| Original diagrams/reference provenance | `visual-library/REGISTRY.md` |
+| Conditional design decisions | `handbook/DECISION-CARDS.md` |
+| Creative frontend QA | `engineering/CREATIVE-FRONTEND-QUALITY.md` |
 | Experimental pilot setup | `pilots/001-signal-archive/README.md` |
 
 All paths above are relative to the **research repository root**. If this skill is copied into another project, clone/locate the research repo or use the skill's bundled `references/` summary; do not silently assume relative paths resolve.
@@ -56,6 +58,9 @@ All paths above are relative to the **research repository root**. If this skill 
 
 ## Output artifacts
 Use `templates/CREATIVE_BRIEF.md`, `templates/DESIGN_REVIEW.md` and `pilots/001-signal-archive/QA_PLAN.md` as models. Keep key decisions inspectable in Markdown.
+
+## Owner scheduling boundary (2026-11-11)
+Claude is occupied with current Faneqo development. Do not use this skill to interrupt that work. The final evaluation is an **isolated Faneqo homepage mockup**, once owner indicates readiness. An existing fictional sandbox prototype is optional practice, not a prerequisite. Read `docs/PILOT-STRATEGY.md`.
 
 ## Alpha validation
 This is a **candidate skill**. It is not proven or installed. Evaluate it on an invented sandbox with the rubric at `handbook/DESIGN_ACCEPTANCE_RUBRIC.md`, revise from actual failures, and obtain owner approval before production use.
