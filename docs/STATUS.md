@@ -100,3 +100,11 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Revised `skills/creative-design-director/SKILL.md` to **alpha v0.2**: research, primary-source selection, original creative theses, implementation-neutral brief, independent critique and a documented feedback loop. **No CSS/UI generation or styling duplication.**
 - Alpha remains stored in the repository only: not installed, executed, compared or shown to outperform the official skill.
 - Claude continues separate Faneqo work; final validation remains an isolated Faneqo homepage mockup when owner indicates availability.
+
+## 2026-11-11 — Release 013: architecture and experience
+- Source-grounded first-pass architecture chapter in `research/010-ARCHITECTURE-OF-DIGITAL-EXPERIENCE.md`, covering Foundation Le Corbusier's Villa Savoye, Ando's Church of the Light (secondary architectural account), and Peter Zumthor's 2011 Serpentine Pavilion (commissioning institution and architect statement).
+- New substantial primary-statement excerpt dossier `reading-dossiers/002-ZUMTHOR-SERPENTINE-STATEMENT.md`; three architecture art case studies, one creative-direction card, a links-only visual atlas and an original sequencing SVG.
+- Primary-source reading dossiers now **2**, with access scope different for each (Albers excerpts; Zumthor short statement). Do not confuse with full books.
+- The visual teaching diagram count is now **9 originals**, based on the prior eight-file registry plus this new SVG; browser rendering and UX tests are unverified. No actual source screenshots captured or copyrighted photographs redistributed.
+- Critical design distinction: architecture's composed path should not be copied as mandatory web scroll path; preserve direct navigation and accessible task completion.
+- Claude skill remains research/direction/critique-only and uninstalled. Owner's final test is an isolated Faneqo homepage mockup once Claude is free. No production changes.
