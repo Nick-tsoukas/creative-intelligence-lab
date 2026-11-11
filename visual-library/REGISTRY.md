@@ -14,7 +14,7 @@
 | original-studies/identity-invariants.svg | Original SVG illustration | Stable component grammar, varied expression | Authored for this project |
 | original-studies/hierarchy-tradeoffs.svg | Original SVG illustration | Noisy vs task-first event composition | Authored for this project |
 
-**Count recorded: 8 original SVG teaching studies.** This count is a file inventory, **not** proof that they were validated by actual user research or rendered in all browsers.
+**Count originally recorded: 8 SVG teaching studies; subsequent Release 013 adds `original-studies/architectural-sequences.svg`, bringing the recorded total to 9.** This count is a file inventory, **not** proof that they were validated by actual user research or rendered in all browsers.
 
 ## External art and web design references
 See `ATTENTION-ARTWORK-INDEX.md` and `CINEMA-PHOTOGRAPHY-SOURCE-ATLAS.md`. These are links to institutional/official sources; artwork copyright belongs to relevant creators/holders. They are not repository screenshots.
