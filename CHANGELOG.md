@@ -24,3 +24,9 @@ These are foundational materials; no Faneqo application code or deployments were
 - Compared authoritative Apple HIG, Fluent 2, GOV.UK and W3C ARIA APG advice and tracked differences and constraints.
 - Added original SVG showing an invented component hierarchy and form error recovery; **not** a screenshot of an existing design system.
 - Updated roadmap and status. No production application changes.
+
+## 2026-11-11 — Art and UX synthesis release 006
+- Created research 004 joining Albers color relativity, Bruce Block visual storytelling, Ellen Lupton typography, and Google's expressive UX research.
+- Added a working anti-generic design protocol and an explicit book-access tracker.
+- Added an original contextual-color SVG teaching illustration, not a third-party screenshot.
+- Updated README, status and roadmap with sources, limitations and next experiments.
