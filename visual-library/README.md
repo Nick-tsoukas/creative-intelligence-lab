@@ -9,7 +9,7 @@ We want a **visually rich, annotated research atlas**, not a folder of random un
 2. **Original visual teaching studies:** our own SVGs/diagrams exploring concepts (e.g., hierarchy, density, rhythm); label clearly as original, not an Apple/Google screenshot or recreation of a proprietary app.
 
 ## Current status
-- **Original demonstrations created:** [Attention vs restraint](original-studies/attention-vs-restraint.svg) and [Component anatomy](original-studies/component-anatomy.svg), intentionally generic comparative interface illustrations.
+- **Original demonstrations created:** [Attention vs restraint](original-studies/attention-vs-restraint.svg), [Component anatomy](original-studies/component-anatomy.svg), and [Contextual color study](original-studies/albers-color-context.svg), original educational illustrations, not captured screenshots.
 - **Actual site screenshots:** **not captured or uploaded yet.** Current tool environment could retrieve page text and image search references but could not reliably load public sites for screenshot capture. Therefore this repository uses **links to source-hosted screenshot examples** and a capture queue. Never fabricate screenshots, device tests, or visual annotations.
 - The public repository should not host copied full-resolution copyrighted screenshots without checking applicable rights. Linking to official examples for study and later making small necessary documented analytical captures can be assessed individually.
 
