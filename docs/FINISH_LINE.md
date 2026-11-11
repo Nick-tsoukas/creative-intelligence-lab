@@ -3,7 +3,7 @@
 **Established 2026-11-11.** The repository is a means to better design decisions, not an infinite bibliography.
 
 ## Definition of done
-**Creative Intelligence Lab v1.0 is ready** when a new ChatGPT session and a fresh Claude Code session can each follow the same brief, produce a reviewable, distinctive design exploration, discuss tradeoffs using cited references, and deliver a working **sandbox** interface that passes agreed functional/accessibility checks. The owner then approves adoption. This is not a claim that our design taste becomes objectively perfect.
+**Creative Intelligence Lab v1.0 is ready** when a new ChatGPT session and a fresh Claude Code session can each follow the same brief, produce a reviewable, distinctive design exploration, discuss tradeoffs using cited references, and deliver a working **isolated Faneqo homepage mockup** that passes agreed functional/accessibility checks after Claude's current unrelated work is finished and mockup work is authorized. The owner then approves adoption. This is not a claim that our design taste becomes objectively perfect.
 
 ## Bounded initial scope (v1.0)
 A compact, well-selected working corpus, not every book or example ever made:
@@ -14,7 +14,7 @@ A compact, well-selected working corpus, not every book or example ever made:
 - **A concise handbook:** ~10–15 conditional principles, with evidence tags, counterexamples, decision questions and pointers to full studies.
 - **A design brief + critique contract** that ChatGPT can use consistently, plus a documented collaboration format with Claude.
 - **A scoped Claude Code design skill** with staged reference loading, critique checkpoints, accessibility and performance guardrails, and an explicit ban on changing production without approval.
-- **A pilot:** three genuinely different concepts for one invented product, one implemented Vue/Nuxt sandbox, a reasoned comparative critique, documented responsive/keyboard/reduced-motion checks, owner review and recorded iteration.
+- **A final pilot:** three genuinely different concepts for a Faneqo homepage mockup, one implemented isolated sandbox, comparative critique, documented responsive/keyboard/reduced-motion checks, owner review and iteration. A fictional Signal Archive prototype exists as optional preliminary material, not required before the final test.
 
 These are planning thresholds and may be refined explicitly based on evidence. Quality gates matter more than raw counts.
 
@@ -44,7 +44,7 @@ These are planning thresholds and may be refined explicitly based on evidence. Q
 
 ### Gate 5: v1.0 release
 [ ] Another new chat can resume solely from README/START_HERE, handbook, collaboration contract and skill package.
-[ ] 1 reproducible sandbox pilot has passed the specified checks and decisions are documented.
+[ ] 1 reproducible **isolated Faneqo homepage mockup** has passed the specified checks and decisions are documented; no live homepage merge/deploy is implied.
 [ ] Release tagged and changelog/status updated. Owner signs off on using the system on production projects.
 
 ## Ownership and safety
@@ -59,3 +59,6 @@ These are planning thresholds and may be refined explicitly based on evidence. Q
 2. v1.0 handbook skeleton + reference quality rubric.
 3. Work an invented sandbox exercise to test the art-direction/engineering handoff.
 4. Use pilot failures to sharpen the skill, rather than waiting for a perfectly exhaustive bibliography.
+
+## 2026-11-11 owner amendment
+The owner is hands-off for **ongoing research**, but Claude Code is busy with separate Faneqo work. **Do not initiate Claude skill testing until the owner indicates availability.** The eventual final test will be a Faneqo homepage mockup; do not edit production. See `docs/PILOT-STRATEGY.md`.
