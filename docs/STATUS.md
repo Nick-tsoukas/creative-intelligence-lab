@@ -40,3 +40,9 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Apple/Google official guidance was read online. Google-reported experimental outcomes remain **creator-reported**, not independently validated.
 - No libraries installed; no application code changed.
 - Next: direct screenshot capture using a browser with access, rights checks before public publication, and a component-by-component comparison.
+
+## 2026-11-11 — Component Anatomy research cycle 005
+- Added `components/` research index and official-source analysis of buttons, dialogs and interruptions, and forms/errors/tabs. Sources include Apple HIG, Fluent 2, GOV.UK and W3C APG.
+- Created original `visual-library/original-studies/component-anatomy.svg` illustrating generic action hierarchy and form recovery; **this is not a real UI screenshot**.
+- Evidence scope: official documentation reviewed; no interactive browser, keyboard or screen reader audits of shipped products. Research hypotheses remain explicitly labeled.
+- Next: compare Material 3, Fluent, Apple, GOV.UK and Vue implementations of the same components with hands-on captured screenshots; verify behavior in a controlled test environment.
