@@ -36,8 +36,8 @@
 - [ ] Human-reviewed Creative Intelligence Handbook. Draft anti-generic methodology published; requires testing, critique, revision.
 - [ ] Critique rubric; worked positive and negative examples.
 - [ ] Design decision journal / reusable creative brief format.
-- [ ] Separate optional Claude Code SKILL.md using selective references, not bulk context.
-- [ ] Trial on a sandbox design exercise before touching production apps.
+- [x] Draft standalone optional Claude Code SKILL.md candidate committed under `skills/creative-design-director/` with selective references. **Not installed or exercised; alpha validation pending.**
+- [ ] Trial on a sandbox design exercise before touching production apps. Signal Archive brief and concepts plus HTML prototype are committed; browser QA, Claude execution, iteration and owner review remain open.
 
 **Boundary:** No Faneqo redesign unless owner explicitly authorizes it.
 ## Next planned research phase
