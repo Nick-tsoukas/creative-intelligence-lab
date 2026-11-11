@@ -71,3 +71,9 @@
 - [x] Eight original SVG teaching examples inventoried in visual registry.
 - [ ] Five additional substantial primary-source reading dossiers, deeper art/web case studies, tested component implementations and actual browser captures.
 - [ ] Final skill validation on isolated Faneqo homepage mockup **only after owner indicates Claude is available**.
+
+## Release 012 skill architecture decision
+- [x] Review official Anthropic frontend-design and identify overlaps.
+- [x] Narrow our alpha skill to research direction, evidence selection, distinct concepts, decision handoffs and independent critique.
+- [x] Create a concrete direction-to-build contract and self-audit of the first prototype's generic design risks.
+- [ ] Validate the complement empirically by comparing frontend-design alone versus frontend-design with Creative Intelligence direction, after Claude is free and owner authorizes isolated mockup work.
