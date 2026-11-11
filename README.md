@@ -18,7 +18,8 @@ Inspired by Faneqo but intentionally **independent of any single app**. Built to
 | [sources/](sources/FOUNDATIONAL_READING.md) | Source reading queue; do not confuse queued books with fully read texts |
 | [web-design/](web-design/README.md) | World-class digital experiences, UX, components, trends, and [five first-pass digital case studies](web-design/experience-atlas.md) |
 | [design-systems/](design-systems/README.md) | Apple HIG, Google Material 3, Microsoft Fluent, IBM Carbon, Shopify Polaris, and Vue component libraries |
-| [visual-library/](visual-library/README.md) | Official visual-example links, screenshot capture protocol, and [original comparative SVG study](visual-library/original-studies/attention-vs-restraint.svg) |
+| [visual-library/](visual-library/README.md) | Official image-reference links, screenshot provenance protocol, and original visual studies |
+| [components/](components/README.md) | Source-based comparative component anatomy: buttons, dialogs, forms, errors and tabs |
 | [frameworks/](frameworks/VISUAL_REVIEW.md) | Repeatable visual and usability critique |
 | [templates/](templates/DIGITAL_CASE_STUDY.md) | Consistent source-backed digital case-study format |
 | [CHANGELOG.md](CHANGELOG.md) | Versioned research and docs changes |
