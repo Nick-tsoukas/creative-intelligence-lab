@@ -93,3 +93,10 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Updated skill alpha's reference map; **Claude skill is still not installed or executed**. Do not interrupt Claude's existing Faneqo work. Final pilot remains isolated Faneqo homepage mockup, not production.
 - Quality limits: studio-authored case evidence isn't an independent visual/UX test; original SVGs were committed as markup, not inspected in every browser; handbook needs validation.
 - See `docs/RELEASE_011_PLAN_AND_SCORECARD.md` for gaps. Next highest-value work: two further original-source reading dossiers, specific artifact audits, and a measured mockup evaluation after Claude is available.
+
+## 2026-11-11 — Release 012: explicit complement to Anthropic frontend-design
+- Reviewed Anthropic's official `frontend-design` skill. It already handles distinct visual styling, typography, responsive frontend implementation, animations and self-critique; the Creative Intelligence skill must not repackage those capabilities as unique.
+- Added `research/009-FRONTEND-SKILL-COMPARISON.md`, `handbook/DIRECTION-TO-BUILD-CONTRACT.md`, and `experiments/001-ANTI-GENERIC-SELF-AUDIT.md`.
+- Revised `skills/creative-design-director/SKILL.md` to **alpha v0.2**: research, primary-source selection, original creative theses, implementation-neutral brief, independent critique and a documented feedback loop. **No CSS/UI generation or styling duplication.**
+- Alpha remains stored in the repository only: not installed, executed, compared or shown to outperform the official skill.
+- Claude continues separate Faneqo work; final validation remains an isolated Faneqo homepage mockup when owner indicates availability.
