@@ -106,3 +106,13 @@
 - [ ] Do not count this as validated v1.0 UX component evidence until actual runtime checks exist.
 
 - [x] Create an optional Playwright smoke-test suite for the workbench; execution and browser visual QA **still pending**.
+
+
+## Release 016 — Book-grounded research and validation preparation (2026-11-13)
+- [x] Read primary, public-domain excerpts of William Morris and Edward Johnston, producing two scoped dossiers ([003](reading-dossiers/003-WILLIAM-MORRIS-IDEAL-BOOK.md), [004](reading-dossiers/004-EDWARD-JOHNSTON-LETTERING.md)). Scope does **not** imply fully read books.
+- [x] Create lawful [book acquisition/reading queue](sources/BOOK_ACQUISITION_AND_READING_QUEUE.md), capped to active works.
+- [x] Commit [isolated Chromium browser test workflow](.github/workflows/perception-workbench.yml). Confirm actual GitHub Actions run separately; not yet evidenced passing.
+- [x] Prepare fair [Creative Intelligence vs baseline comparison protocol](pilots/002-creative-intelligence-comparison/PROTOCOL.md), **not run**.
+- [ ] Execute actual browser QA on perception workbench; investigate failed tests and capture evidence. No false passing reports.
+- [ ] Add two more scoped primary-reading dossiers before v1 gate, but do not postpone the design test for more books.
+- [ ] Wait until founder confirms implementation agent free/authorizes isolated Faneqo homepage pilot. No live code edits.
