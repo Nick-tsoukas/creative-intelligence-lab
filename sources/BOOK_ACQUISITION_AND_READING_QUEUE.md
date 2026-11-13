@@ -44,3 +44,9 @@ The Lab did **not** download or archive Klee, Kandinsky, Arnheim, Albers or Lupt
 - [Master Product Plan](../docs/MASTER_PRODUCT_PLAN.md)
 - [Perception Workbench](../experiments/002-perception-workbench/PROTOCOL.md)
 - [Lab Research Protocol](../docs/RESEARCH_PROTOCOL.md)
+
+## 2026-11-13 — Sixth primary-text dossier
+- Walter Crane, *Line and Form* (1900), original illustrated public-domain Project Gutenberg edition: https://www.gutenberg.org/ebooks/25290 and https://www.gutenberg.org/cache/epub/25290/pg25290-images.html .
+- Research: [Dossier 006](../reading-dossiers/006-WALTER-CRANE-LINE-AND-FORM.md). Original passages examined with chapter and print-page anchors. Not full-book reading or all illustrations visually inspected.
+- This environment could read the official online original text but could not transfer the complete eBook into local container storage. Notes and links are committed, book bytes not copied into the public repo.
+- Six scoped dossiers provisionally meet v1 target quantity; quality review and actual applied design testing are next.
