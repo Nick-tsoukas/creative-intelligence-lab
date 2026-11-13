@@ -80,3 +80,11 @@ These are foundational materials; no Faneqo application code or deployments were
 - No Faneqo code touched.
 
 - Added unexecuted Playwright browser smoke test scaffold for research instrument; no runtime pass assertion.
+
+
+## 2026-11-13 — Research increment 016: actual texts and test infrastructure
+- New official-source verified public-domain reading dossiers for William Morris and Edward Johnston, with exact excerpt scope and applicability warnings.
+- Added legal book acquisition queue with links and rights notes; no copyrighted scans copied.
+- Added GitHub Actions Chromium QA workflow; browser execution remains unverified.
+- Added fair baseline vs Lab direction pilot protocol; not conducted.
+- Recorded v1 scoped reading-dossier count 4/6 (NOT books read in full). No production changes.
