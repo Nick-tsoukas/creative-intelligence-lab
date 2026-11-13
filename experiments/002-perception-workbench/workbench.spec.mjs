@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const path = fileURLToPath(new URL('./index.html', import.meta.url));
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('file://' + path);
+  await page.goto(pathToFileURL(path).href);
 });
 
 test('opens with just first study visible and a usable document title', async ({ page }) => {
