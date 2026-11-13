@@ -145,3 +145,11 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - [Experiment 003 report](../experiments/003-music-art-direction-comparison/RESULTS.md) committed with precise scope; [Creative Director alpha](../skills/creative-design-director/SKILL.md) now demands actual viewport screenshot review before design-quality acceptance.
 - This is not independent empirical proof of greater creative quality; no users, assistive-technology audit, actual Faneqo assets, or controlled A/B comparison. **Experiment 002 Playwright workflow run remains unverified**.
 - Faneqo frontend/backend and production remain untouched.
+
+## 2026-11-13 — Release 019: Walter Crane and reproducible engineering
+- Added reading-dossiers/006-WALTER-CRANE-LINE-AND-FORM.md, grounded in selected original 1900 chapters on silhouette, movement, graphic and ornamental purposes, counterbalance, material constraints, and relational color.
+- Six candidate **scoped** primary-text dossiers now exist (the numerical v1.0 target). This does not mean six full books read; quality review remains.
+- Preserved Experiment 003's exact HTML in GitHub, plus advanced_qa.py and a dedicated GitHub Actions workflow. No longer dependent on the old chat ZIP for source.
+- Executed local Chromium checks: **8/8 basic DOM/viewport cases passed** at 320, 390, 768, 1280px for neutral and expressive treatments: one heading, main landmark, labeled controls, valid hash targets, no horizontal overflow, no JS page errors, focusable selector, reduced-motion emulation.
+- **Not tested:** screen readers, human participants, complete keyboard journey, WCAG conformance, independent artistic comparison. Workflow CI execution is NOT verified as passing.
+- No Faneqo application code modified. Next: confirm hosted CI outcome, run exact Perception Workbench tests, and execute fair creative-quality test when authorized.
