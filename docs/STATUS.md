@@ -130,3 +130,9 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Added `sources/BOOK_ACQUISITION_AND_READING_QUEUE.md` with public-domain text access, rights distinctions and capped active reading queue. **No book files downloaded into the GitHub repository**.
 - Added `pilots/002-creative-intelligence-comparison/PROTOCOL.md`, a fair baseline vs research-directed test plan; neither condition built or run and owner authorization for later Faneqo sandbox still needed.
 - Creative Director skill remains uninstalled/unvalidated. No Faneqo production changes.
+
+## 2026-11-13 — Release 017: Klee source close-reading increment
+- Added `reading-dossiers/005-PAUL-KLEE-PEDAGOGICAL-SKETCHBOOK.md`: limited source-visible 1925 German/1953 English excerpts and translator commentary **clearly separated**; bibliography cross-checked with Met, SFMOMA and Bauhaus Kooperation.
+- Original Centre Pompidou PDF link returned HTTP 404 in online retrieval; **no complete book downloaded**, no plates visually studied. Dossier count now provisionally **5/6 scoped**, zero additional fully-read books.
+- Precise mechanisms: line as a moving point, active/passive/intermediate systems, non-symmetric balance, visual paths and arrow/spiral movement; includes proposed controlled comparative experiment, not actual test findings.
+- Browser CI workflow source remains committed; no successful CI run verified in this session. Creative Director skill and Faneqo isolated homepage pilot remain unexecuted; Faneqo code untouched.
