@@ -17,6 +17,13 @@ A book enters active reading only if it can change a specific creative decision 
 | P2 | Josef Albers, *Interaction of Color* (1963) | Copyrighted; Yale authorized edition/educational institutional excerpts https://yalebooks.yale.edu/book/9780300179354/interaction-of-color/ | INSTITUTIONAL EXCERPTS and other authored statements reviewed; NOT full book | Contextual color and perceptual experiments |
 | P2 | Ellen Lupton, *Thinking with Type* | Copyrighted, current publisher edition/legitimate borrow required | OFFICIAL INFO ONLY | Contemporary readable typography, editorial identity and web reflow |
 
+## 2026-11-13 access update — Klee
+
+- Added [Reading Dossier 005](../reading-dossiers/005-PAUL-KLEE-PEDAGOGICAL-SKETCHBOOK.md): short original German and translated passages (I.1, I.12, selected II/IV topics), separated from the later translator's introduction. **Not the full book or 87 diagrams.**
+- The Bauhaus Bookshelf link to the 1925 German scan at Bibliothèque Kandinsky / Centre Pompidou returned HTTP 404 in this session; it was **not downloaded**. Locate a working authoritative scan before classifying the illustrated book as read.
+- The 1953 Sibyl Moholy-Nagy English translation is a separate rights object; do not treat free access as blanket redistribution rights.
+- Our scoped primary-reading dossier milestone is now 5/6 provisionally; no count of fully read books increased.
+
 ## Practical download policy
 - Download **public-domain** original editions in full where useful and rights are clearly established, including illustrations rather than low-quality OCR alone.
 - Prefer primary institutional scans or publisher-authorized editions and maintain exact edition/translator/pagination records.
