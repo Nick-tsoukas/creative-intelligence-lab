@@ -1,3 +1,5 @@
+> **Canonical execution strategy (2026-11-13):** [Master Product Plan](docs/MASTER_PRODUCT_PLAN.md). This roadmap preserves the historical research queue; near-term work is ordered by stage gates and verified design outcomes, not volume of new notes.
+
 # Roadmap — Creative Intelligence Lab
 
 **Canonical acceptance criteria:** [docs/FINISH_LINE.md](docs/FINISH_LINE.md). This file is a work queue, not an unlimited feature wishlist. Research and skill delivery advance together.
