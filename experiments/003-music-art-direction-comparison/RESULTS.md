@@ -15,7 +15,7 @@ This exploratory pair changes multiple visual properties, so it cannot isolate o
 - Repeated after correction: all **6/6 viewport x direction observations** had document scrollWidth equal to clientWidth; none had horizontal overflow; JavaScript page errors zero.
 - Both directions displayed one primary heading and one Explore CTA; switching direction control correctly updated rendering.
 - Basic focus on direction selector and existence of navigation hash targets verified.
-- Exact HTML, test script, screenshots, run JSON and log are packaged in user-accessible sandbox ZIP at /mnt/data/creative-lab-comparison-001.zip. The ZIP is NOT in GitHub; the GitHub repo only receives this experiment report. A later contributor must obtain the archive separately rather than assume it is part of the repository.
+- Exact HTML, test script, screenshots, run JSON and log are packaged in user-accessible sandbox ZIP at /mnt/data/creative-lab-comparison-001.zip. The original ZIP was not committed during the first session; as of the follow-up, the exact HTML source and advanced QA script have been committed. Screenshot PNGs are still a separate sandbox artifact.
 
 ## Defect found by actual visual inspection
 At 390px, the expressive poster caption was hard to read over a red diagonal stripe, despite no overflow or JS errors. Fixed by adding a near-opaque dark label field, padding and higher stacking order. Misleading nav label “Join” (linked only to CTA) was changed to honest “Explore” (links to actual section). Re-ran all checks, pass.
@@ -36,3 +36,12 @@ At 390px, the expressive poster caption was hard to read over a red diagonal str
 5. Preserve source/provenance and do not imply that this experiment establishes world-class artistic quality.
 
 No Faneqo application code was modified.
+
+
+## 2026-11-13 follow-up — reproducible source and stronger QA
+
+The exact original self-contained HTML source has now been committed as [index.html](index.html), resolving the previous 'ZIP only' reproducibility gap. The [advanced QA script](advanced_qa.py) is also committed; run it with `python advanced_qa.py --html index.html` after installing the Python Playwright package and Chromium.
+
+**Executed locally:** 8/8 basic DOM/viewport cases passing across 320, 390, 768, 1280px and both visual directions. Checks: one primary heading, presence of `main`, no horizontal document overflow, no unlabeled visible anchors/selects/buttons, no broken in-page hash destinations, no page errors, focusable mode selector, and reduced-motion media emulation. This remains **structural QA, not actual screen-reader testing** and not proof of aesthetic superiority. Machine-readable local results are in the refreshed user's sandbox package.
+
+**Remaining:** validate keyboard traversal through all controls, 200% zoom, color contrast, actual user comprehension, image/licensing authenticity, independent artistic judgment and fair baseline design test.
