@@ -115,3 +115,5 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - **Only source-level checks were performed:** 12 static structural checks passed on committed GitHub source. No browser screenshots, interactive runtime execution, screen-reader QA, user participants, empirical findings, or formal accessibility conformance claims. See protocol for exact untested checks and experimental confounds.
 - No external art copied, no Faneqo app code modified, no Claude skill installed.
 - Next acceptance gate: execute browser QA with exact viewport/keyboard records before claiming the prototype tested; refine confounded stimuli before controlled user study.
+
+- Release 015 follow-up: committed a Playwright Test source suite `experiments/002-perception-workbench/workbench.spec.mjs` (nine cases including 1280px, 390px, 320px). **Not executed**, no passing-test claim.
