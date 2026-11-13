@@ -1,0 +1,46 @@
+name: Perception Workbench QA
+
+on:
+  push:
+    paths:
+      - 'experiments/002-perception-workbench/**'
+      - '.github/workflows/perception-workbench.yml'
+  pull_request:
+    paths:
+      - 'experiments/002-perception-workbench/**'
+      - '.github/workflows/perception-workbench.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: experiments/002-perception-workbench
+    steps:
+      - name: Checkout Lab
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated Playwright Test dependencies
+        run: npm install --no-save --no-audit --no-fund @playwright/test
+      - name: Install Chromium and Linux libraries
+        run: npx playwright install --with-deps chromium
+      - name: Run viewport, semantics and behavior checks
+        run: npx playwright test workbench.spec.mjs --browser=chromium --reporter=line
+      - name: Preserve failing browser evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: workbench-failure-evidence
+          path: |
+            experiments/002-perception-workbench/test-results/
+            experiments/002-perception-workbench/playwright-report/
+          if-no-files-found: ignore
+          retention-days: 7
