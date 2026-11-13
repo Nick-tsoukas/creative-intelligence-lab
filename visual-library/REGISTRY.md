@@ -27,3 +27,9 @@ See `ATTENTION-ARTWORK-INDEX.md` and `CINEMA-PHOTOGRAPHY-SOURCE-ATLAS.md`. These
 
 ## Visual QC
 An SVG can have readable markup and still have font overflow or poor layout. Open/render and inspect before calling the visual *verified*. Current new diagrams have been committed as text; cross-browser rendering has not been tested.
+
+## Release 015 — Original interactive study (2026-11-13)
+| Source | Type | Status | Rights |
+|---|---|---|---|
+| `../experiments/002-perception-workbench/index.html` | Original HTML/CSS interactive teaching instrument | Source committed; static checks only; no captured screenshots or browser verification | Original to Lab |
+The experiment is **not** an additional independently captured artwork or website screenshot and should not inflate the v1.0 visual-example count. See its PROTOCOL.md for conditions and confounds.
