@@ -71,3 +71,10 @@ These are foundational materials; no Faneqo application code or deployments were
 - Published architectural promenade/light/threshold research, three art case studies, Zumthor primary statement dossier, visual source atlas, direction card and original three-part spatial sequencing diagram.
 - Updated skill reference index and v1.0 status; confirmed this is research/art direction, not duplicative frontend implementation advice.
 - No Claude invocation, screenshot capture, Nuxt/Faneqo modification or deployment.
+
+## 2026-11-13 — Release 015: Perception Workbench source prototype
+- Added `experiments/002-perception-workbench/index.html`: three comparisons, original stimuli, keyboard tab controls, in-tab observation recording and JSON copy.
+- Added `experiments/002-perception-workbench/PROTOCOL.md`: study conditions, manipulation confounds, QA checklist and evidence standards.
+- Added perceptual organization chapter and composition critique card in preceding research increment.
+- Twelve static structural assertions passed against GitHub source; interactive browser testing **not performed** and not claimed.
+- No Faneqo code touched.
