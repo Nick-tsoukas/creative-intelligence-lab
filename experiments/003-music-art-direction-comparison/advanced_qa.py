@@ -12,12 +12,14 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("--html",type=Path,required=True,help="experiment HTML (from sandbox package)")
     parser.add_argument("--output",type=Path,default=Path("advanced_results.json"))
-    parser.add_argument("--chromium",default="/usr/bin/chromium")
+    parser.add_argument("--chromium",default=None,help="optional local executable; omit for Playwright-managed browser")
     args=parser.parse_args()
     html=args.html.read_text(encoding="utf-8")
     results=[]
     with sync_playwright() as p:
-        browser=p.chromium.launch(executable_path=args.chromium,args=["--no-sandbox"])
+        launch_options={"args":["--no-sandbox"]}
+        if args.chromium: launch_options["executable_path"]=args.chromium
+        browser=p.chromium.launch(**launch_options)
         for width,height in [(320,640),(390,844),(768,900),(1280,800)]:
             for mode in ["baseline","direction"]:
                 page=browser.new_page(viewport={"width":width,"height":height},device_scale_factor=1)
