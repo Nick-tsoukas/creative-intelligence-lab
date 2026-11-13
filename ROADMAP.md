@@ -93,3 +93,12 @@
 - [ ] Draw an original 3-condition perceptual composition study, then test the renders in a browser and record mobile/desktop outcomes.
 - [ ] Compare with counterexamples: ambiguity vs clarity; remarkable visuals vs successful task completion.
 - **Boundary unchanged:** research only; no Faneqo homepage implementation, no production work, no interruption of Claude's engineering tasks.
+
+## Release 015 — Experimental research infrastructure (2026-11-13)
+- [x] Build self-contained 3-study [Perception Workbench](experiments/002-perception-workbench/index.html) using original content and no runtime dependencies.
+- [x] Write [source-level study protocol](experiments/002-perception-workbench/PROTOCOL.md) defining what is manipulated, major confounds, recruitment and measurement requirements.
+- [x] Inspect committed source for 12 static integrity and basic resilience conditions (not runtime verification).
+- [ ] Run real Chromium mobile/desktop visual and keyboard QA; archive captures and defect list (not yet executed).
+- [ ] Upgrade one study to isolate a single experimental factor and counterbalance stimulus order.
+- [ ] Only after protocol improvement, collect participant observations with consent and preregistered outcomes.
+- [ ] Do not count this as validated v1.0 UX component evidence until actual runtime checks exist.
