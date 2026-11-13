@@ -102,3 +102,5 @@
 - [ ] Upgrade one study to isolate a single experimental factor and counterbalance stimulus order.
 - [ ] Only after protocol improvement, collect participant observations with consent and preregistered outcomes.
 - [ ] Do not count this as validated v1.0 UX component evidence until actual runtime checks exist.
+
+- [x] Create an optional Playwright smoke-test suite for the workbench; execution and browser visual QA **still pending**.
