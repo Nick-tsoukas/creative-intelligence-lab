@@ -132,3 +132,14 @@
 - [ ] Run exact committed Perception Workbench source in browser + investigate GitHub CI status; Experiment 003 is a separate new sandbox, not proof Experiment 002 passed.
 - [ ] Reproduce a truly fair baseline-vs-Creative-Intelligence independent design trial with licensed music imagery and actual user task checks.
 - [ ] Keep book acquisition selective; test product design outcomes now.
+
+## Release 019 — First quality-gated toolchain work
+- [x] Add a sixth scoped source-based book dossier on Walter Crane's Line and Form.
+- [x] Commit exact Experiment 003 source and advanced test script; resolves ZIP-only source.
+- [x] Run eight real local Chromium basic DOM/viewport cases (no screen reader or actual user task).
+- [x] Add dedicated GitHub Actions workflow for Experiment 003; run outcome not yet verified.
+- [ ] Verify hosted CI and fix failures.
+- [ ] Execute the exact Experiment 002 Perception Workbench GitHub source tests.
+- [ ] Use selected illustrated original book plates and accurate attribution before claiming direct visual close reading.
+- [ ] Conduct fair independent baseline versus Creative Intelligence design comparison after sandbox authorization.
+- [ ] Stop treating book count alone as progress. Each new source must improve a concrete creative direction or measured test.
