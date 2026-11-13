@@ -116,3 +116,10 @@
 - [ ] Execute actual browser QA on perception workbench; investigate failed tests and capture evidence. No false passing reports.
 - [ ] Add two more scoped primary-reading dossiers before v1 gate, but do not postpone the design test for more books.
 - [ ] Wait until founder confirms implementation agent free/authorizes isolated Faneqo homepage pilot. No live code edits.
+
+## Release 017 — Original Bauhaus source and real-test focus
+- [x] Source-scoped Klee original/translation reading dossier with German/English attribution and institutional cross-checks.
+- [ ] Recover a functional lawfully accessible original illustration scan; the previously linked Centre Pompidou PDF was 404. Inspect exact plates and cite locations before saying Klee's full illustrated book was studied.
+- [ ] Finish one additional scoped reading dossier to meet the 6-dossier *quantity* threshold, then stop accumulating dossiers until actual design comparisons execute.
+- [ ] Obtain actual GitHub Actions run outcome for Perception Workbench; run/fix browser and mobile QA, not merely static checks.
+- [ ] Founder-approved isolated baseline-vs-Lab design experiment once implementer is available, without changing Faneqo production.
