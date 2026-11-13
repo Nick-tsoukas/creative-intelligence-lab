@@ -72,3 +72,14 @@ Claude is occupied with current Faneqo work; do not interrupt it. The final tria
 
 ## Alpha validation
 This is a **candidate skill**, not a proven workflow. To validate, compare *frontend-design alone* with *the same frontend-design implementation process supplied with our research-led direction packet*. Control for content and scope; collect screenshots and task results; use independent critique and owner judgment. If outcomes do not improve, simplify or retire our skill rather than claim success.
+
+## Browser-evidence gate — 2026-11-13 amendment (candidate alpha)
+
+A newly rendered design **cannot** be rated 'visually excellent' from source code, static lint, or no-overflow checks alone. Before final critique:
+1. Capture and inspect actual full-page renders at desktop (1280), mobile (390) and narrow mobile (320), plus relevant tablet/interactive states.
+2. Examine crop, headline wrapping, text over decorative images, contrast, CTA visibility, content order and visual rhythm. Record at least one concrete observation per viewport.
+3. Fix discovered defects; re-run visual capture and relevant browser checks. Do not call an untested mockup finished.
+4. Report exactly what tests actually ran, what screenshots were inspected, and what remains untested (e.g. assistive technology, human users, network deployment).
+5. Check that site navigation labels map to real destination/behavior, not decorative fake affordances.
+
+**Case lesson:** [Experiment 003](../../experiments/003-music-art-direction-comparison/RESULTS.md) captured two fictional music-page variants in Chromium. At 390px, the expressive poster caption overlapped visually with the graphic; no-overflow/zero-JS-error checks missed the legibility issue. Corrected caption field and navigation labeling and retested. The experiment does **not** establish research-led design superiority or world-class quality.
