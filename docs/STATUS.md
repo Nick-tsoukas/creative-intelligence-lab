@@ -117,3 +117,8 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Next acceptance gate: execute browser QA with exact viewport/keyboard records before claiming the prototype tested; refine confounded stimuli before controlled user study.
 
 - Release 015 follow-up: committed a Playwright Test source suite `experiments/002-perception-workbench/workbench.spec.mjs` (nine cases including 1280px, 390px, 320px). **Not executed**, no passing-test claim.
+
+## 2026-11-13 — Founder-aligned master product plan
+- The Lab's primary business application is **Faneqo and music-industry web/mobile experiences**; its creative direction, UX, engineering-evidence and critique core must remain reusable across unrelated domains.
+- Committed `docs/MASTER_PRODUCT_PLAN.md` as the canonical prioritized route to v1.0: research curation, compact art director handbook, skill/toolchain validation, owner-authorized isolated Faneqo flagship, portable release.
+- **No new design tests run** by adding this plan; skill remains an unvalidated alpha, browser instrument not yet runtime tested, and no Faneqo application code was modified.
