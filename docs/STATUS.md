@@ -108,3 +108,10 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - The visual teaching diagram count is now **9 originals**, based on the prior eight-file registry plus this new SVG; browser rendering and UX tests are unverified. No actual source screenshots captured or copyrighted photographs redistributed.
 - Critical design distinction: architecture's composed path should not be copied as mandatory web scroll path; preserve direct navigation and accessible task completion.
 - Claude skill remains research/direction/critique-only and uninstalled. Owner's final test is an isolated Faneqo homepage mockup once Claude is free. No production changes.
+
+## 2026-11-13 — Research engineering release 015: Perception Workbench
+- Added [standalone HTML experiment](../experiments/002-perception-workbench/index.html) and [study protocol](../experiments/002-perception-workbench/PROTOCOL.md).
+- Three working-source UI studies: visual weight (3 conditions), semantic grouping (3 conditions), contextual color (3 conditions). Controls, keyboard tab navigation, in-memory answer recording and JSON copy are coded.
+- **Only source-level checks were performed:** 12 static structural checks passed on committed GitHub source. No browser screenshots, interactive runtime execution, screen-reader QA, user participants, empirical findings, or formal accessibility conformance claims. See protocol for exact untested checks and experimental confounds.
+- No external art copied, no Faneqo app code modified, no Claude skill installed.
+- Next acceptance gate: execute browser QA with exact viewport/keyboard records before claiming the prototype tested; refine confounded stimuli before controlled user study.
