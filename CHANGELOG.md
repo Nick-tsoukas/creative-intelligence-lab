@@ -100,3 +100,9 @@ These are foundational materials; no Faneqo application code or deployments were
 - Manual screenshot inspection exposed poor poster-caption legibility on mobile; corrected and retested. Also corrected misleading Join label.
 - Added results/evidence limitations report for Experiment 003; strengthened Creative Director skill with mandatory visual review. Local HTML+screenshots packaged as chat sandbox ZIP, not GitHub source.
 - No Faneqo production changes. No empirical claim that Lab outperforms standard design.
+
+## 2026-11-13 — Release 019
+- Added Walter Crane primary-source dossier and marked six scoped book dossiers provisionally achieved (NOT six entire books read).
+- Preserved Experiment 003 HTML and advanced Chromium QA in GitHub, with dedicated test workflow.
+- Local eight-case DOM/viewport check completed successfully; CI execution not independently verified.
+- No Faneqo production changes.
