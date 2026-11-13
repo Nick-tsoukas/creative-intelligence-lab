@@ -93,3 +93,10 @@ These are foundational materials; no Faneqo application code or deployments were
 - Original Klee Bauhaus 1925 text excerpts analyzed with careful separation from Sibyl Moholy-Nagy's 1953 introduction and institutional catalog context.
 - New reading dossier 005, linked in sources queue; original scan 404 flagged, no downloaded full book or plate-level inspection claimed.
 - Scope remains first working browser test and fair design comparison; no Faneqo edits.
+
+
+## 2026-11-13 — Release 018: first local Chromium render and critique
+- Two original illustrative directions for a fictional music home page were rendered and screenshot-captured in a local Playwright/Chromium sandbox (6 viewport×variant checks passed, no horizontal overflow or JavaScript errors).
+- Manual screenshot inspection exposed poor poster-caption legibility on mobile; corrected and retested. Also corrected misleading Join label.
+- Added results/evidence limitations report for Experiment 003; strengthened Creative Director skill with mandatory visual review. Local HTML+screenshots packaged as chat sandbox ZIP, not GitHub source.
+- No Faneqo production changes. No empirical claim that Lab outperforms standard design.
