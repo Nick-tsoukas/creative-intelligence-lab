@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Perception Workbench · Creative Intelligence Lab</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#f7f4ee;color:#1c2530;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid #007c91;outline-offset:3px}
+a{color:#005875} .wrap{max-width:1100px;padding:clamp(20px,4vw,52px);margin:auto}
+header{background:#182333;color:#fff}header p{max-width:56ch;line-height:1.5;color:#d4dee7}
+h1{font-size:clamp(2.2rem,5vw,4rem);letter-spacing:-.05em;line-height:1.05;margin:.2em 0}
+h2{font-size:clamp(1.4rem,3vw,2.2rem);letter-spacing:-.03em}
+.eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;padding:18px 0 0}
+.tab{background:#e5ebef;border:2px solid transparent;border-radius:8px;color:#182333;padding:11px 16px;font-weight:700}
+.tab[aria-selected="true"]{background:#182333;color:white}
+.panel[hidden]{display:none}
+.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:16px 0 24px}
+.controls label{font-weight:650}
+.controls select{font:inherit;padding:10px;border:2px solid #5b6672;border-radius:7px;background:#fff}
+.explain{background:#fff;border-left:5px solid #1f6975;padding:12px 18px;line-height:1.55}
+.stage{background:#e9e4da;border:1px solid #b3b9bd;border-radius:12px;padding:clamp(16px,3vw,30px);margin:16px 0}
+.stage h3{margin:0 0 12px}
+.hierarchy{min-height:275px;position:relative;background:#fdfcf9;border:1px solid #b0b0b0;border-radius:5px;overflow:hidden;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hierarchy .message{font-size:clamp(1.5rem,3.2vw,2.5rem);font-weight:850;letter-spacing:-.05em;line-height:1.02}
+.hierarchy .action{display:inline-block;padding:10px 16px;background:#163d4c;color:#fff;border-radius:6px;font-weight:700;width:max-content}
+.hierarchy .proof{font-size:.95rem;max-width:32ch}
+.hierarchy[data-mode="single"] .message{font-size:clamp(2.2rem,5vw,3.8rem);grid-column:1/-1;max-width:18ch}
+.hierarchy[data-mode="single"] .action{align-self:end}
+.hierarchy[data-mode="competing"] .message{color:#ae292e;text-shadow:3px 3px #f8cf38}
+.hierarchy[data-mode="competing"] .proof{font-weight:850;font-size:1.6rem;color:#16559a;align-self:center}
+.hierarchy[data-mode="competing"] .action{background:#7531a4;font-size:1.25rem}
+.hierarchy[data-mode="balanced"]{grid-template-columns:3fr 2fr}
+.hierarchy[data-mode="balanced"] .message{grid-row:1/3;align-self:center}
+.hierarchy[data-mode="balanced"] .proof{align-self:end}
+.grouping{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.grouping .group{min-width:0}
+.grouping .chip{display:block;padding:10px;margin:5px 0;background:#fff;border:1px solid #52616c;border-radius:5px}
+.grouping[data-mode="clear"] .group{border:2px solid #375d65;padding:14px;border-radius:8px;background:#e6f1f1}
+.grouping[data-mode="loose"]{gap:4px}
+.grouping[data-mode="loose"] .group{display:contents}
+.grouping[data-mode="loose"] .chip{margin:5px 0}
+.grouping[data-mode="loose"] h4{display:none}
+.grouping[data-mode="mixed"] .group{display:contents}
+.grouping[data-mode="mixed"] h4{grid-column:1/-1}
+.grouping[data-mode="mixed"] .chip:nth-of-type(2){transform:translateY(13px)}
+.grouping h4{margin:0 0 6px}
+.color-study{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.color-field{height:230px;display:grid;place-items:center;border:1px solid #899096}
+.color-field .patch{width:112px;height:112px;background:#a69a74;border:3px solid #303030}
+.color-field:first-child{background:#1d3146}.color-field:last-child{background:#f6deb4}
+.color-study[data-mode="matched"] .color-field{background:#64748b}
+.color-study[data-mode="inverted"] .color-field:first-child{background:#f6deb4}
+.color-study[data-mode="inverted"] .color-field:last-child{background:#1d3146}
+.legend{display:flex;gap:20px;margin:8px 0;font-size:.88rem}
+fieldset{border:1px solid #9ba2a4;border-radius:9px;padding:16px;margin:18px 0;background:#fff}
+fieldset legend{font-weight:750;padding:0 7px}
+fieldset label{display:block;padding:6px 0}
+#result{min-height:1.5em;font-weight:650;color:#174c59}
+footer{border-top:1px solid #c3c6c5;margin-top:45px;padding-top:20px;line-height:1.6}
+.small{font-size:.87rem;line-height:1.5;color:#3d4850}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media (max-width:600px){.grouping,.color-study{grid-template-columns:1fr}.color-field{height:180px}.hierarchy{grid-template-columns:1fr;padding:18px}.hierarchy[data-mode="single"] .message{font-size:2.4rem}.hierarchy[data-mode="balanced"]{grid-template-columns:1fr}.hierarchy[data-mode="balanced"] .message{grid-row:auto}.tabs{display:grid}.tab{width:100%}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="eyebrow">Creative Intelligence Lab · original research instrument</div><h1>Perception<br>Workbench</h1><p>Three small controlled visual comparisons. Explore what changes when hierarchy, grouping, or surrounding color changes. Your judgments are not automatically research results.</p></div></header>
+<main class="wrap">
+<nav class="tabs" aria-label="Study selection" role="tablist">
+<button class="tab" id="tab-hierarchy" type="button" role="tab" aria-controls="panel-hierarchy" aria-selected="true" tabindex="0">01 · Visual weight</button>
+<button class="tab" id="tab-grouping" type="button" role="tab" aria-controls="panel-grouping" aria-selected="false" tabindex="-1">02 · Grouping</button>
+<button class="tab" id="tab-color" type="button" role="tab" aria-controls="panel-color" aria-selected="false" tabindex="-1">03 · Color context</button>
+</nav>
+<section class="panel" id="panel-hierarchy" role="tabpanel" aria-labelledby="tab-hierarchy">
+<h2>One message, competing visual forces</h2>
+<p class="explain">All variants contain the same words. Only relative size, emphasis, alignment, and visual contrast change. Ask: what do you read first? Can you locate the action immediately?</p>
+<div class="controls"><label for="hierarchy-mode">Composition</label><select id="hierarchy-mode"><option value="single">Single focal point</option><option value="balanced">Asymmetric balance</option><option value="competing">Competing emphasis</option></select></div>
+<div class="stage"><h3>Experimental stimulus</h3><div class="hierarchy" id="hierarchy-stage" data-mode="single"><div class="message">Find the signal.</div><div class="proof">A curated archive of remarkable sounds.</div><span class="action">Explore recordings</span></div></div>
+<fieldset><legend>What did you notice first?</legend><label><input type="radio" name="hierarchy-answer" value="headline"> Main headline</label><label><input type="radio" name="hierarchy-answer" value="description"> Supporting description</label><label><input type="radio" name="hierarchy-answer" value="action"> Explore action</label></fieldset>
+</section>
+<section class="panel" id="panel-grouping" role="tabpanel" aria-labelledby="tab-grouping" hidden>
+<h2>Do the groups make sense?</h2>
+<p class="explain">Identical labels in the same two categories. Compare explicit common regions, loose proximity, and mixed alignment. The semantic relationship should remain understandable without color alone.</p>
+<div class="controls"><label for="grouping-mode">Grouping treatment</label><select id="grouping-mode"><option value="clear">Clear common regions</option><option value="loose">Loose boundaries</option><option value="mixed">Mixed alignment</option></select></div>
+<div class="stage"><h3>Experimental stimulus</h3><div class="grouping" id="grouping-stage" data-mode="clear">
+<div class="group"><h4>Discover</h4><span class="chip">Field recordings</span><span class="chip">Collections</span><span class="chip">Curator picks</span></div>
+<div class="group"><h4>Your archive</h4><span class="chip">Saved sounds</span><span class="chip">Recent listens</span><span class="chip">Playlists</span></div>
+</div></div>
+<fieldset><legend>Which category does “Recent listens” belong to?</legend><label><input type="radio" name="grouping-answer" value="discover"> Discover</label><label><input type="radio" name="grouping-answer" value="archive"> Your archive</label><label><input type="radio" name="grouping-answer" value="unclear"> Unclear from this layout</label></fieldset>
+</section>
+<section class="panel" id="panel-color" role="tabpanel" aria-labelledby="tab-color" hidden>
+<h2>Identical color, different surroundings</h2>
+<p class="explain">The two center patches are the same CSS sRGB value (<code>#a69a74</code>) in all variants. Only the surrounding ground changes. Compare perceived lightness, not physical pixel values.</p>
+<div class="controls"><label for="color-mode">Surrounds</label><select id="color-mode"><option value="contrasting">Dark vs warm light</option><option value="matched">Identical surrounds</option><option value="inverted">Swap dark and light</option></select></div>
+<div class="stage"><h3>Experimental stimulus</h3><div class="color-study" id="color-stage" data-mode="contrasting"><div><div class="color-field"><span class="patch"></span></div><div class="small">Patch A · #a69a74</div></div><div><div class="color-field"><span class="patch"></span></div><div class="small">Patch B · #a69a74</div></div></div></div>
+<fieldset><legend>Which central patch appears lighter?</legend><label><input type="radio" name="color-answer" value="A"> A</label><label><input type="radio" name="color-answer" value="B"> B</label><label><input type="radio" name="color-answer" value="same"> They appear the same</label></fieldset>
+</section>
+<div class="controls"><button id="record" class="tab" type="button">Record current observation</button><button id="copy" class="tab" type="button">Copy observation JSON</button><button id="reset" class="tab" type="button">Clear observations</button></div>
+<div id="result" role="status" aria-live="polite">No observations recorded.</div>
+<p class="small">Observations exist in this browser tab only and are not transmitted or persisted. “Record” logs your chosen answer and condition, not reaction time or objective accuracy. This is an exploratory teaching instrument, not a validated experiment or accessibility conformance test.</p>
+<footer class="small"><strong>Research provenance:</strong> original demonstration built for the Creative Intelligence Lab. Principles discussed in <a href="../../../research/011-PERCEPTUAL-ORGANIZATION.md">Research 011</a>. Consult <a href="../PROTOCOL.md">test protocol</a> before treating any observation as evidence. Third-party artwork is not embedded. Keyboard: Tab to controls; arrow keys switch study tabs.</footer>
+</main>
+<script>
+(()=>{"use strict";
+const names=["hierarchy","grouping","color"];
+const observations=[];
+let active="hierarchy";
+const $=id=>document.getElementById(id);
+function activate(name,focus=false){
+ if(!names.includes(name))return;
+ active=name;
+ names.forEach(n=>{
+ const on=n===name;
+ $("tab-"+n).setAttribute("aria-selected",String(on));
+ $("tab-"+n).tabIndex=on?0:-1;
+ $("panel-"+n).hidden=!on;
+ });
+ if(focus)$("tab-"+name).focus();
+}
+names.forEach((n,i)=>{
+ $("tab-"+n).addEventListener("click",()=>activate(n));
+ $("tab-"+n).addEventListener("keydown",e=>{
+ if(["ArrowRight","ArrowLeft","Home","End"].includes(e.key)){
+ e.preventDefault();
+ const k=e.key==="Home"?0:e.key==="End"?names.length-1:(i+(e.key==="ArrowRight"?1:-1)+names.length)%names.length;
+ activate(names[k],true);
+ }
+ });
+ $(n+"-mode").addEventListener("change",e=>{$(n+"-stage").dataset.mode=e.target.value;});
+});
+function makeObservation(){
+ const radio=document.querySelector('input[name="'+active+'-answer"]:checked');
+ if(!radio){$("result").textContent="Choose an observation first.";return;}
+ const o={study:active,variant:$(active+"-mode").value,answer:radio.value,recordedAt:new Date().toISOString()};
+ observations.push(o);
+ $("result").textContent=observations.length+" observation(s) recorded in this tab.";
+}
+$("record").addEventListener("click",makeObservation);
+$("copy").addEventListener("click",async()=>{
+ const s=JSON.stringify({instrument:"perception-workbench-v0.1",observations},null,2);
+ try{await navigator.clipboard.writeText(s);$("result").textContent="Copied "+observations.length+" observation(s).";}
+ catch{$("result").textContent="Clipboard unavailable in this context. Run from localhost or HTTPS to copy.";}
+});
+$("reset").addEventListener("click",()=>{
+ observations.length=0;
+ document.querySelectorAll('input[type="radio"]').forEach(r=>r.checked=false);
+ $("result").textContent="Observations cleared.";
+});
+})();
+</script>
+</body></html>
