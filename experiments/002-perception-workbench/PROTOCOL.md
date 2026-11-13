@@ -94,3 +94,17 @@ A small structural inspection (NOT runtime QA) found all 12 conditions true:
 - [Perceptual Composition Card](../../handbook/PERCEPTUAL-COMPOSITION-CARD.md)
 
 No artwork reproductions are embedded; all stimuli and text are original to the Lab.
+
+## Browser automation scaffold (committed, NOT executed)
+
+A Playwright Test spec is available at [workbench.spec.mjs](workbench.spec.mjs), with 9 automated test cases including 3 viewport sizes. It is **not evidence of a passing test run**.
+
+Run inside this directory once Node and Playwright Test are available:
+
+```bash
+npm exec --yes --package=@playwright/test -- playwright test workbench.spec.mjs --browser=chromium
+```
+
+Note: Playwright's browser binary may have to be installed first. If installing dependencies, prefer a project-local environment and do not modify the Faneqo application repositories. Record exact browser, OS, viewport, errors and screenshots. Any test failure must be investigated before claiming the study's layout is correct.
+
+This automation checks only testable DOM/behavior claims; it does not replace manual visual perception, keyboard, screen reader or participant studies.
