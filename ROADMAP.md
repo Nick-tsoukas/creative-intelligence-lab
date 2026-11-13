@@ -123,3 +123,12 @@
 - [ ] Finish one additional scoped reading dossier to meet the 6-dossier *quantity* threshold, then stop accumulating dossiers until actual design comparisons execute.
 - [ ] Obtain actual GitHub Actions run outcome for Perception Workbench; run/fix browser and mobile QA, not merely static checks.
 - [ ] Founder-approved isolated baseline-vs-Lab design experiment once implementer is available, without changing Faneqo production.
+
+
+## Release 018 — Evidence before more theory
+- [x] Actually render a fresh isolated fictional-music visual contrast in Chromium, record six screenshot views at 1280/390/320 and basic QA. Evidence summary [here](experiments/003-music-art-direction-comparison/RESULTS.md).
+- [x] Find and correct at least one viewport-specific artistic/UX defect via screenshot review; retest.
+- [x] Add mandatory real screenshot/evidence gate to Creative Director alpha.
+- [ ] Run exact committed Perception Workbench source in browser + investigate GitHub CI status; Experiment 003 is a separate new sandbox, not proof Experiment 002 passed.
+- [ ] Reproduce a truly fair baseline-vs-Creative-Intelligence independent design trial with licensed music imagery and actual user task checks.
+- [ ] Keep book acquisition selective; test product design outcomes now.
