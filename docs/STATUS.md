@@ -122,3 +122,11 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - The Lab's primary business application is **Faneqo and music-industry web/mobile experiences**; its creative direction, UX, engineering-evidence and critique core must remain reusable across unrelated domains.
 - Committed `docs/MASTER_PRODUCT_PLAN.md` as the canonical prioritized route to v1.0: research curation, compact art director handbook, skill/toolchain validation, owner-authorized isolated Faneqo flagship, portable release.
 - **No new design tests run** by adding this plan; skill remains an unvalidated alpha, browser instrument not yet runtime tested, and no Faneqo application code was modified.
+
+
+## 2026-11-13 — Independent research and test-readiness increment 016
+- Added GitHub Actions Chromium workflow `.github/workflows/perception-workbench.yml`; actual CI result is **NOT VERIFIED** in this session. The Playwright source tests are still not counted as passed browser QA.
+- New **primary original-text** reading dossiers: `reading-dossiers/003-WILLIAM-MORRIS-IDEAL-BOOK.md` (1893/1895 essays, carefully limited sections) and `reading-dossiers/004-EDWARD-JOHNSTON-LETTERING.md` (1906 preface and Ch. XIV qualities, exact pages). The scoped reading-dossier count is now **4 of target 6**, pending deeper audit of each; not four entire books.
+- Added `sources/BOOK_ACQUISITION_AND_READING_QUEUE.md` with public-domain text access, rights distinctions and capped active reading queue. **No book files downloaded into the GitHub repository**.
+- Added `pilots/002-creative-intelligence-comparison/PROTOCOL.md`, a fair baseline vs research-directed test plan; neither condition built or run and owner authorization for later Faneqo sandbox still needed.
+- Creative Director skill remains uninstalled/unvalidated. No Faneqo production changes.
