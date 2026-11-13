@@ -88,3 +88,8 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added GitHub Actions Chromium QA workflow; browser execution remains unverified.
 - Added fair baseline vs Lab direction pilot protocol; not conducted.
 - Recorded v1 scoped reading-dossier count 4/6 (NOT books read in full). No production changes.
+
+## 2026-11-13 — Release 017: Klee source-scoped study
+- Original Klee Bauhaus 1925 text excerpts analyzed with careful separation from Sibyl Moholy-Nagy's 1953 introduction and institutional catalog context.
+- New reading dossier 005, linked in sources queue; original scan 404 flagged, no downloaded full book or plate-level inspection claimed.
+- Scope remains first working browser test and fair design comparison; no Faneqo edits.
