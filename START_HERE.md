@@ -3,7 +3,7 @@
 **Purpose:** Maintain a durable, transferable, rigorously sourced library about outstanding art direction, visual communication, web design, UX, components, interaction, motion, and creative engineering.
 
 ## For any new ChatGPT / Claude / human contributor
-1. Read this file, `README.md`, `docs/STATUS.md`, `docs/FINISH_LINE.md`, `docs/CROSS_AGENT_PROTOCOL.md`, `docs/HANDOFF.md`, and `docs/RESEARCH_PROTOCOL.md`.
+1. Read **[docs/MASTER_PRODUCT_PLAN.md](docs/MASTER_PRODUCT_PLAN.md)** for the owner-aligned vision, gated execution and Faneqo-first/reusable architecture; then read this file, `README.md`, `docs/STATUS.md`, `docs/FINISH_LINE.md`, `docs/CROSS_AGENT_PROTOCOL.md`, `docs/HANDOFF.md`, and `docs/RESEARCH_PROTOCOL.md`.
 2. Consult `ROADMAP.md` and the v1.0 stage gates in `docs/FINISH_LINE.md` before choosing new research. Review existing source notes to avoid duplication.
 3. When conducting research, inspect actual artworks or working experiences and seek primary sources. Distinguish verified facts, visual interpretations, hypotheses and open questions. Cite reliable URLs and record access limits.
 4. Save substantive findings to the relevant `research/`, `web-design/`, `case-studies/`, `sources/`, or `handbook/` file. Update status and changelog. Prefer small reviewable commits.
