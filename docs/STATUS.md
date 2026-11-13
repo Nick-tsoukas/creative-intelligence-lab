@@ -136,3 +136,12 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Original Centre Pompidou PDF link returned HTTP 404 in online retrieval; **no complete book downloaded**, no plates visually studied. Dossier count now provisionally **5/6 scoped**, zero additional fully-read books.
 - Precise mechanisms: line as a moving point, active/passive/intermediate systems, non-symmetric balance, visual paths and arrow/spiral movement; includes proposed controlled comparative experiment, not actual test findings.
 - Browser CI workflow source remains committed; no successful CI run verified in this session. Creative Director skill and Faneqo isolated homepage pilot remain unexecuted; Faneqo code untouched.
+
+
+## 2026-11-13 — Release 018: first actually rendered art-direction comparison
+- Built an isolated fictional music-platform two-variant design sandbox (neutral vs expressive). Used headless Chromium via Python Playwright to capture 6 real screenshots at 1280, 390 and 320px.
+- **Actual checks passed** after revision: 6/6 viewport×variant no-horizontal-overflow, zero JS page errors; same principal heading/CTA; direction selector works; simple focus/nav hash checks. The source is provided as a user sandbox ZIP, **not committed to GitHub**.
+- Eyes-on screenshot critique found mobile decorative-overlay text legibility problem despite passing code checks. Corrected caption contrast/stacking, corrected misleading 'Join' link, and reran.
+- [Experiment 003 report](../experiments/003-music-art-direction-comparison/RESULTS.md) committed with precise scope; [Creative Director alpha](../skills/creative-design-director/SKILL.md) now demands actual viewport screenshot review before design-quality acceptance.
+- This is not independent empirical proof of greater creative quality; no users, assistive-technology audit, actual Faneqo assets, or controlled A/B comparison. **Experiment 002 Playwright workflow run remains unverified**.
+- Faneqo frontend/backend and production remain untouched.
