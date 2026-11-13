@@ -93,3 +93,12 @@ Klee offers something more valuable than a recipe for Bauhaus graphics: he teach
 - NEXT: find functional, lawful original scan; examine 3 plate/page pairs with exact visual-page records and original/translation distinction. Do not claim this happened already.
 
 This dossier is a **fifth scoped primary-text research note**, subject to the v1.0 gate's eventual quality review, not five books read cover-to-cover.
+
+## Institutional cross-checks (2026-11-13)
+
+- [Metropolitan Museum of Art collection object 818890](https://www.metmuseum.org/art/collection/search/818890) catalogs Klee's 1925 *Pädagogisches Skizzenbuch*, second edition, published by Albert Langen in the Bauhausbücher series. Its object metadata lists 51 pages: this figure may differ from counts including preliminaries in other sources. Do not combine differing catalog page counts as a single verified physical edition.
+- [SFMOMA exhibition archive](https://www.sfmoma.org/exhibition/paul-klees-pedagogical-sketchbook/) records a 2008–09 exhibition and describes the 1925 publication as drawn from lecture notes Klee developed as a Bauhaus teacher; this confirms historical importance, not our having examined the whole book.
+- [Bauhaus Kooperation](https://bauhauskooperation.de/wissen/publikationen/publikationen-zum-bauhaus/paul-klee-pedagogical-sketchbook) explains the 2019 reissue as combining Sibyl Moholy-Nagy's 1953 translation with the 1925 original graphic/material presentation.
+- A [2026 publisher PDF](https://www.editions-allia.com/files/pdf_1130_file.pdf) describes a newer French translation; this is a distinct rights-protected translation. It has **not been read or excerpted** in the Lab.
+
+**Source hygiene:** An institutional catalog record and exhibition history increase bibliographic confidence but are not direct plate-level visual evidence. Future work should record exact plate image, edition, publication page/figure, file link, and reading notes before calling any 1925 diagram inspected.
