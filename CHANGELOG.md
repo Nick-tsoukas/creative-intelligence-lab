@@ -78,3 +78,5 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added perceptual organization chapter and composition critique card in preceding research increment.
 - Twelve static structural assertions passed against GitHub source; interactive browser testing **not performed** and not claimed.
 - No Faneqo code touched.
+
+- Added unexecuted Playwright browser smoke test scaffold for research instrument; no runtime pass assertion.
