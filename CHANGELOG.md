@@ -106,3 +106,9 @@ These are foundational materials; no Faneqo application code or deployments were
 - Preserved Experiment 003 HTML and advanced Chromium QA in GitHub, with dedicated test workflow.
 - Local eight-case DOM/viewport check completed successfully; CI execution not independently verified.
 - No Faneqo production changes.
+
+## 2026-11-14 — Release 020: Elite UX Director research alpha
+- Created Claude candidate skill elite-ux-director with domain-agnostic task/flow/state/permission reasoning and Faneqo messaging adapter.
+- Added source ledger based on inspected chapters of three free author/publisher UX/web-design books, plus public accessible interaction writings; added reading dossier 007.
+- Added eight synthetic benchmark scenarios, evidence severity rubric and report template; static package integrity checks passed 9/9.
+- Not installed in Claude, not independently tested, no full-book reading claim or Faneqo production changes.
