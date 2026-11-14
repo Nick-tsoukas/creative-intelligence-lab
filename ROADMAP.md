@@ -143,3 +143,12 @@
 - [ ] Use selected illustrated original book plates and accurate attribution before claiming direct visual close reading.
 - [ ] Conduct fair independent baseline versus Creative Intelligence design comparison after sandbox authorization.
 - [ ] Stop treating book count alone as progress. Each new source must improve a concrete creative direction or measured test.
+
+## Release 020 — Independent UX specialist skill (2026-11-14)
+- [x] Review original accessible UX/web-design book chapters from Keith, Lynch/Horton and Boulton; preserve exact chapters and evidence limits.
+- [x] Add research/implementation-neutral Claude **elite-ux-director** alpha with selective references, safe Faneqo adapter, triage rubric, UX contracts and eight-case benchmark.
+- [x] Static self-inspection 9/9 source/packaging checks.
+- [ ] Install/test skill with Claude after founder indicates availability; evaluate with a strong equal-budget baseline and blind evidence review, not the skill's own self-rating.
+- [ ] Inspect current Faneqo live/local implementation and compare user journeys with skill recommendations; protect production data.
+- [ ] Acquire licensed copies/accessible original chapters of high-value copyrighted UX books. Do NOT substitute book descriptions for reading.
+- [ ] Validate actual user tasks, screen reader, keyboard/zoom and recovery behavior in local Nuxt app with real evidence.
