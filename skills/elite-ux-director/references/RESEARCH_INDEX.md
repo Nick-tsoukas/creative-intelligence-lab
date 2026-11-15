@@ -24,7 +24,7 @@
 6. If no relevant source exists, solve the user's task with ordinary engineering/product evidence and log a *new reading question*. Don't hallucinate an expert answer.
 
 ## Study index / provenance
-- `K01–K02` → Lab `reading-dossiers/013-DOW-COMPOSITION-HARMONY-AND-HIERARCHY.md` (selected text only; 1914 9th ed).
+- `K01–K02` → Lab `reading-dossiers/013-DOW-COMPOSITION-HARMONY-AND-HIERARCHY.md` (selected text, 1914 9th ed; separate limited No.16 visual study in Dossier 016).
 - `K03–K04` → `reading-dossiers/014-COVERT-INFORMATION-ARCHITECTURE-MICROSTUDY.md` (selected original pages only).
 - `K05–K06` → `reading-dossiers/015-CHIMERO-WHY-CRAFT-AND-FEEDBACK.md` (two chapters only).
 - `K07` → `reading-dossiers/010-FROST-ATOMIC-DESIGN-METHODOLOGY.md` and Covert selected.
