@@ -20,9 +20,6 @@ REQUIRED = [
     "references/DECISION_CARDS.md",
     "references/INTERACTION_PATTERNS.md",
     "references/PERSONA_AND_CONTEXT_METHOD.md",
-    "references/FANEQO_QR_ADAPTER.md",
-    "references/FANEQO_MESSAGING_ADAPTER.md",
-    "references/WORKED_DECISIONS.md",
     "references/ISSUE_RUBRIC.md",
     "references/SOURCE_LEDGER.md",
     "templates/UX_REVIEW_TEMPLATE.md",
@@ -71,7 +68,7 @@ def check() -> list[str]:
     for p in SKILL.rglob("*.md"):
         if not p.read_text(encoding="utf-8").strip():
             errors.append(f"Empty skill file: {p.relative_to(SKILL)}")
-    for phrase in ["not", "permissions", "hypothesis", "FANEQO_QR_ADAPTER.md"]:
+    for phrase in ["not", "permissions", "hypothesis", "TASK_SOURCE_ROUTER.md"]:
         if phrase.lower() not in text.lower():
             errors.append(f"Missing guard/discovery phrase from SKILL: {phrase}")
     return sorted(set(errors))
