@@ -20,6 +20,12 @@ REQUIRED = (
     "references/TASK_SOURCE_ROUTER.md",
     "references/DECISION_CARDS.md",
     "references/HOMEPAGE_INTELLIGENCE.md",
+    "references/BOOK_STUDY_PROTOCOL.md",
+    "references/VISUAL_ANALYSIS_PROTOCOL.md",
+    "references/DESIGN_KNOWLEDGE_SCHEMA.md",
+    "references/CROSS_BOOK_SYNTHESIS.md",
+    "references/KNOWLEDGE_CARDS.md",
+    "references/RESEARCH_INDEX.md",
     "references/INTERACTION_PATTERNS.md",
     "references/PERSONA_AND_CONTEXT_METHOD.md",
     "references/INDEPENDENT_EVALUATION.md",
@@ -97,12 +103,22 @@ def check() -> list[str]:
             cards = module.sections("card")
             patterns = module.sections("pattern")
             homepages = module.sections("homepage")
+            knowledge = module.sections("knowledge")
             if list(cards) != [f"C{x:02d}" for x in range(1, 10)]:
                 errors.append("Expected decision cards C01–C09 exactly")
             if list(patterns) != [f"P{x}" for x in range(1, 10)]:
                 errors.append("Expected patterns P1–P9 exactly")
             if list(homepages) != [f"H{x:02d}" for x in range(1, 9)]:
                 errors.append("Expected homepage decision cards H01–H08 exactly")
+            if list(knowledge) != [f"K{x:02d}" for x in range(1, 10)]:
+                errors.append("Expected research knowledge cards K01–K09 exactly")
+            if any("## K" in text[5:] for text in knowledge.values()):
+                errors.append("Retrieved research knowledge card includes another knowledge card")
+            for key, chunk in knowledge.items():
+                if not all(part in chunk for part in ("**Source", "**Trigger", "**Counterexample", "**Actual evaluation")):
+                    errors.append(f"Research card {key} missing provenance/condition/evaluation fields")
+            if not module.search_words("homepage hierarchy") or len(module.search_words("homepage hierarchy")) > 6:
+                errors.append("Knowledge search returned no results or overlong response")
             if any("## H" in text[5:] for text in homepages.values()):
                 errors.append("Retrieved homepage card includes another homepage card")
             if any("## C" in text[5:] for text in cards.values()):
@@ -113,6 +129,32 @@ def check() -> list[str]:
             errors.append("Cannot load retrieval module")
     if "homepage" not in fields.get("description", "").lower():
         errors.append("Homepage activation cue missing from skill description")
+    # Read-only catalog check: no automatic edition promotion or ingest claims.
+    recon = ROOT / "scripts/reconcile_ux_book_canon.py"
+    if not recon.is_file():
+        errors.append("Missing canonical catalog reconciliation script")
+    else:
+        spec = importlib.util.spec_from_file_location("ux_books", recon)
+        if spec and spec.loader:
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+            summary = module.reconcile()
+            if summary["incoming_books"] != 82 or summary["incoming_other_resources"] != 40:
+                errors.append("Uploaded source manifest count differs from expected 82 + 40")
+            if summary["legacy_catalog_book_entries"] != 130:
+                errors.append("Legacy catalog count differs from historical 130")
+            if summary["incoming_study_statuses"] != {"not-ingested": 122}:
+                errors.append("New intake must not be auto-marked read or studied")
+        else:
+            errors.append("Cannot import catalog reconciler")
+    for path in (
+        "sources/intake/2026-11-15/BOOK_TO_DESIGN_INTELLIGENCE_PROTOCOL.md",
+        "sources/intake/2026-11-15/ELITE_UX_DESIGN_SOURCE_MANIFEST.csv",
+        "sources/intake/2026-11-15/ELITE_UX_DESIGN_RESEARCH_CANON.md",
+        "sources/BOOK_CANON_RECONCILIATION_2026-11-15.md",
+    ):
+        if not (ROOT / path).is_file():
+            errors.append(f"Missing provenance/intake file: {path}")
     fixtures = ROOT / "quality/ux_skill_eval_cases.json"
     if fixtures.is_file():
         data = json.loads(fixtures.read_text(encoding="utf-8"))
@@ -130,5 +172,5 @@ if __name__ == "__main__":
         print("FAIL:", issue)
     if problems:
         sys.exit(1)
-    print("PASS: metadata, bundled references, product separation, retrieval and fixture structure.")
+    print("PASS: skill metadata, source cards, evidence/intake integrity, book reconciliation, bounded retrieval and fixture structure.")
     print("NOT TESTED: model invocation, skill effectiveness, user task outcomes, browser accessibility.")
