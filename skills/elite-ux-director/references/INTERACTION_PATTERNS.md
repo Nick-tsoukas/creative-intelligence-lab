@@ -66,7 +66,7 @@ Document **situation, actor, attention, lighting, noise, gloves/one-hand, connec
 - Verify actual keyboard, screen reader, reduced motion, zoom/reflow and 2.4.11 focus not obscured. Not verified by code lint alone.
 
 ## P9 — Multi-actor team and agency permissions
-Create actor × action × object × scope matrix. Examples of *roles to verify*, not guaranteed Faneqo roles: solo artist, manager, agency staff, venue assistant, label collaborator, fan. Explicitly ask:
+Create actor × action × object × scope matrix. Examples of *roles to verify*, never assumed: account owner, operator, manager, collaborator, recipient. Explicitly ask:
 - Can actor access multiple artists?
 - Which artist and show currently selected?
 - Who may send, approve, edit public media, export data, view fan contacts, reassign ownership?
