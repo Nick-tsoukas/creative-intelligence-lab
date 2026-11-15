@@ -120,3 +120,11 @@ These are foundational materials; no Faneqo application code or deployments were
 - Moved Faneqo messaging, QR and worked scenarios OUT of the universal skill to `domain-adapters/faneqo/`; earlier source ledger preserved in a historical archive, revised core ledger remains general-purpose.
 - Added personas/context evidence ladder, future independent evaluation protocol, 12 positive/negative activation fixtures plus 8 quality/safety fixtures (NOT RUN), source/architecture audit, packaging script and GitHub Actions check.
 - Installation and rollback guide added; existing Claude installed copy not mutated by GitHub. No Faneqo code/data, deploy, production QR changes or fan messages. **Structural validity is not proof of improved UX outcomes.**
+
+
+## 2026-11-15 — Elite UX Director v0.4 homepage intelligence
+- Added homepage/landing-page skill activation while keeping short general UX instructions and no new mandatory art-direction workflow.
+- Built eight evidence- and counterexample-linked homepage H-cards, first-glance/CTA/proof/narrative/reduced-motion/performance evaluation and a bounded homepage direction packet.
+- Extended deterministic one-card selector with `homepage H01–H08` and package structural checks; prepared 20 activation and 12 quality fixtures total (NOT EXECUTED).
+- Inspected `musicbizqr` GitHub main homepage route, `HomeV2Page.vue`, content/SEO FAQ and North Star/visual-language docs; stored scoped insights in a Faneqo-only homepage adapter, not the universal skill.
+- Continued the existing UX master plan; no Faneqo repository changes, production deploy, external messages or user studies. Any measurable UX improvement remains unverified until future real use.

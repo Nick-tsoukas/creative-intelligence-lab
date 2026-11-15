@@ -170,3 +170,9 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Moved Faneqo messaging, QR and worked scenarios OUT of the universal skill to `domain-adapters/faneqo/`; earlier source ledger preserved in a historical archive, revised core ledger remains general-purpose.
 - Added personas/context evidence ladder, future independent evaluation protocol, 12 positive/negative activation fixtures plus 8 quality/safety fixtures (NOT RUN), source/architecture audit, packaging script and GitHub Actions check.
 - Installation and rollback guide added; existing Claude installed copy not mutated by GitHub. No Faneqo code/data, deploy, production QR changes or fan messages. **Structural validity is not proof of improved UX outcomes.**
+
+
+## 2026-11-15 — Homepage readiness / UX v0.4
+- After v0.3 skill installation was independently confirmed by the founder's Claude Code report, the Lab prepared a new **homepage-focused** universal UX update and separate Faneqo domain adapter. v0.4 is NOT automatically installed on Windows by a repository merge.
+- New general source study supports comprehension, believable demonstration, story flow, actual CTA destinations, motion/accessibility and performance; no homepage participant test or live browser QA was performed here.
+- See `skills/elite-ux-director/references/HOMEPAGE_INTELLIGENCE.md`, `domain-adapters/faneqo/HOMEPAGE_EXPERIENCE.md` and `docs/ELITE_UX_DIRECTOR_V04_RELEASE.md`.

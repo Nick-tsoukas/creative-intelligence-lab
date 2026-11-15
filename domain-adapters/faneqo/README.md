@@ -5,6 +5,7 @@
 ## Materials preserved
 - [Messaging / Nights / Galleries](MESSAGING_AND_NIGHTS.md): actor and recipient semantics, Show Mode, campaign vs private conversation, gallery privacy and interrupted drafts.
 - [QR Experience](QR_EXPERIENCE.md): artist/show QR create, download, print, edit, scan, resolver correctness and analytics. Reported prior fixes are regressions to verify, not proven current live behavior.
+- [Homepage Experience](HOMEPAGE_EXPERIENCE.md): inspected current frontend routes/component composition, approved design doctrine, audience/value/proof/CTA/low-end/mobile narrative questions, and an evidence ledger for the next public homepage mission. Not a live usability audit.
 - [Worked UX cases](WORKED_UX_CASES.md): decision examples, intentionally marked hypotheses; not audit results.
 - [Archived original source ledger](../../sources/UX_SKILL_PRE_V03_SOURCE_LEDGER_ARCHIVE.md): preserves older Faneqo transfers while the reusable package uses a smaller general source ledger.
 

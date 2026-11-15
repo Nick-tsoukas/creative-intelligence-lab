@@ -1,4 +1,4 @@
-# Task-to-Source Router — Elite UX Director v0.3
+# Task-to-Source Router — Elite UX Director v0.4
 
 **Purpose:** select a *small, directly relevant* evidence packet for an actual user task. This is an index, not a bibliography to paste into Claude's working context. Linked scholarly notes are stored separately in the Lab's `reading-dossiers/`; each local entry below is self-contained if only the installed skill is available.
 
@@ -18,9 +18,13 @@
 | “The QR won't download / scan / edit” | Asset generation, scannability, target integrity and scan route | C02 + C06 | P5 QR lifecycle | HCI Ch3; QR domain adapter; technical standard **must be verified separately** |
 | “Users leave the form” | Comprehension, errors, state persistence, focus | C01 + C06 | P6 Forms, failures and recovery | Boulton Ch 7–8; WCAG 2.2 (current primary standard) |
 | “Fans can't follow during a show” | Physical environment, attention, permission, connectivity | C08 + C07 | P7 Situated mobile task | Design Justice chapter; HCI Ch3; field evidence needed |
+| “Visitors don't understand our homepage” | First-view product purpose, priority audience, real proof, primary action and destination | H01 + H05 (selective) | [Homepage Intelligence](HOMEPAGE_INTELLIGENCE.md), [UX packet](../templates/HOMEPAGE_UX_PACKET.md); Creative Design Director for art thesis | NN/g Wang 2024; real route/content check |
+| “Our cinematic homepage is gorgeous but confusing” | Narrative legibility, real evidence, skip/reduced-motion and mobile speed | H03 + H04 or H06 | Homepage Intelligence; creative-design-director and frontend-design only for their roles | NN/g Wang; W3C motion; Google Web Vitals |
 | “This dashboard looks generic” | Is the actual problem UX or creative direction? | C02 + C09 | Route to creative-design-director if visual thesis | Vignelli Semantics/Syntactics; Boulton Hierarchy |
 | “A screen reader can't use the dialog/tabs” | Keyboard interaction, focus, role/behavior mismatch | C06 + C08 | P8 Accessible interaction | W3C APG dialog/tabs and WCAG 2.2 |
 | “What would an agency manager do?” | Decision authority, multiple teams, competing actor jobs | C07 + C08 | P9 Multi-actor permissions | Participatory design (read); project adapter if relevant |
+
+**Homepage source boundary:** `HOMEPAGE_INTELLIGENCE.md` includes practitioner articles and standards reviewed 2026-11-15; these are **not books** or validated effects on a specific page. Baymard ecommerce research is a retail category-navigation comparator, not evidence about startup acquisition or Faneqo visitors.
 
 **Source-evidence boundary:** `sources/UX_DESIGN_BOOK_CATALOG_2026-11-15.md` has 130 candidates but 103 are **unverified** leads; it is an acquisition queue, NOT 130 learned books. `reading-dossiers/008–012` are **section-scoped**. `skills/elite-ux-director/references/SOURCE_LEDGER.md` records earlier reading of Keith, Lynch/Horton, Boulton, Pickering article examples and Nielsen articles. Do not cite unread candidate books as studied evidence.
 
@@ -29,6 +33,8 @@
 - [Understanding WCAG 2.2](https://www.w3.org/WAI/WCAG22/understanding/): explanatory non-normative guidance.
 - [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/): patterns including dialog, tabs, menu; implement only pattern that matches the real interaction; check support.
 - [GOV.UK Design System](https://design-system.service.gov.uk/): authoritative field-tested component guidance in government context, not universally appropriate.
+- [NN/g Homepage Design 5 Principles](https://www.nngroup.com/articles/homepage-design-principles/): 2024 original article covering comprehension, content/examples, navigation, prioritized action and simplicity; distinguish practitioner guidance from product-tested success.
+- [Google Core Web Vitals](https://web.dev/articles/vitals): performance standards, not measurements of a particular homepage.
 - [Nielsen's 10 Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/): heuristic lens, not participant evidence.
 
 ## Source provenance

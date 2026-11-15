@@ -1,7 +1,7 @@
 {
-  "version": "0.3-prepared",
+  "version": "0.4-prepared",
   "status": "NOT_RUN",
-  "instructions": "Synthetic activation/quality fixtures; not confirmed production defects. No user research claimed.",
+  "instructions": "Synthetic activation/quality fixtures; not confirmed production defects. No user research claimed. Homepage fixtures added 2026-11-15; NOT RUN; no fabricated user comprehension or conversion results.",
   "activation_cases": [
     {
       "id": "A01",
@@ -74,6 +74,54 @@
       "prompt": "Explain what the user meant in the email I pasted.",
       "expected": "do_not_activate",
       "class": "writing/interpretation"
+    },
+    {
+      "id": "A13",
+      "prompt": "Our new homepage is beautiful but visitors don't understand what the company does or which button starts signup.",
+      "expected": "activate",
+      "class": "homepage comprehension and CTA"
+    },
+    {
+      "id": "A14",
+      "prompt": "Audit our cinematic landing page's visual narrative, user agency, disabled motion and mobile CTA path.",
+      "expected": "activate",
+      "class": "homepage journey and media accessibility"
+    },
+    {
+      "id": "A15",
+      "prompt": "We have artists, managers and fans visiting the same homepage; help clarify the first action without overloading it.",
+      "expected": "activate",
+      "class": "homepage audience task hierarchy"
+    },
+    {
+      "id": "A16",
+      "prompt": "Our homepage looks polished but the product demo is fictional and the price claim may be stale. Review trust and proof.",
+      "expected": "activate",
+      "class": "homepage evidence integrity"
+    },
+    {
+      "id": "A17",
+      "prompt": "In the homepage hero change only the tailwind margin mt-5 to mt-4, nothing else.",
+      "expected": "do_not_activate",
+      "class": "isolated CSS edit"
+    },
+    {
+      "id": "A18",
+      "prompt": "Create three visually distinctive homepage moodboards using editorial photography, fonts and cinematic references only.",
+      "expected": "do_not_activate",
+      "class": "pure creative art direction"
+    },
+    {
+      "id": "A19",
+      "prompt": "Review the homepage's ability to explain the product to a first-time band manager, then prepare an implementation-neutral UX brief.",
+      "expected": "activate",
+      "class": "homepage novice comprehension"
+    },
+    {
+      "id": "A20",
+      "prompt": "Fix the production deploy step for our static homepage's nginx ingress config; the UX isn't in scope.",
+      "expected": "do_not_activate",
+      "class": "server/deploy"
     }
   ],
   "quality_cases": [
@@ -172,6 +220,59 @@
         "demand user study to fix backend"
       ],
       "verifiable_by": "server tests"
+    },
+    {
+      "id": "Q09",
+      "fixture": "Synthetic marketing homepage uses film-like motion but CTA and core content only appear after scrolling through a forced animation",
+      "must_detect": [
+        "first-view comprehension",
+        "skip/alternative navigation",
+        "reduced-motion parity"
+      ],
+      "must_not": [
+        "replace whole brand without evidence",
+        "assume a dramatic animation helps signup"
+      ],
+      "verifiable_by": "real browser task walkthrough with reduced motion"
+    },
+    {
+      "id": "Q10",
+      "fixture": "Synthetic homepage shows a product mockup that invents a live revenue number and advertises an outdated trial",
+      "must_detect": [
+        "unverified proof vs demo",
+        "offer and checkout truth"
+      ],
+      "must_not": [
+        "fake numbers or testimonials",
+        "claim conversion improvement"
+      ],
+      "verifiable_by": "source claim audit against current product and billing"
+    },
+    {
+      "id": "Q11",
+      "fixture": "Synthetic homepage has a clickable hero 'Explore' and signup button that points to the wrong route on mobile",
+      "must_detect": [
+        "CTA intent and real destination",
+        "mobile route parity"
+      ],
+      "must_not": [
+        "rate visual polish as proof of navigation success"
+      ],
+      "verifiable_by": "real route/browser click checks"
+    },
+    {
+      "id": "Q12",
+      "fixture": "Synthetic visually sophisticated homepage renders hero content only after a large client-only animation and shifts the layout",
+      "must_detect": [
+        "readability without media/JS",
+        "LCP and CLS risks",
+        "SSR/hydration considerations"
+      ],
+      "must_not": [
+        "invent LCP/INP/CLS numbers",
+        "equate Lighthouse with user comprehension"
+      ],
+      "verifiable_by": "SSR browser inspection and measured performance tests"
     }
   ]
 }
