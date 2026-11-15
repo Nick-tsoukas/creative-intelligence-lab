@@ -28,7 +28,7 @@ Trace `entry → orientation → decision → action → feedback → completion
 For shared flows, separate reusable *presentation/interaction primitives* from **distinct business operations**. Don't merge two screens blindly if one is public and the other private. Contrast may help discovery; it doesn't repair meaning or permission policy.
 
 ## Choose expert evidence selectively
-Use [task-to-source router](references/TASK_SOURCE_ROUTER.md) to locate **up to two** matching [conditional decision cards](references/DECISION_CARDS.md) and **one** [interaction pattern](references/INTERACTION_PATTERNS.md). Read only selected sections/files, never the whole library by default. Consult [source ledger](references/SOURCE_LEDGER.md) only to verify original passage/limits or when a material claim needs it. Cite work/chapter/article honestly. Unread candidate books are **not** evidence and heuristics aren't observed user behavior.
+Use [task-to-source router](references/TASK_SOURCE_ROUTER.md) **only when the matching guidance is unclear**. Select at most **two** [conditional cards](references/DECISION_CARDS.md) and **one** [interaction pattern](references/INTERACTION_PATTERNS.md). If Python is available, from this skill's root run `python scripts/retrieve.py card C02` or `python scripts/retrieve.py pattern P1` to receive just the relevant section; otherwise read only the corresponding Markdown section. Never load all cards or the full book catalog by default. Consult [source ledger](references/SOURCE_LEDGER.md) only to verify original passage/limits or when a material claim needs it. Cite work/chapter/article honestly. Unread candidate books are **not** evidence and heuristics aren't observed user behavior.
 
 If the immediate problem is already proven to be an ordinary code defect, do not stall repairs with extra speculative research. If source guidance conflicts with product facts, current product truth and user safety win.
 
@@ -68,6 +68,7 @@ When actual use reveals a weakness, log `symptom → evidence → source/card ch
 - [Interaction patterns](references/INTERACTION_PATTERNS.md): state and recovery contracts.
 - [Persona/context method](references/PERSONA_AND_CONTEXT_METHOD.md): evidence-backed actor research.
 - [Source ledger](references/SOURCE_LEDGER.md): exact original reading scope and caveats.
+- [Independent evaluation protocol](references/INDEPENDENT_EVALUATION.md): only when reviewing evidence or preparing future evaluation; not an automatic test task.
 - [Review template](templates/UX_REVIEW_TEMPLATE.md) and [issue rubric](references/ISSUE_RUBRIC.md).
 
 **Product-specific adapters belong OUTSIDE the reusable skill.** If the current product provides approved domain intelligence (glossary, personas, role/permission map, operating context, past decisions), consult it **only for that product** and verify freshness. The Creative Intelligence Lab stores its Faneqo material separately in `domain-adapters/faneqo/`; those files are NOT part of a generic skill install.
