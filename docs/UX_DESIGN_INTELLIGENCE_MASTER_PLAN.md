@@ -243,3 +243,30 @@ A newer git commit is **not** the same as Claude having learned it. A safe insta
 - Incorporate field-persona research as project-specific evidence and keep generic UX core untouched.
 - Enrich select HCI chapter reading on error and risk, dialogue, navigation and cognition; update only the cards that benefit.
 - At a suitable later point, independently compare activation and output quality against baseline (owner defers controlled benchmarks now). No claim of proven UX excellence until supported.
+
+
+## Architecture Increment 003 — Public Homepage Experience Intelligence (2026-11-15)
+
+**Goal:** strengthen the existing universal UX skill for a coming Faneqo homepage project **without** converting it into an art-direction/visual implementation mega-skill or interrupting operational UX development. Earlier research, approved North Star, v0.3 cards, personas and field work remain intact.
+
+### Added capability
+- `elite-ux-director` v0.4 includes homepage/landing-page activation in frontmatter and a short conditional routing note in the core algorithm. It does **not** autoload all sources or redesign pages by default.
+- `references/HOMEPAGE_INTELLIGENCE.md` has eight on-demand conditional H01–H08 decision cards: product comprehension, audience-job hierarchy, credible proof, skippable narrative, truthful CTA destinations, cinematic performance/accessibility, independent evaluation and approved visual identity.
+- `scripts/retrieve.py homepage H01` retrieves exactly one H-card (or manually open that section when Python unavailable). Core C01–C09 and interaction P1–P9 are preserved.
+- `templates/HOMEPAGE_UX_PACKET.md` records actual evidence, first-view value, real routes, narrative sequence, accessibility/performance risks, UX-versus-art-direction decision boundaries and independent critique. The Creative Design Director still owns the three visual theses; frontend-design and Nuxt engineering still own implementation.
+- `domain-adapters/faneqo/HOMEPAGE_EXPERIENCE.md` stores **separately** verified current GitHub `musicbizqr` homepage architecture and design doctrine, plus clear unknowns and precise review tasks. It is not installed as a universal reference.
+- The quality fixture set now includes homepage-specific positive/negative activation and synthetic performance/first-view/truth/CTA scenarios, marked **NOT RUN**. Static package CI checks retrieval IDs and paths, not actual UX effectiveness.
+
+### Genuine research input and limits
+- Original NN/g 2024 homepage principles, NN/g Nielsen 2002 historical homepage guidance, current Google Core Web Vitals/web.dev, W3C WCAG2.2 movement/carousels, and a 2026 Baymard *e-commerce-only* comparator. Links, exact scope and caution recorded inside `HOMEPAGE_INTELLIGENCE.md`.
+- These sources guide **questions and conditional recommendations**, but cannot establish Faneqo's actual visitor comprehension, signup conversion or any before/after gain. No human or model tests were run.
+- Existing Faneqo doctrine protects approved opening/brand and 390px priority. Current deployed app, business proposition, eligibility, billing and conversion paths require live review at execution time. The 2026-09-09 current-phase file is not necessarily current.
+
+### Next real-product use
+1. Complete the current Show Mode/Night/Messages assignment first; do not change an active worktree for a research update.
+2. Reinstall the full v0.4 *personal* skill after a safe backup, and copy the separate updated Faneqo domain adapter to the known project-only folder, keeping universal and product intelligence separate.
+3. For the homepage, inspect current routes, CTA destinations, copy/FAQ/legal claims, approved compositions and actual 390/320px screenshots. UX Director makes evidence-first UX contract; Creative Design Director develops three distinct concepts only for open decisions; frontend-design/engineer implements a permissioned sandbox; independent critic evaluates rendered output and task journeys.
+4. Use natural Faneqo evidence to revise H-cards; do not claim a structural package check proves a UX win. Keep production/merge safeguards and human final approval.
+
+### Source standards
+Research references: `skills/elite-ux-director/references/HOMEPAGE_INTELLIGENCE.md`. Product adapter: `domain-adapters/faneqo/HOMEPAGE_EXPERIENCE.md`. Versioned installation details: `docs/ELITE_UX_DIRECTOR_V04_RELEASE.md`.
