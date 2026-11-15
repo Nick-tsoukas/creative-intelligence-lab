@@ -67,3 +67,44 @@
 - Realtime status/notification → Pickering Notifications → focus-safe, nonintrusive update test.
 - Tab semantics → Pickering Tabbed Interfaces → keyboard test + consistent in-page versus routed semantics.
 - General friction diagnosis → NN/g 10 heuristics → observe before rating.
+
+
+---
+
+## 2026-11-15 research-integrated extension — section-scoped, no full books claimed
+
+These source records reflect Mission 001's newly written original-text dossiers in `reading-dossiers/008–012`. Their interpretive UX cards are deliberately short in `DECISION_CARDS.md`, and `TASK_SOURCE_ROUTER.md` should be used for selection. **This skill was not performance-benchmarked, and this ledger is not a UX participant study.**
+
+### Hornbæk, Kristensson and Oulasvirta — *Introduction to Human-Computer Interaction* (Oxford, 2025)
+- Complete coauthor-hosted OA PDF: https://pokristensson.com/pubs/IntroductionToHumanComputerInteraction.pdf ; CC BY-NC-ND edition.
+- **Studied:** selected Introduction/Chapter 1 and Chapter 3 pp. 37–40, 49–57 passages; **not whole chapters or whole book**. Figures not visually verified because screenshot retrieval of large PDF failed. See `reading-dossiers/008-HCI-2025-PERCEPTION.md`.
+- **Useful mechanisms:** perceptual detection vs discrimination vs recognition vs search, prior expectations and attention, task before styling. **Interpretive transfer:** an action can be visible but not recognizable or in the expected location.
+- **Caution:** this does not establish a specific visual ranking or actual Faneqo success rate.
+
+### Brad Frost — *Atomic Design* (2016), author-hosted
+- Full web book https://atomicdesign.bradfrost.com/ ; **Chapter 2 directly read**, not the complete book. Dossier 010.
+- **Useful mechanism:** atoms/molecules/organisms/templates/pages with feedback between page-level real content and component patterns. **Interpretive transfer:** reuse composer controls while keeping broadcast, chat, and gallery sharing permission semantics distinct.
+- **Caution:** the book is a design methodology, not empirical evidence that any specific component arrangement improves UX.
+
+### Massimo Vignelli — *The Vignelli Canon* (2009)
+- Institutional PDF https://www.rit.edu/vignellicenter/sites/rit.edu.vignellicenter/files/documents/The%20Vignelli%20Canon.pdf .
+- **Studied:** selected original Semantics/Syntactics/Ambiguity and typographic/grid spreads; **not all pages**, see Dossier 009.
+- **Useful mechanism:** understand subject meaning/context before organizing visual relationships.
+- **Caution:** intentionally expressive ambiguity is not appropriate to wrong-recipient or permission-sensitive controls. No print-point-size prescription for web.
+
+### Sasha Costanza-Chock — *Design Justice* (MIT Press, 2020)
+- Open-authorized original HTML https://designjustice.mitpress.mit.edu/pub/cfohnud7/release/4 .
+- **Studied:** selected sections of *Design Practices: “Nothing about Us without Us”*, not the whole book/chapter footnotes; Dossier 011.
+- **Useful mechanism:** distinguish consultation, participatory authority, assumptions and real affected-user evidence. Do not treat synthetic artist/fan personas as field observations.
+- **Caution:** normative framework, not quantified evidence that any specific Faneqo flow wins.
+
+### William James — *The Principles of Psychology*, Vol I (1890 original; Gutenberg 1918 imprint)
+- Public-domain edition https://www.gutenberg.org/ebooks/57628 .
+- **Studied:** selected Ch IV *Habit* and Ch XI *Attention* passages only; Dossier 012.
+- **Useful historical framing:** habit, selective interest and learned action; **modern technical claims require corroboration from contemporary research**.
+- **Caution:** nineteenth-century physiology and cognitive claims are not modern proven UX laws.
+
+### Standards that are not books
+- W3C WCAG 2.2 https://www.w3.org/TR/WCAG22/ ; selected Understanding materials https://www.w3.org/WAI/WCAG22/understanding/ . Conformance cannot be claimed from source citation or code alone.
+- WAI-ARIA Authoring Practices https://www.w3.org/WAI/ARIA/apg/ . Implement a real keyboard/focus pattern corresponding to actual interaction, rather than decorative ARIA roles.
+- These current standards are used as normative implementation references; reading them does not constitute a completed accessibility audit.
