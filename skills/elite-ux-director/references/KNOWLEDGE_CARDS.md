@@ -5,7 +5,7 @@
 ## K01 — Subordinate visual parts to the real human job
 **Tags:** homepage, hierarchy, composition, visual-focus, subordination.
 **Trigger:** a screen offers many visually equal elements but one task truly matters first.
-**Source & status:** Arthur Wesley Dow, *Composition*, **1914 ninth edition**, Project Gutenberg #45410, opening Principles of Composition / Ways of Creating Harmony, selected textual sections read; illustrations NOT visually studied. [Original](https://www.gutenberg.org/ebooks/45410).
+**Source & status:** Arthur Wesley Dow, *Composition*, **1914 ninth edition**, Project Gutenberg #45410, opening Principles of Composition / Ways of Creating Harmony, selected textual sections read; full original illustrations not systematically viewed; one cropped photo of No. 16 studied separately in Lab Dossier 016. [Original](https://www.gutenberg.org/ebooks/45410).
 **Source claim / evidence:** Dow treats subordination as a relation among compositional parts. Evidence D (historical artistic pedagogy), SOURCE-CHECKED at bounded scope; modern UX transfer E.
 **Mechanism (our interpretation):** a coherent focal structure may help users notice dominant content/actions when importance is genuinely asymmetric.
 **Use:** sketch large-value hierarchy only *after* verifying the intended human task; retain keyboard and readable secondary access.
