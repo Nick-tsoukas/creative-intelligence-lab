@@ -112,3 +112,11 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added source ledger based on inspected chapters of three free author/publisher UX/web-design books, plus public accessible interaction writings; added reading dossier 007.
 - Added eight synthetic benchmark scenarios, evidence severity rubric and report template; static package integrity checks passed 9/9.
 - Not installed in Claude, not independently tested, no full-book reading claim or Faneqo production changes.
+
+
+## 2026-11-15 — Elite UX Director v0.3 architecture and intelligence upgrade
+- Reviewed Anthropic Skills, Agent Skills standard, context-engineering, tool design and independent-evaluation research; retained prior master plan and Faneqo field-research ownership.
+- Rebuilt reusable `elite-ux-director` as a compact, task-first skill with activation exclusions, explicit authority and evidence labels, 9 conditional decision cards, 9 behavior patterns and deterministic one-card retrieval helper.
+- Moved Faneqo messaging, QR and worked scenarios OUT of the universal skill to `domain-adapters/faneqo/`; earlier source ledger preserved in a historical archive, revised core ledger remains general-purpose.
+- Added personas/context evidence ladder, future independent evaluation protocol, 12 positive/negative activation fixtures plus 8 quality/safety fixtures (NOT RUN), source/architecture audit, packaging script and GitHub Actions check.
+- Installation and rollback guide added; existing Claude installed copy not mutated by GitHub. No Faneqo code/data, deploy, production QR changes or fan messages. **Structural validity is not proof of improved UX outcomes.**
