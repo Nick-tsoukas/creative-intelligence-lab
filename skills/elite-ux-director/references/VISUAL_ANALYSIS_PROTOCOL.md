@@ -42,4 +42,4 @@ Validation method and results or NOT RUN:
 Rights/credit/reproduction boundaries:
 ```
 
-**Existing research note:** `reading-dossiers/013-DOW-COMPOSITION-HARMONY-AND-HIERARCHY.md` analyzes text only; despite Gutenberg's illustrated edition, its figures remain **not visually studied**. Never cite that dossier as figure observation.
+**Existing research note:** `reading-dossiers/013-DOW-COMPOSITION-HARMONY-AND-HIERARCHY.md` analyzes text only; despite Gutenberg's illustrated edition, its original illustrations were **not systematically inspected**. A **separate cropped partial photograph of plate No. 16** was observed in `reading-dossiers/016-DOW-PLATE16-VISUAL-LIMITED.md`; do not claim a full-plate or confirmed-edition visual analysis from that fragment.
