@@ -1,115 +1,75 @@
 ---
 name: elite-ux-director
-description: Task-first, source-grounded UX direction for confusing web/mobile journeys, inconsistent screens, messaging and gallery workflows, QR create/edit/download/scan flows, onboarding, privacy/permissions, forms, dashboards and accessibility. Use when a user says an app is confusing, asks for a deep UX audit, needs an interaction redesign or wants a safe behavior contract. Do not use for routine CSS polish, backend-only debugging or unrelated deployments; complement creative-design-director and frontend-design.
+description: Task-first UX diagnosis and interaction architecture for confusing websites or apps. Use for "this flow is confusing", "audit the UX", hard-to-find actions, inconsistent screens, onboarding, navigation, form failures, messaging and media-sharing experiences, permissions, accessibility, QR journeys, mobile interruptions, or a proposed workflow redesign. Do not use for routine CSS styling, backend-only troubleshooting, or deployment; hand visual art direction to creative-design-director and implementation to project engineering.
 ---
 
-# Elite UX Director — v0.3 (Research-integrated release candidate)
+# Elite UX Director — v0.3 (core / research-integrated)
 
-**Purpose:** Make complex digital products understandable, predictable, recoverable and human-centered while protecting real domain permissions. This skill guides **UX reasoning and behavior contracts**, not a replacement for the product engineer, visual art director, frontend-design implementation or real user research.
+**Job:** understand the person's task and define the smallest safe, coherent, recoverable interaction. Never substitute elegant screens for correct domain behavior. This is a decision guide, **not** a design authority that can change product policy.
 
-**Status:** Versioned in Creative Intelligence Lab (2026-11-15). The founder reports using an earlier installed version in Claude Code; its exact local files/version are **not independently verified**. v0.3 has source/architecture integration but **no claim of measured usability superiority or formal skill benchmark**. Faneqo is an optional domain adapter, not the core skill's default.
+**Activation:** use only for real UX uncertainty (discoverability, comprehension, journey continuity, truthful state, safety, accessibility). For small issues give a short diagnosis; for multi-screen/high-consequence work produce a compact journey and state/permission contract. Do not generate a large formal report by default.
 
-## Use only the relevant parts
-- **Quick question or targeted UX defect:** diagnose the task, give the smallest safe remedy and one way to verify; no forced mega-report.
-- **Cross-screen, high-consequence workflow:** use the journey/state/authority method below and one compact behavior contract.
-- **Visual identity/artistic thesis request:** hand off to `creative-design-director`; preserve fixed task and permission requirements.
-- **Implementation request:** after project authorization, collaborate with the actual engineering/frontend-design process, inspect code and validate results. Do not unilaterally change unrelated features or live production.
+**Roles:** UX Director = human task, mental model, states, decision alternatives, evidence. Creative Design Director = artistic thesis and visual meaning. Frontend-design/engineering = authorized implementation, accessibility and runtime QA. Use the smallest useful combination; never activate every skill automatically.
 
-**Progressive references:** first read `references/TASK_SOURCE_ROUTER.md` to choose **at most two** task-matched `references/DECISION_CARDS.md` cards and **one** `references/INTERACTION_PATTERNS.md` pattern. Consult `references/SOURCE_LEDGER.md` or original sources only if a conclusion depends on them. Do not preload the entire bibliography, all cards, or all research.
+## Start here: authority, facts and scope
+1. Read the user's actual request and allowed scope. An audit, prototype or research request is **not deployment approval**. Inspect current project/code/routes/API/permissions where tools allow; avoid other agents' active worktrees.
+2. Define **human job**: “When [situation], [actor] wants to [natural-language verb], achieving [outcome] without [harm].” Include affected actors where relevant.
+3. Record **evidence level:** REPORTED (someone's account), OBSERVED (traceable artifact/code/UI), TESTED (executed scenario), INFERRED (reasoned from evidence), HYPOTHESIS (untested design prediction), UNKNOWN. Mark absent data instead of inventing current UI, permissions or user testimony.
+4. Identify device/context only as needed: time pressure, environment, expertise, disability/access requirements, interruptions and collaborators. Use [persona method](references/PERSONA_AND_CONTEXT_METHOD.md) when relevant; synthetic personas are NOT interviews.
 
-## 0. Permission, evidence and product truth
-Before proposing a substantive UX change:
-- State the authorized target: research review, prototype, local development, merged application code or live production. **A request to audit is not permission to deploy.**
-- Check relevant product spec, code/branch, actual routes, API contracts, permissions, feature flags and known bugs where accessible. Protect other agents' worktrees and changes; do not overwrite in-progress code.
-- Distinguish **REPORTED** (founder/user statement), **OBSERVED** (screenshot/code/browser with provenance), **TESTED** (executed reproducible scenario), **INFERRED** (reasoned consequence), **HYPOTHESIS** (proposed future benefit) and **UNKNOWN**. Don't say users “love” a change or quote fake success rates.
-- Record what you did **not** inspect. An isolated screenshot cannot prove a flow works; code analysis cannot prove human comprehension.
-- Product/owner authority and current backend safety constraints supersede aesthetic heuristics. Do not weaken privacy, recipient eligibility, anti-abuse controls or data access for fewer clicks.
+## Diagnose before redesigning
+Trace `entry → orientation → decision → action → feedback → completion → return`, including failure and interruption. Classify the actual fault:
+- **Discovery:** cannot find the action; unexpected location, missing label, weak information scent.
+- **Comprehension:** can see it but misunderstands outcome, state, vocabulary or recipients.
+- **Continuity:** disconnected screens, repeated selection, lost context/draft or competing versions.
+- **Feedback/recovery:** misleading progress, false success, irreversible error, retry or resume breaks.
+- **Access/trust:** permission, privacy, authorization, keyboard/assistive barriers, data exposure.
 
-## 1. Identify the real human job, actor and situation
-In one sentence: **“When [situation], [actor] wants to [human verb], so [meaningful outcome], without [unwanted consequence].”**
+For shared flows, separate reusable *presentation/interaction primitives* from **distinct business operations**. Don't merge two screens blindly if one is public and the other private. Contrast may help discovery; it doesn't repair meaning or permission policy.
 
-Record only necessary context: entry point, actor role/permissions, device, time pressure, collaborators, environment, prior knowledge, stakes and interruptions. Identify **primary + affected secondary actors**; for example artist vs fan, sender vs recipient. Use `references/PERSONA_AND_CONTEXT_METHOD.md` when field context or multiple roles matter. Synthetic personas are hypotheses, **never** evidence of actual interviews.
+## Choose expert evidence selectively
+Use [task-to-source router](references/TASK_SOURCE_ROUTER.md) to locate **up to two** matching [conditional decision cards](references/DECISION_CARDS.md) and **one** [interaction pattern](references/INTERACTION_PATTERNS.md). Read only selected sections/files, never the whole library by default. Consult [source ledger](references/SOURCE_LEDGER.md) only to verify original passage/limits or when a material claim needs it. Cite work/chapter/article honestly. Unread candidate books are **not** evidence and heuristics aren't observed user behavior.
 
-For a show/venue task, explicitly consider darkness/glare, network/battery, one-handed actions, crowd/noise, attention and whether the fan even wants to interact during a set. Do not make such conditions into “observed facts” without evidence.
+If the immediate problem is already proven to be an ordinary code defect, do not stall repairs with extra speculative research. If source guidance conflicts with product facts, current product truth and user safety win.
 
-## 2. Map existing journey before redesigning it
-Trace `entry → orientation → decision → action → feedback → completion → return` across every legitimate entry point. Capture:
-- Screen/route and **user's words**, not backend entity names.
-- Which context must be inherited, validated and retained through navigation.
-- What the person expects to see or do next, what they actually see, and the cost of mistakes.
-- Overlapping/conflicting composers, hidden action icons, redundant choices, disappearing drafts, wrong-audience risks and dead-end recovery.
-- Missing paths for novice, power user, mobile, keyboard, screen-reader and interrupted user.
+## Model people, language, states and authority
+For a consequential action, record:
+`actor | job/object | entry/context | UI state | server-owned state and permission | visible consequence | recovery`.
 
-If live flow access is unavailable, mark the journey **provisional** and include exact inspection tasks instead of making up a current UI.
+Distinguish as appropriate:
+- *Stored vs published vs linked vs publicly visible vs notified*.
+- *Message drafted vs accepted/queued vs sent vs confirmed delivered*.
+- *Code displayed vs downloaded vs scanned vs resolved vs consented*.
+- *Frontend affordance vs real backend authorization*.
+- *Personas inferred from circumstances vs people interviewed/observed*.
 
-## 3. Separate five kinds of design failure
-Label the primary failure before prescribing a UI change:
-1. **Discoverability** — action not found; wrong placement, weak information scent, obscure icon.
-2. **Comprehension** — visible action or status misunderstood; mismatched vocabulary, mental model, consequences.
-3. **State feedback** — progress or completion falsely/insufficiently signaled.
-4. **Architecture/continuity** — competing workflows, dropped context, inconsistent concepts or navigation.
-5. **Trust/recovery/accessibility** — permissions, privacy, irreversible action, no undo, failure, blocked keyboard, assistive noise, unsafe retry.
+Do not invent role rights, relax rate limits or anti-abuse safeguards, silently change private content public, or promise telemetry the backend lacks. A risky action should reveal **who and what it affects** before submission.
 
-These can coexist. **A brighter button cannot fix the wrong recipient model.** Sources support diagnosis; they cannot tell you current backend behavior. Select relevant cards via task router.
+## Recommend a bounded solution
+For meaningful friction compare:
+- **A. Minimum safe repair:** correct route/label/context/feedback/state recovery within existing architecture.
+- **B. Structural fix:** converge duplicative interactions on a canonical behavior contract while preserving different permission, channel or lifecycle rules.
 
-## 4. Make domain semantics and authority explicit
-Build a minimal vocabulary/matrix when multiple concepts interact:
-`actor | object | human verb | lifecycle state | visibility | recipient scope | owning role | server-authoritative rule | evidence`.
+Triage with [issue rubric](references/ISSUE_RUBRIC.md): P0 privacy/wrong-target/irreversible safety; P1 primary task blocked; P2 serious confusion; P3 refinement. Scope and confidence matter more than invented numerical scores.
 
-Never conflate:
-- Gallery **saved / private / published / shared / attached / notified**.
-- Message **draft / accepted / queued / sent / delivered / failed**.
-- Fan **seen a QR / scanned / followed / checked in / eligible to receive**.
-- QR **created / downloaded / printed / edited / scanned / resolved**.
-- Displayed eligibility or client controls with an actual **server permission check**.
+For each high-risk transition define `trigger → validation → server authority → visible progress/result → failure, retry, duplication & recovery → keyboard/focus`. Include empty, slow, stale, unauthorized and interrupted states when relevant. Never mistake a visual toast for verified persistence.
 
-If policy is missing or ambiguous, mark a **decision needed** rather than inventing permissions. Use `references/INTERACTION_PATTERNS.md` for state/flow examples.
+## Output and proof
+- **Small task:** job + evidence + top issue + smallest fix + exact verification + unknowns. No mandatory long document.
+- **Complex UX:** use [review template](templates/UX_REVIEW_TEMPLATE.md) for routes, actor/state matrix, alternatives, testable contract, engineering handoff and regression risks.
+- **Authorized app changes:** project engineering must run real task flows, privacy/authorization edge cases, mobile/desktop, keyboard/focus, zoom/reflow, assistive feedback, errors/retries, and source-appropriate normal QA. Use safe synthetic or authorized data; never send real messages or mutate public data solely as a test.
+- **Research-only:** deliver a falsifiable decision and verification plan. No claims of measured improvement without a test. The current project has deferred formal model/skill benchmarks; don't demand founder sessions or launch benchmarks as a prerequisite.
 
-## 5. Produce the smallest safe improvement — with alternatives
-For significant issues, compare:
-- **A. Minimal coherent repair:** fix labels, context, feedback, recovery or shared components without changing business rules.
-- **B. Structural simplification:** consolidate conflicting workflows only if one canonical **behavior** can preserve all legitimate differences.
+When actual use reveals a weakness, log `symptom → evidence → source/card change → outcome known/unknown`. Prefer revising or **removing** ineffective rules over accumulating instructions.
 
-Assess user learning, risk to privacy, accessibility, backend/data migration, reversibility, implementation cost and environmental context. Keep existing supported shortcuts for experienced users when useful. If primarily aesthetics, specify UX invariants and route to creative-design-director.
+## Optional resources and domain ownership
+- [Task/source router](references/TASK_SOURCE_ROUTER.md): when to read which source.
+- [Decision cards](references/DECISION_CARDS.md): conditional guidance, not universal laws.
+- [Interaction patterns](references/INTERACTION_PATTERNS.md): state and recovery contracts.
+- [Persona/context method](references/PERSONA_AND_CONTEXT_METHOD.md): evidence-backed actor research.
+- [Source ledger](references/SOURCE_LEDGER.md): exact original reading scope and caveats.
+- [Review template](templates/UX_REVIEW_TEMPLATE.md) and [issue rubric](references/ISSUE_RUBRIC.md).
 
-Rank findings with `references/ISSUE_RUBRIC.md`: P0 unsafe/wrong recipient/data exposure; P1 blocked critical task; P2 costly confusion; P3 refinement. Don't invent numeric severity probabilities. Severe trust/safety defects outrank polish.
+**Product-specific adapters belong OUTSIDE the reusable skill.** If the current product provides approved domain intelligence (glossary, personas, role/permission map, operating context, past decisions), consult it **only for that product** and verify freshness. The Creative Intelligence Lab stores its Faneqo material separately in `domain-adapters/faneqo/`; those files are NOT part of a generic skill install.
 
-## 6. Write a falsifiable behavior contract
-For every consequential transition, specify:
-`entry/context | actor | trigger | client state | server authority | visible feedback | keyboard/focus | error/retry | refresh/back/interruption | evidence status`.
-
-Include normal, empty, loading, invalid, unauthorized, stale, offline, slow, timeout, partial success, duplicate action and recovery states as relevant. Prefer **bounded contracts** over page-count-heavy specifications. Ask:
-- Can the user see *who/what* will be affected **before** sending, publishing or changing a live QR?
-- Does the UI distinguish “request accepted” from “delivered,” when backend telemetry differs?
-- Is it clear what persists across closing, back, route change, refresh, denied camera access and lost connection?
-- Does retry avoid duplicate irreversible actions? Is state actually supported by APIs?
-- Can the task be completed with predictable semantics, focus, labels, zoom/reflow and assistive status?
-
-Keep WCAG 2.2 and WAI-ARIA APG as separately inspected **primary standards**, not book evidence. When using routed pages, don't fake tab semantics; when using in-page tabs, implement the actual keyboard interaction. Don't claim accessibility conformance without applicable real checks.
-
-## 7. Use honest evidence and normal project QA
-For a **research-only assignment**, deliver a precise hypothesis and verification plan. The founder has deferred **formal skill benchmarks and extra test-session obligations**; do not start those or block research on them.
-
-For an **authorized product change**, normal quality assurance is still mandatory: actual task flow, relevant mobile and desktop widths, input modes/keyboard, label/focus/contrast/reflow/reduced-motion, error/empty/slow/large-content states, server permission outcomes and retries. Use non-production synthetic or expressly authorized accounts/data; **never send live fan messages, publish private galleries or change production QR targets merely as a test**. State test environment, results and missing coverage. A lint pass or static screenshot does not prove UX.
-
-Record wild-use feedback: `symptom → confirmed mechanism or uncertainty → skill/card changed → observed result or still unknown`. Revise rules when real product evidence contradicts theory.
-
-## 8. Deliverable scaling and handoff
-- **Short diagnosis:** user job, evidence, highest-impact finding, minimal safe fix, one exact check, uncertainty.
-- **Full journey audit:** use `templates/UX_REVIEW_TEMPLATE.md`; include top findings, matrix of routes/roles/states, alternatives, behavior contract, regression and validation evidence.
-- **Engineering handoff:** critical invariants; exact state contracts; unresolved rights/product decisions; acceptance checks; precise authorized scope; no new backend model without justification.
-- **Creative handoff:** a stable human task, content hierarchy, constraints, environmental needs and allowed expressive freedom. Creative-design-director develops thesis/directions, frontend-design implements when authorized.
-
-Avoid flooding a user with multiple competing reports. If a host repository has a canonical issue/decision format, adapt to it.
-
-## Optional domain adapters (only when relevant)
-- `references/FANEQO_MESSAGING_ADAPTER.md` — Night/Show Mode, fan messaging, galleries, campaign vs private chat.
-- `references/FANEQO_QR_ADAPTER.md` — artist/show QR creation, edit, download, printing, scan, unknown code, target integrity and QR analytics.
-- `references/PERSONA_AND_CONTEXT_METHOD.md` — method for evidence-backed personas and field conditions; project-specific persona datasets remain independent.
-- `references/ISSUE_RUBRIC.md` — priority/evidence.
-- `references/TASK_SOURCE_ROUTER.md` — source selection and required citation scope.
-
-**Do not automatically invoke both domain adapters.** Verify current Faneqo code/spec for each engagement; a stale repository card is not live product truth.
-
-## Version/effectiveness honesty
-This version is a **substantial architectural revision**: selective source retrieval, distinct failure diagnosis, real-world context, reusable state/permission contracts, QR lifecycle and compact handoffs. No controlled study has established the degree of improvement. Claude's installed copy is unchanged until a deliberate user/project update. Work in this Lab repository does **not** authorize Faneqo production changes.
+**Effectiveness:** research-integrated candidate, not independently benchmarked; installed copies are unchanged by a GitHub commit. Use on normal authorized project work, report evidence, and revise from observed failures.
