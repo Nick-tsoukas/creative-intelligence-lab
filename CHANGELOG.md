@@ -128,3 +128,12 @@ These are foundational materials; no Faneqo application code or deployments were
 - Extended deterministic one-card selector with `homepage H01–H08` and package structural checks; prepared 20 activation and 12 quality fixtures total (NOT EXECUTED).
 - Inspected `musicbizqr` GitHub main homepage route, `HomeV2Page.vue`, content/SEO FAQ and North Star/visual-language docs; stored scoped insights in a Faneqo-only homepage adapter, not the universal skill.
 - Continued the existing UX master plan; no Faneqo repository changes, production deploy, external messages or user studies. Any measurable UX improvement remains unverified until future real use.
+
+
+## 2026-11-15 — Elite UX Director v0.5: real book-to-design intelligence
+- Preserved three founder-supplied research files verbatim: 861-line study method, 82-book +40-resource research canon and 122-row not-ingested CSV. Kept historic 130-candidate catalog intact; added read-only, edition-aware candidate matcher.
+- Added four original-text/visual dossiers 013–016: Dow ninth-edition 1914, Covert selected chapters, Chimero Chapters 1–3, and a cropped visual study of Dow Plate 16 with explicit gaps. Verified three complete authorized online book sources, not complete-book reading.
+- Added ten publisher/authority-verified bibliographic acquisition leads (NOT acquired/read) and a reconciliation/status report that refuses inflated unique counts.
+- Added optional study protocol, visual analysis, source/evidence schema, cross-book method, source-to-task index and nine conditional, citation-grounded K-cards without adding entire books to the core prompt.
+- Upgraded deterministic retrieval to `knowledge K01–K09` and bounded keyword ID search; preserved existing C/P/H modes. Strengthened static packaging/ingestion checks and prepared 26 activation/16 quality fixtures (NOT RUN).
+- Integrated this into existing UX master plan and provided rollback-conscious Windows installation guide. No Faneqo code, production deployment, current Claude installation, or user data changed. **No claim of proven skill efficacy or model weight updates.**
