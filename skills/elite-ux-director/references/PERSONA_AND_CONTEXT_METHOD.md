@@ -1,6 +1,6 @@
 # Personas and Live-Context Research Protocol — General-Purpose
 
-**Research status:** Method, not validated Faneqo persona data. Separate Faneqo music-industry/artist/fan persona research is a parallel workstream governed by `docs/UX_DESIGN_INTELLIGENCE_MASTER_PLAN.md`; **do not overwrite or duplicate its source collection**. Consume an authoritative approved `music-industry-research/` dataset if and when it exists.
+**Research status:** Method, not validated product persona data. Any product-specific research belongs in a separate adapter. Do not overwrite or duplicate its source collection. Consult a source-backed dataset only for its actual product and current purpose.
 
 ## Persona evidence ladder
 1. **Observed participant:** actual opt-in interview, field observation, behavioral session with method, date, audience/sample caveat.
@@ -39,4 +39,4 @@ For real-world/event use, ask about: distraction, low light, noise, movement, cr
 Present `observed condition → design consequence → source → alternative/counterexample → verification`. Do not turn a single interview into a statistical claim, or promote a mock persona to a real one. If no field study exists, provide a **small set of falsifiable scenarios** and implement only safe, reversible choices under the product contract.
 
 ## Sources
-Costanza-Chock, *Design Justice* (2020), selected chapter sections on personas/participation and accountability: https://designjustice.mitpress.mit.edu/pub/cfohnud7/release/4 (reviewed scope in reading-dossiers/011). Hornbæk et al., *Introduction to HCI* (2025), selected Chapter 3 on task-driven perception (reviewed in reading-dossiers/008). These sources inform method; neither validates any specific Faneqo persona.
+Costanza-Chock, *Design Justice* (2020), selected chapter sections on personas/participation and accountability: https://designjustice.mitpress.mit.edu/pub/cfohnud7/release/4 (reviewed scope in reading-dossiers/011). Hornbæk et al., *Introduction to HCI* (2025), selected Chapter 3 on task-driven perception (reviewed in reading-dossiers/008). These sources inform method; neither validates any specific product persona.
