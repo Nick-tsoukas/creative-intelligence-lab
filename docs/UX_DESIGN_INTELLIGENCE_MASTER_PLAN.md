@@ -131,3 +131,69 @@ User job: “Send the people from last night's show photos and a thank-you witho
 ## Definition of progress
 
 Progress = genuinely studied source material + a more discriminating decision/handoff method + fewer confusing/unsafe UX proposals in real work. A large bibliography or green static checks alone is not progress.
+
+## Field Program 001 — Live music context, personas, and situational UX (added 2026-11-15)
+
+**Priority: essential UX research input.** Artists, bands, managers, agencies, venue collaborators and fans do not operate in a quiet, idealized office environment. Product behavior must be examined in actual music-industry contexts **before** treating a screen as intuitive. This section extends—not supersedes—the research curriculum and skill responsibilities above.
+
+### Parallel-research coordination (important)
+
+**Another ChatGPT chat has already been assigned and is working on the UX/design book discovery and original-text reading program.** Treat its output as an **independent workstream in progress**. Do **not** restart its assignment, create a competing catalog, overwrite its files, or infer that it has finished. The canonical books catalog belongs to that research chat until its results are handed off or reconciled.
+
+**This workstream owns only:** music-industry domain understanding, personas, live-event ethnographic/contextual research, actor journeys, environmental constraints, situational use cases, and their traceable implications for UX. It may cite relevant books and articles, but must send proposed additions to the canonical book catalog as a **handoff list**, not mutate the book program's files in parallel. Before editing any shared file, inspect the latest version and conflicting changes; prefer append-only scoped research with named ownership.
+
+### Research objectives
+
+1. Understand the daily work, constraints, incentives and vocabulary of different artist types and career stages: aspiring solo artists, working local bands, touring artists, digital-first producers, artist managers, agencies, labels, content partners and fans.
+2. Understand concerts from **both artist/staff and fan perspectives**, before, during and after the show; include fans who prefer not to use a phone during the performance.
+3. Study contextual variables: venue size/genre, lighting and glare, noise, crowd density/mobility, connectivity and battery, one-hand use, interrupted attention, accessibility, social/privacy norms, travel, load-in, soundcheck, merch, load-out, exhaustion and follow-up time.
+4. Map differences by responsibility and authority: who owns the band account, who can run Show Mode, publish a Night/gallery, authorize audience messaging, approve campaigns or see fan information.
+5. Connect field insights to scenario-specific design hypotheses, **not** instant requirements or invented personas.
+
+### Source and evidence hierarchy
+
+- **Primary:** actual, consent-based artist/fan/crew interviews, field observations, diary reports and usability sessions when feasible.
+- **Published research:** scholarly concert-experience and audience-participation studies, occupational ethnographies and artist/manager interviews with methods and source links.
+- **Industry materials:** musicians' unions, touring and venue-operational guides, professional journalism and artists' first-person essays. Label promotional surveys and unrepresentative samples.
+- **Inferred scenarios:** clearly marked research hypotheses until observed or verified.
+
+Keep a source ledger with access type (**abstract-only**, article sections reviewed, full text read, interview heard, field observation completed), date, edition, limits and quotations within rights. Never claim an industry-wide prevalence from one venue or niche sample.
+
+### Journey / contextual field map
+
+| Moment | Artist/team provisional job | Fan provisional job | Core Faneqo UX question |
+|---|---|---|---|
+| Promotion / day before | Prepare show, QR and team roles | Find event, decide whether to attend | Can setup finish in advance, with clear readiness and authority? |
+| Travel, load-in and soundcheck | Coordinate gear, merch, doors and set time | Travel, queue, locate accessibility info | Are essential flows reachable under fragmented attention? |
+| Doors, pre-set and merch | Greet fans, confirm current show | Find friends, optionally scan/follow | Is check-in clear, fast, readable, privacy-respecting? |
+| During set | Perform, limit device interaction | Listen, move, dance, photograph or avoid phone | Does software avoid demanding attention during music? |
+| Immediately after | Merch, fan conversations, load-out, travel | Exit, meet friends, share memories | Can unfinished work safely resume later? |
+| Next day | Review attendance, curate Night, gallery, thank-you | Revisit photos and opt into future contact | Does Night → Messages preserve context, audience and privacy? |
+| Between shows | Maintain artist–fan relationship, coordinate teams | Manage communications and preferences | Are messages relevant, permission-based and manageable? |
+
+### Persona architecture — behavior over stereotypes
+
+Create **provisional archetypes**, with differences in goals, stage of career, touring frequency, audience scale, technology confidence, team size, permissions and device/work environment. Do not invent statistically representative names, ages, incomes or success rates. Include independent and managed artists, touring and local bands, solo/producer profiles, managers, agencies, label teams, limited-access collaborators, casual fans and highly engaged fans. One persona is not one UI theme.
+
+For each persona capture: jobs-to-be-done; decisions and authority; task cadence; collaborators; pressures/interruptions; current tools; workarounds; privacy and consent expectations; accessibility/environment constraints; evidence; unknowns; example scenarios and what would falsify our assumptions.
+
+### Scenario cards — initial *hypotheses*, not validated findings
+
+- **SC-01 Solo artist, before doors:** Artist has competing soundcheck/merch/venue tasks. Can confirm existing QR/Show Mode is ready without entering a long setup?
+- **SC-02 Local band at merch after the set:** A fan has seconds to engage. Can existing artist Headquarters/check-in convey clear value with minimal interaction?
+- **SC-03 Fan in crowded, dim venue:** Can they follow/check in with accessible contrast, explicit consent and graceful interruption recovery?
+- **SC-04 Attentive fan not using their phone during music:** Can they reconnect afterward without coercive in-show phone prompts?
+- **SC-05 Touring manager with successive Nights:** Can they identify the active artist/show correctly and avoid messaging the wrong audience?
+- **SC-06 Artist next morning:** Can they create a gallery and send to **eligible** Night attendees without losing draft, exposing private media or overstating delivery?
+- **SC-07 Fan with accessibility barriers:** Are alternative discovery/participation paths available for visual, motor, hearing or cognitive needs?
+- **SC-08 Multi-artist agency operator:** Are switching, authorization, approvals and account separation safe and understandable?
+
+Every scenario should include: actor and purpose; precise venue/device/lighting/connectivity assumptions; entry point; action steps; interruption/failure; privacy/permission consequence; successful outcome; **what research would validate/reject it**. Avoid silently transforming hypotheses into Faneqo commitments.
+
+### Skill interface and deliverables
+
+Provide `music-industry-research/` as a clearly scoped optional evidence library, not a massive mandatory skill prompt. Create original source-grounded field dossiers, `PERSONA_INDEX.md`, `SHOW_JOURNEYS.md`, `SCENARIO_CARDS.md`, `CONTEXT_CONSTRAINTS.md` and `EVIDENCE_GAPS.md` if they do not already exist; prefer reuse of established repo conventions. Connect only relevant persona and scenario cards into `elite-ux-director` through its existing Faneqo adapter. The core UX skill must remain domain-neutral.
+
+Claude UX deliverables must state: **persona + user job + venue/time context + likely interruptions + constraints + consent and permissions + resulting journey + observed vs assumed evidence**. A stylish desktop mockup is not proof an artist can complete the task backstage or a fan can scan at the venue.
+
+**No formal skill benchmarks or extra founder testing obligations now.** Record findings and let subsequent authorized real Faneqo work reveal flaws naturally. Normal feature QA remains mandatory. Do not interrupt the book-research chat or current development agents, and do not edit production.
