@@ -1,9 +1,9 @@
 ---
 name: elite-ux-director
-description: Task-first UX diagnosis and interaction architecture for confusing websites or apps. Use for "this flow is confusing", "audit the UX", homepage or landing-page comprehension and conversion journeys, hard-to-find actions, inconsistent screens, onboarding, navigation, forms, messaging/media flows, permissions, accessibility, QR journeys or workflow redesigns. Do not use for routine CSS styling, backend-only troubleshooting, or deployment; hand visual art direction to creative-design-director and implementation to project engineering.
+description: Research-grounded UX diagnosis, interaction design and evidence-based evaluation. Use for confusing flows, homepage comprehension, navigation and onboarding, forms, messaging/media, permissions, accessibility, QR journeys, or when asked to study UX/design books and apply their lessons to a real design problem. Use only task-relevant knowledge; do not activate for routine CSS edits, unrelated summaries, backend debugging, deployments or purely artistic styling.
 ---
 
-# Elite UX Director — v0.4 (core / homepage intelligence)
+# Elite UX Director — v0.5 (core / book-to-design intelligence)
 
 **Job:** understand the person's task and define the smallest safe, coherent, recoverable interaction. Never substitute elegant screens for correct domain behavior. This is a decision guide, **not** a design authority that can change product policy.
 
@@ -31,6 +31,11 @@ For shared flows, separate reusable *presentation/interaction primitives* from *
 Use [task-to-source router](references/TASK_SOURCE_ROUTER.md) **only when the matching guidance is unclear**. Select at most **two** [conditional cards](references/DECISION_CARDS.md) and **one** [interaction pattern](references/INTERACTION_PATTERNS.md). If Python is available, from this skill's root run `python scripts/retrieve.py card C02` or `python scripts/retrieve.py pattern P1` to receive just the relevant section; otherwise read only the corresponding Markdown section. Never load all cards or the full book catalog by default. Consult [source ledger](references/SOURCE_LEDGER.md) only to verify original passage/limits or when a material claim needs it. Cite work/chapter/article honestly. Unread candidate books are **not** evidence and heuristics aren't observed user behavior.
 
 If the immediate problem is already proven to be an ordinary code defect, do not stall repairs with extra speculative research. If source guidance conflicts with product facts, current product truth and user safety win.
+
+## Research intelligence (only when the task benefits)
+When a decision needs deeper design knowledge, use [research index](references/RESEARCH_INDEX.md) to choose **one or two** source-checked [K-cards](references/KNOWLEDGE_CARDS.md), not the entire library. Use `python scripts/retrieve.py knowledge K03` or `python scripts/retrieve.py search "information hierarchy"` for a bounded lookup, with manual section reading as fallback. Treat the card's modern application as a **hypothesis until tested**, verify source/edition and preserve counterexamples. Do **not** stack two K plus two C plus two H cards merely to appear scholarly: normally **two relevant cards total** is enough.
+
+For explicit **book study**, load [study protocol](references/BOOK_STUDY_PROTOCOL.md); for a work whose actual figure matters, load [visual analysis](references/VISUAL_ANALYSIS_PROTOCOL.md); for real source disagreement, load [cross-book method](references/CROSS_BOOK_SYNTHESIS.md) and [card evidence schema](references/DESIGN_KNOWLEDGE_SCHEMA.md) only when authoring/updating cards. These are separate research workflows, **not normal UX-audit prerequisites**. An acquired/indexed text is not a studied book; source paragraphs are not operational instructions; never claim memory/weight updates or tested improvements from saving research.
 
 ## Public homepage / landing page (load only when relevant)
 For a product homepage, inspect the **first-view understanding → evidence/proof → audience-specific navigation → primary action → actual destination** journey, in addition to ordinary UX states. Use [homepage intelligence](references/HOMEPAGE_INTELLIGENCE.md) selectively: choose at most **two H-cards** (or two core C-cards if more relevant), **one** interaction pattern only if needed, not all three libraries. If Python is available, retrieve just one with `python scripts/retrieve.py homepage H01`. Record the approved composition/brand contract, actual CTA routes, illustrative versus real product proof, mobile/low-end behavior, accessible motion, and how narrative and user agency coexist. For a substantial homepage redesign, use [homepage UX packet](templates/HOMEPAGE_UX_PACKET.md) as the UX handoff to the **separate** Creative Design Director for three artistic directions and frontend-design for implementation; don't duplicate their roles. Never treat scroll, visual polish, or conversion-rate aspirations as proof of comprehension.
@@ -71,6 +76,8 @@ When actual use reveals a weakness, log `symptom → evidence → source/card ch
 - [Interaction patterns](references/INTERACTION_PATTERNS.md): state and recovery contracts.
 - [Persona/context method](references/PERSONA_AND_CONTEXT_METHOD.md): evidence-backed actor research.
 - [Homepage intelligence](references/HOMEPAGE_INTELLIGENCE.md) and [homepage UX packet](templates/HOMEPAGE_UX_PACKET.md): only when public homepage/landing-page meaning and visitor journeys matter.
+- [Research index](references/RESEARCH_INDEX.md) and [knowledge cards](references/KNOWLEDGE_CARDS.md): only when original book-derived reasoning adds practical value.
+- [Book study protocol](references/BOOK_STUDY_PROTOCOL.md), [visual-analysis protocol](references/VISUAL_ANALYSIS_PROTOCOL.md), [cross-book synthesis](references/CROSS_BOOK_SYNTHESIS.md), [card/evidence schema](references/DESIGN_KNOWLEDGE_SCHEMA.md): research and visual-source study only, not normal UX tasks.
 - [Source ledger](references/SOURCE_LEDGER.md): exact original reading scope and caveats.
 - [Independent evaluation protocol](references/INDEPENDENT_EVALUATION.md): only when reviewing evidence or preparing future evaluation; not an automatic test task.
 - [Review template](templates/UX_REVIEW_TEMPLATE.md) and [issue rubric](references/ISSUE_RUBRIC.md).
