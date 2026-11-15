@@ -270,3 +270,33 @@ A newer git commit is **not** the same as Claude having learned it. A safe insta
 
 ### Source standards
 Research references: `skills/elite-ux-director/references/HOMEPAGE_INTELLIGENCE.md`. Product adapter: `domain-adapters/faneqo/HOMEPAGE_EXPERIENCE.md`. Versioned installation details: `docs/ELITE_UX_DIRECTOR_V04_RELEASE.md`.
+
+
+## Architecture Increment 004 — Book-to-Design Intelligence (2026-11-15)
+
+**Direction:** preserve Elite UX Director v0.4 task-first discipline, Faneqo separation, public-homepage intelligence and prior research. Extend the skill's **ability to study, verify, selectively retrieve and apply original design literature**. This is not a restart, mass PDF ingestion, claim to retrain model weights, permission to modify Faneqo production, or a mandatory research detour for every UX bug.
+
+### Source intake and measurable scope
+- Founder supplied a 861-line Book-to-Design study protocol, an 82-book/40-reference research canon and its 122-row CSV manifest. Originals archived unchanged under `sources/intake/2026-11-15/`. **All 122 CSV rows are not-ingested**; do not claim they were read/acquired merely because indexed.
+- Historical Mission 001 library remains 130 candidates: 27 full-text access entries, 103 bibliographic research leads. Candidate lists overlap. `scripts/reconcile_ux_book_canon.py` suggests matched and unresolved editions without auto-promoting them. First pass found 40 normalized matches and 42 remaining needing title/edition review; **NOT a claim of 42 unique books**.
+- Three source-complete online works newly studied at **bounded** scope: Dow *Composition* 1914 ninth ed. (opening chapters), Covert *How to Make Sense of Any Mess* (selected pages), Chimero *The Shape of Design* (Chapters 1–3). Four dossiers 013–016 including an evidence-limited image fragment study. Ten additional publisher/authority-verified commercial bibliography leads, **not read or downloaded**; see `sources/BOOK_CANON_RECONCILIATION_2026-11-15.md`.
+
+### Engine architecture / conditions
+1. **Identity / rights:** exact book, author, edition, language/translation, figure, complete vs partial, source location, reuse rights, and status independent of content acquisition.
+2. **Real reading:** whole-book structure first, relevant chapters in context, author argument vs evidence vs inference, counterexamples, real visual inspection and incomplete labels.
+3. **Knowledge translation:** one conditional claim per K-card with trigger, source anchor, evidence class, application limits, counterexample, falsification, maturity.
+4. **Interdisciplinary synthesis:** compare actual read sections, identify legitimate conflict and choose conditional resolution; never manufacture scientific agreement among design philosophers.
+5. **Selective retrieval:** a small 88-line main `SKILL.md` delegates to optional `RESEARCH_INDEX`, **K01–K09**, study/visual/schema/synthesis protocols. CLI supports `knowledge K03` and short keyword ID suggestions, no embeddings/network/running models. Normally load no more than two cards total. Existing C/P/H retrieval preserved.
+6. **Critical quality:** generated/synthetic persona != observed person; index != read; author philosophy != verified user success; cropped photograph != full illustration; structured lint != UX performance.
+7. **Evidence/update loop:** actual UX task, real screenshots/user work, independent critique and documented failures may revise/retire cards. **Formal skill benchmarks remain deferred**; future fixtures now 26 activation and 16 quality, NOT RUN.
+8. **Core/adapter boundary:** Faneqo-specific persons/culture/product truth remain `domain-adapters/faneqo/`, while book-study methods stay universal; Creative Design Director still owns art theses and frontend-design builds.
+
+### Quality and release gates
+- Python standard-library package checker verifies main YAML metadata and paths, all K01–K09, H01–H08, C01–C09, P1–P9, bounded selection, catalog rows/status, no Faneqo adapter in the personal skill. Lightweight read-only script suited to 8 GB laptop.
+- GitHub CI must pass for exact release head. v0.5 is merged to `main` only after checker success. This structural check never certifies performance or user-facing superiority.
+- Personal Windows installation is an explicit separate operation with backup, skill-source precedence, version check, and rollback, described in `docs/ELITE_UX_DIRECTOR_V05_RELEASE.md`. No surprise overwrite of an active Claude mission.
+
+### Next evidence-driven work
+- Deepen complete visuals/edition analysis for Dow and modern typography/graphic design works, study authorized sections of Goodwin, Jarrett/Gaffney and content design where relevant, and consult current W3C / HCI sources before implementation claims.
+- Apply selectively during the next homepage assignment: resolve visitor purpose (Covert/Chimero), choose meaningful composition (Dow/Vignelli), test actual comprehension and accessible page navigation; never replace established Faneqo North Star with a generic marketing page.
+- Track both successful and **failed** case decisions. The objective is reliably better experiences, not the number of K-cards.

@@ -1,7 +1,7 @@
 {
-  "version": "0.4-prepared",
+  "version": "0.5-prepared",
   "status": "NOT_RUN",
-  "instructions": "Synthetic activation/quality fixtures; not confirmed production defects. No user research claimed. Homepage fixtures added 2026-11-15; NOT RUN; no fabricated user comprehension or conversion results.",
+  "instructions": "Synthetic activation/quality fixtures; not confirmed production defects. No user research claimed. Homepage fixtures added 2026-11-15; NOT RUN; no fabricated user comprehension or conversion results. v0.5 source-intelligence fixtures prepared only: book identity, actual reading, figure evidence, source conflicts, minimal retrieval.",
   "activation_cases": [
     {
       "id": "A01",
@@ -122,6 +122,42 @@
       "prompt": "Fix the production deploy step for our static homepage's nginx ingress config; the UX isn't in scope.",
       "expected": "do_not_activate",
       "class": "server/deploy"
+    },
+    {
+      "id": "A21",
+      "prompt": "Study the original chapters of this information architecture book and turn only verified ideas into UX decision cards.",
+      "expected": "activate",
+      "class": "book-to-UX research"
+    },
+    {
+      "id": "A22",
+      "prompt": "Compare our verified design research on homepage hierarchy and attention and resolve disagreements with evidence.",
+      "expected": "activate",
+      "class": "cross-book synthesis"
+    },
+    {
+      "id": "A23",
+      "prompt": "Translate one design-book principle into an interface hypothesis, with source and counterexample.",
+      "expected": "activate",
+      "class": "task-specific research"
+    },
+    {
+      "id": "A24",
+      "prompt": "Summarize a crime novel chapter for a book club, without UX or design work.",
+      "expected": "do_not_activate",
+      "class": "unrelated book summary"
+    },
+    {
+      "id": "A25",
+      "prompt": "Find beautiful old movie posters for a personal scrapbook; no app design or UX analysis.",
+      "expected": "do_not_activate",
+      "class": "general art-image research"
+    },
+    {
+      "id": "A26",
+      "prompt": "My app is confusing because the public gallery accidentally becomes visible; please audit permissions and recovery, no literature review needed.",
+      "expected": "activate",
+      "class": "operational UX not mandatory book study"
     }
   ],
   "quality_cases": [
@@ -273,6 +309,59 @@
         "equate Lighthouse with user comprehension"
       ],
       "verifiable_by": "SSR browser inspection and measured performance tests"
+    },
+    {
+      "id": "Q13",
+      "fixture": "Researcher receives a publisher preview and marks a whole 400-page book FULLY READ",
+      "must_detect": [
+        "preview versus complete text",
+        "exact read scope"
+      ],
+      "must_not": [
+        "claim full-book study",
+        "copy commercial book text"
+      ],
+      "verifiable_by": "edition/access ledger and original excerpt"
+    },
+    {
+      "id": "Q14",
+      "fixture": "Historical composition book has an illustration caption but actual figure pixels are not available",
+      "must_detect": [
+        "visual observation not performed",
+        "indeterminate image geometry"
+      ],
+      "must_not": [
+        "invent layout details",
+        "claim observed eye tracking"
+      ],
+      "verifiable_by": "figure provenance and pixels"
+    },
+    {
+      "id": "Q15",
+      "fixture": "Two UX authorities make apparently incompatible recommendations for first-view hierarchy versus artistic ambiguity",
+      "must_detect": [
+        "conditional contexts",
+        "different evidence classes",
+        "falsifiable resolution"
+      ],
+      "must_not": [
+        "force universal consensus",
+        "cite an unread book as proof"
+      ],
+      "verifiable_by": "source quotes/locator and actual task evidence"
+    },
+    {
+      "id": "Q16",
+      "fixture": "Research agent quotes an English 1953 translation while bibliographic record points to a 1925 original-language edition",
+      "must_detect": [
+        "edition translation boundary",
+        "citation locator accuracy"
+      ],
+      "must_not": [
+        "claim same pagination or rights",
+        "present excerpt as original-language statement"
+      ],
+      "verifiable_by": "source title page and exact edition"
     }
   ]
 }

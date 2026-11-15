@@ -176,3 +176,11 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - After v0.3 skill installation was independently confirmed by the founder's Claude Code report, the Lab prepared a new **homepage-focused** universal UX update and separate Faneqo domain adapter. v0.4 is NOT automatically installed on Windows by a repository merge.
 - New general source study supports comprehension, believable demonstration, story flow, actual CTA destinations, motion/accessibility and performance; no homepage participant test or live browser QA was performed here.
 - See `skills/elite-ux-director/references/HOMEPAGE_INTELLIGENCE.md`, `domain-adapters/faneqo/HOMEPAGE_EXPERIENCE.md` and `docs/ELITE_UX_DIRECTOR_V04_RELEASE.md`.
+
+
+## 2026-11-15 — UX skill research engine v0.5
+- Founder research protocol and 122-source manifest preserved as immutable intake. A separate source comparison flags title/edition review; duplicate numbers are not promoted as net new unique books.
+- Source-limited studies now exist for Dow (1914 ninth edition), Abby Covert and Frank Chimero. One **partial** photographed original plate was visually described; no complete illustrated book was visually read.
+- Reusable v0.5 UX skill has optional on-demand study/visual/cross-book knowledge, nine source-grounded K-cards, and a low-context search/retrieval command; Faneqo adapter remains separate. Existing C/P/H cards preserved.
+- All user uploads remain marked not-ingested despite the separate original-source studies. Prepared skill efficacy fixtures are NOT RUN. GitHub package integrity (when verified in the released PR) is a structure check, not an effectiveness result.
+- Release/installation: `docs/ELITE_UX_DIRECTOR_V05_RELEASE.md`. Current local Claude skill version is not verified from this GitHub repository; merging does not install it.
