@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Return only the named UX decision card or interaction pattern.
+"""Return only the named UX decision card, interaction pattern or homepage card.
 
 Usage:
-    python scripts/retrieve.py list [cards|patterns]
+    python scripts/retrieve.py list [cards|patterns|homepages]
     python scripts/retrieve.py card C04
     python scripts/retrieve.py pattern P5
+    python scripts/retrieve.py homepage H01
 
 This script is read-only, uses stdlib, has no network, and prints only one
 selected knowledge chunk to minimize Claude context. It is NOT retrieval AI.
@@ -19,6 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES = {
     "card": (ROOT / "references/DECISION_CARDS.md", r"C\d{2}"),
     "pattern": (ROOT / "references/INTERACTION_PATTERNS.md", r"P\d+"),
+    "homepage": (ROOT / "references/HOMEPAGE_INTELLIGENCE.md", r"H\d{2}"),
 }
 
 
@@ -45,18 +47,18 @@ def main(argv: list[str]) -> int:
         return 0 if len(argv) > 1 else 2
     action = argv[1].lower()
     if action == "list":
-        kinds = ["card", "pattern"] if len(argv) < 3 else [
-            {"cards": "card", "patterns": "pattern"}.get(argv[2], argv[2])
+        kinds = ["card", "pattern", "homepage"] if len(argv) < 3 else [
+            {"cards": "card", "patterns": "pattern", "homepages": "homepage"}.get(argv[2], argv[2])
         ]
         if not all(k in SOURCES for k in kinds):
-            print("Expected list cards or list patterns", file=sys.stderr)
+            print("Expected list cards, list patterns, or list homepages", file=sys.stderr)
             return 2
         for kind in kinds:
             for key, section in sections(kind).items():
                 print(section.splitlines()[0])
         return 0
     if action not in SOURCES or len(argv) != 3:
-        print("Expected card Cxx or pattern Px (or list)", file=sys.stderr)
+        print("Expected card Cxx, pattern Px, or homepage Hxx (or list)", file=sys.stderr)
         return 2
     key = argv[2].upper()
     found = sections(action)
