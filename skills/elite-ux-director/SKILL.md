@@ -1,113 +1,115 @@
 ---
 name: elite-ux-director
-description: Source-grounded UX architecture, journey audits, mental models, interaction/state design, recovery, accessibility and evidence-based critique for web/mobile applications. Use before complex workflow changes, major UX/UI redesigns, multi-step flows or when user reports that a feature is confusing. Complements creative-design-director and frontend-design.
+description: Task-first, source-grounded UX direction for confusing web/mobile journeys, inconsistent screens, messaging and gallery workflows, QR create/edit/download/scan flows, onboarding, privacy/permissions, forms, dashboards and accessibility. Use when a user says an app is confusing, asks for a deep UX audit, needs an interaction redesign or wants a safe behavior contract. Do not use for routine CSS polish, backend-only debugging or unrelated deployments; complement creative-design-director and frontend-design.
 ---
 
-# Elite UX Director — RESEARCH ALPHA v0.1
+# Elite UX Director — v0.3 (Research-integrated release candidate)
 
-**Status:** Candidate skill committed to Creative Intelligence Lab; not installed in or executed by Claude, not validated against an independent designer and not permission to modify production. **Faneqo is the first adapter, not the default for all products.**
+**Purpose:** Make complex digital products understandable, predictable, recoverable and human-centered while protecting real domain permissions. This skill guides **UX reasoning and behavior contracts**, not a replacement for the product engineer, visual art director, frontend-design implementation or real user research.
 
-## Responsibility boundaries
+**Status:** Versioned in Creative Intelligence Lab (2026-11-15). The founder reports using an earlier installed version in Claude Code; its exact local files/version are **not independently verified**. v0.3 has source/architecture integration but **no claim of measured usability superiority or formal skill benchmark**. Faneqo is an optional domain adapter, not the core skill's default.
 
-This skill owns **WHAT the person is trying to accomplish, how the experience should behave, what can go wrong, and how to verify understanding**. It is not the general UI styling/implementation skill, and it does not substitute for real user research.
+## Use only the relevant parts
+- **Quick question or targeted UX defect:** diagnose the task, give the smallest safe remedy and one way to verify; no forced mega-report.
+- **Cross-screen, high-consequence workflow:** use the journey/state/authority method below and one compact behavior contract.
+- **Visual identity/artistic thesis request:** hand off to `creative-design-director`; preserve fixed task and permission requirements.
+- **Implementation request:** after project authorization, collaborate with the actual engineering/frontend-design process, inspect code and validate results. Do not unilaterally change unrelated features or live production.
 
-- **elite-ux-director:** understand tasks, inspect real flows, model states, diagnose friction, define recovery, prove comprehension and task completion.
-- **creative-design-director:** artistic thesis, source-grounded meaning, expressive concepts, source-aware critique.
-- **frontend-design:** authorized visual/front-end implementation.
-- **project-specific engineering/testing skills:** inspect repo, execute tests, screenshots, accessibility and performance.
-- **owner/product spec:** scope, permissions, domain truths and production authority take precedence over all heuristic advice.
+**Progressive references:** first read `references/TASK_SOURCE_ROUTER.md` to choose **at most two** task-matched `references/DECISION_CARDS.md` cards and **one** `references/INTERACTION_PATTERNS.md` pattern. Consult `references/SOURCE_LEDGER.md` or original sources only if a conclusion depends on them. Do not preload the entire bibliography, all cards, or all research.
 
-No skill can certify a redesign as intuitive using source code alone.
+## 0. Permission, evidence and product truth
+Before proposing a substantive UX change:
+- State the authorized target: research review, prototype, local development, merged application code or live production. **A request to audit is not permission to deploy.**
+- Check relevant product spec, code/branch, actual routes, API contracts, permissions, feature flags and known bugs where accessible. Protect other agents' worktrees and changes; do not overwrite in-progress code.
+- Distinguish **REPORTED** (founder/user statement), **OBSERVED** (screenshot/code/browser with provenance), **TESTED** (executed reproducible scenario), **INFERRED** (reasoned consequence), **HYPOTHESIS** (proposed future benefit) and **UNKNOWN**. Don't say users “love” a change or quote fake success rates.
+- Record what you did **not** inspect. An isolated screenshot cannot prove a flow works; code analysis cannot prove human comprehension.
+- Product/owner authority and current backend safety constraints supersede aesthetic heuristics. Do not weaken privacy, recipient eligibility, anti-abuse controls or data access for fewer clicks.
 
-## Trigger
+## 1. Identify the real human job, actor and situation
+In one sentence: **“When [situation], [actor] wants to [human verb], so [meaningful outcome], without [unwanted consequence].”**
 
-Invoke for: confusing multi-screen flows, messaging, permissions/privacy, onboarding, galleries/media, lists and filtering, high-stakes destructive operations, complex dashboards and cross-device task continuity. Also invoke during a critical pre-build UX audit or post-build evidence review.
+Record only necessary context: entry point, actor role/permissions, device, time pressure, collaborators, environment, prior knowledge, stakes and interruptions. Identify **primary + affected secondary actors**; for example artist vs fan, sender vs recipient. Use `references/PERSONA_AND_CONTEXT_METHOD.md` when field context or multiple roles matter. Synthetic personas are hypotheses, **never** evidence of actual interviews.
 
-Do not invoke for: a trivial isolated CSS change, ordinary backend bug, a narrowly authorized visual-only polish task, or deployment where no user-flow change occurs.
+For a show/venue task, explicitly consider darkness/glare, network/battery, one-handed actions, crowd/noise, attention and whether the fan even wants to interact during a set. Do not make such conditions into “observed facts” without evidence.
 
-## Mandatory source selection
+## 2. Map existing journey before redesigning it
+Trace `entry → orientation → decision → action → feedback → completion → return` across every legitimate entry point. Capture:
+- Screen/route and **user's words**, not backend entity names.
+- Which context must be inherited, validated and retained through navigation.
+- What the person expects to see or do next, what they actually see, and the cost of mistakes.
+- Overlapping/conflicting composers, hidden action icons, redundant choices, disappearing drafts, wrong-audience risks and dead-end recovery.
+- Missing paths for novice, power user, mobile, keyboard, screen-reader and interrupted user.
 
-Before giving expert-sounding conclusions, load only **two or three relevant** references from `references/SOURCE_LEDGER.md`. Reference list is not a claim to full-book reading. Each finding must name whether it is **OBSERVED, REPORTED, INFERRED, HYPOTHESIS or TESTED** and cite source/screenshot/file evidence when possible.
+If live flow access is unavailable, mark the journey **provisional** and include exact inspection tasks instead of making up a current UI.
 
-For a messaging app, begin with Keith Ch. 6 (communication), Pickering Notifications, and Lynch/Horton Ch. 4 (IA); for UI tabs use Pickering Tabbed Interfaces. For project discovery and framing use Boulton Ch. 7–8.
+## 3. Separate five kinds of design failure
+Label the primary failure before prescribing a UI change:
+1. **Discoverability** — action not found; wrong placement, weak information scent, obscure icon.
+2. **Comprehension** — visible action or status misunderstood; mismatched vocabulary, mental model, consequences.
+3. **State feedback** — progress or completion falsely/insufficiently signaled.
+4. **Architecture/continuity** — competing workflows, dropped context, inconsistent concepts or navigation.
+5. **Trust/recovery/accessibility** — permissions, privacy, irreversible action, no undo, failure, blocked keyboard, assistive noise, unsafe retry.
 
-## Method: TASK → JOURNEY → STATES → EVIDENCE
+These can coexist. **A brighter button cannot fix the wrong recipient model.** Sources support diagnosis; they cannot tell you current backend behavior. Select relevant cards via task router.
 
-### Gate 0 — Define safe authority
-Read assigned task and current product contract. Inspect current branch/status/worktrees; don't modify active working checkout without authorization. Distinguish local prototype, local app implementation, and production deployment. Do not assume source links/assets are licensed to copy.
+## 4. Make domain semantics and authority explicit
+Build a minimal vocabulary/matrix when multiple concepts interact:
+`actor | object | human verb | lifecycle state | visibility | recipient scope | owning role | server-authoritative rule | evidence`.
 
-### Gate 1 — Understand the user's job
-Record the user's natural-language job (e.g., “send last night's pictures to eligible attendees, without publishing the gallery to everyone”). Identify actor, motivation, entry point, outcome, constraints, prior knowledge, environment (mobile/desktop/venue/bad connection). Do not frame jobs in internal data-model vocabulary.
+Never conflate:
+- Gallery **saved / private / published / shared / attached / notified**.
+- Message **draft / accepted / queued / sent / delivered / failed**.
+- Fan **seen a QR / scanned / followed / checked in / eligible to receive**.
+- QR **created / downloaded / printed / edited / scanned / resolved**.
+- Displayed eligibility or client controls with an actual **server permission check**.
 
-### Gate 2 — Inspect the *actual* product
-Read relevant routes, components, API/state contracts and screenshot(s); where tools permit, navigate real local app. Map entry points, user language, information architecture, controls, relationships, ownership and audience semantics. When tools lack actual access, state that and use a hypothesis list, not a fictional audit.
+If policy is missing or ambiguous, mark a **decision needed** rather than inventing permissions. Use `references/INTERACTION_PATTERNS.md` for state/flow examples.
 
-### Gate 3 — Map complete journey
-Create a compact journey map with:
-- Entry and inherited context
-- User decision and next visible affordance
-- System response and truthful status
-- Error/slip conditions and safe exit
-- Persistence through refresh/back/interruption
-- Final next step
-Look for repeated choices, competing composers, mislabeled navigation, invisible relationships and steps that require users to know backend entities.
+## 5. Produce the smallest safe improvement — with alternatives
+For significant issues, compare:
+- **A. Minimal coherent repair:** fix labels, context, feedback, recovery or shared components without changing business rules.
+- **B. Structural simplification:** consolidate conflicting workflows only if one canonical **behavior** can preserve all legitimate differences.
 
-### Gate 4 — Model states and permissions
-Map both **interface states** and **domain state transitions**. Distinguish draft, saved, attached, published, queued, sent, delivered; never use one label for several incompatible states. Include loading, empty, offline, failure, retry, in-progress, stale and unauthorized states.
+Assess user learning, risk to privacy, accessibility, backend/data migration, reversibility, implementation cost and environmental context. Keep existing supported shortcuts for experienced users when useful. If primarily aesthetics, specify UX invariants and route to creative-design-director.
 
-Privacy, audience, recipient eligibility, and delivery are different concepts. Never resolve friction by silently weakening permissions or removing anti-abuse/rate/cooldown safeguards.
+Rank findings with `references/ISSUE_RUBRIC.md`: P0 unsafe/wrong recipient/data exposure; P1 blocked critical task; P2 costly confusion; P3 refinement. Don't invent numeric severity probabilities. Severe trust/safety defects outrank polish.
 
-### Gate 5 — Diagnose and rank friction
-Use `references/ISSUE_RUBRIC.md`:
-- **P0 safety/correctness:** unauthorized audience/content, false sent status, duplicate irreversible action, serious data loss, broken critical security boundary.
-- **P1 blocks primary job:** no way to finish task, lost draft, inaccessible essential control, broken navigation/return.
-- **P2 costly friction:** repeated selection, inconsistent terminology, hard-to-differentiate items, unclear next action, gratuitous modal/context switch.
-- **P3 polish:** cramped spacing, weak but understandable hierarchy, ornamental distraction.
-Severity must include observed evidence and uncertainty; **not** just a numeric score.
+## 6. Write a falsifiable behavior contract
+For every consequential transition, specify:
+`entry/context | actor | trigger | client state | server authority | visible feedback | keyboard/focus | error/retry | refresh/back/interruption | evidence status`.
 
-### Gate 6 — Propose alternatives and a constrained decision
-Specify (A) minimal repair within current structure, (B) more ambitious interaction simplification **only if justified by task evidence**. Compare discoverability, error risks, privacy, accessibility, implementation cost, data and migration requirements. Reuse existing components/services; avoid separate shadow workflows. For art direction call creative-design-director only when visual thesis is required.
+Include normal, empty, loading, invalid, unauthorized, stale, offline, slow, timeout, partial success, duplicate action and recovery states as relevant. Prefer **bounded contracts** over page-count-heavy specifications. Ask:
+- Can the user see *who/what* will be affected **before** sending, publishing or changing a live QR?
+- Does the UI distinguish “request accepted” from “delivered,” when backend telemetry differs?
+- Is it clear what persists across closing, back, route change, refresh, denied camera access and lost connection?
+- Does retry avoid duplicate irreversible actions? Is state actually supported by APIs?
+- Can the task be completed with predictable semantics, focus, labels, zoom/reflow and assistive status?
 
-### Gate 7 — Define behavior before CSS
-Produce an implementation-neutral behavior contract (what happens on click, keyboard, back, refresh, success/failure, unauthorized, no recipients). Use accessible semantics, distinguish links vs buttons, label controls, manage focus after opening/closing modal, choose nonintrusive live regions. Do not claim WCAG compliance from markup pattern alone.
+Keep WCAG 2.2 and WAI-ARIA APG as separately inspected **primary standards**, not book evidence. When using routed pages, don't fake tab semantics; when using in-page tabs, implement the actual keyboard interaction. Don't claim accessibility conformance without applicable real checks.
 
-### Gate 8 — Validate honestly
-- **Static:** contracts, route state, typecheck and tests. These alone are insufficient.
-- **Browser:** task walkthrough at relevant 320/390/430/768/1440 widths; actual screenshots, focus traversal, reduced motion, long/empty/error data, keyboard viewport and mobile keyboard where available.
-- **Data safety:** non-production records and synthetic or authorized accounts; test all audience/privacy/ownership paths and retries/idempotency. Never send live fan messages as a test.
-- **Task assessment:** founder first-use test with zero coaching; representative user research when possible. Record completion, errors, confusion, backtracking, confidence and direct observations without inventing percentages.
-- **Compare:** baseline vs revision using equivalent tasks and context; report tradeoffs and any regression. Beautiful screenshots are not proof of usability.
+## 7. Use honest evidence and normal project QA
+For a **research-only assignment**, deliver a precise hypothesis and verification plan. The founder has deferred **formal skill benchmarks and extra test-session obligations**; do not start those or block research on them.
 
-### Gate 9 — Critique/iterate/handoff
-Provide: top 3 verified problems; problem-to-evidence mapping; behavior contract; approved minimal slice; actual test report; unresolved hypotheses; next observation needed. Major visual work hands off to creative-design-director and frontend-design; avoid duplicate directives. A founder's confusion is a valid observation requiring investigation, not a license to invent a sweeping redesign.
+For an **authorized product change**, normal quality assurance is still mandatory: actual task flow, relevant mobile and desktop widths, input modes/keyboard, label/focus/contrast/reflow/reduced-motion, error/empty/slow/large-content states, server permission outcomes and retries. Use non-production synthetic or expressly authorized accounts/data; **never send live fan messages, publish private galleries or change production QR targets merely as a test**. State test environment, results and missing coverage. A lint pass or static screenshot does not prove UX.
 
-## Universal UX quality gates
+Record wild-use feedback: `symptom → confirmed mechanism or uncertainty → skill/card changed → observed result or still unknown`. Revise rules when real product evidence contradicts theory.
 
-1. User recognizes the **next safe action**.
-2. Audience, context, privacy and consequences are understandable.
-3. One canonical way of performing an operation, with multiple sensible entries but no incompatible twins.
-4. The system tells the truth about progress, success and failure.
-5. Recovery is possible; no unnecessary destruction or duplicate side effects.
-6. Context persists appropriately across navigation and errors.
-7. Keyboard, zoom/reflow, labels and assistive feedback are designed and tested.
-8. Visual distinction serves comprehension, not competing spectacle.
-9. The experience works under real content and device constraints.
-10. Product owner/real users can execute the critical journey without coaching.
+## 8. Deliverable scaling and handoff
+- **Short diagnosis:** user job, evidence, highest-impact finding, minimal safe fix, one exact check, uncertainty.
+- **Full journey audit:** use `templates/UX_REVIEW_TEMPLATE.md`; include top findings, matrix of routes/roles/states, alternatives, behavior contract, regression and validation evidence.
+- **Engineering handoff:** critical invariants; exact state contracts; unresolved rights/product decisions; acceptance checks; precise authorized scope; no new backend model without justification.
+- **Creative handoff:** a stable human task, content hierarchy, constraints, environmental needs and allowed expressive freedom. Creative-design-director develops thesis/directions, frontend-design implements when authorized.
 
-## File contracts
+Avoid flooding a user with multiple competing reports. If a host repository has a canonical issue/decision format, adapt to it.
 
-For a significant UX assignment produce concise, directly usable artifacts:
-- `UX_FLOW_AUDIT.md` — current flow, observed evidence, severity, user job, critical confusion and unknowns.
-- `UX_BEHAVIOR_CONTRACT.md` — recommended flow, controlled vocabulary, states, edge cases, permissions, recovery and navigation.
-- `UX_TEST_MATRIX.md` — task scenarios, exact environment, test observations, defects, corrected behavior and untested items.
-- `UX_DECISION.md` — owner-approved choice, rejected alternatives and release boundary.
+## Optional domain adapters (only when relevant)
+- `references/FANEQO_MESSAGING_ADAPTER.md` — Night/Show Mode, fan messaging, galleries, campaign vs private chat.
+- `references/FANEQO_QR_ADAPTER.md` — artist/show QR creation, edit, download, printing, scan, unknown code, target integrity and QR analytics.
+- `references/PERSONA_AND_CONTEXT_METHOD.md` — method for evidence-backed personas and field conditions; project-specific persona datasets remain independent.
+- `references/ISSUE_RUBRIC.md` — priority/evidence.
+- `references/TASK_SOURCE_ROUTER.md` — source selection and required citation scope.
 
-Use `templates/UX_REVIEW_TEMPLATE.md` in this skill package as the minimum format. Do not create enormous duplicate reports when the host project already has authoritative documentation.
+**Do not automatically invoke both domain adapters.** Verify current Faneqo code/spec for each engagement; a stale repository card is not live product truth.
 
-## Faneqo adapter
-
-Load `references/FANEQO_MESSAGING_ADAPTER.md` **only for Faneqo messaging/Night tasks**. Core skill must remain usable for unrelated product domains. Never change Show Mode check-in, gallery privacy policy, message audience, Stripe or production settings to repair a UX symptom.
-
-## Skill verification status
-
-This is **v0.1 alpha research**. No Claude invocation, no validated skill effectiveness, no independent users, and no guarantee of 'elite' outcomes. Next test is a blinded review of a representative Faneqo Night → Messages journey: baseline Claude UX review vs this skill added, identical screenshots and requirements, compare concrete correct findings, high-severity misses, actionable fixes and actual browser evidence. If the skill is verbose or distracts from the job, reduce it.
+## Version/effectiveness honesty
+This version is a **substantial architectural revision**: selective source retrieval, distinct failure diagnosis, real-world context, reusable state/permission contracts, QR lifecycle and compact handoffs. No controlled study has established the degree of improvement. Claude's installed copy is unchanged until a deliberate user/project update. Work in this Lab repository does **not** authorize Faneqo production changes.
