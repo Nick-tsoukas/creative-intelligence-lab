@@ -1,6 +1,6 @@
-# Elite UX Director — Evaluation Fixture v0.1 (NOT EXECUTED)
+# Elite UX Director — Original Eight-Case Fixture (NOT EXECUTED)
 
-Purpose: test whether the candidate Claude skill improves actual UX issue finding and proposed repairs, compared with ordinary Claude review, under identical source inputs. **Owner must authorize any future Claude testing**; this is a *prepared* fixture, not evidence of effectiveness.
+Purpose: preserve eight synthetic privacy/messaging UX scenarios for later independent comparison. Companion: [Independent Evaluation Protocol](references/INDEPENDENT_EVALUATION.md) and Lab-only `quality/ux_skill_eval_cases.json`, which separate activation from output quality. **Founder has deferred standalone formal skill tests**, so these are prepared fixtures, not evidence of effectiveness.
 
 ## Matched comparison
 - Condition A: same skilled model with task brief + identical screenshots/feature contracts, without elite-ux-director.
@@ -53,4 +53,4 @@ Pass candidate only after **actual** independent review of the paired outputs an
 4. Verify a selected repair in the actual local Nuxt app with screenshots and test flows.
 5. Update SKILL.md; repeat until the skill is shorter and more useful, not just more forceful.
 
-**Current state:** benchmark *authored only*, **zero benchmark runs**, no skill installed in Claude.
+**Current state:** eight original fixtures authored, **zero benchmark runs**. Founder reports an earlier skill installed in Claude; this repository cannot confirm which version/path is active. This v0.3 package is not automatically installed by repository merges.

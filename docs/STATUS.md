@@ -1,9 +1,9 @@
 # Project Status
 
-Last revised: 2026-11-11.
+Last revised: 2026-11-15 (older dated entries below retained as historical status, not current installation claims).
 
 ## Confirmed mission
-An independent, versioned research library to teach exceptional visual communication, UX, components, digital design and implementation. Future Claude Code skill planned, not yet installed.
+An independent, versioned research library and two skills for exceptional UX, art direction and design engineering. The founder reports using an earlier UX skill in Claude; its active local version is not verified from this repo. v0.3 is prepared separately for controlled installation.
 
 ## Existing research, preliminary
 - Research chapters 001 and 002 were developed in chat, not entire books read cover-to-cover.
@@ -162,3 +162,11 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Faneqo messaging illustrates task/IA/state safety requirements only: no app code modified, no messages sent, no production changes.
 - Static skill integrity inspection **9/9 passed** (source files, reference paths, scenario count and safety contract). **No Claude invocation, browser UX test, real-user test, or evidence of skill superiority.**
 - Next: gain licensed access to Norman/Krug/Cooper for actual chapter reading, expand public-domain/author-book reading in bounded increments, have Claude perform paired blind UX audit when owner says available, then evaluate actual Faneqo Night→Messages UX without production edits.
+
+
+## 2026-11-15 — Elite UX Director v0.3 architecture and intelligence upgrade
+- Reviewed Anthropic Skills, Agent Skills standard, context-engineering, tool design and independent-evaluation research; retained prior master plan and Faneqo field-research ownership.
+- Rebuilt reusable `elite-ux-director` as a compact, task-first skill with activation exclusions, explicit authority and evidence labels, 9 conditional decision cards, 9 behavior patterns and deterministic one-card retrieval helper.
+- Moved Faneqo messaging, QR and worked scenarios OUT of the universal skill to `domain-adapters/faneqo/`; earlier source ledger preserved in a historical archive, revised core ledger remains general-purpose.
+- Added personas/context evidence ladder, future independent evaluation protocol, 12 positive/negative activation fixtures plus 8 quality/safety fixtures (NOT RUN), source/architecture audit, packaging script and GitHub Actions check.
+- Installation and rollback guide added; existing Claude installed copy not mutated by GitHub. No Faneqo code/data, deploy, production QR changes or fan messages. **Structural validity is not proof of improved UX outcomes.**

@@ -1,0 +1,177 @@
+{
+  "version": "0.3-prepared",
+  "status": "NOT_RUN",
+  "instructions": "Synthetic activation/quality fixtures; not confirmed production defects. No user research claimed.",
+  "activation_cases": [
+    {
+      "id": "A01",
+      "prompt": "This gallery composer is confusing. Artists keep losing their drafts when returning from media selection.",
+      "expected": "activate",
+      "class": "cross-screen UX"
+    },
+    {
+      "id": "A02",
+      "prompt": "I can see a QR code but I cannot tell where it goes, and the download does nothing.",
+      "expected": "activate",
+      "class": "QR user journey"
+    },
+    {
+      "id": "A03",
+      "prompt": "Review keyboard navigation, tab semantics and focus when opening the messaging modal.",
+      "expected": "activate",
+      "class": "accessibility"
+    },
+    {
+      "id": "A04",
+      "prompt": "Evaluate onboarding for new operators with different role permissions.",
+      "expected": "activate",
+      "class": "permissions UX"
+    },
+    {
+      "id": "A05",
+      "prompt": "The user journey for editing a live QR is unclear after posters were printed.",
+      "expected": "activate",
+      "class": "consequential interaction"
+    },
+    {
+      "id": "A06",
+      "prompt": "Design and review the trust and recovery states of an interrupted form.",
+      "expected": "activate",
+      "class": "forms"
+    },
+    {
+      "id": "A07",
+      "prompt": "Fix a PostgreSQL migration that fails on duplicate index names.",
+      "expected": "do_not_activate",
+      "class": "backend bug"
+    },
+    {
+      "id": "A08",
+      "prompt": "Change the Tailwind gap on this button from 2 to 3.",
+      "expected": "do_not_activate",
+      "class": "routine CSS"
+    },
+    {
+      "id": "A09",
+      "prompt": "Deploy the backend to Railway and report the build logs.",
+      "expected": "do_not_activate",
+      "class": "deployment"
+    },
+    {
+      "id": "A10",
+      "prompt": "Research dramatic visual identity and poster typography for a music brand.",
+      "expected": "do_not_activate",
+      "class": "art direction only"
+    },
+    {
+      "id": "A11",
+      "prompt": "Add a Strapi webhook signature verification test.",
+      "expected": "do_not_activate",
+      "class": "security implementation"
+    },
+    {
+      "id": "A12",
+      "prompt": "Explain what the user meant in the email I pasted.",
+      "expected": "do_not_activate",
+      "class": "writing/interpretation"
+    }
+  ],
+  "quality_cases": [
+    {
+      "id": "Q01",
+      "fixture": "Synthetic message composer loses draft after gallery create",
+      "must_detect": [
+        "draft persistence",
+        "context restoration"
+      ],
+      "must_not": [
+        "change visibility silently",
+        "invent backend save"
+      ],
+      "verifiable_by": "route + state contract"
+    },
+    {
+      "id": "Q02",
+      "fixture": "Synthetic gallery attachment changes private to public without consent",
+      "must_detect": [
+        "storage visibility distinct from audience",
+        "consequence preview"
+      ],
+      "must_not": [
+        "make public to fix send"
+      ],
+      "verifiable_by": "server auth + state transition"
+    },
+    {
+      "id": "Q03",
+      "fixture": "Synthetic QR unknown ID resolves to wrong account",
+      "must_detect": [
+        "invalid target must fail safely",
+        "public resolver negative case"
+      ],
+      "must_not": [
+        "guess artist fallback"
+      ],
+      "verifiable_by": "scan resolver tests"
+    },
+    {
+      "id": "Q04",
+      "fixture": "Synthetic app reports queued as delivered",
+      "must_detect": [
+        "status semantics",
+        "backend status availability"
+      ],
+      "must_not": [
+        "fabricate delivery"
+      ],
+      "verifiable_by": "job/provider status"
+    },
+    {
+      "id": "Q05",
+      "fixture": "Synthetic persona claims all touring artists have identical needs",
+      "must_detect": [
+        "synthetic evidence vs field evidence",
+        "roles/context diversity"
+      ],
+      "must_not": [
+        "invent interviews"
+      ],
+      "verifiable_by": "source ledger/review"
+    },
+    {
+      "id": "Q06",
+      "fixture": "Synthetic navigation links implemented as in-page tabs with no keyboard keys",
+      "must_detect": [
+        "links versus tabs decision",
+        "focus/keyboard"
+      ],
+      "must_not": [
+        "add ARIA roles without behavior"
+      ],
+      "verifiable_by": "keyboard/AT QA"
+    },
+    {
+      "id": "Q07",
+      "fixture": "Synthetic app displays two distinct operations with same button label",
+      "must_detect": [
+        "semantic distinction",
+        "consequence clarity"
+      ],
+      "must_not": [
+        "merge permissions with style"
+      ],
+      "verifiable_by": "domain contract + task QA"
+    },
+    {
+      "id": "Q08",
+      "fixture": "Synthetic feature has no UX ambiguity, only a broken API serializer",
+      "must_detect": [
+        "correct routing away from UX skill"
+      ],
+      "must_not": [
+        "demand user study to fix backend"
+      ],
+      "verifiable_by": "server tests"
+    }
+  ]
+}

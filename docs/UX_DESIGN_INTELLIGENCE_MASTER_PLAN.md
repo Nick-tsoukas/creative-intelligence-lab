@@ -197,3 +197,49 @@ Provide `music-industry-research/` as a clearly scoped optional evidence library
 Claude UX deliverables must state: **persona + user job + venue/time context + likely interruptions + constraints + consent and permissions + resulting journey + observed vs assumed evidence**. A stylish desktop mockup is not proof an artist can complete the task backstage or a fan can scan at the venue.
 
 **No formal skill benchmarks or extra founder testing obligations now.** Record findings and let subsequent authorized real Faneqo work reveal flaws naturally. Normal feature QA remains mandatory. Do not interrupt the book-research chat or current development agents, and do not edit production.
+
+
+---
+
+## Architecture Increment 002 — Progressive Disclosure, Source Intelligence & Independent Quality (2026-11-15)
+
+**Status:** implemented in isolated `feature/elite-ux-director-v0-3-research-driven` branch, subject to package CI and merge confirmation; not installed in active Claude/Faneqo environments. **This is an incremental upgrade of this plan, NOT a restart or competing skill.** Prior Field Program 001, separate music-industry research and separate book acquisition remain intact.
+
+### External technical references audited
+- Anthropic [Claude Code Skills](https://code.claude.com/docs/en/skills): activation metadata, on-demand references, context compaction, skill location/precedence and independent evaluation.
+- [Agent Skills standard](https://agentskills.io/specification): name/description constraints, three-level disclosure and shallow bundled resources.
+- Anthropic [Effective Context Engineering](https://www.anthropic.com/research/effective-context-engineering-for-ai-agents): minimum high-signal context, selective retrieval.
+- Anthropic [Writing Effective Tools for Agents](https://www.anthropic.com/research/writing-tools-for-agents): small clear tool boundaries, useful concise outputs and evidence-driven optimization.
+- Anthropic [Demystifying Evals](https://www.anthropic.com/research/demystifying-evals-for-ai-agents): task/trial/outcome separation and independent grading.
+- Matt Pocock Skills for Real Engineers, reviewed in `research/012-AGENT-SKILLS-UX-ARCHITECTURE.md`: small composable tasks, domain modeling and public-seam verification.
+
+See [technical architecture audit](UX_SKILL_ARCHITECTURE_AUDIT_2026-11-15.md) for original-scope review and detailed tradeoffs.
+
+### Adopted decisions and high-impact modules
+1. **General skill core:** `skills/elite-ux-director/SKILL.md` remains a short, reusable reasoning protocol; activates on real UX ambiguity, not style-only/backend-only/deployment.
+2. **Progressive disclosure:** name/description always available; skill algorithm on activation; source router, cards, patterns and review templates only on need. One-card deterministic retrieval available without embedding full source documents.
+3. **Knowledge organization:** nine conditional evidence-linked decision cards, nine interaction contracts (including QR and asynchronous state), source ledger with exact original reading limits, no fabricated book knowledge.
+4. **Persona epistemology:** actor context/permissions over invented demographic stereotypes; separate reported testimony, verified field study, founder claims, product code and provisional scenarios.
+5. **Independent quality strategy:** detection of skill activation and correctness of *output* are different; prepare positive/negative fixtures and reviewer rubric, but do **not** initiate formal benchmark now. Use normal product QA and natural issue outcomes. Actual benchmark effectiveness remains UNKNOWN.
+6. **Strict domain boundary:** Faneqo-specific messaging/QR/real-case docs moved to `domain-adapters/faneqo/`, outside reusable skill install. Faneqo personas and environment research remain a separate scoped workstream; consume it later with provenance rather than overwrite.
+7. **Long-term maintenance:** package checker, GitHub Actions gate, version/rollback instructions, source confidence and field feedback log; delete rules that do not improve real outcomes.
+
+### What is preserved
+Master Product Plan's Understand → Research → Thesis → Concepts → Handoff → Implementation → Evidence → Critique cycle; existing two-role architecture (UX and Creative Design); official frontend-design implementation responsibilities; original reading dossiers; issue rubric; Faneqo adapter; real-world field program; no formal benchmarks directive.
+
+### Release and installation gate
+A newer git commit is **not** the same as Claude having learned it. A safe install/reinstall notice must identify:
+- exact commit/release on main;
+- verified package integrity and correct frontmatter;
+- path to all required reference files;
+- discovery/precedence across Windows, WSL, project and personal installations;
+- rollback backup;
+- separate optional Faneqo domain adapter;
+- explicit limitation: improvements to structure and source access may be substantial, **but effectiveness needs observations**.
+
+### Next high-leverage work (without disrupting current Faneqo development)
+- Use the upgrade in already-authorized Faneqo UX work after deliberate install; do not force a fake showcase.
+- Record actual wrong/unsafe guidance, missing domain context and surprising user behavior; do not just aggregate positive testimonials.
+- Incorporate field-persona research as project-specific evidence and keep generic UX core untouched.
+- Enrich select HCI chapter reading on error and risk, dialogue, navigation and cognition; update only the cards that benefit.
+- At a suitable later point, independently compare activation and output quality against baseline (owner defers controlled benchmarks now). No claim of proven UX excellence until supported.
