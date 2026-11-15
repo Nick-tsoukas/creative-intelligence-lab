@@ -19,12 +19,14 @@ MAIN = SKILL / "SKILL.md"
 REQUIRED = (
     "references/TASK_SOURCE_ROUTER.md",
     "references/DECISION_CARDS.md",
+    "references/HOMEPAGE_INTELLIGENCE.md",
     "references/INTERACTION_PATTERNS.md",
     "references/PERSONA_AND_CONTEXT_METHOD.md",
     "references/INDEPENDENT_EVALUATION.md",
     "references/ISSUE_RUBRIC.md",
     "references/SOURCE_LEDGER.md",
     "templates/UX_REVIEW_TEMPLATE.md",
+    "templates/HOMEPAGE_UX_PACKET.md",
     "scripts/retrieve.py",
     "EVALUATION.md",
 )
@@ -94,16 +96,23 @@ def check() -> list[str]:
             spec.loader.exec_module(module)
             cards = module.sections("card")
             patterns = module.sections("pattern")
+            homepages = module.sections("homepage")
             if list(cards) != [f"C{x:02d}" for x in range(1, 10)]:
                 errors.append("Expected decision cards C01–C09 exactly")
             if list(patterns) != [f"P{x}" for x in range(1, 10)]:
                 errors.append("Expected patterns P1–P9 exactly")
+            if list(homepages) != [f"H{x:02d}" for x in range(1, 9)]:
+                errors.append("Expected homepage decision cards H01–H08 exactly")
+            if any("## H" in text[5:] for text in homepages.values()):
+                errors.append("Retrieved homepage card includes another homepage card")
             if any("## C" in text[5:] for text in cards.values()):
                 errors.append("Retrieved decision card includes another card")
             if any("## P" in text[5:] for text in patterns.values()):
                 errors.append("Retrieved pattern includes another pattern")
         else:
             errors.append("Cannot load retrieval module")
+    if "homepage" not in fields.get("description", "").lower():
+        errors.append("Homepage activation cue missing from skill description")
     fixtures = ROOT / "quality/ux_skill_eval_cases.json"
     if fixtures.is_file():
         data = json.loads(fixtures.read_text(encoding="utf-8"))
