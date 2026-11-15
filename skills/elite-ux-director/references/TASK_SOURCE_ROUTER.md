@@ -20,7 +20,7 @@
 | “Fans can't follow during a show” | Physical environment, attention, permission, connectivity | C08 + C07 | P7 Situated mobile task | Design Justice chapter; HCI Ch3; field evidence needed |
 | “This dashboard looks generic” | Is the actual problem UX or creative direction? | C02 + C09 | Route to creative-design-director if visual thesis | Vignelli Semantics/Syntactics; Boulton Hierarchy |
 | “A screen reader can't use the dialog/tabs” | Keyboard interaction, focus, role/behavior mismatch | C06 + C08 | P8 Accessible interaction | W3C APG dialog/tabs and WCAG 2.2 |
-| “What would an agency manager do?” | Decision authority, multiple teams, competing actor jobs | C07 + C08 | P9 Multi-actor permissions | Participatory design (read); Faneqo adapter if relevant |
+| “What would an agency manager do?” | Decision authority, multiple teams, competing actor jobs | C07 + C08 | P9 Multi-actor permissions | Participatory design (read); project adapter if relevant |
 
 **Source-evidence boundary:** `sources/UX_DESIGN_BOOK_CATALOG_2026-11-15.md` has 130 candidates but 103 are **unverified** leads; it is an acquisition queue, NOT 130 learned books. `reading-dossiers/008–012` are **section-scoped**. `skills/elite-ux-director/references/SOURCE_LEDGER.md` records earlier reading of Keith, Lynch/Horton, Boulton, Pickering article examples and Nielsen articles. Do not cite unread candidate books as studied evidence.
 
