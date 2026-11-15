@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Return only the named UX decision card, interaction pattern or homepage card.
+"""Read exactly one selected UX knowledge card/pattern from a bounded local corpus.
 
-Usage:
-    python scripts/retrieve.py list [cards|patterns|homepages]
+Usage (from the installed elite-ux-director directory):
+    python scripts/retrieve.py list [cards|patterns|homepages|knowledge]
     python scripts/retrieve.py card C04
     python scripts/retrieve.py pattern P5
     python scripts/retrieve.py homepage H01
+    python scripts/retrieve.py knowledge K03
+    python scripts/retrieve.py search "visual hierarchy"
 
-This script is read-only, uses stdlib, has no network, and prints only one
-selected knowledge chunk to minimize Claude context. It is NOT retrieval AI.
+Read-only. Python standard library, no network, embedding or model calls.
+Search only suggests IDs; it does NOT read or output a whole book.
 """
 from __future__ import annotations
 
@@ -21,44 +23,77 @@ SOURCES = {
     "card": (ROOT / "references/DECISION_CARDS.md", r"C\d{2}"),
     "pattern": (ROOT / "references/INTERACTION_PATTERNS.md", r"P\d+"),
     "homepage": (ROOT / "references/HOMEPAGE_INTELLIGENCE.md", r"H\d{2}"),
+    "knowledge": (ROOT / "references/KNOWLEDGE_CARDS.md", r"K\d{2}"),
+}
+ALIASES = {
+    "cards": "card", "patterns": "pattern",
+    "homepages": "homepage", "knowledge": "knowledge"
 }
 
 
 def sections(kind: str) -> dict[str, str]:
-    file, id_pattern = SOURCES[kind]
-    text = file.read_text(encoding="utf-8")
-    headings = list(re.finditer(r"(?m)^## (" + id_pattern + r")\b[^\n]*", text))
+    """Return ordered, self-contained ## ID sections; fail for missing files."""
+    path, id_pattern = SOURCES[kind]
+    source = path.read_text(encoding="utf-8")
+    headers = list(re.finditer(r"(?m)^## (" + id_pattern + r")\b[^\n]*", source))
     result = {}
-    for i, match in enumerate(headings):
-        start = match.start()
-        end = headings[i + 1].start() if i + 1 < len(headings) else len(text)
-        part = text[start:end]
-        # Stop before appendix notes not part of the numbered card.
-        next_heading = re.search(r"(?m)^## (?!"+id_pattern+r"\b)", part[3:])
-        if next_heading:
-            part = part[:3 + next_heading.start()]
-        result[match.group(1).upper()] = part.strip()
+    for i, match in enumerate(headers):
+        end = headers[i + 1].start() if i + 1 < len(headers) else len(source)
+        chunk = source[match.start():end]
+        # The final numbered card may be followed by a non-card appendix.
+        appendix = re.search(r"(?m)^## (?!"+id_pattern+r"\b)[^\n]+", chunk[3:])
+        if appendix:
+            chunk = chunk[:3 + appendix.start()]
+        key = match.group(1).upper()
+        if key in result:
+            raise ValueError("Duplicate knowledge/card ID: " + key)
+        result[key] = chunk.strip()
     return result
 
 
+def search_words(query: str, limit: int = 6) -> list[tuple[int, str, str, str]]:
+    """Deterministically rank a few IDs by title/tags plus body match, never full text."""
+    tokens = [t for t in re.findall(r"[a-z0-9]+", query.lower()) if len(t) > 2]
+    if not tokens:
+        return []
+    out = []
+    for kind in SOURCES:
+        for key, part in sections(kind).items():
+            head = "\n".join(part.splitlines()[:3]).lower()
+            body = part.lower()
+            score = sum(4 if word in head else 1 if word in body else 0 for word in tokens)
+            if score:
+                title = part.splitlines()[0].removeprefix("## ")
+                out.append((score, kind, key, title))
+    return sorted(out, key=lambda v: (-v[0], v[1], v[2]))[:limit]
+
+
 def main(argv: list[str]) -> int:
-    if len(argv) == 1 or argv[1] in ("-h", "--help"):
+    if len(argv) < 2 or argv[1] in ("-h", "--help"):
         print(__doc__)
         return 0 if len(argv) > 1 else 2
-    action = argv[1].lower()
+    action = ALIASES.get(argv[1].lower(), argv[1].lower())
     if action == "list":
-        kinds = ["card", "pattern", "homepage"] if len(argv) < 3 else [
-            {"cards": "card", "patterns": "pattern", "homepages": "homepage"}.get(argv[2], argv[2])
-        ]
-        if not all(k in SOURCES for k in kinds):
-            print("Expected list cards, list patterns, or list homepages", file=sys.stderr)
+        if len(argv) > 3:
+            print("Expected list [cards|patterns|homepages|knowledge]", file=sys.stderr)
+            return 2
+        kinds = [ALIASES.get(argv[2].lower(), argv[2].lower())] if len(argv) == 3 else list(SOURCES)
+        if any(kind not in SOURCES for kind in kinds):
+            print("Unknown list category", file=sys.stderr)
             return 2
         for kind in kinds:
-            for key, section in sections(kind).items():
-                print(section.splitlines()[0])
+            for value in sections(kind).values():
+                print(value.splitlines()[0])
+        return 0
+    if action == "search":
+        if len(argv) < 3:
+            print("Expected a quoted search phrase", file=sys.stderr)
+            return 2
+        for score, kind, key, title in search_words(" ".join(argv[2:])):
+            print(f"{kind} {key} | {title} | rank={score}")
         return 0
     if action not in SOURCES or len(argv) != 3:
-        print("Expected card Cxx, pattern Px, or homepage Hxx (or list)", file=sys.stderr)
+        print("Expected card Cxx, pattern Px, homepage Hxx or knowledge Kxx", file=sys.stderr)
         return 2
     key = argv[2].upper()
     found = sections(action)
