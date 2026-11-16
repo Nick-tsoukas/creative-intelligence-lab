@@ -49,7 +49,11 @@ def build(
     technical = screen.inventory(repo, route, includes or [], manifest)
     taste_packet = taste.render_brief(taste.make_brief(workspace / "creative-judgment", project, 6))
     if audit_id:
-        vision = visual.report(workspace, project, visual.safe_id(audit_id))
+        audit = visual.load_audit(workspace, project, visual.safe_id(audit_id))
+        _, screenshot_path = visual.capture(workspace, project, audit["screen_id"])
+        vision = ("Screenshot pixels (OPEN IN A VISION-CAPABLE VIEWER, not yet opened by this tool): "
+                  + str(screenshot_path) + "\n\n"
+                  + visual.report(workspace, project, audit_id))
     else:
         vision = "No reviewed screenshot audit attached. Do not claim a visual examination."
     atlas = optional_atlas_packet(workspace, project, atlas_packet)
