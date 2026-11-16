@@ -137,3 +137,11 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added optional study protocol, visual analysis, source/evidence schema, cross-book method, source-to-task index and nine conditional, citation-grounded K-cards without adding entire books to the core prompt.
 - Upgraded deterministic retrieval to `knowledge K01–K09` and bounded keyword ID search; preserved existing C/P/H modes. Strengthened static packaging/ingestion checks and prepared 26 activation/16 quality fixtures (NOT RUN).
 - Integrated this into existing UX master plan and provided rollback-conscious Windows installation guide. No Faneqo code, production deployment, current Claude installation, or user data changed. **No claim of proven skill efficacy or model weight updates.**
+
+
+## 2026-11-15 — Masterpiece Atlas Visual Intelligence / v5.0-safe additive upgrade
+- Read founder's v5.0 art-direction expansion handoff. Audited current accessible GitHub repo: creative-design-director alpha v0.3 and elite-ux-director v0.5, **not** a verified copy of claimed newer v5.0. Existing skill entrypoints **unchanged**, no downgrade/install.
+- Added eight exact-work, sourced preview-observed studies (Vermeer, Hokusai, Hopper, Scher, Albers, Ando, Gordon Parks, Reid Miles) with museum/creator references, visible-vs-interpreted distinction, rights, anti-clone transfer, counterexample and original exercise.
+- Added a small JSON Masterpiece Atlas and Python standard-library topic/ID retrieval, static CI provenance checks, eight conditional AD art-direction reasoning moves and a concise three-concept design packet.
+- Separated Faneqo music-domain visual language into `domain-adapters/faneqo/`. Updated existing art-direction program, master plans, visual registry, status and v5.0 integration audit. Book research track not restarted, no acquired/fully studied book counts inflated.
+- **Limitations:** image previews, not full original visual studies; no actual Faneqo homepage implementation, screenshot/browser QA, user testing or measured UX advantage. All external artwork remains linked, not copied.
