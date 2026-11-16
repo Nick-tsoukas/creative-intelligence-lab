@@ -99,7 +99,7 @@ def main() -> int:
             assert page.locator(".hero-cta").is_visible()
             assert not page.locator(".mode-buttons").is_visible(), "Inert controls visible with JS disabled"
             page.locator(".hero-cta").click()
-            assert page.evaluate("location.hash") == "#concept"
+            assert page.url.endswith("#concept")
             static.close()
         finally:
             browser.close()
