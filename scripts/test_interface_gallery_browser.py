@@ -67,9 +67,9 @@ def run():
                                          viewport={"width": 390, "height": 844})
             page = static.new_page()
             page.goto(PAGE)
-            # A dedicated accessible noscript link index will be required if
-            # the research gallery itself becomes a core no-JS application.
             assert page.locator("h1").is_visible()
+            assert page.locator(".fallback-links a").count() == 10
+            assert page.locator(".fallback-links a").first.is_visible()
             page.close()
             static.close()
         finally:
