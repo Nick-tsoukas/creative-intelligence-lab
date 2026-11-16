@@ -52,7 +52,7 @@ def line_number(source: str, index: int) -> int:
 
 def safe_path(value: str) -> str | None:
     """Only static API-like routes: deliberately skip query strings and dynamic URLs."""
-    if not value.startswith("/") or "//" in value or any(c in value for c in ("?", "#", "$", "{", "}", "%")):
+    if not value.startswith("/") or value.endswith("/") or "//" in value or any(c in value for c in ("?", "#", "$", "{", "}", "%")):
         return None
     # Static route paths are not secrets, but only show routes, not response bodies.
     return value
@@ -66,6 +66,8 @@ def scan_file(root: Path, path: Path) -> dict:
         nearby = source[match.end():match.end() + 260]
         url = STATIC_URL.search(nearby)
         endpoint = safe_path(url.group("url")) if url and url.start() < 130 else None
+        if url and nearby[url.end():].lstrip().startswith("+"):
+            endpoint = None  # A literal concatenated with runtime values is not a static endpoint.
         api.append({
             "function": match.group(1), "static_path": endpoint,
             "line": line_number(source, match.start()),
