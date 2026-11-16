@@ -82,3 +82,13 @@ Single source of project truth is private local JSON files. No global SQLite dat
 - No changes to `skills/elite-ux-director/SKILL.md` or `skills/creative-design-director/SKILL.md` because the separately described v5.0 location is unverified.
 
 **Core principle:** quality requires deep inspection and repeated decisions; lightweight infrastructure exists only to make that more repeatable.
+
+## 2026-11-16 — Increment 002: source-observed creative research and original visual gallery
+
+Added exactly 60 deduplicated research targets across the six intended categories (10 web, 10 mobile, 10 music, 15 component, 10 motion, 5 experimental). Ten now link to explicitly **PREVIEW_OBSERVED** specific works (RCA, Wax Poetics, Culture.pl, HEM, Gaga, Mobbin, Tiptap, Apple Photos, Uppy, Spotify); **50 remain QUEUED** and must not be presented as studied. Text/image previews were actually inspected but no deep current product flow, gestures, user tests or mobile browser behavior claimed. Original and third-party screenshot pixels are **not redistributed**.
+
+Original static CSS visual browser `interface-atlas/gallery.html` is self-contained, task searchable, keyboard-friendly and has outbound original image/source links and a no-JS link list. Deterministic Python builder, bounded CLI query/compare, source integrity tests and Chromium responsive tests prevent stale research UI and layout drift.
+
+`pilots/002-faneqo-night-art-research/README.md` maps eight relevant studied mechanisms into three **different** Night artistic premises (editorial journal, sound-first Encore Room, collectible Night Edition), including honest media provenance and safe editing/QR/share contracts. No Faneqo code changes, owner direction selection, final mockup or efficacy benchmark. `quality/BLIND_ART_DIRECTION_COMPARISON_PROTOCOL.md` specifies the future fair same-model baseline challenge.
+
+**Architecture remains small:** all JSON/HTML/stdlib, offline visual browsing, no vector DB, paid connectors, screenshot scraping or active worker. Future agent installation only after inspecting the actual advanced v5.0 source; older Lab skill entrypoints remain unchanged.
