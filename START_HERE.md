@@ -36,3 +36,7 @@ Claude Code is busy with unrelated Faneqo work; do **not** initiate skill execut
 
 ## Current art-direction practice (2026-11-15)
 For advanced visual design **without changing old skill versions**, see `handbook/VISUAL_DIRECTION_TASK_ROUTER.md`, `visual-library/masterpiece-atlas/README.md`, and the **original browser-ready** `experiments/004-visual-grammar-studio/index.html`. Research source limits: `research/015` and `research/016`; real browser QA: `scripts/test_visual_grammar_studio.py`. The claimed separate v5.0 skill's location remains unverified—read `docs/V5_ART_DIRECTION_INTEGRATION_AUDIT.md` before integration. Do not copy any v0.x entrypoint over a more advanced installation.
+
+
+## Private visual design workspace — 2026-11-16
+For per-project screenshots, a visual comparison board, evidence-labeled UX findings, exceptional design source links and independent three-premise art direction, start with `docs/PROJECT_VISUAL_WORKSPACE_QUICKSTART.md`. The portable source catalog is `interface-atlas/` and the local-only CLI is `scripts/visual_workspace.py` (stdlib). Private media is **never** to be committed; `.cil-private/` is ignored. Do not use the repository's old skill files to overwrite an unverified separate v5.0 installation.
