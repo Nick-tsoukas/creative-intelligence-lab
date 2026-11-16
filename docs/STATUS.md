@@ -213,3 +213,9 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Original self-contained `interface-atlas/gallery.html` with ten CSS **interpretive schematics**, task search and filters, linked original screenshot previews at external hosts, disclosure of caveats and no-JS fallback. No third-party image bytes hosted; viewer local/offline except for clicking outbound source links.
 - `scripts/query_interface_atlas.py`, reproducible builder, static provenance/integrity tests and real GitHub-hosted Chromium gallery smoke; CI results should be checked at PR merge. Faneqo Night Recap original art-direction pilot brief and unbiased comparison protocol prepared, **not implemented or measured in production**.
 - Protected separately reported v5.0 skill. Do not overwrite with older repo skill entrypoints or imply installation/deployment.
+
+## 2026-11-16 — Design Packet Router v0.3
+
+- New optional `scripts/prepare_design_packet.py` offers one compact, source-grounded project design packet rather than asking the model to ingest an entire research library. Selects 1–4 preview-observed cases and up to six imported screenshot paths/eight scoped findings, bounded to 16,000 characters; saving is private and non-overwriting.
+- It is **not** an image model, screenshot reader, model retraining, browser automation, owner-approved design, or production change. Real visual inspection and truthful current product behavior remain mandatory for downstream agents.
+- New `scripts/test_design_packet.py` and GitHub CI; check exact PR run for validation result. v5.0 installed source still unverified and not touched.
