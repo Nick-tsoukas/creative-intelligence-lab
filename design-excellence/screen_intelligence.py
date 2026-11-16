@@ -160,7 +160,7 @@ def inventory(root: Path, screen: str, includes: list[str], manifest_path: str |
 def render_markdown(data: dict) -> str:
     lines = [
         "# Screen Intelligence — " + data["screen"], "",
-        "**Static clues are not verified runtime behavior.** No code or endpoint was executed.", "",
+        "**All scanned callsites and symbols are STATIC_HINT_NOT_VERIFIED.** No code or endpoint was executed.", "",
         "## Existing source and UI interaction clues",
     ]
     for file in data["static_hints"]:
