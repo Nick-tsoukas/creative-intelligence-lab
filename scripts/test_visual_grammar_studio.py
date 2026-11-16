@@ -52,7 +52,7 @@ def inspect(page, mode: str, width: int) -> None:
     assert page.locator("body").get_attribute("data-mode") == "editorial"
     page.locator('button[data-select-mode="signal"]').click()
     assert page.locator("body").get_attribute("data-mode") == "signal"
-    assert page.locator("#main-headline").inner_text().strip() == "The night stays with you."
+    assert page.locator("#main-headline").evaluate("(el) => el.textContent.replace(/\\s+/g, ' ').trim()") == "The night stays with you."
 
 
 def stress(page) -> None:
