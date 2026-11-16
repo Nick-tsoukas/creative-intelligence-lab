@@ -1,0 +1,78 @@
+name: Project Visual Memory and Interface Atlas
+
+on:
+  pull_request:
+    paths:
+      - 'interface-atlas/**'
+      - 'scripts/visual_workspace.py'
+      - 'scripts/test_visual_workspace.py'
+      - 'scripts/test_visual_board_browser.py'
+      - 'docs/PROJECT_VISUAL_MEMORY_MASTER_PLAN.md'
+      - 'docs/PROJECT_VISUAL_WORKSPACE_QUICKSTART.md'
+      - 'templates/PROJECT_VISUAL_REVIEW.md'
+      - '.gitignore'
+      - '.github/workflows/project-visual-memory.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'interface-atlas/**'
+      - 'scripts/visual_workspace.py'
+      - 'scripts/test_visual_workspace.py'
+      - 'scripts/test_visual_board_browser.py'
+      - '.github/workflows/project-visual-memory.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  private-data-and-cli:
+    name: Offline stdlib integration tests + private data gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax and integration checks
+        run: |
+          python -m py_compile scripts/visual_workspace.py scripts/test_visual_workspace.py
+          python -m unittest discover -s scripts -p test_visual_workspace.py -v
+          python scripts/visual_workspace.py find --query "Awwwards"
+          python scripts/visual_workspace.py find --query "mobile upload"
+      - name: Verify private captures are never tracked
+        run: |
+          if git ls-files | grep -q '^\.cil-private/'; then
+            echo "::error::Private project screenshots are tracked by Git"
+            exit 1
+          fi
+          test -f .gitignore
+          grep -qx '.cil-private/' .gitignore
+          echo "PASS: private visual assets remain gitignored"
+
+  rendered-board:
+    name: Real Chromium visual-board smoke (synthetic pixels)
+    needs: private-data-and-cli
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      VISUAL_BOARD_SCREENSHOTS: synthetic-visual-board-screenshots
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated Playwright Chromium (GitHub runner only)
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.62.0
+          python -m playwright install --with-deps chromium
+      - name: Verify actual rendered local project board
+        run: python scripts/test_visual_board_browser.py
+      - name: Upload synthetic-only screenshot artifacts for optional human critique
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-visual-memory-browser-screenshots
+          path: synthetic-visual-board-screenshots
+          retention-days: 7
+          if-no-files-found: warn
