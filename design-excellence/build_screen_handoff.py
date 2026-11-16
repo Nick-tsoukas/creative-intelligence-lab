@@ -42,11 +42,12 @@ def optional_atlas_packet(workspace: Path, project: str, packet: str | None) -> 
 def build(
     workspace: Path, repo: Path, route: str, project: str,
     audit_id: str | None = None, manifest: str | None = None,
-    includes: list[str] | None = None, atlas_packet: str | None = None
+    includes: list[str] | None = None, atlas_packet: str | None = None,
+    backend_root: Path | None = None, schema_paths: list[str] | None = None
 ) -> str:
     project = visual.safe_id(project)
     workspace = workspace.resolve()
-    technical = screen.inventory(repo, route, includes or [], manifest)
+    technical = screen.inventory(repo, route, includes or [], manifest, backend_root, schema_paths)
     taste_packet = taste.render_brief(taste.make_brief(workspace / "creative-judgment", project, 6))
     if audit_id:
         audit = visual.load_audit(workspace, project, visual.safe_id(audit_id))
@@ -104,6 +105,8 @@ def main(argv=None) -> int:
     p.add_argument("--project", required=True)
     p.add_argument("--audit", help="ID of a reviewed visual audit, optional")
     p.add_argument("--manifest", help="Explicit data/permission manifest, optional")
+    p.add_argument("--backend-root", type=Path, help="Optional checkout containing selected Strapi schemas")
+    p.add_argument("--schema", action="append", default=[], help="Explicit relative Strapi schema.json (max 6)")
     p.add_argument("--include", action="append", default=[], help="Selected source file")
     p.add_argument("--atlas-packet", help="Optional existing private research-packet ID")
     p.add_argument("--save", help="Optional private output name; never overwrites")
@@ -111,7 +114,8 @@ def main(argv=None) -> int:
     try:
         root = args.workspace.expanduser().resolve()
         content = build(root, args.repo_root, args.screen, args.project, args.audit,
-                        args.manifest, args.include, args.atlas_packet)
+                        args.manifest, args.include, args.atlas_packet,
+                        args.backend_root, args.schema)
         if args.save:
             name = visual.safe_id(args.save)
             path = root / "design-hand-offs" / visual.safe_id(args.project) / (name + ".md")
