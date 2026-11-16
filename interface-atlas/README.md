@@ -32,3 +32,21 @@ The search returns brief, bounded, evidence-labeled source links. A research age
 
 ## Rights & credentials
 Awwwards, Mobbin and Refero each have their own terms and entitlements. No bypass, mass scraping, exporting screenshots or credential harvesting. A URL is a locator, not a reuse grant. Official Nuxt UI, Reka UI and W3C design patterns may provide implementation-friendly analogues, still subject to the source's license and semantic requirements.
+
+## Increment 002 — Actual preview-observed cases + original visual browser (2026-11-16)
+
+The source-hub catalog (`catalog.json`, 20 general library/doc sources) remains separate from **60 individual research targets** in `research-targets.json`. Exactly ten specific digital works/screens have been visually inspected *at accessible preview resolution*: `observed-cases.json` EI-001..EI-010, with exact source image URL, direct observation, cited work source, transfer hypothesis, counterexample, rights and time/interaction limits. The other 50 targets are `QUEUED_FOR_RESEARCH`—not audited examples, nor verified as current.
+
+**Visual browsing:** open `gallery.html` directly in your browser. Its ten original CSS diagrams convey different visual *ideas* and link to the actual reference preview and original work. The gallery does not hotlink, embed or host copyrighted screenshot pixels; links are outbound. Click "Actual observation, limitations & application" to read evidence. Filter by web, mobile, component or music; local search requires no server/API. JavaScript-disabled readers still get ten source links.
+
+**Claude/ChatGPT research retrieval:**
+```bash
+python scripts/query_interface_atlas.py search "music gallery"
+python scripts/query_interface_atlas.py show EI-002
+python scripts/query_interface_atlas.py compare EI-002 EI-008
+python scripts/query_interface_atlas.py targets "audio"
+python scripts/build_interface_gallery.py --check
+```
+Retrieve 2–4 relevant specific studies for a substantial design task, not the whole 60. Never convert `PREVIEW_OBSERVED` into "flow tested"; choose a real app browser session for actual behavior. Contribute specific observations and failures to the current project workspace, not a fictional global user-study score.
+
+**Pilot:** `../pilots/002-faneqo-night-art-research/README.md` uses actual observed source mechanisms to develop three original Night Recap art directions; no Faneqo application code modified. **Fair comparison protocol:** `../quality/BLIND_ART_DIRECTION_COMPARISON_PROTOCOL.md`, not yet run.
