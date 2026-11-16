@@ -75,6 +75,31 @@ import useComposer from '~/composables/useComposer'
         self.assertIn("Production authorization unknown", result["unknowns"])
         self.assertIn("Never imply", si.render_markdown(result))
 
+    def test_explicit_strapi_schema_has_field_shapes_not_permission_claims(self):
+        backend = self.root / "backend"
+        schema = backend / "src" / "api" / "night" / "content-types" / "night" / "schema.json"
+        schema.parent.mkdir(parents=True)
+        schema.write_text(json.dumps({
+            "info": {"displayName": "Show Recap"},
+            "attributes": {
+                "title": {"type": "string", "required": True},
+                "photos": {"type": "media", "multiple": True},
+                "band": {"type": "relation", "relation": "manyToOne", "target": "api::band.band"}
+            }
+        }), encoding="utf-8")
+        data = si.inventory(self.root, "pages/night.vue", [], backend_root=backend,
+                            schema_paths=["src/api/night/content-types/night/schema.json"])
+        self.assertEqual(data["backend_schema_hints"][0]["display_name"], "Show Recap")
+        self.assertEqual([x["name"] for x in data["backend_schema_hints"][0]["fields"]],
+                         ["band", "photos", "title"])
+        self.assertEqual(data["backend_schema_hints"][0]["fields"][1]["type"], "media")
+        self.assertIn("NOT evidence of API responses", si.render_markdown(data).replace(
+            "No verified API response/permission from schema alone.",
+            "NOT evidence of API responses"))
+        with self.assertRaises(ValueError):
+            si.inventory(self.root, "pages/night.vue", [],
+                         schema_paths=["src/api/night/content-types/night/schema.json"])
+
     def test_reject_mismatched_manifest(self):
         path = self.root / "wrong.json"
         path.write_text(json.dumps({"schema": 1, "route": "other.vue", "facts": [], "unknowns": [], "constraints": []}))
