@@ -39,6 +39,7 @@ import useComposer from '~/composables/useComposer'
         self.assertIn("useRoute", hints["composables"])
         self.assertIn("click", hints["ui_events"])
         self.assertIn("useFetch", [a["function"] for a in hints["api_calls"]])
+        self.assertIn("$fetch", [a["function"] for a in hints["api_calls"]])
         self.assertIn("/api/show-recaps", [a["static_path"] for a in hints["api_calls"]])
         self.assertIn(None, [a["static_path"] for a in hints["api_calls"]])
         self.assertNotIn("don't-leak", si.render_markdown(result))
