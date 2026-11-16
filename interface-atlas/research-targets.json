@@ -1,0 +1,1147 @@
+{
+  "version": 1,
+  "created_on": "2026-11-16",
+  "description": "60 prioritized targets, not 60 deeply inspected applications; 10 link to actually observed screenshot previews. Exact work URLs require verification when status QUEUED.",
+  "targets": [
+    {
+      "id": "T-001",
+      "category": "web",
+      "title": "RCA Records — editorial release cards",
+      "url": "https://www.awwwards.com/sites/rca-records",
+      "tags": [
+        "music",
+        "editorial",
+        "carousel",
+        "photography"
+      ],
+      "case_id": "EI-001",
+      "status": "PREVIEW_OBSERVED",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "SEE_LINKED_STUDY",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-002",
+      "category": "web",
+      "title": "Wax Poetics — music magazine design",
+      "url": "https://wonderlandams.com/works/wax-poetics",
+      "tags": [
+        "music",
+        "editorial",
+        "typography",
+        "photography"
+      ],
+      "case_id": "EI-002",
+      "status": "PREVIEW_OBSERVED",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "SEE_LINKED_STUDY",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-003",
+      "category": "web",
+      "title": "Polish Electronic Music — typographic storytelling",
+      "url": "https://www.awwwards.com/inspiration/a-foreigners-guide-to-polish-electronic-music-culture-pl-1",
+      "tags": [
+        "music",
+        "typography",
+        "composition",
+        "hero"
+      ],
+      "case_id": "EI-003",
+      "status": "PREVIEW_OBSERVED",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "SEE_LINKED_STUDY",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-004",
+      "category": "web",
+      "title": "HEM Records — experimental music player",
+      "url": "https://dinehq.com/work/hem/",
+      "tags": [
+        "music",
+        "player",
+        "mobile",
+        "identity"
+      ],
+      "case_id": "EI-004",
+      "status": "PREVIEW_OBSERVED",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "SEE_LINKED_STUDY",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-005",
+      "category": "web",
+      "title": "Lady Gaga — artist digital home",
+      "url": "https://www.yung.studio/work/lady-gaga",
+      "tags": [
+        "music",
+        "artist",
+        "hero",
+        "photography"
+      ],
+      "case_id": "EI-005",
+      "status": "PREVIEW_OBSERVED",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "SEE_LINKED_STUDY",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-006",
+      "category": "web",
+      "title": "Awwwards — visual web selection",
+      "url": "https://www.awwwards.com/",
+      "tags": [
+        "creative",
+        "editorial",
+        "web",
+        "experimental"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-007",
+      "category": "web",
+      "title": "SiteInspire — editorial website selection",
+      "url": "https://www.siteinspire.com/",
+      "tags": [
+        "typography",
+        "editorial",
+        "web",
+        "layout"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-008",
+      "category": "web",
+      "title": "Godly — unconventional website collection",
+      "url": "https://godly.website/",
+      "tags": [
+        "experimental",
+        "web",
+        "motion",
+        "interaction"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-009",
+      "category": "web",
+      "title": "Lapa Ninja — polished landing-page collection",
+      "url": "https://www.lapa.ninja/",
+      "tags": [
+        "landing",
+        "copy",
+        "conversion",
+        "hero"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-010",
+      "category": "web",
+      "title": "Land-book — website design selection",
+      "url": "https://land-book.com/",
+      "tags": [
+        "homepage",
+        "web",
+        "layout",
+        "hero"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-011",
+      "category": "mobile",
+      "title": "Apple Photos — Memories mobile experience",
+      "url": "https://support.apple.com/en-in/guide/iphone/iphd4f70e68f/ios",
+      "tags": [
+        "mobile",
+        "gallery",
+        "memories",
+        "curation"
+      ],
+      "case_id": "EI-008",
+      "status": "PREVIEW_OBSERVED",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "SEE_LINKED_STUDY",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-012",
+      "category": "mobile",
+      "title": "Spotify — Now Playing mobile layout example",
+      "url": "https://www.pi.fyi/rec/cmhcpd6w105c0o63tclww61fz",
+      "tags": [
+        "mobile",
+        "player",
+        "music",
+        "audio"
+      ],
+      "case_id": "EI-010",
+      "status": "PREVIEW_OBSERVED",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "SEE_LINKED_STUDY",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-013",
+      "category": "mobile",
+      "title": "Mobbin — shipped mobile screen/flow research",
+      "url": "https://mobbin.com/",
+      "tags": [
+        "mobile",
+        "flow",
+        "search",
+        "components"
+      ],
+      "case_id": "EI-006",
+      "status": "PREVIEW_OBSERVED",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "SEE_LINKED_STUDY",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-014",
+      "category": "mobile",
+      "title": "Refero — real iOS and web app examples",
+      "url": "https://refero.design/",
+      "tags": [
+        "mobile",
+        "flow",
+        "editor",
+        "upload"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-015",
+      "category": "mobile",
+      "title": "Page Flows — annotated journeys",
+      "url": "https://pageflows.com/",
+      "tags": [
+        "mobile",
+        "flow",
+        "video",
+        "interaction"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-016",
+      "category": "mobile",
+      "title": "Apple Human Interface Guidelines — mobile hierarchy",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/",
+      "tags": [
+        "mobile",
+        "ios",
+        "accessibility",
+        "navigation"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-017",
+      "category": "mobile",
+      "title": "Material Design 3 — mobile navigation",
+      "url": "https://m3.material.io/",
+      "tags": [
+        "mobile",
+        "android",
+        "navigation",
+        "components"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-018",
+      "category": "mobile",
+      "title": "Headspace — guided experience flow",
+      "url": "https://www.headspace.com/",
+      "tags": [
+        "mobile",
+        "onboarding",
+        "calm",
+        "wellness"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-019",
+      "category": "mobile",
+      "title": "Strava — social activity flow",
+      "url": "https://www.strava.com/",
+      "tags": [
+        "mobile",
+        "social",
+        "feed",
+        "activity"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-020",
+      "category": "mobile",
+      "title": "Duolingo — lesson and progress flow",
+      "url": "https://www.duolingo.com/",
+      "tags": [
+        "mobile",
+        "progress",
+        "engagement",
+        "onboarding"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-021",
+      "category": "music",
+      "title": "Bandcamp — artist album page and player",
+      "url": "https://bandcamp.com/",
+      "tags": [
+        "artist",
+        "music",
+        "audio",
+        "commerce"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-022",
+      "category": "music",
+      "title": "SoundCloud — creator profile and audio",
+      "url": "https://soundcloud.com/",
+      "tags": [
+        "music",
+        "audio",
+        "creator",
+        "comments"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-023",
+      "category": "music",
+      "title": "Spotify for Artists — musician dashboard",
+      "url": "https://artists.spotify.com/",
+      "tags": [
+        "artist",
+        "analytics",
+        "media",
+        "utility"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-024",
+      "category": "music",
+      "title": "Apple Music for Artists — audience and releases",
+      "url": "https://artists.apple.com/",
+      "tags": [
+        "artist",
+        "music",
+        "analytics",
+        "media"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-025",
+      "category": "music",
+      "title": "TIDAL — music curation and artist discovery",
+      "url": "https://tidal.com/",
+      "tags": [
+        "music",
+        "curation",
+        "album",
+        "player"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-026",
+      "category": "music",
+      "title": "COLORS — music performance presentation",
+      "url": "https://colorsxstudios.com/",
+      "tags": [
+        "music",
+        "performance",
+        "video",
+        "photography"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-027",
+      "category": "music",
+      "title": "Boiler Room — performance stream context",
+      "url": "https://boilerroom.tv/",
+      "tags": [
+        "music",
+        "livestream",
+        "event",
+        "video"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-028",
+      "category": "music",
+      "title": "NPR Tiny Desk — intimate performance archive",
+      "url": "https://www.npr.org/series/tiny-desk-concerts/",
+      "tags": [
+        "music",
+        "performance",
+        "archive",
+        "story"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-029",
+      "category": "music",
+      "title": "Resident Advisor — event editorial & ticketing",
+      "url": "https://ra.co/",
+      "tags": [
+        "music",
+        "events",
+        "tickets",
+        "editorial"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-030",
+      "category": "music",
+      "title": "Songkick — artist and venue event discovery",
+      "url": "https://www.songkick.com/",
+      "tags": [
+        "music",
+        "events",
+        "concerts",
+        "discovery"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-031",
+      "category": "component",
+      "title": "Tiptap — authoring toolbar and editor",
+      "url": "https://tiptap.dev/product/editor",
+      "tags": [
+        "component",
+        "editor",
+        "rich-text",
+        "toolbar"
+      ],
+      "case_id": "EI-007",
+      "status": "PREVIEW_OBSERVED",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "SEE_LINKED_STUDY",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-032",
+      "category": "component",
+      "title": "Uppy Dashboard — media upload",
+      "url": "https://uppy.io/",
+      "tags": [
+        "component",
+        "upload",
+        "media",
+        "progress"
+      ],
+      "case_id": "EI-009",
+      "status": "PREVIEW_OBSERVED",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "SEE_LINKED_STUDY",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-033",
+      "category": "component",
+      "title": "Uppy Vue — headless uploader building blocks",
+      "url": "https://uppy.io/docs/vue/",
+      "tags": [
+        "component",
+        "upload",
+        "nuxt",
+        "vue"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-034",
+      "category": "component",
+      "title": "Nuxt UI — Vue component system",
+      "url": "https://ui.nuxt.com/",
+      "tags": [
+        "component",
+        "nuxt",
+        "vue",
+        "forms"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-035",
+      "category": "component",
+      "title": "Reka UI — accessible Vue primitives",
+      "url": "https://reka-ui.com/",
+      "tags": [
+        "component",
+        "vue",
+        "dialog",
+        "focus"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-036",
+      "category": "component",
+      "title": "WAI ARIA APG — dialog keyboard interaction",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "tags": [
+        "component",
+        "dialog",
+        "accessibility",
+        "focus"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-037",
+      "category": "component",
+      "title": "WAI ARIA APG — tabs keyboard interaction",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/",
+      "tags": [
+        "component",
+        "tabs",
+        "accessibility",
+        "keyboard"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-038",
+      "category": "component",
+      "title": "Radix Primitives — well-documented states",
+      "url": "https://www.radix-ui.com/primitives",
+      "tags": [
+        "component",
+        "focus",
+        "interaction",
+        "patterns"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-039",
+      "category": "component",
+      "title": "PhotoSwipe — image lightbox system",
+      "url": "https://photoswipe.com/",
+      "tags": [
+        "component",
+        "gallery",
+        "lightbox",
+        "zoom"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-040",
+      "category": "component",
+      "title": "WaveSurfer — waveform audio display",
+      "url": "https://wavesurfer.xyz/",
+      "tags": [
+        "component",
+        "audio",
+        "waveform",
+        "player"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-041",
+      "category": "component",
+      "title": "Video.js — accessible video player research",
+      "url": "https://videojs.com/",
+      "tags": [
+        "component",
+        "video",
+        "player",
+        "accessibility"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-042",
+      "category": "component",
+      "title": "VueUse — Vue composition utilities",
+      "url": "https://vueuse.org/",
+      "tags": [
+        "component",
+        "vue",
+        "composition",
+        "utility"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-043",
+      "category": "component",
+      "title": "Component Gallery — comparative system references",
+      "url": "https://component.gallery/",
+      "tags": [
+        "component",
+        "patterns",
+        "design-system",
+        "search"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-044",
+      "category": "component",
+      "title": "Headless UI — accessible controls",
+      "url": "https://headlessui.com/",
+      "tags": [
+        "component",
+        "vue",
+        "dialog",
+        "menu"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-045",
+      "category": "component",
+      "title": "Web Share API — browser sharing contract",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share",
+      "tags": [
+        "component",
+        "sharing",
+        "web-api",
+        "permissions"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-046",
+      "category": "motion",
+      "title": "GSAP — interactive motion research",
+      "url": "https://gsap.com/",
+      "tags": [
+        "motion",
+        "animation",
+        "sequence",
+        "scroll"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-047",
+      "category": "motion",
+      "title": "Anime.js — motion examples",
+      "url": "https://animejs.com/",
+      "tags": [
+        "motion",
+        "animation",
+        "typography",
+        "sequence"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-048",
+      "category": "motion",
+      "title": "Motion — performant web animation patterns",
+      "url": "https://motion.dev/",
+      "tags": [
+        "motion",
+        "animation",
+        "interaction",
+        "performance"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-049",
+      "category": "motion",
+      "title": "LottieFiles — motion systems & animation assets",
+      "url": "https://lottiefiles.com/",
+      "tags": [
+        "motion",
+        "icon",
+        "feedback",
+        "animation"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-050",
+      "category": "motion",
+      "title": "CSS Scroll-Driven Animation — platform guide",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations",
+      "tags": [
+        "motion",
+        "scroll",
+        "css",
+        "performance"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-051",
+      "category": "motion",
+      "title": "Apple HIG — motion and transitions",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/",
+      "tags": [
+        "motion",
+        "mobile",
+        "ios",
+        "reduced-motion"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-052",
+      "category": "motion",
+      "title": "Material 3 — motion behavior",
+      "url": "https://m3.material.io/",
+      "tags": [
+        "motion",
+        "android",
+        "interaction",
+        "transition"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-053",
+      "category": "motion",
+      "title": "Page Flows — recorded interaction sequences",
+      "url": "https://pageflows.com/",
+      "tags": [
+        "motion",
+        "flow",
+        "screen-recordings",
+        "interaction"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-054",
+      "category": "motion",
+      "title": "Webflow — interaction design reference",
+      "url": "https://webflow.com/",
+      "tags": [
+        "motion",
+        "web",
+        "interaction",
+        "scroll"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-055",
+      "category": "motion",
+      "title": "Awwwards — experimental interaction research",
+      "url": "https://www.awwwards.com/",
+      "tags": [
+        "motion",
+        "experimental",
+        "web",
+        "art"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-056",
+      "category": "experimental",
+      "title": "Immersive Garden — interactive creative studio",
+      "url": "https://www.awwwards.com/",
+      "tags": [
+        "experimental",
+        "3d",
+        "interactive",
+        "art-direction"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-057",
+      "category": "experimental",
+      "title": "Shopify Editions — visual product storytelling",
+      "url": "https://www.shopify.com/editions",
+      "tags": [
+        "experimental",
+        "editorial",
+        "storytelling",
+        "web"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-058",
+      "category": "experimental",
+      "title": "Resn — experimental digital work",
+      "url": "https://resn.co.nz/",
+      "tags": [
+        "experimental",
+        "web",
+        "3d",
+        "creative"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-059",
+      "category": "experimental",
+      "title": "Active Theory — immersive digital experiences",
+      "url": "https://activetheory.com/",
+      "tags": [
+        "experimental",
+        "interactive",
+        "web",
+        "3d"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    },
+    {
+      "id": "T-060",
+      "category": "experimental",
+      "title": "CSS Design Awards — experimental selection",
+      "url": "https://www.cssdesignawards.com/",
+      "tags": [
+        "experimental",
+        "web",
+        "award",
+        "typography"
+      ],
+      "case_id": null,
+      "status": "QUEUED_FOR_RESEARCH",
+      "source_url_review": "SOURCE_LINK_ONLY_UNLESS_CASE_ATTACHED",
+      "visual_evidence": "NOT_INSPECTED",
+      "flow_tested": false,
+      "rights": "Link only; do not redistribute copyrighted screen pixels",
+      "quality_hypothesis": "Investigate original composition, interaction mechanics, counterexamples, accessibility and relevance before adapting."
+    }
+  ]
+}
