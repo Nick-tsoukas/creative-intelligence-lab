@@ -81,7 +81,8 @@ def capture(workspace: Path, project: str, screen: str) -> tuple[dict, Path]:
         raise ValueError("Captured image unavailable or unsafe")
     if image.stat().st_size > MAX_IMAGE:
         raise ValueError("Captured image exceeds 24MB")
-    blob_hash = hashlib.file_digest(image.open("rb"), "sha256").hexdigest()
+    with image.open("rb") as stream:
+        blob_hash = hashlib.file_digest(stream, "sha256").hexdigest()
     if blob_hash != c.get("sha256"):
         raise ValueError("Captured image hash mismatch; refresh original capture")
     return c, image
