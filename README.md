@@ -117,3 +117,11 @@ The system uses **Python 3.12+ standard library** for its core workflow (no data
 A **real visual research browser** is now versioned at [interface-atlas/gallery.html](interface-atlas/gallery.html), with original illustrative schematics that **link to the actual published digital-work preview images**, never copy them. Ten specific screenshots were actually studied at preview resolution, with 50 further queued targets and 20 general source hub links. See [source-controlled evidence records](interface-atlas/observed-cases.json), [60 research targets](interface-atlas/research-targets.json), and the [CLI](scripts/query_interface_atlas.py).
 
 The Faneqo-specific [Night Recap research pilot](pilots/002-faneqo-night-art-research/README.md) applies case insights to three different original concepts without editing Faneqo. The [quality comparison protocol](quality/BLIND_ART_DIRECTION_COMPARISON_PROTOCOL.md) describes how to test if reference-grounded work actually improves over a plain AI design workflow; such an experiment has not yet been run.
+
+## Quick art-direction packet for a real project
+
+Use the optional [Project Design Packet Router](docs/PROJECT_DESIGN_PACKET_ROUTER.md) to select just 1–4 source-grounded visual studies and join them with a private project's actual screenshot locations, evidence findings and existing directions:
+
+    python scripts/prepare_design_packet.py --project faneqo-night --task "redesign the Night gallery"
+
+The script is offline Python stdlib, bounded and read-only unless you explicitly save a private packet. It does **not** see the pixels or modify any product. The actual image and source preview must still be opened by a vision-capable agent before analysis. No skill overwrite, external model call or benchmark claim.
