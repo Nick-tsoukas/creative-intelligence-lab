@@ -1,6 +1,6 @@
 # Masterpiece Atlas — Art-to-Interface Research (Increment 001)
 
-**Date:** 2026-11-15. **Status:** Six artwork/architecture/identity source-grounded first-pass studies with image-preview inspection; **not** six exhaustive art-historical monographs, complete digital-website audits, or claims of observed user eye-tracking. All images remain at institutional/creator sources and are **not copied into this repo**.
+**Date:** 2026-11-15. **Status:** Seven artwork/architecture/identity source-grounded first-pass studies with image-preview inspection; **not** six exhaustive art-historical monographs, complete digital-website audits, or claims of observed user eye-tracking. All images remain at institutional/creator sources and are **not copied into this repo**.
 
 ## Purpose
 Turn exact works into **original, conditional mechanisms** for digital experience art direction. Do not use famous artists as endorsements, copy identifiable styles, or conflate museum scholarship with UX evidence.
@@ -27,6 +27,7 @@ For an ordinary design task, choose **one** artwork mechanism, optionally compar
 | [MA-004](studies/MA-004-SCHER-SIMPATICO.md) | Scher, *Simpatico*, Public Theater | Graphic design / typography | museum store poster preview + Pentagram project context inspected | typographic personality with differentiated information hierarchy |
 | [MA-005](studies/MA-005-ALBERS-LIGHT-RISING.md) | Albers, *Study for Homage to the Square: Light Rising*, NGA | Color painting | NGA record + cropped image preview inspected | relative color/context and nesting; no standalone color formulas |
 | [MA-006](studies/MA-006-ANDO-CHURCH-OF-LIGHT.md) | Ando, *Church of the Light*, Ibaraki | Architecture / light / sequence | architect-authored primary account + editorial photo preview | arrival, contrast and controlled reveal; no forced scrolling |
+| [MA-007](studies/MA-007-PARKS-AMERICAN-GOTHIC.md) | Parks, *American Gothic*, Washington, D.C. | Photography / identity / ethics | foundation/LOC context and museum print preview | real human context before symbolic visual treatment |
 
 ## Status taxonomy
 - `OBJECT_IDENTIFIED`: correct institutional title/author/accession.
@@ -37,7 +38,7 @@ For an ordinary design task, choose **one** artwork mechanism, optionally compar
 - `DIGITAL_TRANSFER_PROPOSED`: original UI exercise/hypothesis (not proof).
 - `BROWSER_EXERCISE_RUN` / `HUMAN_OUTCOME_OBSERVED`: evidence captured, not currently achieved.
 
-All six initial cards are **object identified + preview-observed + primary context read where noted + digital transfer proposed**. None is promoted to full complete visual study or measured UX result.
+All seven initial cards are **object identified + preview-observed + primary context read where noted + digital transfer proposed**. None is promoted to full complete visual study or measured UX result.
 
 ## Required critique separation
 1. What image pixels can actually be seen (avoid inventing missing edges).
