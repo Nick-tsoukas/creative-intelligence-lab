@@ -108,6 +108,10 @@ body[data-mode="signal"] .scene-note { border-top: 3px solid #11140e; }
 .method-grid span { color: #dcac8c; font-size: .72rem; font-weight: 700; }
 .method-grid h3 { font-size: 1.2rem; font-weight: 700; }
 .lab-footer { font-size: .65rem; letter-spacing: .12em; color: #b2b6b6; }
+/* 200% text and user spacing overrides must not force horizontal scrolling. */
+.controls h1, .explanation h2, .method h2, .hero-content h2, .study-diagram > div { overflow-wrap: anywhere; hyphens: manual; }
+.explanation, .method, .explanation-text, .study-diagram, .method-grid { min-width: 0; }
+
 
 @media (max-width: 1000px) {
   .explanation { grid-template-columns: 1fr 2fr; }
