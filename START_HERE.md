@@ -32,3 +32,7 @@ The owner has final design/deployment authority. ChatGPT directs and independent
 
 ## Latest owner decision (2026-11-11)
 Claude Code is busy with unrelated Faneqo work; do **not** initiate skill execution or cross-agent prototyping yet. Continue research and GitHub documentation. The **final** test will be an isolated Faneqo homepage mockup, not the live production site. Read `docs/PILOT-STRATEGY.md` and current `docs/STATUS.md`. Owner approves any later implementation or deployment.
+
+
+## Current art-direction practice (2026-11-15)
+For advanced visual design **without changing old skill versions**, see `handbook/VISUAL_DIRECTION_TASK_ROUTER.md`, `visual-library/masterpiece-atlas/README.md`, and the **original browser-ready** `experiments/004-visual-grammar-studio/index.html`. Research source limits: `research/015` and `research/016`; real browser QA: `scripts/test_visual_grammar_studio.py`. The claimed separate v5.0 skill's location remains unverified—read `docs/V5_ART_DIRECTION_INTEGRATION_AUDIT.md` before integration. Do not copy any v0.x entrypoint over a more advanced installation.
