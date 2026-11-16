@@ -14,6 +14,7 @@ import sys
 
 MAX_BYTES = 256_000
 MAX_FILES = 12
+MAX_SCHEMAS = 6
 EXTENSIONS = {".vue", ".ts", ".js", ".mjs"}
 SUSPICIOUS = re.compile(r"(?:^|[/_.-])(secret|password|credential|token|private|\.env)(?:$|[/_.-])", re.I)
 API_CALL = re.compile(r"\b(useFetch|useLazyFetch|\$fetch|useAsyncData|useLazyAsyncData|useStrapi|useStrapiClient)\s*(?:<[^()\n]{1,120}>)?\s*\(", re.M)
@@ -92,6 +93,52 @@ def scan_file(root: Path, path: Path) -> dict:
     }
 
 
+
+def inspect_strapi_schema(root: Path, rel: str) -> dict:
+    """Inspect ONLY explicit Strapi schema JSON: no database/user data or permission claims."""
+    if "\x00" in rel or len(rel) > 512:
+        raise ValueError("Invalid schema path")
+    path = Path(rel)
+    if path.is_absolute() or ".." in path.parts or path.suffix != ".json":
+        raise ValueError("Strapi schema must be a relative .json path without traversal")
+    if any(SUSPICIOUS.search(part) for part in path.parts):
+        raise ValueError("Refusing secret-bearing schema path")
+    root = root.resolve(strict=True)
+    full = root / path
+    if (not full.is_file() or full.is_symlink() or
+            not full.resolve().is_relative_to(root) or full.stat().st_size > 128_000):
+        raise ValueError("Missing, unsafe or oversized Strapi schema")
+    doc = json.loads(full.read_text(encoding="utf-8"))
+    if not isinstance(doc, dict) or not isinstance(doc.get("attributes"), dict):
+        raise ValueError("Schema has no Strapi attributes object")
+    attrs = doc["attributes"]
+    if len(attrs) > 200:
+        raise ValueError("Schema exceeds bounded field count")
+    fields = []
+    for key in sorted(attrs):
+        entry = attrs[key]
+        if not isinstance(key, str) or not re.fullmatch(r"[A-Za-z][A-Za-z0-9_]{0,79}", key) or not isinstance(entry, dict):
+            raise ValueError("Malformed Strapi attribute")
+        detail = {}
+        for item in ("type", "relation", "target", "component"):
+            value = entry.get(item)
+            if isinstance(value, str):
+                detail[item] = value[:160]
+        for item in ("required", "private", "repeatable", "multiple"):
+            value = entry.get(item)
+            if isinstance(value, bool):
+                detail[item] = value
+        fields.append({"name": key, **detail})
+    display = doc.get("info", {}).get("displayName", "") if isinstance(doc.get("info"), dict) else ""
+    return {
+        "file": rel,
+        "display_name": str(display)[:120],
+        "fields": fields,
+        "evidence": "SCHEMA_OBSERVED_NOT_RESPONSE_OR_PERMISSION",
+        "caution": "An attribute definition does not establish populated fields, serialization, user access, or server-side authorization",
+    }
+
+
 def validate_manifest(doc: dict, route: str) -> dict:
     if not isinstance(doc, dict) or set(doc) != MANIFEST_KEYS or doc.get("schema") != 1:
         raise ValueError("Manifest requires schema=1, route, facts, unknowns, constraints")
@@ -117,7 +164,8 @@ def validate_manifest(doc: dict, route: str) -> dict:
     return doc
 
 
-def inventory(root: Path, screen: str, includes: list[str], manifest_path: str | None = None) -> dict:
+def inventory(root: Path, screen: str, includes: list[str], manifest_path: str | None = None,
+              backend_root: Path | None = None, schema_paths: list[str] | None = None) -> dict:
     root = root.resolve(strict=True)
     if not root.is_dir():
         raise ValueError("Repository root must be a directory")
@@ -143,12 +191,21 @@ def inventory(root: Path, screen: str, includes: list[str], manifest_path: str |
         unknowns = list(dict.fromkeys(unknowns + manifest["unknowns"]))
         constraints = manifest["constraints"]
     scanned = [scan_file(root, p) for p in files]
+    selected_schemas = schema_paths or []
+    if len(selected_schemas) > MAX_SCHEMAS:
+        raise ValueError("Select at most six Strapi schema files")
+    if selected_schemas and backend_root is None:
+        raise ValueError("--backend-root required when --schema is provided")
+    schemas = [inspect_strapi_schema(backend_root, path) for path in selected_schemas]
+    if schemas:
+        unknowns.append("Strapi content-type definitions are NOT evidence of API responses or user permissions")
     return {
         "schema": 1,
         "purpose": "SCREEN_IMPLEMENTATION_CONTEXT_NOT_A_SECURITY_AUDIT",
         "screen": screen,
         "files_scanned": len(scanned),
         "static_hints": scanned,
+        "backend_schema_hints": schemas,
         "confirmed_or_observed_facts": facts,
         "constraints": constraints,
         "unknowns": unknowns,
@@ -172,6 +229,16 @@ def render_markdown(data: dict) -> str:
             lines.append(f"- API hint L{call['line']}: {call['function']} → {call['static_path'] or 'DYNAMIC/UNKNOWN'} (UNVERIFIED)")
         for imported in file["relative_imports"]:
             lines.append("- Import hint: " + imported)
+    lines += ["", "## Selected Strapi content-type schema (field types only; no access inferred)"]
+    if not data["backend_schema_hints"]:
+        lines.append("- No backend content-type schema explicitly inspected.")
+    for model in data["backend_schema_hints"]:
+        lines.append("\n### " + model["file"] + " [" + model["evidence"] + "]")
+        lines.append("- Model: " + (model["display_name"] or "UNNAMED"))
+        for field in model["fields"]:
+            details = ", ".join(k + "=" + str(v) for k, v in field.items() if k != "name")
+            lines.append("- " + field["name"] + ": " + (details or "type UNKNOWN"))
+        lines.append("- No verified API response/permission from schema alone.")
     lines += ["", "## Explicitly recorded data, states and authority"]
     if not data["confirmed_or_observed_facts"]:
         lines.append("- No verified field or permission contract provided yet.")
@@ -195,10 +262,13 @@ def main(argv=None) -> int:
     p.add_argument("--screen", required=True, help="Relative path to actual Vue/Nuxt screen")
     p.add_argument("--include", action="append", default=[], help="Additional explicitly selected Vue/TS/JS file; max 11")
     p.add_argument("--manifest", help="Optional human-verified JSON screen contract")
+    p.add_argument("--backend-root", type=Path, help="Optional checkout with Strapi source schemas")
+    p.add_argument("--schema", action="append", default=[], help="Explicit relative Strapi content-type schema.json, max 6")
     p.add_argument("--format", choices=("markdown", "json"), default="markdown")
     args = p.parse_args(argv)
     try:
-        result = inventory(args.repo_root, args.screen, args.include, args.manifest)
+        result = inventory(args.repo_root, args.screen, args.include, args.manifest,
+                           args.backend_root, args.schema)
         print(json.dumps(result, ensure_ascii=False, indent=2) if args.format == "json" else render_markdown(result))
         return 0
     except (ValueError, OSError, UnicodeError, json.JSONDecodeError) as error:
