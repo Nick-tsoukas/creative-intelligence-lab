@@ -67,6 +67,22 @@ Manifest `route` must exactly match `--screen`. A `CODE_OBSERVED` fact must iden
 - An artist's editing controls are separate from a fan's public view.
 - A dashboard number must be connected to a real, authorized metric, not a visual placeholder.
 
+## Optional Strapi v4 schema evidence (field inventory only)
+
+Select specific real `schema.json` files after identifying which backend models the page requests. This operates entirely offline and **never** reads database records or proves user access:
+
+```bash
+python design-excellence/screen_intelligence.py \
+  --repo-root /path/to/nuxt-app \
+  --screen pages/example.vue \
+  --backend-root /path/to/strapi-backend \
+  --schema src/api/example/content-types/example/schema.json
+```
+
+The paths shown are illustrative; confirm their real location first. The resulting `backend_schema_hints` reports field name, type, relation target, required/private flags, component or media information where present. It does not claim that an API returns those attributes, that the role may read/write them, or that Strapi sanitization permits exposing them. Validate those separately in controller/service/policy code and an authorized development session.
+
+You may also include `--backend-root` and `--schema` in `build_screen_handoff.py` to place the schema evidence alongside the visual audit and owner decisions.
+
 ## Review and handoff gate
 
 Before implementation, provide a compact **Screen Implementation Contract**:
