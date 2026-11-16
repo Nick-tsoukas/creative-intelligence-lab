@@ -153,7 +153,8 @@ body[data-mode="signal"] .scene-note { border-top: 3px solid #11140e; }
   .canvas-top nav { gap: .5rem; flex-wrap:wrap; }
   .hero-content h2,body[data-mode="signal"] .hero-content h2 { font-size: 12vw; }
   .hero-cta { width: 100%; }
-  .method-grid { grid-template-columns:1fr; gap: .4rem; }
+  .method-grid { grid-template-columns:minmax(0,1fr); gap: .4rem; }
+  .method-grid > div, .method-grid h3, .method-grid p { min-width:0; overflow-wrap:anywhere; }
 }
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
