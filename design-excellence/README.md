@@ -69,3 +69,36 @@ Tests use temporary directories, not private production data. Do not mark as pas
 ## Integration contract
 
 The owner approves all aesthetic decisions. This tool only remembers explicit feedback and exports a bounded briefing packet for future sessions. The other chat controls the Atlas's reference records and visual gallery. **Do not change or merge its work**, and do not add global v5.0 skill instructions until the active skill is located, its owner confirms a suitable integration point, and conflicts are checked.
+
+## Increment 002 — Visual Audit + Screen Intelligence (2026-11-16)
+
+This branch now also includes the two complementary capabilities requested for real design work:
+
+1. **Visual design audit:** [visual_audit.py](visual_audit.py), the [art-director playbook](VISUAL_AUDIT_PLAYBOOK.md) and synthetic tests. Uses a *private existing screenshot capture* and gathers ranked, attributable observations from a vision-capable critic. **The CLI does not see pixels itself.** Each image-specific observation requires `--pixels-inspected` after a real review; unreviewed dimensions remain unreviewed, not scored as passing.
+2. **Technical screen intelligence:** [screen_intelligence.py](screen_intelligence.py), the [data/permissions playbook](SCREEN_INTELLIGENCE_PLAYBOOK.md) and an [illustrative JSON contract](examples/screen-contract.example.json). Reads selected Nuxt/Vue source files without executing application code, reports API/composable/UI hints, and accepts separately validated human-supplied field/action/state/authority facts. Static hints are *not* runtime/API facts.
+3. **Combined handoff:** [build_screen_handoff.py](build_screen_handoff.py) reads the screen inventory, an optional visual audit, project-specific owner judgment and an optional existing Atlas research packet. Produces one bounded, structured implementation packet. It does not clone or modify the other chat's `prepare_design_packet.py` or its Atlas catalog.
+4. **Testability:** [test_screen_and_visual.py](test_screen_and_visual.py), [test_handoff.py](test_handoff.py), prior ledger tests and a new isolated GitHub Actions workflow. Source and test files never read private Faneqo screenshots during CI. **Run and inspect the workflow before treating QA as passed.**
+
+### Quick commands
+
+After an existing redacted capture has been imported through the Visual Memory workspace:
+
+```bash
+python design-excellence/visual_audit.py start --project faneqo-night --audit night-mobile-01 --screen night-baseline-mobile
+python design-excellence/visual_audit.py prompt --project faneqo-night --audit night-mobile-01
+# Open the actual image, record observations according to VISUAL_AUDIT_PLAYBOOK.md.
+python design-excellence/visual_audit.py report --project faneqo-night --audit night-mobile-01
+
+# Replace these illustrative paths with real, confirmed source files:
+python design-excellence/screen_intelligence.py --repo-root /path/to/nuxt-app --screen pages/example.vue
+
+# Combine the evidence, without installing or modifying any existing skill:
+python design-excellence/build_screen_handoff.py \\
+  --repo-root /path/to/nuxt-app --screen pages/example.vue \\
+  --project faneqo-night --audit night-mobile-01
+
+# Synthetic offline tests
+python -m unittest discover -s design-excellence -p 'test_*.py' -v
+```
+
+**No production edits, screenshots, customer data, API requests, web browsing, paid models or additional packages.** This remains an unmerged review branch. `--audit` is optional if visual inspection has not yet been performed. `--manifest` and `--atlas-packet` are optional, so integration waits for verified context rather than assuming it exists.
