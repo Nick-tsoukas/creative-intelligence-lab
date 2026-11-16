@@ -148,6 +148,7 @@ body[data-mode="signal"] .scene-note { border-top: 3px solid #11140e; }
 }
 @media (max-width: 360px) {
   .lab-header { align-items: flex-start; }
+  .lab-wordmark { white-space: normal; min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
   .mode-buttons button { padding: .68rem .8rem; font-size: .79rem; }
   .canvas-top { align-items: start; }
   .canvas-top nav { gap: .5rem; flex-wrap:wrap; }
