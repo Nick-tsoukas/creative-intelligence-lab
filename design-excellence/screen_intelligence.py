@@ -17,7 +17,7 @@ MAX_FILES = 12
 MAX_SCHEMAS = 6
 EXTENSIONS = {".vue", ".ts", ".js", ".mjs"}
 SUSPICIOUS = re.compile(r"(?:^|[/_.-])(secret|password|credential|token|private|\.env)(?:$|[/_.-])", re.I)
-API_CALL = re.compile(r"\b(useFetch|useLazyFetch|\$fetch|useAsyncData|useLazyAsyncData|useStrapi|useStrapiClient)\s*(?:<[^()\n]{1,120}>)?\s*\(", re.M)
+API_CALL = re.compile(r"(?<![\w$])(useFetch|useLazyFetch|\$fetch|useAsyncData|useLazyAsyncData|useStrapi|useStrapiClient)\s*(?:<[^()\n]{1,120}>)?\s*\(", re.M)
 STATIC_URL = re.compile(r"""(?P<quote>['"\x60])(?P<url>/(?:api/)?[a-zA-Z0-9/_-]{1,150})(?P=quote)""")
 COMPOSABLE = re.compile(r"\b(useState|useRoute|useRouter|useRuntimeConfig|useCookie|useNuxtApp|useFetch|useAsyncData|useLazyFetch|useLazyAsyncData|computed|ref|watch|onMounted|defineProps|defineEmits|useHead|navigateTo)\s*(?:<[^()\n]{1,120}>)?\s*\(")
 IMPORT = re.compile(r"""(?:from\s*|import\s*\()\s*['"](?P<path>[^'"]{1,160})['"]""")
