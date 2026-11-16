@@ -33,3 +33,9 @@ An SVG can have readable markup and still have font overflow or poor layout. Ope
 |---|---|---|---|
 | `../experiments/002-perception-workbench/index.html` | Original HTML/CSS interactive teaching instrument | Source committed; static checks only; no captured screenshots or browser verification | Original to Lab |
 The experiment is **not** an additional independently captured artwork or website screenshot and should not inflate the v1.0 visual-example count. See its PROTOCOL.md for conditions and confounds.
+
+
+## 2026-11-15 — Linked Masterpiece Atlas (not locally stored art images)
+- New `masterpiece-atlas/README.md`, eight linked source-grounded first-pass studies (MA-001..008), and `index.json` with source URLs, rights, creator, preview-observation status and conditional transferable mechanism. Studies span Vermeer, Hokusai, Hopper, Paula Scher, Josef Albers, Tadao Ando, Gordon Parks and Reid Miles/Blue Note.
+- **Original third-party artwork/photo pixels added to repo: zero.** Some images were inspected as publicly served low-res/cropped representations, identified accordingly. No high-resolution full-image study, live website screenshot, browser task test, real user interviews or rights clearance is implied.
+- Bounded selector `../scripts/query_masterpiece_atlas.py` and checker `../scripts/check_masterpiece_atlas.py`. Count these as source-linked art **references**, not independently committed original SVG teaching studies or full deep atlas examinations.
