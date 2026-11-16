@@ -102,7 +102,7 @@ def validate_manifest(doc: dict, route: str) -> dict:
     for fact in doc["facts"]:
         if not isinstance(fact, dict) or set(fact) != FACT_KEYS:
             raise ValueError("Fact needs id/kind/name/source/used_for/shape/permissions/states/evidence/verified_on")
-        if fact["evidence"] not in SUPPORTED_EVIDENCE:
+        if not isinstance(fact["evidence"], str) or fact["evidence"] not in SUPPORTED_EVIDENCE:
             raise ValueError("Invalid fact evidence")
         for key, value in fact.items():
             if not isinstance(value, str) or len(value) > 600 or "\x00" in value:
