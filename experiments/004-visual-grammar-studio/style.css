@@ -1,8 +1,8 @@
 /* Original visual-composition exercises. No external fonts, images or dependencies. */
 :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-synthesis: none; }
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
-body { margin: 0; background: #111316; color: #eeede8; }
+html { scroll-behavior: smooth; scroll-padding-top: 2rem; overflow-x: clip; }
+body { margin: 0; background: #111316; color: #eeede8; overflow-x: clip; }
 a { color: inherit; text-underline-offset: .2em; }
 button { font: inherit; cursor: pointer; }
 button:focus-visible, a:focus-visible { outline: 3px solid #ffda73; outline-offset: 4px; }
