@@ -5,6 +5,8 @@ on:
     paths:
       - 'interface-atlas/**'
       - 'scripts/visual_workspace.py'
+      - 'scripts/prepare_design_packet.py'
+      - 'scripts/test_design_packet.py'
       - 'scripts/test_visual_workspace.py'
       - 'scripts/test_visual_board_browser.py'
       - 'docs/PROJECT_VISUAL_MEMORY_MASTER_PLAN.md'
@@ -17,6 +19,8 @@ on:
     paths:
       - 'interface-atlas/**'
       - 'scripts/visual_workspace.py'
+      - 'scripts/prepare_design_packet.py'
+      - 'scripts/test_design_packet.py'
       - 'scripts/test_visual_workspace.py'
       - 'scripts/test_visual_board_browser.py'
       - '.github/workflows/project-visual-memory.yml'
@@ -36,8 +40,11 @@ jobs:
           python-version: '3.12'
       - name: Syntax and integration checks
         run: |
-          python -m py_compile scripts/visual_workspace.py scripts/test_visual_workspace.py
+          python -m py_compile scripts/visual_workspace.py scripts/test_visual_workspace.py scripts/prepare_design_packet.py scripts/test_design_packet.py
           python -m unittest discover -s scripts -p test_visual_workspace.py -v
+          python -m unittest discover -s scripts -p test_design_packet.py -v
+          python -m unittest discover -s scripts -p test_interface_atlas.py -v
+          python scripts/build_interface_gallery.py --check
           python scripts/visual_workspace.py find --query "Awwwards"
           python scripts/visual_workspace.py find --query "mobile upload"
       - name: Verify private captures are never tracked
