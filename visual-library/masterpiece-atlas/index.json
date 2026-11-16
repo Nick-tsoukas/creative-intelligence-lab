@@ -3,7 +3,7 @@
   "status": "FIRST_PASS_NOT_FULLY_STUDIED",
   "date": "2026-11-15",
   "image_assets_embedded": false,
-  "description": "Six source-grounded artist/architecture studies; preview observation and curator/creator context separated from digital transfer hypotheses.",
+  "description": "Seven source-grounded artist/architecture studies; preview observation and curator/creator context separated from digital transfer hypotheses.",
   "entries": [
     {
       "id": "MA-001",
@@ -154,6 +154,31 @@
         "DIGITAL_TRANSFER_PROPOSED"
       ],
       "rights": "Architect-authored account; third-party photo and RIBA drawing rights are separate"
+    },
+    {
+      "id": "MA-007",
+      "title": "American Gothic, Washington, D.C.",
+      "creator": "Gordon Parks",
+      "year": "1942",
+      "discipline": "photography",
+      "tags": [
+        "portrait",
+        "photography",
+        "authenticity",
+        "ethics",
+        "culture",
+        "framing"
+      ],
+      "mechanism": "Portrait framing only has ethical/design force when identity, lived context and consent are understood; don't manufacture documentary authenticity.",
+      "source": "https://www.gordonparksfoundation.org/gordon-parks/photography-archive/washington-d-c-and-ella-watson-1942?view=slider",
+      "study": "studies/MA-007-PARKS-AMERICAN-GOTHIC.md",
+      "evidence": [
+        "OBJECT_IDENTIFIED",
+        "PREVIEW_OBSERVED",
+        "PRIMARY_CONTEXT_READ",
+        "DIGITAL_TRANSFER_PROPOSED"
+      ],
+      "rights": "Gordon Parks Foundation/LOC and specific photographic print rights require clearance"
     }
   ]
 }
