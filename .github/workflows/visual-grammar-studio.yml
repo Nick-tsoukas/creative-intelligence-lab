@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     env:
-      ART_STUDIO_SCREENSHOTS: ${{ runner.temp }}/art-studio-screenshots
+      ART_STUDIO_SCREENSHOTS: ${{ github.workspace }}/art-studio-screenshots
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
