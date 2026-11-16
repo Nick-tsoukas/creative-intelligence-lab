@@ -326,3 +326,16 @@ Research references: `skills/elite-ux-director/references/HOMEPAGE_INTELLIGENCE.
 - **Utility:** Messages, campaign review, dashboards, permissions—restrained artistic identity, excellent readability, state clarity, and focused interactions.
 
 **Both modes require original expression and verified project truth, appropriate accessibility and honest visual evidence.**
+
+
+## Architecture Increment 005 — Masterpiece Atlas and Art Direction Bridge (2026-11-15)
+An accompanying handoff requests a **v5.0-compatible** upgrade to artistic knowledge, not a restart or downgrade. The actual v5.0 skill source has not been located from the available GitHub branches; see `docs/V5_ART_DIRECTION_INTEGRATION_AUDIT.md`. Therefore this increment **adds** a reusable Masterpiece Atlas and art-direction decision engine while leaving existing older skill entrypoints untouched.
+
+- Eight source-verified first-pass artwork/design/photography/architecture/music visual studies: `visual-library/masterpiece-atlas/studies/MA-001..MA-008`, status PREVIEW_OBSERVED + source/creator context read; **no complete original figure coverage or test outcome claims**. Rights/source links remain on museum/creator sites, no third-party pixels committed.
+- Selective, low-cost retrieval via `python scripts/query_masterpiece_atlas.py search "typography"` and `show MA-004`; no embeddings, API fees, background jobs or heavy RAM usage. Optional knowledge only, not an always-on master prompt.
+- `handbook/MASTERPIECE_ART_DIRECTION_DECISIONS.md`: AD01–AD08 conditional visual reasoning, counterexamples, 2 coherent expressive/utility modes, three genuinely distinct concept premises and independent critique. `templates/MASTERPIECE_DIRECTION_PACKET.md` gives an implementation-neutral artifact.
+- `domain-adapters/faneqo/MASTERPIECE_ART_DIRECTION.md` contains only project-specific examples; current real app/approved areas must be inspected at use time. No artist assets, pricing claims or Faneqo app behavior invented as facts.
+- Structural validation `scripts/check_masterpiece_atlas.py` with GitHub Actions; actual effect on Claude v5.0 or user outcomes **not tested**, owner continues to defer formal standalone benchmarks.
+- `research/014-MASTERPIECE_VISUAL_INTELLIGENCE_IMPLEMENTATION.md` documents sources, book acquisition recommendations (not new parallel bibliography), remaining original-figure/film/digital browser gaps and next study order.
+
+**Future v5 integration:** inspect the actual v5 checkout and feature set, then point to this **additive** Atlas rather than swapping in any older alpha skill. Do not clone artwork, generate synthetic testimonials, force scroll animations, or violate keyboard/motion/permission invariants to make a UI look painterly.
