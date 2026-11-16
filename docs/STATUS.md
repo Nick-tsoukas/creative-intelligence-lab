@@ -205,3 +205,11 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Implemented a standard-library Python CLI for private screenshot import (manual redaction confirmation required), SHA256/image provenance, before/after HTML board, labeled findings, concepts, curated source search, report and integrity audit. Added stdlib tests and optional GitHub-hosted Chromium checks with **synthetic-only** images; consult the PR for actual results.
 - Preserved the separate unverified v5.0 skill source/installation, current Faneqo application and all permissions/payment flows. No real user's production screenshot or Faneqo code is committed/altered.
 - Next stages: deep inspected Awwwards/Mobbin/Refero cases (where licensed), actual screenshot observation and problem annotation, independent visual/UX critique, authorized Faneqo Night Recap application, and controlled comparison against a plain AI design workflow.
+
+## 2026-11-16 — Interface Atlas Increment 002 (observed imagery, research UI, pilot)
+
+- Ten **specific actual image previews** inspected and documented under `interface-atlas/observed-cases.json` EI-001..EI-010; some (Apple Photos 2021, Uppy 2016, older HEM) are explicitly historical, Spotify preview has an unverified exact date. None has a live tested app flow or proven performance metric.
+- Sixty curated research targets across six buckets. **50 are queued/uninspected**; only 10 link to preview-observed cases. Shared source hub catalog of 20 entries remains separate, and we did not make a false unique-count claim for external website domains.
+- Original self-contained `interface-atlas/gallery.html` with ten CSS **interpretive schematics**, task search and filters, linked original screenshot previews at external hosts, disclosure of caveats and no-JS fallback. No third-party image bytes hosted; viewer local/offline except for clicking outbound source links.
+- `scripts/query_interface_atlas.py`, reproducible builder, static provenance/integrity tests and real GitHub-hosted Chromium gallery smoke; CI results should be checked at PR merge. Faneqo Night Recap original art-direction pilot brief and unbiased comparison protocol prepared, **not implemented or measured in production**.
+- Protected separately reported v5.0 skill. Do not overwrite with older repo skill entrypoints or imply installation/deployment.

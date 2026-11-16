@@ -161,6 +161,12 @@ class ProjectVisualWorkspaceTest(unittest.TestCase):
         self.assertIn("https://www.awwwards.com/", text)
         self.run_cli("find", "--query", "a", good=False)
 
+    def test_studied_cases_are_discoverable_from_project_search(self):
+        text = self.run_cli("find", "--query", "rich text editor")
+        self.assertIn("EI-007", text)
+        self.assertIn("PREVIEW_OBSERVED", text)
+        self.assertLessEqual(len(text.strip().splitlines()), 6)
+
     def test_project_names_and_github_ignore(self):
         self.run_cli("init-project", "--project", "../unsafe",
                      "--title", "Unsafe", good=False)

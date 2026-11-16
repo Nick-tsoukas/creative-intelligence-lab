@@ -1,0 +1,77 @@
+name: Exceptional Interface Atlas source and visual QA
+
+on:
+  pull_request:
+    paths:
+      - 'interface-atlas/**'
+      - 'scripts/query_interface_atlas.py'
+      - 'scripts/build_interface_gallery.py'
+      - 'scripts/test_interface_atlas.py'
+      - 'scripts/test_interface_gallery_browser.py'
+      - '.github/workflows/interface-atlas-research.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'interface-atlas/**'
+      - 'scripts/query_interface_atlas.py'
+      - 'scripts/build_interface_gallery.py'
+      - 'scripts/test_interface_atlas.py'
+      - 'scripts/test_interface_gallery_browser.py'
+      - '.github/workflows/interface-atlas-research.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  evidence-and-bounds:
+    name: 10 observed previews, 60 queued targets, safe data and retrieval
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Static source/fidelity tests and deterministic gallery
+        run: |
+          python -m py_compile scripts/query_interface_atlas.py scripts/build_interface_gallery.py scripts/test_interface_atlas.py
+          python -m unittest discover -s scripts -p test_interface_atlas.py -v
+          python scripts/build_interface_gallery.py --check
+          python scripts/query_interface_atlas.py show EI-002 > /dev/null
+          python scripts/query_interface_atlas.py compare EI-002 EI-008 > /dev/null
+          python scripts/query_interface_atlas.py search "music gallery" > /dev/null
+          python scripts/query_interface_atlas.py targets "upload" > /dev/null
+      - name: Check copyright boundaries
+        run: |
+          if find interface-atlas -type f \( -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' -o -name '*.webp' \) | grep .; then
+            echo "::error::Unexpected external raster image under public interface-atlas"
+            exit 1
+          fi
+          echo "PASS: no third-party image pixels shipped in Atlas"
+
+  actual-chromium:
+    name: "Browser visual research gallery: 320, 390, 768, 1440"
+    needs: evidence-and-bounds
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      ATLAS_GALLERY_SHOTS: atlas-gallery-screenshots
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated Chromium (not on user's laptop)
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.62.0
+          python -m playwright install --with-deps chromium
+      - name: Test actual offline visual browser and search
+        run: python scripts/test_interface_gallery_browser.py
+      - name: Save original-schematic screenshots for human visual critique
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-gallery-original-schematic-render-screenshots
+          path: atlas-gallery-screenshots
+          retention-days: 7
+          if-no-files-found: warn

@@ -40,3 +40,7 @@ For advanced visual design **without changing old skill versions**, see `handboo
 
 ## Private visual design workspace — 2026-11-16
 For per-project screenshots, a visual comparison board, evidence-labeled UX findings, exceptional design source links and independent three-premise art direction, start with `docs/PROJECT_VISUAL_WORKSPACE_QUICKSTART.md`. The portable source catalog is `interface-atlas/` and the local-only CLI is `scripts/visual_workspace.py` (stdlib). Private media is **never** to be committed; `.cil-private/` is ignored. Do not use the repository's old skill files to overwrite an unverified separate v5.0 installation.
+
+## 2026-11-16 — Actual source-observed digital visual references
+
+Open `interface-atlas/gallery.html` in a local browser for 10 original abstract composition thumbnails, links to the **real external screenshot previews**, source-grounded observations, limitations, and visual research search/filter. Inspect source screenshots before proposing a concept. Use `scripts/query_interface_atlas.py show EI-002` or `compare EI-002 EI-008` for just-in-time context. The collection has 60 research targets but only 10 preview-observed specific digital cases; the rest are queued. The original Faneqo Night Recap pilot is `pilots/002-faneqo-night-art-research/README.md`. The separate advanced v5.0 skill remains untouched.

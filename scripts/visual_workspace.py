@@ -244,6 +244,17 @@ def find(a, base):
     if not tokens:
         raise ValueError("Search requires meaningful words")
     refs = read_json(CATALOG)["entries"]
+    # Specific image-observed cases are much more actionable than generic
+    # directories. They are still ONLY preview observations, never flow tests.
+    cases_path = ROOT / "interface-atlas" / "observed-cases.json"
+    if cases_path.is_file():
+        for case in read_json(cases_path)["cases"]:
+            refs.append({
+                "id": case["id"], "name": case["title"],
+                "url": case["source_url"], "kind": case["kind"],
+                "tags": case["tags"], "why_inspect": case["mechanism"],
+                "status": "PREVIEW_OBSERVED",
+            })
     if a.project:
         refs += records(project_path(base, a.project), "references")
     scored = []
@@ -252,6 +263,8 @@ def find(a, base):
         name = (item.get("name") or item.get("title") or "").lower()
         why = (item.get("why_inspect") or item.get("why") or "").lower()
         value = sum(5 if x in tags else 3 if x in name else 1 if x in why else 0 for x in tokens)
+        if value and item.get("status") == "PREVIEW_OBSERVED":
+            value += 2  # Evidence-weighting applies only to matching cases.
         if value:
             scored.append((value, item))
     for _, r in sorted(scored, key=lambda x: (-x[0], x[1]["id"]))[:a.limit]:

@@ -160,3 +160,11 @@ These are foundational materials; no Faneqo application code or deployments were
 - Versioned 20 source-link leads including Awwwards, Mobbin, Refero and component documentation, four original interaction research briefs, and a three-premise visual critique packet. No copied third-party imagery or fake inspected-case claims.
 - Kept actual screenshots in git-ignored `.cil-private/`, original source links as pointers, and Faneqo-specific Night example in its separate domain adapter. No Faneqo application changes or v5.0 overwrite.
 - Added stdlib integration tests, security/metadata gates and optional real Chromium CI using **only generated synthetic images**. Browser results and merge gate documented by the corresponding PR.
+
+## 2026-11-16 — Exceptional Interface Atlas v0.2: actual preview-observed visual research
+
+- Inspected 10 specific web/mobile/component interface **image previews** (RCA, Wax Poetics, Polish Electronic Music, HEM Records, Lady Gaga, Mobbin, Tiptap, Apple Photos, Uppy, Spotify) and added source-grounded case records with actual visible pixel description, exact image URL, conditional art-direction transfer, failure conditions, rights and historical-version limitations. No interaction testing or verified current mobile behavior implied.
+- Built precisely 60 research targets (10 web/10 mobile/10 music/15 component/10 motion/5 experimental), 50 explicitly still queued and not analyzed; source hubs remain in prior 20-reference catalog.
+- Added a **visually designed, self-contained, searchable original CSS reference browser** with 10 visual schematics, outbound image/source links, expandable studies and no-JavaScript accessible source index. No copyrighted image pixels copied or hotlinked.
+- Added Python stdlib `query_interface_atlas.py` one-case search/show/compare/targets, reproducible gallery generation, static source-status/security checks and Chromium viewports/interaction checks with original schematic screenshot artifacts.
+- Added a Faneqo Night Recap source-driven design pilot with 3 different artistic theses and a future *blinded same-model comparison* protocol. Neither an installed v5.0 skill nor Faneqo application files changed. Actual design superiority remains untested.
