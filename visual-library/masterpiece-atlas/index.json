@@ -3,7 +3,7 @@
   "status": "FIRST_PASS_NOT_FULLY_STUDIED",
   "date": "2026-11-15",
   "image_assets_embedded": false,
-  "description": "Seven source-grounded artist/architecture studies; preview observation and curator/creator context separated from digital transfer hypotheses.",
+  "description": "Eight source-grounded artist/architecture studies; preview observation and curator/creator context separated from digital transfer hypotheses.",
   "entries": [
     {
       "id": "MA-001",
@@ -179,6 +179,32 @@
         "DIGITAL_TRANSFER_PROPOSED"
       ],
       "rights": "Gordon Parks Foundation/LOC and specific photographic print rights require clearance"
+    },
+    {
+      "id": "MA-008",
+      "title": "Out to Lunch! album cover",
+      "creator": "Reid Miles (cover design); Eric Dolphy (album)",
+      "year": "1964",
+      "discipline": "music-graphic-design",
+      "tags": [
+        "music",
+        "album",
+        "typography",
+        "photography",
+        "jazz",
+        "identity",
+        "culture"
+      ],
+      "mechanism": "An unexpected subject-specific visual metaphor can pair with accurate artist information; the visual should not impersonate operational status or copy an existing label identity.",
+      "source": "https://www.bluenote.com/blue-note-wall-art/",
+      "study": "studies/MA-008-REID-MILES-OUT-TO-LUNCH.md",
+      "evidence": [
+        "OBJECT_IDENTIFIED",
+        "PREVIEW_OBSERVED",
+        "PRIMARY_CONTEXT_READ",
+        "DIGITAL_TRANSFER_PROPOSED"
+      ],
+      "rights": "Blue Note/photographer/graphic artwork rights; independent collector preview not cleared for republication"
     }
   ]
 }
