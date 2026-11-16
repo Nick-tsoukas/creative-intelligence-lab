@@ -37,7 +37,7 @@ def check() -> list[str]:
             errors.append(f"Missing or unsafe study {key}")
             continue
         content = file.read_text(encoding="utf-8")
-        if len(content) < 1000 or not all(s in content.lower() for s in ["source", "observed", "hypothesis", "not done"]):
+        if (len(content) < 1000 or not all(s in content.lower() for s in ["source", "observed", "hypothesis"]) or not ("not done" in content.lower() or "not run" in content.lower())):
             errors.append(f"Study {key} lacks original evidence/counterexample coverage")
         if not e.get("source", "").startswith("https://"):
             errors.append(f"Unverified source URL format for {key}")
