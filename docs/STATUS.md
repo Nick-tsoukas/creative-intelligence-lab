@@ -184,3 +184,10 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - Reusable v0.5 UX skill has optional on-demand study/visual/cross-book knowledge, nine source-grounded K-cards, and a low-context search/retrieval command; Faneqo adapter remains separate. Existing C/P/H cards preserved.
 - All user uploads remain marked not-ingested despite the separate original-source studies. Prepared skill efficacy fixtures are NOT RUN. GitHub package integrity (when verified in the released PR) is a structure check, not an effectiveness result.
 - Release/installation: `docs/ELITE_UX_DIRECTOR_V05_RELEASE.md`. Current local Claude skill version is not verified from this GitHub repository; merging does not install it.
+
+
+## 2026-11-15 — Masterpiece Atlas first-pass research / v5.0 integration status
+- Completed an **additive** eight-work research Atlas (MA-001..MA-008), original art-direction decision engine AD01..AD08, three-concept packet, JSON source index, bounded stdlib CLI and static GitHub Actions integrity workflow. Full source/rights/evidence limits in `visual-library/masterpiece-atlas/README.md`.
+- User handoff claims a separate v5.0 advanced system, but the accessible GitHub repo only exposed v0.x entrypoints; **we did not modify or replace them**, inspect any live installed v5.0 copy, or touch production Faneqo. Separate `docs/V5_ART_DIRECTION_INTEGRATION_AUDIT.md` is the integration guardrail.
+- All eight studies have low-res/cropped preview observation and actual museum/creator source reading. No complete full-resolution original-work study, browser/mobile art-direction study, real user data, licensing clearance, or empirical skill-effectiveness claim.
+- Next: deeper image/edition primary work, actual film/music series, live contemporary web experience inspection and safe selective adoption by the real v5.0 system when its location is verifiable.

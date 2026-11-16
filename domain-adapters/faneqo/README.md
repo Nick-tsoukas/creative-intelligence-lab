@@ -23,3 +23,8 @@ If Claude's working project is unable to read the Lab repository, copy/link this
 
 ## Separate workstream
 The master plan's music-industry interviews/persona study belongs to its own scoped research track. Reconcile new verified field findings here after checking source ownership; do not overwrite ongoing researchers' files or fabricate participant results.
+
+
+## 2026-11-15 — Masterpiece art direction / authentic music context
+- [Masterpiece Art Direction](MASTERPIECE_ART_DIRECTION.md): optional Faneqo-only creative visual research hypotheses, expressive vs utility contexts, artist/photo rights, three genuine *not-yet-approved* homepage directions and source-linked examples from the separate universal `visual-library/masterpiece-atlas/`.
+- Never install this adapter inside a universal personal skill or treat it as a replacement for the current Faneqo brand North Star/product truth. No application or active worktree changes resulted from the study.

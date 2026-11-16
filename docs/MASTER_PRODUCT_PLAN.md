@@ -184,3 +184,9 @@ Current highest priority: run or otherwise prepare reproducible browser evidence
 **What v1.0 is NOT:** a guarantee of universal world-best design, an autonomous production deployment system, an exhaustive book-reading claim, or a production Faneqo homepage redesign.
 
 **What success looks like:** an artistic director/engineer can create three exceptional, distinct options from the same Faneqo brief, justify the design choices with genuinely examined sources, build a technically credible isolated experience, survive independent visual/UX critique, and adapt the system to another domain.
+
+
+## 2026-11-15 Art Direction Evidence Increment — Atlas, not a skill replacement
+The six-domain masterpiece art-direction track has now begun producing **eight source-grounded, first-pass visual studies** at `visual-library/masterpiece-atlas/` and a bounded CLI selector + structural CI. `handbook/MASTERPIECE_ART_DIRECTION_DECISIONS.md` and `templates/MASTERPIECE_DIRECTION_PACKET.md` introduce a source-aware creative reasoning/critique bridge and coordinated expressive/utility typography and interaction modes. Separate Faneqo visual context lives in `domain-adapters/faneqo/MASTERPIECE_ART_DIRECTION.md`.
+
+These are **preview-observed and institution-/creator-context-read** source studies, not a claim that Stage 1's deep-artwork count or Stage 3 browser validation is complete. `research/014-MASTERPIECE_VISUAL_INTELLIGENCE_IMPLEMENTATION.md` names remaining visual-depth, music/film, contemporary browser and testing gates. The asserted advanced v5.0 system in the founder handoff cannot be independently located in this GitHub checkout, so prior v0.x skill entrypoints were left unchanged; see `docs/V5_ART_DIRECTION_INTEGRATION_AUDIT.md`. No Faneqo production changes, skill installation, external art copied or measured UX improvement.

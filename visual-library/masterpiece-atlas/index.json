@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "status": "FIRST_PASS_NOT_FULLY_STUDIED",
+  "date": "2026-11-15",
+  "image_assets_embedded": false,
+  "description": "Eight source-grounded artist/architecture studies; preview observation and curator/creator context separated from digital transfer hypotheses.",
+  "entries": [
+    {
+      "id": "MA-001",
+      "title": "Woman Holding a Balance",
+      "creator": "Johannes Vermeer",
+      "year": "c. 1664",
+      "discipline": "painting",
+      "tags": [
+        "quiet",
+        "light",
+        "balance",
+        "hierarchy",
+        "contrast",
+        "composition"
+      ],
+      "mechanism": "Local light and spatial relations can prioritize quiet human action without flattening secondary content.",
+      "source": "https://www.nga.gov/artworks/1236-woman-holding-balance",
+      "study": "studies/MA-001-VERMEER-BALANCE.md",
+      "evidence": [
+        "OBJECT_IDENTIFIED",
+        "PREVIEW_OBSERVED",
+        "PRIMARY_CONTEXT_READ",
+        "DIGITAL_TRANSFER_PROPOSED"
+      ],
+      "rights": "NGA image permissions per item"
+    },
+    {
+      "id": "MA-002",
+      "title": "Under the Wave off Kanagawa",
+      "creator": "Katsushika Hokusai",
+      "year": "ca. 1830–32",
+      "discipline": "woodblock",
+      "tags": [
+        "rhythm",
+        "scale",
+        "movement",
+        "contrast",
+        "composition",
+        "narrative"
+      ],
+      "mechanism": "Large foreground energy can coexist with a small stable reference, without requiring literal imagery reuse.",
+      "source": "https://www.metmuseum.org/art/collection/search/36491",
+      "study": "studies/MA-002-HOKUSAI-WAVE.md",
+      "evidence": [
+        "OBJECT_IDENTIFIED",
+        "PREVIEW_OBSERVED",
+        "PRIMARY_CONTEXT_READ",
+        "DIGITAL_TRANSFER_PROPOSED"
+      ],
+      "rights": "Met catalog marks this impression image Public Domain"
+    },
+    {
+      "id": "MA-003",
+      "title": "Nighthawks",
+      "creator": "Edward Hopper",
+      "year": "1942",
+      "discipline": "painting",
+      "tags": [
+        "lighting",
+        "photography",
+        "cinematic",
+        "threshold",
+        "story",
+        "negative-space"
+      ],
+      "mechanism": "Luminous inhabited space framed by darkness suggests a story; deliberately absent entry is anti-pattern for product navigation.",
+      "source": "https://archive.artic.edu/hopper/artwork/111628",
+      "study": "studies/MA-003-HOPPER-NIGHTHAWKS.md",
+      "evidence": [
+        "OBJECT_IDENTIFIED",
+        "PREVIEW_OBSERVED",
+        "PRIMARY_CONTEXT_READ",
+        "DIGITAL_TRANSFER_PROPOSED"
+      ],
+      "rights": "Museum and third-party photo rights to review"
+    },
+    {
+      "id": "MA-004",
+      "title": "Simpatico poster",
+      "creator": "Paula Scher",
+      "year": "1994",
+      "discipline": "graphic-design",
+      "tags": [
+        "typography",
+        "identity",
+        "hierarchy",
+        "poster",
+        "culture",
+        "density"
+      ],
+      "mechanism": "Overwhelming display type can build cultural identity if utility information remains reliably legible.",
+      "source": "https://www.pentagram.com/work/the-public-theater/story",
+      "study": "studies/MA-004-SCHER-SIMPATICO.md",
+      "evidence": [
+        "OBJECT_IDENTIFIED",
+        "PREVIEW_OBSERVED",
+        "PRIMARY_CONTEXT_READ",
+        "DIGITAL_TRANSFER_PROPOSED"
+      ],
+      "rights": "Commercial identity and museum store photo; permission required for reproduction"
+    },
+    {
+      "id": "MA-005",
+      "title": "Study for Homage to the Square: Light Rising",
+      "creator": "Josef Albers",
+      "year": "1950, altered 1959",
+      "discipline": "color-painting",
+      "tags": [
+        "color",
+        "context",
+        "contrast",
+        "nesting",
+        "perception",
+        "value"
+      ],
+      "mechanism": "Color impact changes with adjacent surfaces; artistic value contrast is not accessibility compliance.",
+      "source": "https://www.nga.gov/artworks/74822-study-homage-square-light-rising",
+      "study": "studies/MA-005-ALBERS-LIGHT-RISING.md",
+      "evidence": [
+        "OBJECT_IDENTIFIED",
+        "PREVIEW_OBSERVED",
+        "PRIMARY_CONTEXT_READ",
+        "DIGITAL_TRANSFER_PROPOSED"
+      ],
+      "rights": "NGA expressly does not provide media download; request image-use permission"
+    },
+    {
+      "id": "MA-006",
+      "title": "Church of the Light",
+      "creator": "Tadao Ando Architect & Associates",
+      "year": "1989",
+      "discipline": "architecture",
+      "tags": [
+        "light",
+        "space",
+        "sequence",
+        "arrival",
+        "reveal",
+        "restraint"
+      ],
+      "mechanism": "Spatial restraint and a focused reveal can express meaning, not justify delaying digital tasks.",
+      "source": "https://artsandculture.google.com/story/the-church-of-the-light-a-cross-of-light-floating-in-the-dark/2QVRGQpQrOQ8sQ?hl=en",
+      "study": "studies/MA-006-ANDO-CHURCH-OF-LIGHT.md",
+      "evidence": [
+        "OBJECT_IDENTIFIED",
+        "PREVIEW_OBSERVED",
+        "PRIMARY_CONTEXT_READ",
+        "DIGITAL_TRANSFER_PROPOSED"
+      ],
+      "rights": "Architect-authored account; third-party photo and RIBA drawing rights are separate"
+    },
+    {
+      "id": "MA-007",
+      "title": "American Gothic, Washington, D.C.",
+      "creator": "Gordon Parks",
+      "year": "1942",
+      "discipline": "photography",
+      "tags": [
+        "portrait",
+        "photography",
+        "authenticity",
+        "ethics",
+        "culture",
+        "framing"
+      ],
+      "mechanism": "Portrait framing only has ethical/design force when identity, lived context and consent are understood; don't manufacture documentary authenticity.",
+      "source": "https://www.gordonparksfoundation.org/gordon-parks/photography-archive/washington-d-c-and-ella-watson-1942?view=slider",
+      "study": "studies/MA-007-PARKS-AMERICAN-GOTHIC.md",
+      "evidence": [
+        "OBJECT_IDENTIFIED",
+        "PREVIEW_OBSERVED",
+        "PRIMARY_CONTEXT_READ",
+        "DIGITAL_TRANSFER_PROPOSED"
+      ],
+      "rights": "Gordon Parks Foundation/LOC and specific photographic print rights require clearance"
+    },
+    {
+      "id": "MA-008",
+      "title": "Out to Lunch! album cover",
+      "creator": "Reid Miles (cover design); Eric Dolphy (album)",
+      "year": "1964",
+      "discipline": "music-graphic-design",
+      "tags": [
+        "music",
+        "album",
+        "typography",
+        "photography",
+        "jazz",
+        "identity",
+        "culture"
+      ],
+      "mechanism": "An unexpected subject-specific visual metaphor can pair with accurate artist information; the visual should not impersonate operational status or copy an existing label identity.",
+      "source": "https://www.bluenote.com/blue-note-wall-art/",
+      "study": "studies/MA-008-REID-MILES-OUT-TO-LUNCH.md",
+      "evidence": [
+        "OBJECT_IDENTIFIED",
+        "PREVIEW_OBSERVED",
+        "PRIMARY_CONTEXT_READ",
+        "DIGITAL_TRANSFER_PROPOSED"
+      ],
+      "rights": "Blue Note/photographer/graphic artwork rights; independent collector preview not cleared for republication"
+    }
+  ]
+}

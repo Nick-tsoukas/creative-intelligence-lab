@@ -1,0 +1,35 @@
+name: Masterpiece Atlas static integrity
+
+on:
+  pull_request:
+    paths:
+      - 'visual-library/masterpiece-atlas/**'
+      - 'scripts/query_masterpiece_atlas.py'
+      - 'scripts/check_masterpiece_atlas.py'
+      - '.github/workflows/masterpiece-atlas-check.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'visual-library/masterpiece-atlas/**'
+      - 'scripts/query_masterpiece_atlas.py'
+      - 'scripts/check_masterpiece_atlas.py'
+      - '.github/workflows/masterpiece-atlas-check.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  atlas-structure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check Atlas data and bounded retrieval (not model efficacy)
+        run: python scripts/check_masterpiece_atlas.py
+      - name: Show one exact study and short topic search
+        run: |
+          python scripts/query_masterpiece_atlas.py show MA-001 > /dev/null
+          python scripts/query_masterpiece_atlas.py search "light" > /dev/null
