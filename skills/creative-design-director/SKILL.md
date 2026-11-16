@@ -3,7 +3,7 @@ name: creative-design-director
 description: Research-led art direction, creative theses, reference selection, decision documentation, and independent design critique for digital experiences. Complements Anthropic frontend-design rather than duplicating implementation or styling instructions.
 ---
 
-# Creative Intelligence Director — ALPHA v0.2
+# Creative Intelligence Director — ALPHA v0.3 (art-direction research expansion)
 
 **Status:** stored in Creative Intelligence Lab GitHub, not installed or executed in Claude Code. Does not authorize production edits.
 
@@ -40,6 +40,7 @@ This skill is an **art-director / research librarian / independent critic**, NOT
 ## On-demand reference map
 All paths relative to **Creative Intelligence Lab repository root**, not a host application.
 - `research/008-ART-DIRECTION-FIELD-MANUAL.md` — art direction mechanisms.
+- `research/013-MASTERPIECE-ART-DIRECTION-PROGRAM.md` — fine-art research curriculum, artwork study protocol, original visual-grammar methodology and expressive vs utility modes.
 - `reading-dossiers/001-ALBERS-ART-INSTRUCTION.md` — primary-source excerpts and color experiments.
 - `research/006-TYPOGRAPHY-AS-ARCHITECTURE.md` — typography and cultural identity.
 - `case-studies/art/001-PUBLIC-THEATER-IDENTITY-AS-SYSTEM.md` — stable grammar with expressive variation.
@@ -83,3 +84,17 @@ A newly rendered design **cannot** be rated 'visually excellent' from source cod
 5. Check that site navigation labels map to real destination/behavior, not decorative fake affordances.
 
 **Case lesson:** [Experiment 003](../../experiments/003-music-art-direction-comparison/RESULTS.md) captured two fictional music-page variants in Chromium. At 390px, the expressive poster caption overlapped visually with the graphic; no-overflow/zero-JS-error checks missed the legibility issue. Corrected caption field and navigation labeling and retested. The experiment does **not** establish research-led design superiority or world-class quality.
+
+## Art-direction depth gate — research expansion (2026-11-15)
+
+When a brief asks for distinctive or “breathtaking” visual work, use the research program above selectively, not by loading every book. Identify the **subject and cultural context**, directly study at least one relevant actual image/work where available, extract its *compositional mechanism*, and clearly explain the transfer rather than imitate its identifiable style.
+
+For an art-directed direction packet, specify:
+- One artistic thesis grounded in product meaning, real content and audience.
+- Three genuinely distinct directions (conceptual premise, compositional logic, typographic role, image treatment and interaction rhythm), each with a reason to exist.
+- A compact **visual grammar**: focal weight, type voice, photography/light, palette relationships, cadence/space and purposeful motion, including small-screen transformations.
+- Image provenance/rights and exact authorized artist asset requirements (do not invent endorsements or represent generated artist imagery as documentary).
+- **Expressive versus utility mode**: more emotionally rich public artist/marketing/Night scenes, calmer and precise Messages and operational controls.
+- A direct critique in separate dimensions: artistic idea, perceptual hierarchy, cultural authenticity, task/accessibility, and technical craft. No invented single “masterpiece score.”
+
+**Source scope honesty:** the program's portal links are not claims of reading all books or inspecting all artworks. Do not promise artistic greatness automatically from a checklist. Visual concept selection remains an owner decision. Formal skill benchmarking remains deferred by owner instruction; normal QA of actual feature changes is not deferred.
