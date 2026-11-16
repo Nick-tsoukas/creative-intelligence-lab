@@ -1,0 +1,44 @@
+name: Visual Grammar Studio browser regression
+
+on:
+  pull_request:
+    paths:
+      - 'experiments/004-visual-grammar-studio/**'
+      - 'scripts/test_visual_grammar_studio.py'
+      - '.github/workflows/visual-grammar-studio.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'experiments/004-visual-grammar-studio/**'
+      - 'scripts/test_visual_grammar_studio.py'
+      - '.github/workflows/visual-grammar-studio.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  browser-qa:
+    name: Real Chromium viewport/interaction checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      ART_STUDIO_SCREENSHOTS: ${{ runner.temp }}/art-studio-screenshots
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated browser testing support (CI runner only)
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Render original three-direction studio and verify responsive semantics
+        run: python scripts/test_visual_grammar_studio.py
+      - name: Preserve screenshots for human critique (not automatic approval)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-grammar-studio-actual-browser-screenshots
+          path: ${{ env.ART_STUDIO_SCREENSHOTS }}
+          retention-days: 7
+          if-no-files-found: warn
