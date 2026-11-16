@@ -1,0 +1,430 @@
+{
+  "version": 1,
+  "kind": "reference_leads",
+  "research_status": "NOT_A_CASE_STUDY",
+  "description": "20 source hubs and official documentation references for later per-work visual/interaction inspection; none visually audited by this file.",
+  "entries": [
+    {
+      "id": "SRC-001",
+      "name": "Awwwards",
+      "url": "https://www.awwwards.com/",
+      "kind": "web",
+      "source_type": "website-awards",
+      "tags": [
+        "editorial",
+        "cinematic",
+        "motion",
+        "typography",
+        "creative",
+        "homepage"
+      ],
+      "why_inspect": "Distinctive artistic website directions; validate accessibility/performance separately.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-002",
+      "name": "SiteInspire",
+      "url": "https://www.siteinspire.com/",
+      "kind": "web",
+      "source_type": "design-collection",
+      "tags": [
+        "editorial",
+        "photography",
+        "layout",
+        "web",
+        "homepage"
+      ],
+      "why_inspect": "Curated web compositions and photographic arrangements.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-003",
+      "name": "Lapa Ninja",
+      "url": "https://www.lapa.ninja/",
+      "kind": "web",
+      "source_type": "landing-page-library",
+      "tags": [
+        "landing",
+        "homepage",
+        "conversion",
+        "spacing",
+        "typography"
+      ],
+      "why_inspect": "Landing-page references; evaluate real CTA semantics.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-004",
+      "name": "Godly",
+      "url": "https://godly.website/",
+      "kind": "web",
+      "source_type": "design-collection",
+      "tags": [
+        "experimental",
+        "motion",
+        "web",
+        "creative",
+        "typography"
+      ],
+      "why_inspect": "Expressive experimental interfaces and visual narratives.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-005",
+      "name": "Land-book",
+      "url": "https://land-book.com/",
+      "kind": "web",
+      "source_type": "landing-page-library",
+      "tags": [
+        "landing",
+        "homepage",
+        "editorial",
+        "visual",
+        "web"
+      ],
+      "why_inspect": "Homepage arrangement, image hierarchy and section sequence.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-006",
+      "name": "CSS Design Awards",
+      "url": "https://www.cssdesignawards.com/",
+      "kind": "web",
+      "source_type": "website-awards",
+      "tags": [
+        "animation",
+        "experimental",
+        "typography",
+        "motion",
+        "web"
+      ],
+      "why_inspect": "Contemporary artistic websites; awards are discovery evidence only.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-007",
+      "name": "Mobbin",
+      "url": "https://mobbin.com/",
+      "kind": "mobile",
+      "source_type": "product-screens-library",
+      "tags": [
+        "mobile",
+        "app",
+        "flow",
+        "messaging",
+        "upload",
+        "sharing",
+        "editor",
+        "onboarding"
+      ],
+      "why_inspect": "Observe real shipped application screens and flows when access is authorized.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-008",
+      "name": "Refero",
+      "url": "https://refero.design/",
+      "kind": "mobile",
+      "source_type": "product-screens-library",
+      "tags": [
+        "mobile",
+        "web",
+        "flow",
+        "editor",
+        "upload",
+        "gallery",
+        "product",
+        "component"
+      ],
+      "why_inspect": "Task-oriented screens and journeys; paid access may be required.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-009",
+      "name": "Component Gallery",
+      "url": "https://component.gallery/",
+      "kind": "component",
+      "source_type": "component-index",
+      "tags": [
+        "component",
+        "dialog",
+        "navigation",
+        "forms",
+        "states",
+        "design-system"
+      ],
+      "why_inspect": "Compare independently documented component anatomy and states.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-010",
+      "name": "Nuxt UI",
+      "url": "https://ui.nuxt.com/",
+      "kind": "component",
+      "source_type": "official-code-docs",
+      "tags": [
+        "nuxt",
+        "vue",
+        "component",
+        "upload",
+        "forms",
+        "dialog",
+        "calendar"
+      ],
+      "why_inspect": "Vue/Nuxt-friendly documented UI components and APIs; verify current version.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-011",
+      "name": "Reka UI",
+      "url": "https://reka-ui.com/",
+      "kind": "component",
+      "source_type": "official-code-docs",
+      "tags": [
+        "nuxt",
+        "vue",
+        "component",
+        "accessibility",
+        "dialog",
+        "tabs",
+        "focus"
+      ],
+      "why_inspect": "Accessible Vue primitives, keyboard patterns and implementation foundations.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-012",
+      "name": "WAI-ARIA Authoring Practices",
+      "url": "https://www.w3.org/WAI/ARIA/apg/",
+      "kind": "component",
+      "source_type": "normative-adjacent-patterns",
+      "tags": [
+        "keyboard",
+        "accessibility",
+        "dialog",
+        "tabs",
+        "toolbar",
+        "menu",
+        "component"
+      ],
+      "why_inspect": "Accessible semantic patterns and keyboard behavior; not visual beauty inspiration.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-013",
+      "name": "Tiptap",
+      "url": "https://tiptap.dev/",
+      "kind": "component",
+      "source_type": "official-editor-docs",
+      "tags": [
+        "editor",
+        "rich-text",
+        "composition",
+        "contenteditable",
+        "keyboard",
+        "writing"
+      ],
+      "why_inspect": "Rich-text editing architecture and extensions; version/license check.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-014",
+      "name": "Uppy",
+      "url": "https://uppy.io/",
+      "kind": "component",
+      "source_type": "official-uploader-docs",
+      "tags": [
+        "upload",
+        "media",
+        "progress",
+        "retry",
+        "file",
+        "drag-drop",
+        "component"
+      ],
+      "why_inspect": "Upload flows, drag and drop, progress and recovery; check licensing.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-015",
+      "name": "Apple Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/",
+      "kind": "mobile",
+      "source_type": "official-platform-guidance",
+      "tags": [
+        "ios",
+        "mobile",
+        "accessibility",
+        "navigation",
+        "typography",
+        "sharing"
+      ],
+      "why_inspect": "Platform design guidance; not an iOS-screen screenshot library.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-016",
+      "name": "Material Design",
+      "url": "https://m3.material.io/",
+      "kind": "mobile",
+      "source_type": "official-platform-guidance",
+      "tags": [
+        "android",
+        "mobile",
+        "component",
+        "typography",
+        "navigation",
+        "motion"
+      ],
+      "why_inspect": "Android/multiplatform component and interaction patterns.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-017",
+      "name": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "kind": "research",
+      "source_type": "normative-standard",
+      "tags": [
+        "accessibility",
+        "contrast",
+        "reflow",
+        "text-spacing",
+        "motion",
+        "keyboard"
+      ],
+      "why_inspect": "Check normative accessibility requirements separately from art direction.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-018",
+      "name": "Playwright screenshots",
+      "url": "https://playwright.dev/python/docs/screenshots",
+      "kind": "research",
+      "source_type": "official-browser-docs",
+      "tags": [
+        "screenshot",
+        "viewport",
+        "testing",
+        "comparison",
+        "qa",
+        "automation"
+      ],
+      "why_inspect": "Official browser screenshot/testing technique for authorized future capture.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-019",
+      "name": "Met Open Access",
+      "url": "https://www.metmuseum.org/hubs/open-access",
+      "kind": "web",
+      "source_type": "institutional-art-collection",
+      "tags": [
+        "art",
+        "visual",
+        "typography",
+        "composition",
+        "culture",
+        "art-history"
+      ],
+      "why_inspect": "Original institutional artwork references with work-specific provenance.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    },
+    {
+      "id": "SRC-020",
+      "name": "Pentagram Projects",
+      "url": "https://www.pentagram.com/work",
+      "kind": "web",
+      "source_type": "design-studio-portfolio",
+      "tags": [
+        "identity",
+        "typography",
+        "editorial",
+        "branding",
+        "creative"
+      ],
+      "why_inspect": "Professional creative systems and visual storytelling; project claims require work-level inspection.",
+      "status": "LINK_ONLY",
+      "visually_inspected": false,
+      "flow_tested": false,
+      "rights": "Link/attribution only; no images or source code licensed by this record.",
+      "last_verified_at": null
+    }
+  ]
+}
