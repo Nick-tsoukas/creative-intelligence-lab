@@ -22,8 +22,8 @@ def check() -> list[str]:
     errors = []
     data = json.loads((ATLAS / "index.json").read_text(encoding="utf-8"))
     entries = data.get("entries", [])
-    if len(entries) != 6:
-        errors.append("Expected six first-pass studies; count changes require explicit review")
+    if len(entries) != 7:
+        errors.append("Expected seven first-pass studies; count changes require explicit review")
     if data.get("image_assets_embedded") is not False:
         errors.append("No third-party imagery may be embedded in Atlas")
     ids = set()
@@ -70,5 +70,5 @@ if __name__ == "__main__":
         print("FAIL:", problem)
     if failures:
         raise SystemExit(1)
-    print("PASS: six Atlas records, provenance fields, linked studies, safe paths, bounded lookup.")
+    print("PASS: seven Atlas records, provenance fields, linked studies, safe paths, bounded lookup.")
     print("NOT TESTED: visual images beyond described previews, user behavior, browser access, effect on v5.0 skill.")
