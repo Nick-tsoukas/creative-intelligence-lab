@@ -64,6 +64,21 @@ All findings are append-only under `.cil-private/design-audits/<project>/<audit>
 
 These are **prompts for judgment**, not numerical formulas. Avoid one 'masterpiece score.' An elegantly empty screen can be visually polished but unusable.
 
+## Compare a revised screenshot against the original
+
+Import the revised screenshot separately into the existing private Visual Memory workspace; do not overwrite the baseline. Start a distinct audit for the revised screen, then **visually inspect** both images.
+
+```bash
+python design-excellence/visual_audit.py start \
+  --project faneqo-night --audit revised-mobile-01 --screen night-revised-mobile
+
+# After an actual visually observed review of the candidate:
+python design-excellence/visual_audit.py compare \
+  --project faneqo-night --before initial-mobile-01 --after revised-mobile-01
+```
+
+The comparison identifies both source image locations, whether the viewport and state match, and the independently authored findings. It does **not** automatically choose a winner, make a stronger claim than the available evidence, or overwrite any historical audit. A changed viewport or app state is flagged as a comparability warning. The owner still decides whether the revision is better.
+
 ## Required report standard
 
 - **At most five** high-impact recommended changes in a first iteration, prioritized by severity.
