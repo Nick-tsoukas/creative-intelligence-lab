@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "route": "pages/example.vue",
+  "facts": [
+    {
+      "id": "display-title",
+      "kind": "DATA_FIELD",
+      "name": "example.title",
+      "source": "Example only: verify current frontend type and Strapi content-type before use",
+      "used_for": "Visible primary title",
+      "shape": "string (illustrative, not verified Faneqo schema)",
+      "permissions": "UNKNOWN — verify authenticated/public view rules",
+      "states": "pending, ready, empty, error — proposed test cases",
+      "evidence": "CODE_OBSERVED",
+      "verified_on": "NOT VERIFIED; REPLACE THIS EXAMPLE"
+    },
+    {
+      "id": "save-action",
+      "kind": "ACTION",
+      "name": "saveDraft",
+      "source": "Example only: must locate current UI handler and backend mutation",
+      "used_for": "Explicit save with clear feedback",
+      "shape": "(payload) => result (illustrative only)",
+      "permissions": "UNKNOWN — check server authorization",
+      "states": "idle, saving, saved, failed, retry — test required",
+      "evidence": "CODE_OBSERVED",
+      "verified_on": "NOT VERIFIED; REPLACE THIS EXAMPLE"
+    }
+  ],
+  "unknowns": [
+    "Does backend return fields shown?",
+    "Can this actor modify the object?",
+    "What happens after a failed save?"
+  ],
+  "constraints": [
+    "Never represent a draft as published",
+    "Never invent a public share link or analytics metric"
+  ]
+}
