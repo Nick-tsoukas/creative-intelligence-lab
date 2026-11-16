@@ -7,6 +7,12 @@ on:
     paths:
       - 'design-excellence/**'
       - '.github/workflows/design-excellence-validation.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'design-excellence/**'
+      - '.github/workflows/design-excellence-validation.yml'
   workflow_dispatch:
 
 permissions:
