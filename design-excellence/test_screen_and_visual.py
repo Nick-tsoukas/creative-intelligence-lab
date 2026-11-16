@@ -176,6 +176,16 @@ class VisualAuditTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             va.start(self.workspace, "example", "audit1", "screen1")
 
+    def test_comparison_requires_two_audits_and_does_not_choose_winner(self):
+        va.start(self.workspace, "example", "audit1", "screen1")
+        va.start(self.workspace, "example", "audit2", "screen1")
+        comparison = va.compare(self.workspace, "example", "audit1", "audit2")
+        self.assertIn("Viewport comparable: YES", comparison)
+        self.assertIn("Winner: NOT SELECTED", comparison)
+        self.assertIn("Open BOTH actual images", comparison)
+        with self.assertRaises(ValueError):
+            va.compare(self.workspace, "example", "audit1", "audit1")
+
     def test_empty_report_has_honest_limit(self):
         va.start(self.workspace, "example", "audit1", "screen1")
         self.assertIn("not** been audited", va.report(self.workspace, "example", "audit1"))
