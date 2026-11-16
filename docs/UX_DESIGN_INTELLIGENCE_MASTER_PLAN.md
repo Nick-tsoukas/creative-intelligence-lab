@@ -339,3 +339,12 @@ An accompanying handoff requests a **v5.0-compatible** upgrade to artistic knowl
 - `research/014-MASTERPIECE_VISUAL_INTELLIGENCE_IMPLEMENTATION.md` documents sources, book acquisition recommendations (not new parallel bibliography), remaining original-figure/film/digital browser gaps and next study order.
 
 **Future v5 integration:** inspect the actual v5 checkout and feature set, then point to this **additive** Atlas rather than swapping in any older alpha skill. Do not clone artwork, generate synthetic testimonials, force scroll animations, or violate keyboard/motion/permission invariants to make a UI look painterly.
+
+
+## Architecture Increment 006 — Actual Visual Design Practice (2026-11-15)
+**Reason:** the Masterpiece Atlas offers source-linked art mechanisms but needed a concrete **original composition exercise** and real responsive/screen semantics validation to become more useful. The established v5.0 preservation constraint remains: **no older skill entrypoints overwritten** and no production Faneqo work.
+- Research notes `research/015-SOURCE_CRITICAL_COMPOSITION-VERMEER-HOKUSAI.md` and `research/016-COLOR-TYPE-CRAFT-AND-ACCESSIBILITY.md` compare NGA/Met composition and published Albers/Blue Note/WCAG constraints, with exact image/reading limitations. Eight Atlas originals remain *preview-observed*, not deep/full-resolution certified.
+- `experiments/004-visual-grammar-studio/` is an original browser-ready design artifact: the **same fictional promise, copy, navigation and real in-page action** rendered through three divergent artistic theses (editorial, cinematic, typographic signal). No external fonts/media, customer claims, signups or borrowed artwork.
+- `scripts/test_visual_grammar_studio.py` and scoped GitHub Actions test functional page geometry, no horizontal overflow at 320/390/768/1440, mode switching, actual anchors, reduced motion/no-JS and 200% text spacing; screenshot artifacts are for a later **human visual inspection**, never automated artistic approval.
+- `handbook/VISUAL_DIRECTION_TASK_ROUTER.md` selects research/Atlas guidance only when relevant. The student should examine **why** a composition fails, not simply change colors or collect more famous names.
+- Next: inspect actual browser screenshots, fix wrap/crop defects, and use this method in a permitted Faneqo homepage sandbox; record what worked/failed. No formal independent model benchmarks initiated.
