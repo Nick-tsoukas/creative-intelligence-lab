@@ -168,3 +168,9 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added a **visually designed, self-contained, searchable original CSS reference browser** with 10 visual schematics, outbound image/source links, expandable studies and no-JavaScript accessible source index. No copyrighted image pixels copied or hotlinked.
 - Added Python stdlib `query_interface_atlas.py` one-case search/show/compare/targets, reproducible gallery generation, static source-status/security checks and Chromium viewports/interaction checks with original schematic screenshot artifacts.
 - Added a Faneqo Night Recap source-driven design pilot with 3 different artistic theses and a future *blinded same-model comparison* protocol. Neither an installed v5.0 skill nor Faneqo application files changed. Actual design superiority remains untested.
+
+## 2026-11-16 — Contextual design packet router v0.3
+
+- Added offline `scripts/prepare_design_packet.py` joining private project screenshot metadata, scoped evidenced problems, 1–4 specific preview-observed design sources and prior concepts into an actionable, original three-premise research packet. Sensitive screenshots stay private, no model/browser/image access is implied.
+- Added unit/integration tests for bounded source selection, missing pixels, screen-specific finding scope, safe private non-overwrite and absence of paid/network dependencies, plus GitHub CI.
+- Updated workspace quickstart, master plan and release documentation. Existing v5.0 skill entrypoints and Faneqo application untouched; no claims of measured design superiority.

@@ -94,3 +94,12 @@ Automated authenticated production captures, screenshot annotations, browser ins
 
 ## Version / safe integration
 The source GitHub repository currently contains older skill entrypoints than the separately reported advanced v5.0 installation. **Do not copy those older entrypoints over v5.0**. The workspace and Atlas are optional independent tools; a future integrator may add one pointer from the verified active v5.0 source to this quickstart and Atlas.
+
+## Faster research-to-design handoff (2026-11-16)
+
+Once a project contains manually redacted screen captures and user-reported/observed findings, the Lab can build one **bounded source-grounded art-direction packet** for Claude or ChatGPT:
+
+    python scripts/prepare_design_packet.py --project faneqo-night --task "create a breathtaking, usable Night Recap media gallery"
+    python scripts/prepare_design_packet.py --project faneqo-night --task "simplify audio upload" --screen night-baseline-mobile --save audio-brief-001
+
+The packet contains private screenshot paths (you still must **actually open the pixels**), up to eight screen-specific findings, and up to four concrete preview-observed external studies with their original URLs, detailed visual analysis, counterexamples and non-copying directions. It does not run an AI model, invent source visuals, approve a design or edit Faneqo. File stays under `.cil-private/projects/<project>/research-packets/` with no overwrite. See `docs/PROJECT_DESIGN_PACKET_ROUTER.md`.

@@ -44,3 +44,7 @@ For per-project screenshots, a visual comparison board, evidence-labeled UX find
 ## 2026-11-16 — Actual source-observed digital visual references
 
 Open `interface-atlas/gallery.html` in a local browser for 10 original abstract composition thumbnails, links to the **real external screenshot previews**, source-grounded observations, limitations, and visual research search/filter. Inspect source screenshots before proposing a concept. Use `scripts/query_interface_atlas.py show EI-002` or `compare EI-002 EI-008` for just-in-time context. The collection has 60 research targets but only 10 preview-observed specific digital cases; the rest are queued. The original Faneqo Night Recap pilot is `pilots/002-faneqo-night-art-research/README.md`. The separate advanced v5.0 skill remains untouched.
+
+## 2026-11-16 — Task-aware research packet
+
+For an authorized substantial visual design assignment, see `docs/PROJECT_DESIGN_PACKET_ROUTER.md`. The offline source-to-brief command `python scripts/prepare_design_packet.py --project <safe-slug> --task "precise design question"` selects no more than four directly relevant source observations and a few private screenshot paths. **Open those images before asserting visual findings.** This is optional and does not replace the unknown installed v5.0 skill.
