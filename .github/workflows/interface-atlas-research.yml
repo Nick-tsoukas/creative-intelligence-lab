@@ -50,7 +50,7 @@ jobs:
           echo "PASS: no third-party image pixels shipped in Atlas"
 
   actual-chromium:
-    name: Browser visual research gallery: 320, 390, 768, 1440
+    name: "Browser visual research gallery: 320, 390, 768, 1440"
     needs: evidence-and-bounds
     runs-on: ubuntu-latest
     timeout-minutes: 12
