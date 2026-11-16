@@ -145,3 +145,11 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added a small JSON Masterpiece Atlas and Python standard-library topic/ID retrieval, static CI provenance checks, eight conditional AD art-direction reasoning moves and a concise three-concept design packet.
 - Separated Faneqo music-domain visual language into `domain-adapters/faneqo/`. Updated existing art-direction program, master plans, visual registry, status and v5.0 integration audit. Book research track not restarted, no acquired/fully studied book counts inflated.
 - **Limitations:** image previews, not full original visual studies; no actual Faneqo homepage implementation, screenshot/browser QA, user testing or measured UX advantage. All external artwork remains linked, not copied.
+
+
+## 2026-11-15 — Visual Grammar Studio: from art references to actual original compositions
+- Researched original museum descriptions for Vermeer NGA accession 1942.9.97 and Hokusai Met JP10 and identified the latter's exact public-domain API image; retained preview-observed limits rather than invent full-resolution examination. Cross-study dossier `research/015`.
+- Studied Yale's published Albers edition metadata, official Blue Note design account and WCAG 2.2 type/reflow/contrast standards; did NOT falsely claim complete Albers book reading. Research `016`.
+- Added a standalone, source-inspired **original three-artistic-premises** HTML/CSS/JS studio with identical fictional product copy/CTA and coherent static/no-JS fallback. No external assets.
+- Added real Chromium/Playwright viewport and interaction QA, screenshot artifacts, 200% text stress and motion/JS fallback, along with a bounded art-direction task router. Tests are engineering smoke checks, not real-person comprehension or aesthetic-quality benchmarks.
+- Retained all original skill entrypoints unchanged, v5.0 compatibility, source/rights boundaries and isolated Faneqo production development.

@@ -45,3 +45,7 @@ All are **referrals** to the existing Library mission, not an independently cano
 
 ## Gaps explicitly not closed
 No full original image collections downloaded, no copyright permissions cleared, no live Faneqo screenshots captured, no original film sequence studied, no contemporary website browser interaction performed, no actual Claude v5.0 installation inspected, no Faneqo app changes or production deployment. This increment is meaningful **research infrastructure + eight scoped studies**, not the full six-domain completion gate.
+
+
+## Implemented follow-on — Visual Grammar Studio and source-critical composition (2026-11-15)
+With no claim of seeing unobserved full-resolution museum pixels, the Lab deepened Vermeer/Hokusai institutional source comparison (`research/015`) and compiled W3C-linked type/color craft (`research/016`). It implemented a **fictional, self-contained, three-mode original composition studio** (`experiments/004-visual-grammar-studio/`) preserving identical content, CTA anchor and semantics, and added a Playwright Chromium QA script across mobile/desktop, reduced motion, text-spacing stress and no-JS fallback. Related on-demand routing: `handbook/VISUAL_DIRECTION_TASK_ROUTER.md`. This remains a controlled art-direction practice and source-based tool, not a real Faneqo conversion experiment or an automated proof of visual beauty. The v5.0 source/version location remains unverified.

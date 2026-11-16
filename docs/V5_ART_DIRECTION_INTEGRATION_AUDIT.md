@@ -35,3 +35,7 @@ When the v5.0 owner/session has the current codebase:
 - No formal standalone skill benchmark run: owner's direction is to learn organically during authorized projects. Static CI does not prove aesthetic excellence or measurable UX improvements.
 
 **Conclusion:** A compatible, tested-for-structure *research module* can be merged without corrupting unknown v5.0. Actual v5.0 integration must happen at its verifiable source checkout, not by overwriting v0.x entrypoints.
+
+
+## Increment 002 — Visual Grammar Studio (2026-11-15)
+Another additive art-direction upgrade adds real original comparison code, source-critical museum composition reading, and automated responsive/interaction browser QA, separate from v5.0. Sources: `research/015`, `research/016`, `handbook/VISUAL_DIRECTION_TASK_ROUTER.md`, `experiments/004-visual-grammar-studio/`. It **does not modify** either older skill entrypoint or any unknown installed advanced v5.0 system. A future v5.0 integrator should use one optional pointer rather than duplicating every research chapter. Screenshots must be reviewed before art-quality claims; browser smoke success isn't model/UX superiority.
