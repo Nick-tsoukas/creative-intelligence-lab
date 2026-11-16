@@ -7,6 +7,7 @@ Usage: python scripts/build_interface_gallery.py [--check]
 """
 from __future__ import annotations
 import argparse
+import html
 import json
 from pathlib import Path
 
@@ -27,9 +28,15 @@ def build():
     # A JSON string inside a <script type=application/json> must not terminate
     # the script element or allow HTML injection via untrusted reference text.
     data = data.replace("&", "\\u0026").replace("<", "\\u003c").replace(">", "\\u003e")
-    if source.count("__RESEARCH_DATA__") != 1:
-        raise ValueError("Gallery template must have one research data placeholder")
-    return source.replace("__RESEARCH_DATA__", data)
+    if source.count("__RESEARCH_DATA__") != 1 or source.count("__NOSCRIPT_LINKS__") != 1:
+        raise ValueError("Gallery template must have exactly one of each data placeholder")
+    links = "\n".join(
+        f'<li><a href="{html.escape(item["source_url"], quote=True)}"'
+        f' target="_blank" rel="noopener noreferrer">'
+        f'{html.escape(item["title"])} — Original source</a></li>'
+        for item in cases
+    )
+    return source.replace("__RESEARCH_DATA__", data).replace("__NOSCRIPT_LINKS__", links)
 
 
 def main():
