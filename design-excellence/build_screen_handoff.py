@@ -34,8 +34,9 @@ def optional_atlas_packet(workspace: Path, project: str, packet: str | None) -> 
     text = target.read_text(encoding="utf-8")
     # If the research packet itself is long, only include its leading portion;
     # the exact original stays safely available to the local agent.
-    return (text[:MAX_EXTERNAL] + "\n[RESEARCH PACKET TRUNCATED — open the source file as needed]")
-        if len(text) > MAX_EXTERNAL else text
+    if len(text) > MAX_EXTERNAL:
+        return text[:MAX_EXTERNAL] + "\n[RESEARCH PACKET TRUNCATED — open the source file as needed]"
+    return text
 
 
 def build(
