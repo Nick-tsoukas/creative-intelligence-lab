@@ -191,3 +191,9 @@ Select and fully analyze an initial set of outstanding digital experiences with 
 - User handoff claims a separate v5.0 advanced system, but the accessible GitHub repo only exposed v0.x entrypoints; **we did not modify or replace them**, inspect any live installed v5.0 copy, or touch production Faneqo. Separate `docs/V5_ART_DIRECTION_INTEGRATION_AUDIT.md` is the integration guardrail.
 - All eight studies have low-res/cropped preview observation and actual museum/creator source reading. No complete full-resolution original-work study, browser/mobile art-direction study, real user data, licensing clearance, or empirical skill-effectiveness claim.
 - Next: deeper image/edition primary work, actual film/music series, live contemporary web experience inspection and safe selective adoption by the real v5.0 system when its location is verifiable.
+
+
+## 2026-11-15 — Visual Grammar Studio and source-critical art practice
+- Source-based analysis compares two museums' Vermeer/Hokusai composition accounts, plus Albers publisher history, official Blue Note identity and current W3C typography/accessibility constraints. Exact source vs interpretation status recorded in `research/015` and `research/016`.
+- Original `experiments/004-visual-grammar-studio/` demonstrates editorial/cinematic/typographic choices on identical **fictional** copy with real in-page CTA. Browser QA in `scripts/test_visual_grammar_studio.py` runs on GitHub CI where available; screenshot artifacts require actual independent visual review before any creative quality claim.
+- The separate v5.0 system remains unlocated in available GitHub records; its entrypoint was not overwritten, installed or benchmarked. This increment is an additive Lab research/design practice.
