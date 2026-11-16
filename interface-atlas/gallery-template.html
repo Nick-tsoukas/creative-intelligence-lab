@@ -66,6 +66,7 @@ header nav{font-size:.76rem;display:flex;gap:1.5rem;flex-wrap:wrap}
 .case-body summary{cursor:pointer;color:#f0dbba;font-weight:750}
 .case-body details p{line-height:1.5}
 .empty{padding:4rem 0;color:#b0aaa3}
+.fallback-links{columns:2;column-gap:3rem;line-height:1.9;padding-left:1.2rem}.fallback-links li{break-inside:avoid;margin-bottom:.5rem}
 .audit{border-top:1px solid #383a3c;padding:2.5rem clamp(1rem,5vw,5rem) 4rem;background:#171819;display:grid;grid-template-columns:1fr 1fr;gap:2rem}
 .audit h2{font:400 clamp(2rem,3vw,3rem)/1.15 Georgia,serif;letter-spacing:-.05em;margin:.5rem 0 1rem}
 .audit p{font-size:.9rem;color:#c6c1ba;line-height:1.7}
@@ -73,7 +74,7 @@ header nav{font-size:.76rem;display:flex;gap:1.5rem;flex-wrap:wrap}
 footer{padding:1.5rem clamp(1rem,5vw,5rem);font-size:.73rem;color:#aaa49c;border-top:1px solid #414345}
 [hidden]{display:none!important}
 @media(max-width:1050px){.results{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.measure{display:flex;gap:2rem;flex-wrap:wrap;border-left:none;border-top:1px solid #665046;padding:1rem 0}.measure p{max-width:20ch}}
-@media(max-width:640px){.results{grid-template-columns:minmax(0,1fr)}.art{height:250px}.hero{padding-top:3rem}.hero h1{font-size:clamp(3.3rem,15vw,5rem)}.audit{grid-template-columns:1fr}.tabs{width:100%}.tabs button{flex:1}.brand span{display:block;margin:.2rem 0 0}}
+@media(max-width:640px){.results{grid-template-columns:minmax(0,1fr)}.art{height:250px}.hero{padding-top:3rem}.hero h1{font-size:clamp(3.3rem,15vw,5rem)}.audit{grid-template-columns:1fr}.fallback-links{columns:1}.tabs{width:100%}.tabs button{flex:1}.brand span{display:block;margin:.2rem 0 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -91,6 +92,7 @@ footer{padding:1.5rem clamp(1rem,5vw,5rem);font-size:.73rem;color:#aaa49c;border
 <div class="note">0 full user-flow tests. 0 claims of demonstrated design superiority. External screenshots are linked, never duplicated here.</div>
 </div>
 </section>
+<noscript><section class="catalog" aria-label="Static source link index"><div class="section-heading"><h2>Reference sources</h2><span class="count">JavaScript is off; links are still available.</span></div><ul class="fallback-links">__NOSCRIPT_LINKS__</ul></section></noscript>
 <section class="controls" aria-label="Research controls">
 <div class="left"><label for="query">What are you trying to design?</label><input id="query" type="search" placeholder="Search e.g. music, editor, gallery, typography" autocomplete="off"></div>
 <div class="tabs" role="group" aria-label="Filter reference category"><button type="button" aria-pressed="true" data-filter="all">All</button><button type="button" aria-pressed="false" data-filter="web">Web</button><button type="button" aria-pressed="false" data-filter="mobile">Mobile</button><button type="button" aria-pressed="false" data-filter="component">Components</button><button type="button" aria-pressed="false" data-filter="music">Music</button></div>
