@@ -217,14 +217,52 @@ def prompt(workspace: Path, project: str, audit: str) -> str:
     ]) + "\n"
 
 
+
+def compare(workspace: Path, project: str, baseline_id: str, candidate_id: str) -> str:
+    """Prepare paired, actual-image references; no automatic 'improvement' claim."""
+    if baseline_id == candidate_id:
+        raise ValueError("Use two different audit IDs")
+    before = load_audit(workspace, project, safe_id(baseline_id))
+    after = load_audit(workspace, project, safe_id(candidate_id))
+    _, before_image = capture(workspace, project, before["screen_id"])
+    _, after_image = capture(workspace, project, after["screen_id"])
+    same_view = before["viewport_css"] == after["viewport_css"]
+    same_state = before["capture_state"] == after["capture_state"]
+    lines = [
+        "# Before / After — Independent Visual Comparison",
+        "**Neither comparison nor apparent visual polish proves UX or design quality improvement.**",
+        f"- BEFORE screenshot: {before_image}",
+        f"- AFTER screenshot: {after_image}",
+        f"- BEFORE viewport/state: {before['viewport_css']} / {before['capture_state'] or 'UNKNOWN'}",
+        f"- AFTER viewport/state: {after['viewport_css']} / {after['capture_state'] or 'UNKNOWN'}",
+        f"- Viewport comparable: {'YES' if same_view else 'NO — recapture matched viewport'}",
+        f"- Product state comparable: {'YES' if same_state else 'NO — inspect state differences'}",
+        "",
+        "Open BOTH actual images. Independently judge changes to focal hierarchy, photo crop,",
+        "typography, breathing room, visual rhythm, comprehension and the primary action.",
+        "Inspect whether a correction introduced a new visual or operational failure.",
+        "Record the real owner's judgment separately; do not invent acceptance.",
+        "",
+        "## BEFORE audit evidence", report(workspace, project, baseline_id),
+        "## AFTER audit evidence", report(workspace, project, candidate_id),
+        "## Human decision still needed",
+        "Winner: NOT SELECTED. No aesthetic or task success is certified by this report.",
+    ]
+    return "\n".join(lines) + "\n"
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--workspace", type=Path, default=DEFAULT_WORKSPACE)
     commands = p.add_subparsers(dest="command", required=True)
-    for command in ("start", "observe", "report", "prompt", "audit"):
+    for command in ("start", "observe", "report", "prompt", "audit", "compare"):
         x = commands.add_parser(command)
         x.add_argument("--project", required=True)
-        x.add_argument("--audit", required=True)
+        if command != "compare":
+            x.add_argument("--audit", required=True)
+        else:
+            x.add_argument("--before", required=True)
+            x.add_argument("--after", required=True)
         if command == "start":
             x.add_argument("--screen", required=True)
         if command == "observe":
@@ -245,6 +283,8 @@ def main(argv=None) -> int:
             print(json.dumps(observe(root, args.project, args.audit, args), indent=2))
         elif args.command == "report":
             print(report(root, args.project, args.audit))
+        elif args.command == "compare":
+            print(compare(root, args.project, args.before, args.after))
         elif args.command == "prompt":
             print(prompt(root, args.project, args.audit))
         else:
