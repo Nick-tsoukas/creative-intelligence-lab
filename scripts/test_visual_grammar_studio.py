@@ -65,8 +65,14 @@ def stress(page) -> None:
            e.style.wordSpacing = '0.16em';
        }
     }""")
-    # WCAG text spacing requires no LOSS OF CONTENT; a geometry smoke check
-    # can flag overflow but does not certify screen reader/comprehension.
+    # Check real information elements independently of the decorative clipping boundary.
+    content_bounds = page.evaluate("""() => [...document.querySelectorAll(
+      '.lab-wordmark, #main-headline, .hero-subtitle, .hero-cta, .canvas-top nav a, .method-grid h3, .method-grid p'
+    )].map(el => ({name: el.className || el.tagName,
+      left: el.getBoundingClientRect().left, right: el.getBoundingClientRect().right}))""")
+    for item in content_bounds:
+        assert item["left"] >= -1 and item["right"] <= 321, ("real content clipped at 320px", item)
+    # WCAG text spacing requires no LOSS OF CONTENT; this does not certify conformance.
     dims = page.evaluate("() => ({vp:innerWidth,sw:document.documentElement.scrollWidth})")
     if dims["sw"] > dims["vp"] + 1:
         offenders = page.evaluate("""() =>
