@@ -155,7 +155,11 @@ body[data-mode="signal"] .scene-note { border-top: 3px solid #11140e; }
   .hero-content h2,body[data-mode="signal"] .hero-content h2 { font-size: 12vw; }
   .hero-cta { width: 100%; }
   .method-grid { grid-template-columns:minmax(0,1fr); gap: .4rem; }
-  body[data-mode="signal"] .scene-rule-two { display:none; } /* avoid decorative transform scroll overflow at 320px */
+  /* Mobile signal uses typographic rhythm; large off-canvas geometry is deliberately omitted. */
+  body[data-mode="signal"] .scene-rule-two,
+  body[data-mode="signal"] .scene-frame,
+  body[data-mode="signal"] .scene-mark,
+  body[data-mode="signal"] .scene-halo { display:none; }
   .method-grid > div, .method-grid h3, .method-grid p { min-width:0; overflow-wrap:anywhere; }
 }
 @media (prefers-reduced-motion: reduce) {
