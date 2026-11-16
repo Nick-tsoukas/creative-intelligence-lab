@@ -1,6 +1,6 @@
 # Masterpiece Atlas — Art-to-Interface Research (Increment 001)
 
-**Date:** 2026-11-15. **Status:** Eight artwork/architecture/identity source-grounded first-pass studies with image-preview inspection; **not** six exhaustive art-historical monographs, complete digital-website audits, or claims of observed user eye-tracking. All images remain at institutional/creator sources and are **not copied into this repo**.
+**Date:** 2026-11-15. **Status:** Eight artwork/architecture/identity source-grounded first-pass studies with image-preview inspection; **not** eight exhaustive art-historical monographs, complete digital-website audits, or claims of observed user eye-tracking. All images remain at institutional/creator sources and are **not copied into this repo**.
 
 ## Purpose
 Turn exact works into **original, conditional mechanisms** for digital experience art direction. Do not use famous artists as endorsements, copy identifiable styles, or conflate museum scholarship with UX evidence.
@@ -58,3 +58,10 @@ The user's separate handoff refers to a **v5.0 UX/Design system** but does not i
 
 ## Rights
 Links and original commentary only. Museum image permissions vary; the Met explicitly marks its Hokusai JP10 image public domain, but this does not grant unrestricted reuse of third-party website screenshots or the actual creative identity. No unlicensed image assets are committed. Check individual rights before reproducing photographs, posters or branding.
+
+
+## Increment 002 — From referenced masterpieces to tested compositions (2026-11-15)
+- Deepened the *textual/institutional source reading* of Vermeer MA-001 and Hokusai MA-002, while keeping the original images at **preview-observed**, not full-resolution examined: `../../research/015-SOURCE_CRITICAL_COMPOSITION-VERMEER-HOKUSAI.md`.
+- Added a method for relative color, expressive-versus-utility typography and **actual WCAG 2.2 technical constraints**: `../../research/016-COLOR-TYPE-CRAFT-AND-ACCESSIBILITY.md`. It does **not** claim full reading of Yale's paid Albers digital edition.
+- Produced an original *same copy, 3 compositions* studio at `../../experiments/004-visual-grammar-studio/`, with separate browser QA; no external artwork/copyrighted asset copies.
+- Task-first reading and counterexample guide: `../../handbook/VISUAL_DIRECTION_TASK_ROUTER.md`.
