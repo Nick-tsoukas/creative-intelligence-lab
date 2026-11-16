@@ -85,3 +85,26 @@ No model-generated quality score certifies originality. Compare ordinary agent w
 ## First review scenario
 
 Faneqo Night Recap: only when the owner supplies or authorizes a sanitized current screenshot, record the specific reason they accept/reject a candidate, e.g. spatial breathing room, artist photo dominance, legibility of audio actions. Use an actual candidate ID and faithful quoted/paraphrased reason; do not claim a synthetic example was witnessed feedback.
+
+## Increment 002 extension — requested visual audit and real screen data context (2026-11-16)
+
+The owner added two explicit, high-impact requirements:
+
+- A **visual-only design critique** that judges actual composition, typography, photography, space, hierarchy, identity and micro-polish. Implemented first as a reviewer-driven, screenshot-hash-bound `visual_audit.py` workflow. The tool does **not** perform computer vision; a vision-enabled agent must open the original private image and record defensible observations. Phase 4's independent finishing/revision gate remains a separate future step.
+- A **technical screen intelligence** layer that knows the source components, actual available data, API routes, field types, user roles, editing/publishing actions and state lifecycle before making implementable design proposals. Implemented first as a read-only `screen_intelligence.py` source inventory with *explicit* `STATIC_HINT_NOT_VERIFIED` status and an optional hand-confirmed data/permission contract. Actual API verification, backend controller/schema inspection and runtime tests remain required.
+
+**Bridge now implemented:** `build_screen_handoff.py` composes the owner taste ledger, a reviewed screenshot audit, static frontend inventory and optional Atlas packet into one bounded, read-only *implementation handoff*, without editing either Atlas implementation or the installed/unknown advanced v5.0 skill.
+
+**Evidence rule:** no automatic 'beauty score', no invented field names, no claim that a frontend API call proves server authorization, and no treating mere code scans as live data availability. Keep the private screenshots where the other chat already stores them; this feature only references their image hashes and local paths.
+
+### Status at this point
+
+- Phase 0 protected scope: done; all changes isolated to the dedicated feature branch plus one uniquely named CI workflow.
+- Phase 1 owner judgment ledger: code and synthetic tests authored, **not a claim of model training or better design**.
+- Visual audit entrypoint: implemented reviewer-driven evidence records, priority report and image integrity checks; actual Faneqo pixel inspection not performed here.
+- Technical context entrypoint: implemented bounded read-only selected-source detection + explicit manifest; no current Faneqo route inspection or permission verification performed here.
+- Combined handoff: implemented and backed by synthetic tests; optional latest Atlas integration via reading *existing private packet only*.
+- CI: workflow authored; record actual results before claiming validation complete.
+- Future gates: use one real authorized private Faneqo screenshot and actual technical code/API truth, verify independent visual review, produce three original design directions, implement only a sandbox and gather owner critique. No live application changes authorized.
+
+**Coexistence update:** the only allowed addition outside `design-excellence/` is the newly named `.github/workflows/design-excellence-validation.yml`, which solely tests these files. The concurrent Atlas and v5.0 code and docs remain untouched.
