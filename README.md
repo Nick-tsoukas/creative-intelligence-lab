@@ -105,3 +105,9 @@ Next action: real browser testing, screenshots, and Claude-led authorized iterat
 - [Architecture case studies](case-studies/art/002-VILLA-SAVOYE-PROMENADE.md) — three independently documented works in `case-studies/art/`.
 - [Architecture-to-UX direction card](handbook/ARCHITECTURE-TO-UX-CARD.md) — an implementation-neutral creative briefing tool.
 - [Visual architecture reference atlas](visual-library/ARCHITECTURE-REFERENCE-ATLAS.md) and [original three-sequence SVG](visual-library/original-studies/architectural-sequences.svg).
+
+
+## 2026-11-16 — Private Project Visual Memory + Exceptional Interface Atlas
+An **additive local-first design workspace** is now under active development. It supports project-specific screenshot evidence, context and state provenance, findings, source links, original design premises, before/after local boards and integrity checks, **without importing customer screenshots into this public repository**. See [quickstart](docs/PROJECT_VISUAL_WORKSPACE_QUICKSTART.md), [master plan](docs/PROJECT_VISUAL_MEMORY_MASTER_PLAN.md) and [reference catalog](interface-atlas/README.md).
+
+The system uses **Python 3.12+ standard library** for its core workflow (no database, background process, browser requirement or paid APIs); browser validation runs separately in GitHub CI with synthetic images. The source catalog contains **20 research leads**, not 20 audited application screenshots. The v5.0 installation remains untouched; see [integration audit](docs/V5_ART_DIRECTION_INTEGRATION_AUDIT.md).

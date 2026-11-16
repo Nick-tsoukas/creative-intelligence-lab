@@ -153,3 +153,10 @@ These are foundational materials; no Faneqo application code or deployments were
 - Added a standalone, source-inspired **original three-artistic-premises** HTML/CSS/JS studio with identical fictional product copy/CTA and coherent static/no-JS fallback. No external assets.
 - Added real Chromium/Playwright viewport and interaction QA, screenshot artifacts, 200% text stress and motion/JS fallback, along with a bounded art-direction task router. Tests are engineering smoke checks, not real-person comprehension or aesthetic-quality benchmarks.
 - Retained all original skill entrypoints unchanged, v5.0 compatibility, source/rights boundaries and isolated Faneqo production development.
+
+
+## 2026-11-16 — Exceptional Interface Atlas + Private Project Visual Memory
+- Implemented **offline stdlib Python** project workspaces with screenshot SHA-256/dimensions, human redaction confirmation, provenance, version/state, evidence findings, linked research, original unapproved concepts, bounded search, local HTML board with before/after, reports and integrity checks.
+- Versioned 20 source-link leads including Awwwards, Mobbin, Refero and component documentation, four original interaction research briefs, and a three-premise visual critique packet. No copied third-party imagery or fake inspected-case claims.
+- Kept actual screenshots in git-ignored `.cil-private/`, original source links as pointers, and Faneqo-specific Night example in its separate domain adapter. No Faneqo application changes or v5.0 overwrite.
+- Added stdlib integration tests, security/metadata gates and optional real Chromium CI using **only generated synthetic images**. Browser results and merge gate documented by the corresponding PR.

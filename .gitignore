@@ -1,0 +1,7 @@
+# Visual-workspace data, potentially private screenshots and generated local boards.
+.cil-private/
+# Keep generated screenshots from browser QA out of the public source tree.
+*.pyc
+__pycache__/
+.pytest_cache/
+synthetic-visual-board-screenshots/

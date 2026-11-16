@@ -39,3 +39,7 @@ When the v5.0 owner/session has the current codebase:
 
 ## Increment 002 — Visual Grammar Studio (2026-11-15)
 Another additive art-direction upgrade adds real original comparison code, source-critical museum composition reading, and automated responsive/interaction browser QA, separate from v5.0. Sources: `research/015`, `research/016`, `handbook/VISUAL_DIRECTION_TASK_ROUTER.md`, `experiments/004-visual-grammar-studio/`. It **does not modify** either older skill entrypoint or any unknown installed advanced v5.0 system. A future v5.0 integrator should use one optional pointer rather than duplicating every research chapter. Screenshots must be reviewed before art-quality claims; browser smoke success isn't model/UX superiority.
+
+
+## 2026-11-16 — Additive Project Visual Memory integration seam
+A new independent offline workspace CLI and source index (`scripts/visual_workspace.py`, `interface-atlas/`) lets projects retain private screenshot provenance, evidence findings, references, and creative directions. Because the reported advanced v5.0 source/installation still has not been independently verified, **both old skill entrypoints remain unchanged**. To integrate later, point v5.0 optionally to `docs/PROJECT_VISUAL_WORKSPACE_QUICKSTART.md`, require direct visual observation before analysis, and retrieve a few source links rather than loading the entire library. Do not install the older portable v0.x skill over the owner's v5.0. No model efficacy claim from repository tests.
