@@ -68,7 +68,17 @@ def stress(page) -> None:
     # WCAG text spacing requires no LOSS OF CONTENT; a geometry smoke check
     # can flag overflow but does not certify screen reader/comprehension.
     dims = page.evaluate("() => ({vp:innerWidth,sw:document.documentElement.scrollWidth})")
-    assert dims["sw"] <= dims["vp"] + 1, ("text size/spacing horizontal overflow", dims)
+    if dims["sw"] > dims["vp"] + 1:
+        offenders = page.evaluate("""() =>
+          [...document.querySelectorAll('body *')].map(el => {
+            const rect = el.getBoundingClientRect();
+            return {tag:el.tagName, cls:String(el.className).slice(0,55),
+                    text:(el.textContent || '').trim().slice(0,48),
+                    right:Math.round(rect.right), width:Math.round(rect.width)};
+          }).filter(x => x.right > innerWidth + 1 && x.width > 0)
+            .sort((a,b)=>b.right-a.right).slice(0,12)
+        """)
+        raise AssertionError(("text size/spacing horizontal overflow", dims, offenders))
     assert page.locator(".hero-cta").is_visible()
     page.screenshot(path=str(SHOTS / "signal-text-stress-320.png"), full_page=True, animations="disabled")
 
