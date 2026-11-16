@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Creative Intelligence Lab: original schematics and source-linked, evidence-labelled studies of exceptional digital design.">
+<title>Exceptional Interface Atlas — Creative Intelligence Lab</title>
+<style>
+:root{color-scheme:dark;background:#101113;color:#efeee9;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;font-synthesis:none}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}body{margin:0;min-width:0}
+a{color:inherit;text-underline-offset:.23em}button,input{font:inherit}
+:focus-visible{outline:3px solid #ffcf97;outline-offset:4px}
+.skip{position:absolute;left:1rem;top:-8rem;padding:.8rem;background:#f1efed;color:#141414;z-index:3}.skip:focus{top:.7rem}
+header{min-height:72px;display:flex;align-items:center;justify-content:space-between;padding:1rem clamp(1rem,4vw,4rem);gap:1rem;flex-wrap:wrap;border-bottom:1px solid #333538}
+.brand{font-size:1.08rem;font-weight:900;letter-spacing:-.065em;text-decoration:none}.brand span{font-size:.68rem;letter-spacing:.1em;color:#baae9f;font-weight:600;margin-left:.7rem}
+header nav{font-size:.76rem;display:flex;gap:1.5rem;flex-wrap:wrap}
+.hero{padding:clamp(3rem,8vw,8rem) clamp(1rem,5vw,5rem) clamp(2rem,5vw,5rem);display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.45fr);gap:3rem;background:radial-gradient(ellipse at 76% 20%,#3b29244b,transparent 62%)}
+.eyebrow{font-size:.68rem;font-weight:800;letter-spacing:.2em;color:#c7b09a;text-transform:uppercase;line-height:1.5}
+.hero h1{font-family:Georgia,Times New Roman,serif;font-weight:400;font-size:clamp(3.6rem,7.7vw,9.4rem);line-height:.96;letter-spacing:-.078em;max-width:11ch;margin:1rem 0 1.6rem}
+.hero h1 em{font-weight:400;color:#e6ad86}
+.hero p{font-size:1.05rem;line-height:1.68;color:#c5c4c0;max-width:52ch}
+.measure{border-left:1px solid #665046;padding:1rem 0 0 2rem;align-self:center}
+.measure .number{font-family:Georgia,serif;font-size:clamp(2.8rem,5vw,5rem);line-height:1;letter-spacing:-.055em}
+.measure p{font-size:.85rem;margin:.35rem 0 1.7rem;color:#b9b4ac}
+.measure .note{font-size:.73rem;border-top:1px solid #665046;padding-top:1.25rem}
+.controls{margin:0 clamp(1rem,5vw,5rem);padding:2rem 0;display:flex;align-items:end;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;border-top:1px solid #4a4947}
+.controls .left{min-width:min(100%,300px);max-width:450px;flex:1}
+.controls label{display:block;font-size:.7rem;letter-spacing:.13em;font-weight:750;text-transform:uppercase;color:#c4b7ab;margin-bottom:.75rem}
+.controls input{display:block;width:100%;height:3rem;background:#1c1e1f;color:#f0ece5;border:1px solid #57585a;border-radius:4px;padding:0 1rem;font-size:.95rem}
+.tabs{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.tabs button{padding:.75rem 1rem;background:transparent;color:#c9c7c0;border:1px solid #545454;border-radius:3px;font-size:.78rem;font-weight:650;cursor:pointer}
+.tabs button[aria-pressed=true]{background:#f0e4d5;color:#25201c;border-color:#f0e4d5}
+.tabs button:focus-visible{outline-color:#e7b181}
+.catalog{padding:1rem clamp(1rem,5vw,5rem) 4rem}
+.section-heading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;padding:1rem 0 1.7rem}
+.section-heading h2{font:400 clamp(2rem,3.5vw,3.5rem)/1.1 Georgia,serif;letter-spacing:-.045em;margin:0}
+.count{color:#b7afa4;font-size:.82rem}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.8rem,2vw,2rem)}
+.case{min-width:0;border:1px solid #444548;background:#17191a;display:flex;flex-direction:column;overflow:hidden;border-radius:7px}
+.art{height:clamp(210px,21vw,320px);position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#252527}
+.art::before,.art::after{content:"";display:block;position:absolute;pointer-events:none}
+.art .shape,.art .shape2,.art .shape3{position:absolute;display:block;pointer-events:none}
+.art .symbol{font-family:Georgia,serif;font-size:clamp(4rem,10vw,9rem);line-height:1;letter-spacing:-.12em;font-weight:700;position:relative;z-index:2}
+.art .art-label{position:absolute;bottom:1.1rem;left:1.2rem;font-size:.56rem;letter-spacing:.18em;font-weight:850;z-index:5}
+.art .index{position:absolute;top:1.1rem;right:1.2rem;font-size:.8rem;font-weight:850;z-index:5}
+.art.rca{background:#101213;color:#f1efed}.art.rca .shape{width:60%;height:47%;top:22%;left:10%;border:2px solid #f9f7f0;box-shadow:18px 0 0 -10px #101213,22px 0 0 -8px #f9f7f0,60px 0 0 -34px #101213,64px 0 0 -32px #f9f7f0}.art.rca .shape2{top:67%;left:11%;height:3px;width:68%;background:#c9ef35}.art.rca .symbol{font:700 clamp(2rem,5vw,4.2rem)/1 system-ui,sans-serif;letter-spacing:-.06em}
+.art.wax{background:#f1e9d7;color:#17191a}.art.wax .shape{width:42%;height:48%;left:-2%;bottom:0;background:#cb5e3c;transform:skew(10deg)}.art.wax .shape2{height:90%;width:1px;left:45%;top:5%;background:#9d9388}.art.wax .symbol{font:900 clamp(2.5rem,5.5vw,5rem)/.85 Impact,"Arial Black",sans-serif;letter-spacing:-.09em;transform:translateX(14%)}.art.wax .art-label{color:#2a2a27}
+.art.polish{background:#f3eee3;color:#12171c}.art.polish .shape{width:42%;height:100%;right:-6%;background:linear-gradient(150deg,#bb28ad,#2873dd);transform:skew(-9deg)}.art.polish .shape2{width:38%;height:38%;left:-8%;bottom:-17%;background:#cfc8bd;border-radius:50%}.art.polish .symbol{font:950 clamp(2.4rem,5vw,4.4rem)/.94 Impact,"Arial Black",sans-serif;letter-spacing:-.04em;max-width:74%;text-transform:uppercase}.art.polish .art-label{color:#34383c}
+.art.hem{background:#c7dfed;color:#121921}.art.hem .shape{right:12%;height:85%;width:30%;top:6%;border:8px solid #131b22;border-radius:24px;background:linear-gradient(140deg,#50bcb6,#3d638e 65%,#191d2b)}.art.hem .shape2{left:-10%;top:22%;width:62%;height:55%;background:repeating-linear-gradient(90deg,#e3d5ca 0 23px,#9878af 23px 38px,#9cbed6 38px 55px)}.art.hem .symbol{font:900 clamp(2.3rem,5vw,4.6rem)/1 system-ui,sans-serif;letter-spacing:-.1em;background:#d6edf3;transform:rotate(-6deg);padding:.1rem .3rem}
+.art.gaga{background:#e8ddcf;color:#191d1d}.art.gaga .shape{height:90%;width:42%;border-radius:40% 40% 0 0;right:12%;bottom:-33%;background:#484047;transform:rotate(-10deg)}.art.gaga .shape2{height:8%;width:70%;right:7%;top:40%;background:#121717;box-shadow:0 35px 0 #f6f0e9,0 70px 0 #e56f47}.art.gaga .symbol{font:900 clamp(2.3rem,4.6vw,4.1rem)/1 system-ui,sans-serif;letter-spacing:-.08em;color:#fff;transform:translateY(-70px)}
+.art.mobbin{background:#f4f2ed;color:#151719}.art.mobbin .shape{height:63%;width:23%;left:12%;top:22%;background:#e3d0ae;border-radius:18px;box-shadow:85px 0 0 #e9b7a3,170px 0 0 #d4d5de}.art.mobbin .shape2{height:18%;width:18%;left:14.5%;top:30%;background:#b46758;border-radius:10px;box-shadow:85px 0 0 #d47040,170px 0 0 #42435e}.art.mobbin .symbol{font:900 clamp(2rem,4vw,3.6rem)/1 system-ui,sans-serif;letter-spacing:-.09em;transform:translateY(-92px)}
+.art.tiptap{background:#f2f1ed;color:#1b1b1b}.art.tiptap .shape{height:13%;width:82%;left:9%;top:19%;background:#111318;box-shadow:0 33px 0 -28px #79787d}.art.tiptap .shape2{left:15%;top:45%;width:60%;height:7px;background:#afadac;box-shadow:0 24px 0 #d2cfc8,0 48px 0 #adabac}.art.tiptap .shape3{width:3px;height:24%;left:68%;top:44%;background:#c4589e}.art.tiptap .symbol{font:700 clamp(2rem,4vw,3rem)/1.1 Georgia,serif;transform:translateY(-2px)}
+.art.memories{background:#183970;color:#fff}.art.memories .shape{width:70%;height:73%;left:15%;top:14%;background:radial-gradient(circle at 24% 70%,#bf9f75 0 11%,transparent 12%),radial-gradient(circle at 63% 45%,#ebbd6f 0 10%,transparent 11%),linear-gradient(145deg,#234ba1,#5984a1);border-radius:13px}.art.memories .shape2{width:30%;height:32%;left:36%;bottom:12%;border-radius:50% 50% 20% 20%;background:#db5d74}.art.memories .symbol{font:900 clamp(2.2rem,4.5vw,4rem)/1 system-ui,sans-serif;letter-spacing:-.05em;transform:translateY(-45px)}
+.art.uppy{background:#eae9e6;color:#33363a}.art.uppy .shape{width:83%;height:75%;top:12%;left:9%;border:2px dashed #a1a2a1}.art.uppy .shape2{width:20%;height:27%;left:18%;top:49%;border-radius:5px;background:#9ebcbb;box-shadow:90px 0 0 #b9a487,180px 0 0 #9eb9d1}.art.uppy .symbol{font:900 clamp(2rem,4vw,3rem)/1 system-ui,sans-serif;transform:translateY(-58px)}
+.art.spotify{background:#56272a;color:#fff}.art.spotify .shape{width:53%;height:56%;left:23%;top:8%;background:linear-gradient(135deg,#d06c55 5%,#326da0 52%,#b18d5b);transform:rotate(-5deg)}.art.spotify .shape2{width:68%;height:4px;left:15%;bottom:24%;background:#e8ded4}.art.spotify .shape3{height:42px;width:42px;left:calc(50% - 21px);bottom:7%;background:#fff;border-radius:50%}.art.spotify .symbol{font:850 clamp(2rem,4vw,3.3rem)/1 system-ui,sans-serif;transform:translateY(-12px);text-shadow:1px 2px 4px #0008}
+.art .art-label{color:inherit}
+.case-body{padding:1.35rem 1.5rem 1.5rem;flex:1;display:flex;flex-direction:column}
+.case-body h3{font-size:1.2rem;font-weight:700;letter-spacing:-.035em;line-height:1.25;margin:.6rem 0 .65rem}
+.case-body .mechanism{font-size:.9rem;line-height:1.65;color:#d1d0cc;margin:0 0 1.25rem}
+.case-body .metadata{display:flex;gap:.6rem;flex-wrap:wrap;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:#b6ad9f}
+.case-body .actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:auto;border-top:1px solid #424447;padding-top:1rem;font-size:.78rem}
+.case-body .actions a{font-weight:700;text-decoration:none;border-bottom:1px solid #76716b}
+.case-body details{margin-top:1rem;border-top:1px solid #3b3d3f;padding-top:.75rem;font-size:.82rem;color:#bdbdb8}
+.case-body summary{cursor:pointer;color:#f0dbba;font-weight:750}
+.case-body details p{line-height:1.5}
+.empty{padding:4rem 0;color:#b0aaa3}
+.audit{border-top:1px solid #383a3c;padding:2.5rem clamp(1rem,5vw,5rem) 4rem;background:#171819;display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.audit h2{font:400 clamp(2rem,3vw,3rem)/1.15 Georgia,serif;letter-spacing:-.05em;margin:.5rem 0 1rem}
+.audit p{font-size:.9rem;color:#c6c1ba;line-height:1.7}
+.audit ul{padding-left:1.25rem;font-size:.85rem;color:#d2cbc2;line-height:1.9}
+footer{padding:1.5rem clamp(1rem,5vw,5rem);font-size:.73rem;color:#aaa49c;border-top:1px solid #414345}
+[hidden]{display:none!important}
+@media(max-width:1050px){.results{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.measure{display:flex;gap:2rem;flex-wrap:wrap;border-left:none;border-top:1px solid #665046;padding:1rem 0}.measure p{max-width:20ch}}
+@media(max-width:640px){.results{grid-template-columns:minmax(0,1fr)}.art{height:250px}.hero{padding-top:3rem}.hero h1{font-size:clamp(3.3rem,15vw,5rem)}.audit{grid-template-columns:1fr}.tabs{width:100%}.tabs button{flex:1}.brand span{display:block;margin:.2rem 0 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#research">Skip to research library</a>
+<header><a class="brand" href="#top">C / I LAB <span>EXCEPTIONAL INTERFACE ATLAS</span></a><nav><a href="#research">Visual references</a><a href="#principles">Research method</a><a href="../README.md">Source documentation</a></nav></header>
+<main>
+<section class="hero" id="top">
+<div><div class="eyebrow">RESEARCH INSTRUMENT NO. 002 · ORIGINAL VISUAL STUDIES</div>
+<h1>Study deeply.<br><em>Invent freely.</em></h1>
+<p>Ten real interface images, studied with care. Sixty further research targets. Each reference becomes a conditional visual idea—not an imitation. Open actual source pixels to see the difference between observation and interpretation.</p></div>
+<div class="measure">
+<div><div class="number" id="case-total">10</div><p>Source-linked visual studies</p></div>
+<div><div class="number" id="target-total">60</div><p>Research targets, many uninspected</p></div>
+<div class="note">0 full user-flow tests. 0 claims of demonstrated design superiority. External screenshots are linked, never duplicated here.</div>
+</div>
+</section>
+<section class="controls" aria-label="Research controls">
+<div class="left"><label for="query">What are you trying to design?</label><input id="query" type="search" placeholder="Search e.g. music, editor, gallery, typography" autocomplete="off"></div>
+<div class="tabs" role="group" aria-label="Filter reference category"><button type="button" aria-pressed="true" data-filter="all">All</button><button type="button" aria-pressed="false" data-filter="web">Web</button><button type="button" aria-pressed="false" data-filter="mobile">Mobile</button><button type="button" aria-pressed="false" data-filter="component">Components</button><button type="button" aria-pressed="false" data-filter="music">Music</button></div>
+</section>
+<section class="catalog" id="research">
+<div class="section-heading"><h2>Observed visual references</h2><span class="count" id="result-count" role="status" aria-live="polite"></span></div>
+<div class="results" id="results"></div>
+<div class="empty" id="empty" hidden>No verified preview studies match. Search the queued research targets, then inspect actual source pixels before writing a case study.</div>
+</section>
+<section class="audit" id="principles"><div><div class="eyebrow">DESIGN INTELLIGENCE, NOT REPLICATION</div><h2>Look. Understand. Challenge. Create.</h2><p>Each source has its own artistic and cultural meaning. We study visual relationships and interaction ideas, then design an original solution for a different product and human task.</p><p>Visual studies are not awards for usability, rights to copy source imagery, or evidence that a live mobile flow works.</p></div><div><div class="eyebrow">PROOF HIERARCHY</div><ul><li>External preview image actually seen: <strong>PREVIEW_OBSERVED</strong>.</li><li>Navigation, focus, errors and motion: <strong>NOT_TESTED</strong>.</li><li>Mobile/browser performance: <strong>NOT_TESTED</strong>.</li><li>Original composition sketches: teaching illustrations, <strong>not copied screenshots</strong>.</li><li>Future design outcome: requires real rendered comparison and independent critique.</li></ul></div></section>
+</main>
+<footer>Creative Intelligence Lab · Git-versioned research · External preview images open at their original hosts · No network fonts, tracking or image assets used in this gallery.</footer>
+<script id="research-data" type="application/json">__RESEARCH_DATA__</script>
+<script>
+(() => {
+  "use strict";
+  const data = JSON.parse(document.getElementById("research-data").textContent);
+  const rows = data.cases;
+  const input = document.getElementById("query");
+  const results = document.getElementById("results");
+  const count = document.getElementById("result-count");
+  const empty = document.getElementById("empty");
+  const filters = Array.from(document.querySelectorAll("[data-filter]"));
+  let activeFilter = "all";
+  const designs = {
+    "EI-001":["rca","RCA"], "EI-002":["wax","WAX"], "EI-003":["polish","MUSIC"],
+    "EI-004":["hem","HEM"],"EI-005":["gaga","ARTIST"],"EI-006":["mobbin","UI"],
+    "EI-007":["tiptap","Aa"],"EI-008":["memories","SUMMER"],
+    "EI-009":["uppy","FILES"],"EI-010":["spotify","▶"]
+  };
+  const create = (tag, className, text) => {
+    const n=document.createElement(tag);
+    if(className) n.className=className;
+    if(text!==undefined) n.textContent=String(text);
+    return n;
+  };
+  const addLink=(container,label,url) => {
+    const a=create("a",null,label);
+    if(!url.startsWith("https://")) return;
+    a.href=url;a.target="_blank";a.rel="noopener noreferrer";
+    container.appendChild(a);
+  };
+  function card(item) {
+    const article=create("article","case");
+    const art=create("div","art "+designs[item.id][0]);
+    art.setAttribute("aria-label","Original composition schematic. Not a reproduction of the linked website.");
+    for(const className of ["shape","shape2","shape3"]) art.appendChild(create("span",className));
+    art.appendChild(create("span","symbol",designs[item.id][1]));
+    art.appendChild(create("span","art-label","ORIGINAL SCHEMATIC · NOT A SCREENSHOT"));
+    art.appendChild(create("span","index",item.id));
+    const body=create("div","case-body");
+    const meta=create("div","metadata");
+    meta.appendChild(create("span",null,item.kind));
+    meta.appendChild(create("span",null,"Preview observed"));
+    body.appendChild(meta);
+    body.appendChild(create("h3",null,item.title));
+    body.appendChild(create("p","mechanism",item.mechanism));
+    const actions=create("div","actions");
+    addLink(actions,"View actual source image ↗",item.preview_url);
+    addLink(actions,"Visit original source ↗",item.source_url);
+    body.appendChild(actions);
+    const detail=create("details");
+    detail.appendChild(create("summary",null,"Actual observation, limitations & application"));
+    for(const [name,value] of [
+      ["What was visible",item.observed],
+      ["Research limitation",item.observation_limits],
+      ["Where this could fail",item.risks],
+      ["Original exercise",item.original_exercise],
+      ["Do not copy",item.not_copy]
+    ]) { const p=create("p");p.appendChild(create("strong",null,name+": "));p.appendChild(document.createTextNode(value));detail.appendChild(p); }
+    body.appendChild(detail);article.appendChild(art);article.appendChild(body);
+    return article;
+  }
+  function update(){
+    const query=input.value.trim().toLowerCase();
+    const terms=query.split(/\s+/).filter(Boolean);
+    const visible=rows.filter(r=>{
+      if(activeFilter!=="all" && activeFilter!=="music" && r.kind!==activeFilter) return false;
+      if(activeFilter==="music" && !r.tags.includes("music")) return false;
+      const searchable=[r.title,r.creator,r.kind,r.mechanism,r.observed,...r.tags].join(" ").toLowerCase();
+      return terms.every(t=>searchable.includes(t));
+    });
+    results.replaceChildren(...visible.map(card));
+    count.textContent=visible.length+" of "+rows.length+" studies";
+    empty.hidden=visible.length!==0;
+  }
+  input.addEventListener("input",update);
+  for(const b of filters)b.addEventListener("click",()=>{
+    activeFilter=b.dataset.filter;
+    for(const other of filters)other.setAttribute("aria-pressed",String(other===b));
+    update();
+  });
+  document.getElementById("case-total").textContent=rows.length;
+  document.getElementById("target-total").textContent=data.total_targets;
+  update();
+})();
+</script>
+</body>
+</html>
