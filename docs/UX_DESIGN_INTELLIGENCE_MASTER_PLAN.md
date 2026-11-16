@@ -300,3 +300,29 @@ Research references: `skills/elite-ux-director/references/HOMEPAGE_INTELLIGENCE.
 - Deepen complete visuals/edition analysis for Dow and modern typography/graphic design works, study authorized sections of Goodwin, Jarrett/Gaffney and content design where relevant, and consult current W3C / HCI sources before implementation claims.
 - Apply selectively during the next homepage assignment: resolve visitor purpose (Covert/Chimero), choose meaningful composition (Dow/Vignelli), test actual comprehension and accessible page navigation; never replace established Faneqo North Star with a generic marketing page.
 - Track both successful and **failed** case decisions. The objective is reliably better experiences, not the number of K-cards.
+
+## Art Direction Program 002 — Masterpiece-Level Visual Communication (added 2026-11-15)
+
+**Creative ambition:** original, emotionally resonant, technically crafted interfaces informed by great painting, graphic design, photography, cinematography, architecture, music culture and contemporary digital art. “Mona Lisa interfaces” is the aspiration for craft, depth and coherence—not a claim that any UI can be objectively certified as a masterpiece.
+
+**Canonical art program:** [research/013-MASTERPIECE-ART-DIRECTION-PROGRAM.md](../research/013-MASTERPIECE-ART-DIRECTION-PROGRAM.md). That file defines source portals, six art disciplines, visual dossier schema, source-to-concept exercises, art-direction grammar, and proposed enhancements for creative-design-director.
+
+### Ownership and coordination
+- The **other research chat** is already building the canonical UX/design bibliography and obtaining free full texts. **Do not interrupt, restart or duplicate its work.** Send art-book candidates as a handoff for deduplication.
+- The **music-industry field research** stream owns persona and live-venue contexts.
+- This **art-direction workstream** owns close inspection of actual artworks, digital artistic references, creative theses, composition experiments, visual grammar, and creative-design-director skill upgrades.
+- The shared Lab master plan remains canonical; do not create a parallel master plan or a competing art-direction mega-skill.
+
+### Near-term priorities
+1. Build deeply inspected artwork dossiers with originals and object-level context (not keyword-based “style inspiration”).
+2. Expand art-direction sources using the Getty Research Portal, MetPublications, museums, archives, authentic music photography and verified artist/designer statements.
+3. Translate lessons into **conditional, original composition principles**; reject imitation and pseudoscientific proportion myths.
+4. Refactor the existing Creative Design Director references into small, composable on-demand disciplines: composition, expressive typography, authentic music imagery, visual storytelling/sequence, art direction critique.
+5. Make three conceptually different directions with responsive art-direction specs for authorized product projects.
+6. Let real Faneqo work exercise the skill organically; no separate formal benchmark or interruptions of active Claude tasks.
+
+### Two output modes
+- **Expressive:** public Headquarters, marketing, artist imagery, Night memory experience, magazine advertising—high visual emotion within clear action hierarchy.
+- **Utility:** Messages, campaign review, dashboards, permissions—restrained artistic identity, excellent readability, state clarity, and focused interactions.
+
+**Both modes require original expression and verified project truth, appropriate accessibility and honest visual evidence.**
