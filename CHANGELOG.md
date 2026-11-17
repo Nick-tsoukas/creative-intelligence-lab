@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-11-17 — Elite UX Director v0.7
+
+Three workflow sizes, explicit prototype/production/research evidence, incremental
+verification and bounded completion; separate reliability/creative judgment;
+concrete cross-domain premises, consequence-based findings and capture discipline.
+Existing library/tools preserved; core 667 → 734 words, 20 references unchanged.
+Audit, field attribution, validation and publication: [v0.7 record](docs/ELITE_UX_DIRECTOR_V07.md).
+The previously local v0.6 foundation is included with provenance. No Faneqo app or
+installed skill changes.
+
 ## 2026-11-16 — Elite UX Director v0.6
 
 Implemented locally: compact evidence loop, screen/action intelligence, visual craft, design-to-code and capture checks. Research corpus preserved and off the default implementation path. See docs/ELITE_UX_DIRECTOR_V06_RELEASE.md and its validation report. No Faneqo app changes or GitHub publication. Older installation/scheduling notes are historical; current owner authorization covers this bounded skill work.

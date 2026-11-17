@@ -1,32 +1,36 @@
-# Render and verify: states, captures and outcomes
+# Render and verify the decision
 
-## Derive the state matrix
+Use the core's mode, work type and existing acceptance list. A prototype needs representative evidence of its stated decision, not a duplicate production certification. Research needs sources and applicability unless a claim depends on an actual rendered interface. Record unsupported boundaries once and reference them thereafter.
 
-Select applicable rows from the current flow; combine equivalent cases rather than multiplying every state by every width.
+## Select states, not a Cartesian matrix
 
-| State family | Questions |
+Derive the few important states from actual data/transitions: entry/empty/loaded; editing; pending/failure/recovery; permissions/consequences; completion/return; narrow/short/long-content presentation. Combine equivalent cases. The focused repair uses affected states; a changed journey or concept usually needs representative mobile and desktop. Follow project widths; absent a contract, 390 and 1440 CSS px are useful starting points, not mandatory repair recaptures.
+
+Reuse valid evidence of unchanged states. An existing record can hold `state/setup | viewport/scroll scope | expected truth | capture/check | result/gap`. Labels alone do not prove a state was reached.
+
+## Make captures trustworthy
+
+Use existing browsers/servers, one context and sequential viewports initially on constrained hardware. No new screenshot service or dependency is implied.
+
+1. Confirm route, role, content and target state. Wait for relevant fonts, image decoding and layout with a bounded timeout. For full-content evidence, bring needed below-fold lazy media into view or trigger its loading in the harness; record that preparation. Do not claim complete media evidence while critical images remain pending.
+2. Identify the actual scroller. Record viewport, DPR, document/scroller dimensions, capture scope and state when needed to interpret the result. Full-page capture may miss an internal pane; use overlapping scroller/viewport segments instead.
+3. Inspect actual pixels, including relevant lower content. Judge fixed/sticky controls and occlusion with **viewport captures**; their position in a full-page composite is not a realistic scrolling experience. Never remove visible UI simply to flatter a capture.
+4. If a capture/check fails, separate product behavior from harness timing, missing assets, wrong route/role or incorrect scroll scope. Await a meaningful state/event; asynchronous editor caret focus can finish after the click that initiated it. Reproduce the user consequence before changing application code. A longer timeout alone does not establish the cause.
+5. Optional: `python scripts/check_capture.py shot.png --expected-width 390 --expected-height 2400` from the skill root. Dimensions are physical pixels for the chosen scope. Exit 1 = invalid/mismatched; exit 2 = suspicious, inspect/document; exit 0 = no heuristic concern, not beauty or completeness. Preserve originals; re-export unsupported encodings with existing capture tools when needed.
+
+Test-only eager loading or focus synchronization belongs in the evidence notes; it must not conceal production latency or alter the user behavior being evaluated. A missing environment is a limitation, not automatically a product bug.
+
+## Repair once, verify the affected surface
+
+| Repair | Relevant rerun |
 |---|---|
-| Entry/data | First use, empty, populated, loading, stale, unavailable backend? |
-| Editing | Long title/caption, missing required data, last-second edit, reorder/selection? |
-| Work in progress | Uploading/processing, partial success, failure, interrupted/resumed, cancel/retry? |
-| Authority | Own/team/other scope, eligibility, blocked action with truthful reason, public/third-party effects? |
-| Completion | Saved/published/queued exactly as supported, readback, back/reload and duplicate prevention? |
-| Presentation | Mobile/desktop, narrow/short, keyboard/focus, zoom, overlay/fixed navigation, reduced motion? |
+| Dialog naming | Accessible name and affected focus behavior; recapture if visible layout changes |
+| Mobile crop/focal control | Control changes the real image; affected mobile hero pixels |
+| Save/storage behavior | Failure, buffer retention, retry and promised reload/recovery |
+| Shared layout | Impacted consumers, widths and difficult content states |
 
-Record `state | setup/role | width/height | task | expected truth | capture | result`. Screen labels are not evidence that a state was reached.
+Expand only for shared code, a new failure, unresolved uncertainty or engineering/project requirements. Engineering owns full-suite mechanics; the UX skill adds no second full-suite gate. Valid unchanged captures stay valid.
 
-## Capture without fooling yourself
+Review reliability and creative quality separately. Backend/read-model checks apply to the production claims being changed, not every isolated concept. Screenshots do not prove keyboard/assistive-technology or user-task outcomes. Disclose their actual coverage separately.
 
-Use the browser already available and existing servers. No mandatory Playwright/MCP install or persistent capture service. On a 16 GB machine, start with sequential captures and a single browser context; increase only for a measured need.
-
-1. Confirm route, role and target state. Wait for actual fonts, relevant image decoding and stable layout, with a bounded timeout; disclose pending media. Do not wait for network-idle on continuously updating apps.
-2. Identify the actual scrolling element. Full-page screenshot covers the document, not necessarily an internally scrolling pane. Record CSS viewport, device scale, document and relevant scroller dimensions, capture mode, state and date.
-3. Capture viewport and full intended content where useful. Inspect top, middle and bottom. If an internal scroller cannot be captured faithfully, take overlapping viewport segments, recording scroll offsets. Preserve real sticky/overlay occlusion as a finding.
-4. Run optional `python scripts/check_capture.py shot.png --expected-width 390 --expected-height 2400` from this skill root. Expected dimensions are physical screenshot pixels, calculated from capture scope and device scale, not copied blindly from viewport size. Exit 1 means invalid/mismatched; exit 2 means suspicious and requires recapture or documented visual review; exit 0 only means no automated concern detected.
-5. Open the image pixels before critique, even on exit 0. Flat-tail detection is a heuristic; dark/minimal art can legitimately trigger it, and incomplete captures can evade it. Unsupported PNG encodings should be re-exported by the existing capture tool; no new decoder dependency is required.
-
-## Two review passes
-
-First catch concrete defects: clipping, semantic/visual order, unreadable field boundaries, hidden actions, sticky height, missing media, false state/copy and bad captures. Then assess creative quality using VISUAL_CRAFT_AND_MEMORY.md. A checklist does not select the artistic winner.
-
-Verify important transitions against backend/read-model truth when authorized; no toast-only success. Re-render affected states after repairs. Mark TESTED / NOT TESTED / BLOCKED with evidence and retain the baseline. Report assistive-technology and user-task testing separately from screenshot review. Research-only work supplies this verification plan rather than pretending to execute it.
+Done when the agreed decision is possible, critical evidence is valid, material defects are resolved and limits disclosed. Reopen only for a new material defect, changed requirements or invalid/insufficient critical evidence. Keep optional refinements in the existing short deferred list.

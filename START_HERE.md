@@ -1,5 +1,11 @@
 # START HERE — Creative Intelligence Lab
 
+**Current UX/design skill:** [Elite UX Director v0.7](skills/elite-ux-director/SKILL.md).
+For its field-informed modes, creative reasoning, validation and installation
+limits, read [the v0.7 handoff](docs/ELITE_UX_DIRECTOR_V07.md). This increment is
+separate from the historical creative-director alpha, unknown v5.0 and the broader
+v1.0 research/pilot gates below. No production Faneqo change is implied.
+
 **Purpose:** Maintain a durable, transferable, rigorously sourced library about outstanding art direction, visual communication, web design, UX, components, interaction, motion, and creative engineering.
 
 ## For any new ChatGPT / Claude / human contributor

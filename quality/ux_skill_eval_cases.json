@@ -1,7 +1,7 @@
 {
-  "version": "0.5-prepared",
+  "version": "0.7-prepared",
   "status": "NOT_RUN",
-  "instructions": "Synthetic activation/quality fixtures; not confirmed production defects. No user research claimed. Homepage fixtures added 2026-11-15; NOT RUN; no fabricated user comprehension or conversion results. v0.5 source-intelligence fixtures prepared only: book identity, actual reading, figure evidence, source conflicts, minimal retrieval.",
+  "instructions": "Synthetic activation/quality fixtures; not confirmed production defects. No user research claimed. Homepage fixtures added 2026-11-15; NOT RUN; no fabricated user comprehension or conversion results. v0.5 source-intelligence fixtures prepared only: book identity, actual reading, figure evidence, source conflicts, minimal retrieval. v0.7: interface concept/art-direction exploration is supported; standalone poster/brand research remains out of scope. Historical fixtures remain NOT_RUN; qualitative portability probes are reported separately.",
   "activation_cases": [
     {
       "id": "A01",
@@ -108,8 +108,8 @@
     {
       "id": "A18",
       "prompt": "Create three visually distinctive homepage moodboards using editorial photography, fonts and cinematic references only.",
-      "expected": "do_not_activate",
-      "class": "pure creative art direction"
+      "expected": "activate",
+      "class": "interface art direction / Concept Exploration"
     },
     {
       "id": "A19",

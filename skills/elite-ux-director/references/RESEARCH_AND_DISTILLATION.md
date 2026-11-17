@@ -17,6 +17,8 @@ Record the question, original source/edition/passage and access status; separate
 
 Promote only what changes a decision or observable reasoning, creative judgment or design outcome. Use realistic authorized designs and distinguish activation, technical verification, critic/owner verdicts and actual user outcomes. Preserve failed transfers and contradictory evidence. Never claim a book was read because indexed, a persona was interviewed because generated, or a saved principle changed model weights.
 
-Claude field feedback on v0.5 is valuable REPORTED evidence, not a controlled causal study. The v0.6 changes address specific observed/reported failure modes; validation of packaging and capture checks cannot establish general design superiority.
+Claude field feedback on v0.5 and the v0.6 Night prototypes inform revisions; neither is a controlled causal study. Night work involved project guidance, engineering skills, Superpowers and an independent reviewer. Record which instruction changed a decision when known; do not attribute every repair or repeated check to this skill. Owner/user acceptance and creative improvement can remain unknown even when behavior tests pass.
+
+Normal field feedback is optional after meaningful assignments, not a retrospective gate for each repair. Reuse the existing decision record: decision changed, real defect found, work caused/prevented, actual owner/user response, creative outcome and confounds. Preserve negative/unknown results. A formal equal-budget comparison remains optional; no dedicated benchmark project is required before ordinary revisions.
 
 Larger corpus ingestion, new evaluation services, automatic research pipelines and new Atlas infrastructure belong to a future Lab phase. Do not build them as part of ordinary product work.

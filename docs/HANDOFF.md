@@ -1,8 +1,14 @@
 # Project Handoff — for Future Chats and Claude Code
 
-## Latest continuation — Elite UX Director v0.6
+## Latest continuation — Elite UX Director v0.7
 
-Implemented locally: compact evidence loop, screen/action intelligence, visual craft, design-to-code and capture checks. Research corpus preserved and off the default implementation path. See ELITE_UX_DIRECTOR_V06_RELEASE.md and its validation report. No Faneqo app changes or GitHub publication. Older installation/scheduling notes are historical; current owner authorization covers this bounded skill work.
+Read [ELITE_UX_DIRECTOR_V07.md](ELITE_UX_DIRECTOR_V07.md) for the single current
+decision/validation/release record. Source: `skills/elite-ux-director/`; worktree:
+`C:/code/cil-ux-v07`. The owner authorized commit/push/merge after checks and review.
+Original Lab v0.6 dirty work and Faneqo work remain untouched. Personal Codex was
+observed at v0.6; repository publication does not install v0.7 or prove Claude use.
+Next real-world evaluation should record decision value and work cost on normal
+authorized tasks, not reopen a standalone benchmark project or production pilot.
 
 ## North star
 Develop deep and original creative judgment, through close reading and observation, into a durable research library, later a critical design handbook, and finally an optional reusable art-director skill. Inspired by Faneqo, but useful across all products.

@@ -1,6 +1,6 @@
 # Screen intelligence: a bounded working sheet
 
-Read current project authority first. Follow a declared adapter link if present, selecting only the target surface. A stale adapter is a lead, not canonical truth. Reuse an existing brief/ticket; this table is not a mandatory new artifact.
+Read current project authority first. Reuse the core's mode, work type and decision boundary. Follow a declared adapter link if present, selecting only the target surface. A stale adapter is a lead, not canonical truth. Reuse an existing brief/ticket; this table is not a mandatory new artifact. Select only rows relevant to what must be real; prototype fixtures do not require a production endpoint inventory.
 
 | Question | Record only what changes this decision |
 |---|---|

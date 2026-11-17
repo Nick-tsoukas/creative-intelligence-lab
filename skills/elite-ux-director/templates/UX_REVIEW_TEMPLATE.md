@@ -1,20 +1,27 @@
-# UX design and evidence loop
+# One compact design decision record
 
-Use only sections that help the task; a small repair can be a few bullets.
+Reuse the existing brief, ticket, project log or visual workspace. This is an
+optional shape, not another required document. Link detailed logs and captures.
 
-- Scope, surface/version, role/context, human job, product authority/locks.
-- Evidence: REPORTED / OBSERVED / TESTED / INFERRED / HYPOTHESIS / UNKNOWN, with locations.
-- Screen intelligence: data, primary actions and actual consequences, reused components/tokens, relevant prior verdicts, unknowns.
-- Diagnosis: discovery / comprehension / continuity / feedback-recovery / access-trust; severity and smallest safe repair.
-- Substantial visual work: distinct premises, content-specific thesis, composition/type/image/space decisions, tradeoffs and choice status.
+- **Decision:** user job; interface mode (skip for source-only research); prototype / production / research; what must be real; owner choice/authority status.
+- **Evidence:** only sources, current code, observed pixels and behavior that change the decision. Label REPORTED / OBSERVED / TESTED / INFERRED where material. Record unsupported boundaries once.
+- **Material findings:** confirmed defect / plausible risk / preference; affected person and consequence; bounded repair or next check. Optional refinements stay deferred.
+- **Verification:** affected behaviors/states and valid captures actually inspected, with result/location. Reuse unchanged evidence; engineering owns full-suite requirements.
+- **Limitations:** specific unverified claims, unavailable evidence and what they prevent deciding. A disclosed irrelevant production boundary does not block a prototype choice.
+- **Next action:** fix, choose, implement under existing authority, or stop. Reopen only for a material defect, changed requirements or invalid/insufficient critical evidence.
 
-| State and setup | Viewport/scope | Expected behavior/consequence | Capture + validity review | Task/server checks | Result / remaining gap |
-|---|---|---|---|---|---|
+For visual exploration/review, add two short independent judgments:
 
-## Rendered critique and repair
+**UX reliability:** what is understandable, completable, recoverable and truthful;
+behavior evidence and remaining uncertainty.
 
-Strongest relationship; material craft/usability defects; changes made; affected recaptures and outcome. Name whether this is self-review or independent critique. Separate screenshot, keyboard, assistive-technology and user-task evidence.
+**Creative quality:** strongest content-specific relationship; weakest decision
+and its effect on hierarchy/composition/type/images/rhythm; concrete next
+correction if needed. A behavior-test count is not an aesthetic verdict.
 
-## Decision and handoff
+Each concept: `organizing idea → intended impression → task benefit → sacrifice`.
+Name self-review versus independent critique and who actually selected/approved.
 
-What is ready, what remains blocked/untested, who approved what, and next action. Record a real accepted/rejected concept and its reason in existing project memory; do not invent a verdict. Research-only work ends with the proposal and concrete verification plan.
+After a meaningful task, optional field note: skill/version; decision changed or
+defect found; unnecessary work caused/prevented; actual owner/user response;
+quality outcome (including unknown); confounds; retain/revise/drop guidance.

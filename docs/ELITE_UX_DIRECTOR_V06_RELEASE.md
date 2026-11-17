@@ -1,5 +1,8 @@
 # Elite UX Director v0.6 — evidence loop
 
+Historical local increment, preserved as the foundation of v0.7. Current source,
+publication and validation state: [ELITE_UX_DIRECTOR_V07.md](ELITE_UX_DIRECTOR_V07.md).
+
 Date: 2026-11-16. Source baseline: 6943b723fb718385e2595aef8b421a61468ed962.
 
 ## Change and evidence
