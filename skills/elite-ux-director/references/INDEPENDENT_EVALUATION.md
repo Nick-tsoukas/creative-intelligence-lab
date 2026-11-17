@@ -30,7 +30,7 @@ The canonical machine-readable table is `quality/ux_skill_eval_cases.json` **in 
 Eight existing scenarios in `EVALUATION.md` focus on high-stakes messaging/privacy. Do not modify their seeded assumptions to fit a skill answer. Add QR, forms and cross-industry scenarios in the repository quality set; include at least:
 - wrong-artist QR fallback, draft loss, public/private exposure, and status-as-delivered misrepresentation
 - a clearly backend-only task where UX skill should not activate
-- a visual art-direction-only task where UX skill should defer to creative design
+- an interface art-direction task where Concept Exploration applies, and a standalone poster/brand research request outside this skill's scope
 - a multi-actor permissions case with evidence-based rather than synthetic-persona reasoning
 - accessibility keyboard/focus case tied to actual interaction not bogus ARIA labels
 

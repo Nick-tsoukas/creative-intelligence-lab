@@ -1,6 +1,8 @@
-# Task-to-Source Router — Elite UX Director v0.4
+# Task-to-Source Router — Elite UX Director — optional research router (v0.7 integration; v0.4 source map preserved)
 
 **Purpose:** select a *small, directly relevant* evidence packet for an actual user task. This is an index, not a bibliography to paste into Claude's working context. Linked scholarly notes are stored separately in the Lab's `reading-dossiers/`; each local entry below is self-contained if only the installed skill is available.
+
+Start with the compact SKILL.md and its selected mode/work type, not this research map. Use the same plan, acceptance list and evidence location. If another creative/frontend skill already supplies a direction, reuse it; no compulsory activation, extra concept count or model handoff. VISUAL_CRAFT_AND_MEMORY.md includes standalone worked premises when no sibling skill is available.
 
 ## Selection policy
 1. Read the active app's actual code and product contract first where possible. This reference library cannot tell you what is currently deployed.
@@ -18,9 +20,9 @@
 | “The QR won't download / scan / edit” | Asset generation, scannability, target integrity and scan route | C02 + C06 | P5 QR lifecycle | HCI Ch3; QR domain adapter; technical standard **must be verified separately** |
 | “Users leave the form” | Comprehension, errors, state persistence, focus | C01 + C06 | P6 Forms, failures and recovery | Boulton Ch 7–8; WCAG 2.2 (current primary standard) |
 | “Fans can't follow during a show” | Physical environment, attention, permission, connectivity | C08 + C07 | P7 Situated mobile task | Design Justice chapter; HCI Ch3; field evidence needed |
-| “Visitors don't understand our homepage” | First-view product purpose, priority audience, real proof, primary action and destination | H01 + H05 (selective) | [Homepage Intelligence](HOMEPAGE_INTELLIGENCE.md), [UX packet](../templates/HOMEPAGE_UX_PACKET.md); Creative Design Director for art thesis | NN/g Wang 2024; real route/content check |
-| “Our cinematic homepage is gorgeous but confusing” | Narrative legibility, real evidence, skip/reduced-motion and mobile speed | H03 + H04 or H06 | Homepage Intelligence; creative-design-director and frontend-design only for their roles | NN/g Wang; W3C motion; Google Web Vitals |
-| “This dashboard looks generic” | Is the actual problem UX or creative direction? | C02 + C09 | Route to creative-design-director if visual thesis | Vignelli Semantics/Syntactics; Boulton Hierarchy |
+| “Visitors don't understand our homepage” | First-view product purpose, priority audience, real proof, primary action and destination | H01 + H05 (selective) | [Homepage Intelligence](HOMEPAGE_INTELLIGENCE.md), optional [UX packet](../templates/HOMEPAGE_UX_PACKET.md); reuse supplied thesis or core Concept Exploration | NN/g Wang 2024; real route/content check |
+| “Our cinematic homepage is gorgeous but confusing” | Narrative legibility, real evidence, skip/reduced-motion and mobile speed | H03 + H04 or H06 | Homepage Intelligence; shared acceptance list; core creative judgment and engineering implementation mechanics | NN/g Wang; W3C motion; Google Web Vitals |
+| “This dashboard looks generic” | Is the actual problem task reliability or a weak organizing idea? | C02 + C09 | Core Concept Exploration; VISUAL_CRAFT_AND_MEMORY.md; reuse an existing creative brief if supplied | Vignelli Semantics/Syntactics; Boulton Hierarchy |
 | “A screen reader can't use the dialog/tabs” | Keyboard interaction, focus, role/behavior mismatch | C06 + C08 | P8 Accessible interaction | W3C APG dialog/tabs and WCAG 2.2 |
 | “What would an agency manager do?” | Decision authority, multiple teams, competing actor jobs | C07 + C08 | P9 Multi-actor permissions | Participatory design (read); project adapter if relevant |
 

@@ -1,6 +1,6 @@
 # Homepage UX Direction Packet — [project / route / revision]
 
-This template is *optional*, used when redesigning/auditing an audience-facing homepage. It is a **UX evidence and handoff** artifact, not a substitute for the Creative Design Director's three-concept art direction or an implementation plan. Use only what helps the task.
+This template is *optional*, used when redesigning/auditing an audience-facing homepage. Fold relevant fields into the existing brief/decision record; do not start another plan or impose another concept count when another skill is active. Use the core's mode, work type and creative comparison, reusing any supplied art direction.
 
 **Authority:** research / sandbox / local implementation / release-approved; protected areas:
 **Product / route / inspected commit / state:**
@@ -42,7 +42,7 @@ Check anonymous visitor, existing customer, mobile visitor, visitor seeking pric
 **Option A — minimal comprehensibility fix:**
 **Option B — structural narrative rethink (only if warranted):**
 **H-card(s), source chapter/article, interpretive leap and counterexample:**
-**Art-direction decisions owned by creative-design-director (not UX skill):**
+**Creative direction: reuse a supplied brief; otherwise use this skill's Concept Exploration. Record the owner choice separately:**
 **Implementation decisions owned by frontend-design/engineering:**
 
 ## 6. Actual verification (don't pre-fill as passed)

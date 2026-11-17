@@ -5,6 +5,13 @@
 Inspired by Faneqo but intentionally **independent of any single app**. Built to support future research by humans, ChatGPT, and Claude Code, and eventually a selective reference-driven art-director skill.
 
 ## Start here — especially if you're a new AI session
+
+Current reusable UX/design source: [Elite UX Director v0.7](skills/elite-ux-director/SKILL.md).
+Use it for bounded UX repairs, flow improvement or interface concept exploration.
+Modes, prototype/production/research boundaries, field evidence and validation:
+[v0.7 handoff](docs/ELITE_UX_DIRECTOR_V07.md). The research library and advanced
+v5.0 work remain separate; merging source does not install or validate a host skill.
+
 1. **[START_HERE.md](START_HERE.md)** — canonical onboarding instructions and resumption prompt.
 2. **[docs/STATUS.md](docs/STATUS.md)** — what's actually done and what's not.
 3. **[docs/HANDOFF.md](docs/HANDOFF.md)** — mission, prior decisions, and collaboration context.

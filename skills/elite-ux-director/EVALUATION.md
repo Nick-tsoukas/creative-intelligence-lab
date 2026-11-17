@@ -53,4 +53,4 @@ Pass candidate only after **actual** independent review of the paired outputs an
 4. Verify a selected repair in the actual local Nuxt app with screenshots and test flows.
 5. Update SKILL.md; repeat until the skill is shorter and more useful, not just more forceful.
 
-**Current state:** eight original fixtures authored, **zero benchmark runs**. Founder reports an earlier skill installed in Claude; this repository cannot confirm which version/path is active. This v0.3 package is not automatically installed by repository merges.
+**Current state:** eight original fixtures authored, **zero formal benchmark runs**. Repository merges do not automatically install a skill. The active source is v0.7; older dated protocols and unexecuted benchmark fixtures are retained. See ../../docs/ELITE_UX_DIRECTOR_V07.md for qualitative probes, technical checks and field evidence, separately from unexecuted formal fixtures. The observed personal Codex installation was v0.6; no Claude invocation or installation is established by this release.

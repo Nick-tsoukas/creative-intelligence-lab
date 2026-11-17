@@ -1,61 +1,27 @@
-# UX Decision / Journey Review — [human job, not feature label]
+# One compact design decision record
 
-**Scope / authority:** [research, prototype, local app, approved production change]
-**App / version / branch / date:**
-**Actors and environment:** [roles, novice/expert, device, venue/desk, interruptions]
-**Human job:** When [situation], [actor] wants to [verb/outcome], without [risk].
-**Evidence inspected:** [links to screenshots, code/routes, logs, first-person reports, standards]
-**Missing evidence:** [not accessed / unknown / user study not performed]
-**Source cards used:** [at most 2, precise book/chapter/standard and whether read]
-**Decision owner:** [proposed / approved / unclear — never invent approval]
+Reuse the existing brief, ticket, project log or visual workspace. This is an
+optional shape, not another required document. Link detailed logs and captures.
 
-## Quick diagnosis (for a small task, use ONLY this section)
-| Finding / classification | Evidence label and exact location | Severity & consequence | Minimal safe repair | Verification |
-|---|---|---|---|---|
-| ... | REPORTED / OBSERVED / INFERRED / HYPOTHESIS / TESTED / UNKNOWN | P0–P3 with uncertainty | ... | ... |
+- **Decision:** user job; interface mode (skip for source-only research); prototype / production / research; what must be real; owner choice/authority status.
+- **Evidence:** only sources, current code, observed pixels and behavior that change the decision. Label REPORTED / OBSERVED / TESTED / INFERRED where material. Record unsupported boundaries once.
+- **Material findings:** confirmed defect / plausible risk / preference; affected person and consequence; bounded repair or next check. Optional refinements stay deferred.
+- **Verification:** affected behaviors/states and valid captures actually inspected, with result/location. Reuse unchanged evidence; engineering owns full-suite requirements.
+- **Limitations:** specific unverified claims, unavailable evidence and what they prevent deciding. A disclosed irrelevant production boundary does not block a prototype choice.
+- **Next action:** fix, choose, implement under existing authority, or stop. Reopen only for a material defect, changed requirements or invalid/insufficient critical evidence.
 
-## Cross-entry journey (only for complex tasks)
-| Step / entry | Human purpose & visible action | Context inherited | Actor permission / server truth | Failure / resume | Evidence |
-|---|---|---|---|---|---|
+For visual exploration/review, add two short independent judgments:
 
-## Domain vocabulary & trust boundary
-| Object or state | What user thinks it means | What backend currently means | Who may change or see it | Unresolved decision |
-|---|---|---|---|---|
+**UX reliability:** what is understandable, completable, recoverable and truthful;
+behavior evidence and remaining uncertainty.
 
-Especially distinguish stored vs published, audience vs visibility, queued vs sent/delivered, scan vs follow/check-in, preview vs actual QR payload.
+**Creative quality:** strongest content-specific relationship; weakest decision
+and its effect on hierarchy/composition/type/images/rhythm; concrete next
+correction if needed. A behavior-test count is not an aesthetic verdict.
 
-## Decision alternatives
-- **A — smallest coherent repair:** [what changes, what remains invariant]
-- **B — more structural redesign:** [specific simplification, justified only by evidence]
-- **Tradeoffs:** discoverability, task continuity, recipient/privacy, safety, accessibility, performance and engineering cost.
-- **Rejected tempting shortcut:** [unsafe or unhelpful option and why]
-- **Owner/implementer authorization status:** [never assume a proposed design is approved]
+Each concept: `organizing idea → intended impression → task benefit → sacrifice`.
+Name self-review versus independent critique and who actually selected/approved.
 
-## Behavior contract (critical transitions, not every trivial click)
-| Actor / state | Trigger & input | Server-authoritative check | Visible truthful outcome | Keyboard/focus | Error/retry/interruption | Test needed |
-|---|---|---|---|---|---|---|
-
-Use only states the real product supports. For public edits, broadcasts, permissions or QR changes specify consequence before action, duplicate prevention and no unauthorized audience.
-
-## Context and persona evidence
-- **Role/task differences:** [who has authority, whose interest may conflict]
-- **Observed field conditions:** [only with evidence]
-- **Provisional scenario assumptions:** [clearly labeled]
-- **Who was not represented / what would falsify it:** [if relevant]
-
-## Actual verification (only if work was authorized and executed)
-- **Environment / commit / account:** 
-- **Tasks and state variations actually run:**
-- **Mobile/desktop, keyboard, focus, zoom/reflow, reduced motion, assistive tech:**
-- **Actual observed outcomes / defects:**
-- **Not executed and why:**
-- **Regression / rollback concern:**
-
-## Handoff — concise
-1. **What the engineer should change** [bounded to authorized scope].
-2. **What MUST NOT change** [permissions, data model, background sending, already printed QR semantics].
-3. **Most important product uncertainty** [decision required].
-4. **Acceptance check** [real behavior, not “looks good”].
-5. **Next observation** [only if evidence gap matters].
-
-**Evidence rule:** don't claim a book was read because listed, a user was interviewed because a persona exists, or a design was tested because a code review passed. Don't generate multiple reports where a project ticket suffices.
+After a meaningful task, optional field note: skill/version; decision changed or
+defect found; unnecessary work caused/prevented; actual owner/user response;
+quality outcome (including unknown); confounds; retain/revise/drop guidance.

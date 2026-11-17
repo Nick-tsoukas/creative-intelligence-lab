@@ -3,7 +3,7 @@
 **Scope:** this tool **organizes and displays evidence**. It does not automatically capture live sites, inspect pixels with an AI vision model, redraw an interface, test user tasks, or establish copyright permission. Creative Intelligence Lab remains a source-grounded design research and critique system.
 
 ## Requirements
-- Python **3.12+** (stdlib only). On the user's 8 GB Windows machine, WSL Python is fine.
+- Python **3.12+** (stdlib only). On the user's 16 GB Windows machine, WSL Python is fine.
 - Run in `creative-intelligence-lab` repo; no NPM install, browser server, database, Node process, external API or credentials.
 - Use real screenshots **only after creating a manually redacted local copy**. The `--redacted-confirmed` switch is your assertion, **not** automatic redaction. Keep customer names, email addresses, private fan media, account details, access tokens, analytics secrets and connected logins out of captures.
 
