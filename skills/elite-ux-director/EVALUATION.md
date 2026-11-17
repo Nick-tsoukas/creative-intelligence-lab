@@ -53,4 +53,4 @@ Pass candidate only after **actual** independent review of the paired outputs an
 4. Verify a selected repair in the actual local Nuxt app with screenshots and test flows.
 5. Update SKILL.md; repeat until the skill is shorter and more useful, not just more forceful.
 
-**Current state:** eight original fixtures authored, **zero benchmark runs**. Founder reports an earlier skill installed in Claude; this repository cannot confirm which version/path is active. This v0.3 package is not automatically installed by repository merges.
+**Current state:** eight original fixtures authored, **zero benchmark runs**. Founder reports an earlier skill installed in Claude; this repository cannot confirm which version/path is active. Repository merges do not automatically install a skill. The active source is v0.6; older dated protocols and unexecuted benchmark fixtures are retained. See ../../docs/ELITE_UX_DIRECTOR_V06_VALIDATION.md for this increment's separate technical and scenario checks.

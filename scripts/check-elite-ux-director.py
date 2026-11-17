@@ -17,6 +17,13 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skills" / "elite-ux-director"
 MAIN = SKILL / "SKILL.md"
 REQUIRED = (
+    "references/SCREEN_INTELLIGENCE.md",
+    "references/ACTION_TRUTH.md",
+    "references/DESIGN_TO_CODE.md",
+    "references/RENDER_AND_VERIFY.md",
+    "references/VISUAL_CRAFT_AND_MEMORY.md",
+    "references/RESEARCH_AND_DISTILLATION.md",
+    "scripts/check_capture.py",
     "references/TASK_SOURCE_ROUTER.md",
     "references/DECISION_CARDS.md",
     "references/HOMEPAGE_INTELLIGENCE.md",
@@ -70,6 +77,9 @@ def check() -> list[str]:
         errors.append("description must be 1–1024 characters")
     if "when" not in fields.get("description", "").lower() and "use for" not in fields.get("description", "").lower():
         errors.append("description should mention activation circumstance")
+    core = body.split("---", 2)[-1]
+    if len(core.split()) > 800:
+        errors.append("v0.6 runtime core exceeds 800 words")
     if len(lines) > 500:
         errors.append("SKILL.md over 500 lines (progressive disclosure)")
     if len(body) > 20000:

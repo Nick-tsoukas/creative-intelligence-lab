@@ -1,61 +1,20 @@
-# UX Decision / Journey Review — [human job, not feature label]
+# UX design and evidence loop
 
-**Scope / authority:** [research, prototype, local app, approved production change]
-**App / version / branch / date:**
-**Actors and environment:** [roles, novice/expert, device, venue/desk, interruptions]
-**Human job:** When [situation], [actor] wants to [verb/outcome], without [risk].
-**Evidence inspected:** [links to screenshots, code/routes, logs, first-person reports, standards]
-**Missing evidence:** [not accessed / unknown / user study not performed]
-**Source cards used:** [at most 2, precise book/chapter/standard and whether read]
-**Decision owner:** [proposed / approved / unclear — never invent approval]
+Use only sections that help the task; a small repair can be a few bullets.
 
-## Quick diagnosis (for a small task, use ONLY this section)
-| Finding / classification | Evidence label and exact location | Severity & consequence | Minimal safe repair | Verification |
-|---|---|---|---|---|
-| ... | REPORTED / OBSERVED / INFERRED / HYPOTHESIS / TESTED / UNKNOWN | P0–P3 with uncertainty | ... | ... |
+- Scope, surface/version, role/context, human job, product authority/locks.
+- Evidence: REPORTED / OBSERVED / TESTED / INFERRED / HYPOTHESIS / UNKNOWN, with locations.
+- Screen intelligence: data, primary actions and actual consequences, reused components/tokens, relevant prior verdicts, unknowns.
+- Diagnosis: discovery / comprehension / continuity / feedback-recovery / access-trust; severity and smallest safe repair.
+- Substantial visual work: distinct premises, content-specific thesis, composition/type/image/space decisions, tradeoffs and choice status.
 
-## Cross-entry journey (only for complex tasks)
-| Step / entry | Human purpose & visible action | Context inherited | Actor permission / server truth | Failure / resume | Evidence |
+| State and setup | Viewport/scope | Expected behavior/consequence | Capture + validity review | Task/server checks | Result / remaining gap |
 |---|---|---|---|---|---|
 
-## Domain vocabulary & trust boundary
-| Object or state | What user thinks it means | What backend currently means | Who may change or see it | Unresolved decision |
-|---|---|---|---|---|
+## Rendered critique and repair
 
-Especially distinguish stored vs published, audience vs visibility, queued vs sent/delivered, scan vs follow/check-in, preview vs actual QR payload.
+Strongest relationship; material craft/usability defects; changes made; affected recaptures and outcome. Name whether this is self-review or independent critique. Separate screenshot, keyboard, assistive-technology and user-task evidence.
 
-## Decision alternatives
-- **A — smallest coherent repair:** [what changes, what remains invariant]
-- **B — more structural redesign:** [specific simplification, justified only by evidence]
-- **Tradeoffs:** discoverability, task continuity, recipient/privacy, safety, accessibility, performance and engineering cost.
-- **Rejected tempting shortcut:** [unsafe or unhelpful option and why]
-- **Owner/implementer authorization status:** [never assume a proposed design is approved]
+## Decision and handoff
 
-## Behavior contract (critical transitions, not every trivial click)
-| Actor / state | Trigger & input | Server-authoritative check | Visible truthful outcome | Keyboard/focus | Error/retry/interruption | Test needed |
-|---|---|---|---|---|---|---|
-
-Use only states the real product supports. For public edits, broadcasts, permissions or QR changes specify consequence before action, duplicate prevention and no unauthorized audience.
-
-## Context and persona evidence
-- **Role/task differences:** [who has authority, whose interest may conflict]
-- **Observed field conditions:** [only with evidence]
-- **Provisional scenario assumptions:** [clearly labeled]
-- **Who was not represented / what would falsify it:** [if relevant]
-
-## Actual verification (only if work was authorized and executed)
-- **Environment / commit / account:** 
-- **Tasks and state variations actually run:**
-- **Mobile/desktop, keyboard, focus, zoom/reflow, reduced motion, assistive tech:**
-- **Actual observed outcomes / defects:**
-- **Not executed and why:**
-- **Regression / rollback concern:**
-
-## Handoff — concise
-1. **What the engineer should change** [bounded to authorized scope].
-2. **What MUST NOT change** [permissions, data model, background sending, already printed QR semantics].
-3. **Most important product uncertainty** [decision required].
-4. **Acceptance check** [real behavior, not “looks good”].
-5. **Next observation** [only if evidence gap matters].
-
-**Evidence rule:** don't claim a book was read because listed, a user was interviewed because a persona exists, or a design was tested because a code review passed. Don't generate multiple reports where a project ticket suffices.
+What is ready, what remains blocked/untested, who approved what, and next action. Record a real accepted/rejected concept and its reason in existing project memory; do not invent a verdict. Research-only work ends with the proposal and concrete verification plan.

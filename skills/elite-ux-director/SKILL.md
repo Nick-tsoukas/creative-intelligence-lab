@@ -1,87 +1,37 @@
 ---
 name: elite-ux-director
-description: Research-grounded UX diagnosis, interaction design and evidence-based evaluation. Use for confusing flows, homepage comprehension, navigation and onboarding, forms, messaging/media, permissions, accessibility, QR journeys, or when asked to study UX/design books and apply their lessons to a real design problem. Use only task-relevant knowledge; do not activate for routine CSS edits, unrelated summaries, backend debugging, deployments or purely artistic styling.
+description: Use when diagnosing confusing product flows, homepage comprehension, forms, navigation, personas, interaction states, or designing and reviewing rendered interfaces. Connects user tasks, actual action consequences, visual craft, and iterative proof. Does not replace backend debugging or require research for routine implementation.
 ---
 
-# Elite UX Director — v0.5 (core / book-to-design intelligence)
+# Elite UX Director v0.6
 
-**Job:** understand the person's task and define the smallest safe, coherent, recoverable interaction. Never substitute elegant screens for correct domain behavior. This is a decision guide, **not** a design authority that can change product policy.
+Understand the human job, make the consequences truthful, and improve the rendered experience. Use the smallest useful workflow; a small repair needs no formal dossier. Follow the user's scope and current project authority. This skill supplies design judgment, not permission to publish, send, deploy, or change product policy.
 
-**Activation:** use only for real UX uncertainty (discoverability, comprehension, journey continuity, truthful state, safety, accessibility). For small issues give a short diagnosis; for multi-screen/high-consequence work produce a compact journey and state/permission contract. Do not generate a large formal report by default.
+## Understand the screen
+State: **When [situation], [actor] wants [outcome], without [harm].** Distinguish reported needs from observed behavior. Use the [persona method](references/PERSONA_AND_CONTEXT_METHOD.md) for meaningful role/context differences; invented personas are hypotheses, never interviews.
 
-**Roles:** UX Director = human task, mental model, states, decision alternatives, evidence. Creative Design Director = artistic thesis and visual meaning. Frontend-design/engineering = authorized implementation, accessibility and runtime QA. Use the smallest useful combination; never activate every skill automatically.
+Find current project guidance and any declared product adapter; read only its relevant consequences, locks, tokens, shared components and accepted/rejected decisions. Verify freshness against the current screen and code. Do not guess an adapter path or load every design skill. If no adapter exists, assemble the compact [screen intelligence sheet](references/SCREEN_INTELLIGENCE.md) in the task notes; do not create a new database or copy an entire repository.
 
-## Start here: authority, facts and scope
-1. Read the user's actual request and allowed scope. An audit, prototype or research request is **not deployment approval**. Inspect current project/code/routes/API/permissions where tools allow; avoid other agents' active worktrees.
-2. Define **human job**: “When [situation], [actor] wants to [natural-language verb], achieving [outcome] without [harm].” Include affected actors where relevant.
-3. Record **evidence level:** REPORTED (someone's account), OBSERVED (traceable artifact/code/UI), TESTED (executed scenario), INFERRED (reasoned from evidence), HYPOTHESIS (untested design prediction), UNKNOWN. Mark absent data instead of inventing current UI, permissions or user testimony.
-4. Identify device/context only as needed: time pressure, environment, expertise, disability/access requirements, interruptions and collaborators. Use [persona method](references/PERSONA_AND_CONTEXT_METHOD.md) when relevant; synthetic personas are NOT interviews.
+Label material claims **REPORTED / OBSERVED / TESTED / INFERRED / HYPOTHESIS / UNKNOWN**, with a location or evidence link. Separate an unavailable environment from a product defect; test competing explanations before fixing.
 
-## Diagnose before redesigning
-Trace `entry → orientation → decision → action → feedback → completion → return`, including failure and interruption. Classify the actual fault:
-- **Discovery:** cannot find the action; unexpected location, missing label, weak information scent.
-- **Comprehension:** can see it but misunderstands outcome, state, vocabulary or recipients.
-- **Continuity:** disconnected screens, repeated selection, lost context/draft or competing versions.
-- **Feedback/recovery:** misleading progress, false success, irreversible error, retry or resume breaks.
-- **Access/trust:** permission, privacy, authorization, keyboard/assistive barriers, data exposure.
+## Verify the action, then diagnose
+For changed or unverified primary/consequential actions, trace visible copy through handler, API, server authorization and relevant side effects. Distinguish **stored, linked, published, publicly visible, notified, queued, sent and delivered**. Reuse unchanged verified contracts with provenance; check exposure and defaults. Use [action truth](references/ACTION_TRUTH.md); never mistake a toast for persistence. Show who and what a risky action affects before submission.
 
-For shared flows, separate reusable *presentation/interaction primitives* from **distinct business operations**. Don't merge two screens blindly if one is public and the other private. Contrast may help discovery; it doesn't repair meaning or permission policy.
+Trace entry → orientation → decision → action → feedback → completion → return, including interruption. Classify the fault: discovery, comprehension, continuity, feedback/recovery, or access/trust. Prefer the smallest safe repair; compare structural consolidation only when evidence warrants it. Shared presentation does not make distinct permissions or business operations identical. Use [severity](references/ISSUE_RUBRIC.md) for material risk.
 
-## Choose expert evidence selectively
-Use [task-to-source router](references/TASK_SOURCE_ROUTER.md) **only when the matching guidance is unclear**. Select at most **two** [conditional cards](references/DECISION_CARDS.md) and **one** [interaction pattern](references/INTERACTION_PATTERNS.md). If Python is available, from this skill's root run `python scripts/retrieve.py card C02` or `python scripts/retrieve.py pattern P1` to receive just the relevant section; otherwise read only the corresponding Markdown section. Never load all cards or the full book catalog by default. Consult [source ledger](references/SOURCE_LEDGER.md) only to verify original passage/limits or when a material claim needs it. Cite work/chapter/article honestly. Unread candidate books are **not** evidence and heuristics aren't observed user behavior.
+## Design with intent
+For substantial visual work, compare two or three different compositional premises using the same truthful content; do not reopen a locked direction to satisfy this step. Specify intended meaning, focal hierarchy, image role, typography, whitespace/rhythm, and mobile transformation. Consider utility versus expressive context. Avoid palette-only variants and generic decoration.
 
-If the immediate problem is already proven to be an ordinary code defect, do not stall repairs with extra speculative research. If source guidance conflicts with product facts, current product truth and user safety win.
+Use [visual craft and memory](references/VISUAL_CRAFT_AND_MEMORY.md) for a bounded critique and project decision history. One agent may direct, implement and review when authorized: separate those passes and call self-review self-review. Use independent critique for unresolved or consequential judgment; do not claim independence or founder approval without it. No compulsory handoff to another model.
 
-## Research intelligence (only when the task benefits)
-When a decision needs deeper design knowledge, use [research index](references/RESEARCH_INDEX.md) to choose **one or two** source-checked [K-cards](references/KNOWLEDGE_CARDS.md), not the entire library. Use `python scripts/retrieve.py knowledge K03` or `python scripts/retrieve.py search "information hierarchy"` for a bounded lookup, with manual section reading as fallback. Treat the card's modern application as a **hypothesis until tested**, verify source/edition and preserve counterexamples. Do **not** stack two K plus two C plus two H cards merely to appear scholarly: normally **two relevant cards total** is enough.
+## Render → inspect → repair → verify
+Derive the relevant states from actual data and transitions using the [state and capture checklist](references/RENDER_AND_VERIFY.md). For a changed interface, inspect real mobile and desktop renders, then affected keyboard, overlay, failure and long-content states. Use product widths; absent a contract, start at 390 and 1440 CSS px, adding narrow/short/zoom cases where risk warrants.
 
-For explicit **book study**, load [study protocol](references/BOOK_STUDY_PROTOCOL.md); for a work whose actual figure matters, load [visual analysis](references/VISUAL_ANALYSIS_PROTOCOL.md); for real source disagreement, load [cross-book method](references/CROSS_BOOK_SYNTHESIS.md) and [card evidence schema](references/DESIGN_KNOWLEDGE_SCHEMA.md) only when authoring/updating cards. These are separate research workflows, **not normal UX-audit prerequisites**. An acquired/indexed text is not a studied book; source paragraphs are not operational instructions; never claim memory/weight updates or tested improvements from saving research.
+Validate each capture before critique: correct route/role/state, loaded fonts/media, intended scroll container, credible dimensions and visible lower content. Open the pixels; metadata and no-overflow assertions are insufficient. The optional dependency-free screenshot checker flags suspicious blank tails, not beauty or completeness. Use segmented scroller captures when full-page capture fails.
 
-## Public homepage / landing page (load only when relevant)
-For a product homepage, inspect the **first-view understanding → evidence/proof → audience-specific navigation → primary action → actual destination** journey, in addition to ordinary UX states. Use [homepage intelligence](references/HOMEPAGE_INTELLIGENCE.md) selectively: choose at most **two H-cards** (or two core C-cards if more relevant), **one** interaction pattern only if needed, not all three libraries. If Python is available, retrieve just one with `python scripts/retrieve.py homepage H01`. Record the approved composition/brand contract, actual CTA routes, illustrative versus real product proof, mobile/low-end behavior, accessible motion, and how narrative and user agency coexist. For a substantial homepage redesign, use [homepage UX packet](templates/HOMEPAGE_UX_PACKET.md) as the UX handoff to the **separate** Creative Design Director for three artistic directions and frontend-design for implementation; don't duplicate their roles. Never treat scroll, visual polish, or conversion-rate aspirations as proof of comprehension.
+Apply [design-to-code checks](references/DESIGN_TO_CODE.md): semantic reading order, reachable sticky actions, visible fields, label/name agreement, font-ready sizing and unobscured failure states. Test the actual outcome through the relevant server/read model when authorized, including retry/duplicate behavior. Fix material defects and recapture affected states. Stop when acceptance criteria are met or report a specific remaining blocker; avoid endless taste iterations.
 
-## Model people, language, states and authority
-For a consequential action, record:
-`actor | job/object | entry/context | UI state | server-owned state and permission | visible consequence | recovery`.
+End with the decision, evidence actually inspected, relevant checks and outcomes, unresolved limits, and next action. Research-only tasks end with a testable proposal and verification plan; they do not require implementation. Use the [review template](templates/UX_REVIEW_TEMPLATE.md) only when helpful.
 
-Distinguish as appropriate:
-- *Stored vs published vs linked vs publicly visible vs notified*.
-- *Message drafted vs accepted/queued vs sent vs confirmed delivered*.
-- *Code displayed vs downloaded vs scanned vs resolved vs consented*.
-- *Frontend affordance vs real backend authorization*.
-- *Personas inferred from circumstances vs people interviewed/observed*.
-
-Do not invent role rights, relax rate limits or anti-abuse safeguards, silently change private content public, or promise telemetry the backend lacks. A risky action should reveal **who and what it affects** before submission.
-
-## Recommend a bounded solution
-For meaningful friction compare:
-- **A. Minimum safe repair:** correct route/label/context/feedback/state recovery within existing architecture.
-- **B. Structural fix:** converge duplicative interactions on a canonical behavior contract while preserving different permission, channel or lifecycle rules.
-
-Triage with [issue rubric](references/ISSUE_RUBRIC.md): P0 privacy/wrong-target/irreversible safety; P1 primary task blocked; P2 serious confusion; P3 refinement. Scope and confidence matter more than invented numerical scores.
-
-For each high-risk transition define `trigger → validation → server authority → visible progress/result → failure, retry, duplication & recovery → keyboard/focus`. Include empty, slow, stale, unauthorized and interrupted states when relevant. Never mistake a visual toast for verified persistence.
-
-## Output and proof
-- **Small task:** job + evidence + top issue + smallest fix + exact verification + unknowns. No mandatory long document.
-- **Complex UX:** use [review template](templates/UX_REVIEW_TEMPLATE.md) for routes, actor/state matrix, alternatives, testable contract, engineering handoff and regression risks.
-- **Authorized app changes:** project engineering must run real task flows, privacy/authorization edge cases, mobile/desktop, keyboard/focus, zoom/reflow, assistive feedback, errors/retries, and source-appropriate normal QA. Use safe synthetic or authorized data; never send real messages or mutate public data solely as a test.
-- **Research-only:** deliver a falsifiable decision and verification plan. No claims of measured improvement without a test. The current project has deferred formal model/skill benchmarks; don't demand founder sessions or launch benchmarks as a prerequisite.
-
-When actual use reveals a weakness, log `symptom → evidence → source/card change → outcome known/unknown`. Prefer revising or **removing** ineffective rules over accumulating instructions.
-
-## Optional resources and domain ownership
-- [Task/source router](references/TASK_SOURCE_ROUTER.md): when to read which source.
-- [Decision cards](references/DECISION_CARDS.md): conditional guidance, not universal laws.
-- [Interaction patterns](references/INTERACTION_PATTERNS.md): state and recovery contracts.
-- [Persona/context method](references/PERSONA_AND_CONTEXT_METHOD.md): evidence-backed actor research.
-- [Homepage intelligence](references/HOMEPAGE_INTELLIGENCE.md) and [homepage UX packet](templates/HOMEPAGE_UX_PACKET.md): only when public homepage/landing-page meaning and visitor journeys matter.
-- [Research index](references/RESEARCH_INDEX.md) and [knowledge cards](references/KNOWLEDGE_CARDS.md): only when original book-derived reasoning adds practical value.
-- [Book study protocol](references/BOOK_STUDY_PROTOCOL.md), [visual-analysis protocol](references/VISUAL_ANALYSIS_PROTOCOL.md), [cross-book synthesis](references/CROSS_BOOK_SYNTHESIS.md), [card/evidence schema](references/DESIGN_KNOWLEDGE_SCHEMA.md): research and visual-source study only, not normal UX tasks.
-- [Source ledger](references/SOURCE_LEDGER.md): exact original reading scope and caveats.
-- [Independent evaluation protocol](references/INDEPENDENT_EVALUATION.md): only when reviewing evidence or preparing future evaluation; not an automatic test task.
-- [Review template](templates/UX_REVIEW_TEMPLATE.md) and [issue rubric](references/ISSUE_RUBRIC.md).
-
-**Product-specific adapters belong OUTSIDE the reusable skill.** If the current product provides approved domain intelligence (glossary, personas, role/permission map, operating context, past decisions), consult it **only for that product** and verify freshness. The Creative Intelligence Lab stores its Faneqo material separately in `domain-adapters/faneqo/`; those files are NOT part of a generic skill install.
-
-**Effectiveness:** research-integrated candidate, not independently benchmarked; installed copies are unchanged by a GitHub commit. Use on normal authorized project work, report evidence, and revise from observed failures.
+## Research develops the skill
+Routine work uses this distilled core and task-relevant references. Books, knowledge/homepage cards and the Exceptional Interface Atlas remain preserved and optional. For a specific unanswered question or skill-development session, use [research and distillation](references/RESEARCH_AND_DISTILLATION.md). Promote insights only with provenance, limits and meaningful evaluation; a saved card or passing validator is not proof of better design.

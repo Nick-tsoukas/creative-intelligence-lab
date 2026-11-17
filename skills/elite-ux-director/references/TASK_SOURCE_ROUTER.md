@@ -1,6 +1,8 @@
-# Task-to-Source Router — Elite UX Director v0.4
+# Task-to-Source Router — Elite UX Director — optional research router (v0.6 integration; v0.4 source map preserved)
 
 **Purpose:** select a *small, directly relevant* evidence packet for an actual user task. This is an index, not a bibliography to paste into Claude's working context. Linked scholarly notes are stored separately in the Lab's `reading-dossiers/`; each local entry below is self-contained if only the installed skill is available.
+
+For routine implementation start with the compact SKILL.md, not this research map. If sibling creative/frontend skills are absent, use the core visual pass plus VISUAL_CRAFT_AND_MEMORY.md and DESIGN_TO_CODE.md; no model handoff is required.
 
 ## Selection policy
 1. Read the active app's actual code and product contract first where possible. This reference library cannot tell you what is currently deployed.

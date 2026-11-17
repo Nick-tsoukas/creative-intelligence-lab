@@ -1,5 +1,9 @@
 # Project Status
 
+## Current increment — Elite UX Director v0.6
+
+Implemented locally: compact evidence loop, screen/action intelligence, visual craft, design-to-code and capture checks. Research corpus preserved and off the default implementation path. See ELITE_UX_DIRECTOR_V06_RELEASE.md and its validation report. No Faneqo app changes or GitHub publication. Older installation/scheduling notes are historical; current owner authorization covers this bounded skill work.
+
 Last revised: 2026-11-15 (older dated entries below retained as historical status, not current installation claims).
 
 ## Confirmed mission

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-16 — Elite UX Director v0.6
+
+Implemented locally: compact evidence loop, screen/action intelligence, visual craft, design-to-code and capture checks. Research corpus preserved and off the default implementation path. See docs/ELITE_UX_DIRECTOR_V06_RELEASE.md and its validation report. No Faneqo app changes or GitHub publication. Older installation/scheduling notes are historical; current owner authorization covers this bounded skill work.
+
 ## 2026-11-11 — Repository onboarding
 - Added research mission and durable instructions for future AI and human sessions.
 - Added status, handoff, research protocol, roadmap and source reading queue.
