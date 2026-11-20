@@ -1,0 +1,49 @@
+name: Design Excellence — isolated unit tests
+
+on:
+  push:
+    branches:
+      - feature/creative-judgment-ledger-20261116
+    paths:
+      - 'design-excellence/**'
+      - '.github/workflows/design-excellence-validation.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'design-excellence/**'
+      - '.github/workflows/design-excellence-validation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unit-and-safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout this branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile sources
+        run: python -m compileall -q design-excellence
+
+      - name: Unit tests (offline/synthetic only)
+        run: python -m unittest discover -s design-excellence -p 'test_*.py' -v
+
+      - name: Guard active project scope
+        shell: bash
+        run: |
+          if git ls-files -z -- design-excellence | xargs -0 -r grep -El -- 'PRIVATE_KEY|BEGIN RSA|api[_-]?secret' | grep .; then
+            echo 'Possible secret-bearing pattern in design-excellence files. Review before merging.'
+            exit 1
+          fi
+          echo 'No matching secret marker patterns detected (not a substitute for secret scanning).'
