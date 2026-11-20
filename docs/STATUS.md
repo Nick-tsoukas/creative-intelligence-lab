@@ -1,5 +1,9 @@
 # Project Status
 
+## Creative Director × Creative Studio (2026-11-20, candidate)
+
+Added a scoped Creative Engine direction adapter and Pilot 003 protocol for the existing Faneqo generator. This is a prepared experiment, not a measured visual improvement or installed skill. No Faneqo app changes. See `docs/HANDOFF.md` and `pilots/003-faneqo-creative-engine/PROTOCOL.md`.
+
 ## Current increment — Elite UX Director v0.7
 
 Field-informed modes, work-type evidence, incremental verification, completion,

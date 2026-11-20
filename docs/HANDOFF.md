@@ -1,5 +1,9 @@
 # Project Handoff — for Future Chats and Claude Code
 
+## Creative Studio design-intelligence pilot (2026-11-20)
+
+The owner authorized a quality-first, performance-conscious Creative Director experiment using the **existing** Faneqo Creative Engine. The Lab now has a candidate on-demand adapter at `skills/creative-design-director/references/FANEQO_CREATIVE_ENGINE.md` and a fair-trial plan at `pilots/003-faneqo-creative-engine/PROTOCOL.md`. They extend the existing alpha; they are **not** an installed skill or a verified quality improvement. Target integration is the current Markdown → `compose` → three PNG previews workflow. No Faneqo production source, Studio templates or deployments changed. Next: run the baseline and candidate on the same pinned Studio revision, inspect actual images, collect Nick's blind preference, and decide whether to keep or simplify the adapter.
+
 ## Latest continuation — Elite UX Director v0.7
 
 Read [ELITE_UX_DIRECTOR_V07.md](ELITE_UX_DIRECTOR_V07.md) for the single current

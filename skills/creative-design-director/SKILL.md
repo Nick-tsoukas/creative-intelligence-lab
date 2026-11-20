@@ -19,6 +19,7 @@ This skill is an **art-director / research librarian / independent critic**, NOT
 - Preparing a bounded creative-direction packet for an implementer.
 - Independently critiquing screenshots or tested output against the agreed brief.
 - Writing evidence-based design feedback and maintaining a decision history.
+- Directing an existing creative generator without replacing its rendering or approval workflow.
 
 ## Do not activate for
 - Ordinary CSS, Tailwind, React, Vue, Nuxt component authoring or animation implementation.
@@ -39,6 +40,7 @@ This skill is an **art-director / research librarian / independent critic**, NOT
 
 ## On-demand reference map
 All paths relative to **Creative Intelligence Lab repository root**, not a host application.
+- `references/FANEQO_CREATIVE_ENGINE.md` — load only when directing or reviewing a Faneqo Creative Studio campaign; preserves the existing Markdown-to-render contract.
 - `research/008-ART-DIRECTION-FIELD-MANUAL.md` — art direction mechanisms.
 - `research/013-MASTERPIECE-ART-DIRECTION-PROGRAM.md` — fine-art research curriculum, artwork study protocol, original visual-grammar methodology and expressive vs utility modes.
 - `reading-dossiers/001-ALBERS-ART-INSTRUCTION.md` — primary-source excerpts and color experiments.
