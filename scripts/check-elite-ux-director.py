@@ -139,6 +139,30 @@ def check() -> list[str]:
             errors.append("Cannot load retrieval module")
     if "homepage" not in fields.get("description", "").lower():
         errors.append("Homepage activation cue missing from skill description")
+    review_template = (SKILL / "templates/UX_REVIEW_TEMPLATE.md").read_text(encoding="utf-8")
+    normalized_review = " ".join(review_template.split()).lower()
+    for label in (
+        "Routes/components:",
+        "Locked/open:",
+        "Actions/data:",
+        "Desktop→mobile:",
+        "Accessibility:",
+        "Acceptance:",
+        "Visual verification:",
+    ):
+        if label not in review_template:
+            errors.append(f"Implementation handoff missing field: {label}")
+    for requirement in (
+        "composition/hierarchy",
+        "typography/spacing",
+        "authentic imagery/art direction",
+        "interaction clarity",
+        "mobile transformation",
+        "observed pixels",
+        "automated capture/overflow checks validate capture or geometry, not aesthetics or task success",
+    ):
+        if requirement not in normalized_review:
+            errors.append(f"Visual review missing criterion: {requirement}")
     # Read-only catalog check: no automatic edition promotion or ingest claims.
     recon = ROOT / "scripts/reconcile_ux_book_canon.py"
     if not recon.is_file():
@@ -173,6 +197,15 @@ def check() -> list[str]:
         cases = data["activation_cases"]
         if not any(c["expected"] == "activate" for c in cases) or not any(c["expected"] == "do_not_activate" for c in cases):
             errors.append("Activation set requires positive and negative fixtures")
+        dashboard = next((case for case in data.get("quality_cases", []) if case.get("id") == "Q17"), None)
+        if dashboard is None:
+            errors.append("Missing dashboard/data UX evaluation fixture Q17")
+        else:
+            required = ("gross/net", "loading", "empty", "mobile", "chart")
+            coverage = " ".join(dashboard.get("must_detect", [])).lower()
+            has_failure_state = "error" in coverage or "failure" in coverage
+            if not dashboard.get("prompt") or any(term not in coverage for term in required) or not has_failure_state:
+                errors.append("Q17 must include a prompt and metric/state/responsive/accessibility criteria")
     return sorted(set(errors))
 
 
@@ -183,4 +216,4 @@ if __name__ == "__main__":
     if problems:
         sys.exit(1)
     print("PASS: skill metadata, source cards, evidence/intake integrity, book reconciliation, bounded retrieval and fixture structure.")
-    print("NOT TESTED: model invocation, skill effectiveness, user task outcomes, browser accessibility.")
+    print("NOT TESTED BY THIS CHECK: activation, overall skill effectiveness, user outcomes, browser accessibility.")

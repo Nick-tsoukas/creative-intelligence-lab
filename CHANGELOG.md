@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-19 — Elite UX Director v0.7 handoff/evaluation follow-up
+
+Added a compact optional build handoff, explicit screenshot-evidence versus
+automated-check boundaries, and synthetic dashboard case Q17. One matched
+one-shot review found no accuracy gain over v0.6; context footprint is reported
+as a source-text proxy, not model token telemetry. Full fixture suite remains
+NOT RUN. No application or installed-skill changes.
+
 ## 2026-11-17 — Elite UX Director v0.7
 
 Three workflow sizes, explicit prototype/production/research evidence, incremental

@@ -1,5 +1,15 @@
 # Project Handoff — for Future Chats and Claude Code
 
+## 2026-11-19 — v0.7 UX handoff follow-up
+
+Branch: `skill/elite-ux-v071-ux-quality-20261119`. Adds an optional seven-field
+implementation handoff, concise visual-evidence guidance, and synthetic dashboard
+case Q17. The one-shot matched comparison found 6/6 seeded findings in both v0.6
+and v0.7; it does not establish a quality gain. Source-text size and evaluation
+limits are in `skills/elite-ux-director/EVALUATION.md`. Full fixture suite remains
+NOT RUN. Personal installation is still v0.6; do not copy this package into it
+without verifying the host update path and target contents.
+
 ## Latest continuation — Elite UX Director v0.7
 
 Read [ELITE_UX_DIRECTOR_V07.md](ELITE_UX_DIRECTOR_V07.md) for the single current

@@ -10,6 +10,14 @@ separately from that validation record. The local v0.6 foundation is preserved.
 No Faneqo app or personal/Claude installation changes. Older dated entries below
 are historical and do not establish current installation or validation.
 
+### 2026-11-19 follow-up — optional handoff and dashboard case
+
+An isolated follow-up branch adds a concise implementation handoff, explicit
+visual-evidence limits and synthetic dashboard fixture Q17. One matched,
+single-response comparison detected the same six seeded findings in v0.6 and
+v0.7; no accuracy gain is established. The full evaluation suite remains NOT RUN.
+The installed personal skill remains v0.6; no installation or app changes.
+
 Last revised: 2026-11-15 (older dated entries below retained as historical status, not current installation claims).
 
 ## Confirmed mission
