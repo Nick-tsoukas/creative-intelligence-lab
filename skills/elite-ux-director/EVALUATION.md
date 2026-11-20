@@ -46,6 +46,46 @@ For each scenario:
 
 Pass candidate only after **actual** independent review of the paired outputs and observable improvements with no regressions. A strong baseline winning is useful evidence; revise or retire redundant skill sections.
 
+## Focused dashboard comparison — 2026-11-19
+
+One exploratory response per condition on synthetic Q17; both used the same
+general-purpose agent class, task facts and 180-word output cap. This is not a
+blind, repeated or statistically meaningful trial.
+
+| Measure | Installed v0.6 | Canonical v0.7 + handoff draft |
+|---|---:|---:|
+| Grounded findings detected | 6/6 | 6/6 |
+| Missed seeded findings | 0 | 0 |
+| Unsafe/unsupported recommendations | 0 | 0 |
+| Output limit | 180 words | 180 words |
+
+Both identified the gross/net mismatch (+14.3% on comparable net), stale values,
+empty/error/retry distinction, narrow KPI layout, chart accessibility and the
+absence of screenshot/source evidence. No correctness improvement was observed.
+The v0.7 response more explicitly separated reported facts from unverified visual
+claims, but both handoffs omitted some requested fields.
+
+A downstream implementer review of the first draft raised two presentation
+questions (loader treatment and empty/error copy). The template now distinguishes
+codebase lookups from reviewer/owner decisions and supplies all seven handoff
+labels. A format smoke filled all seven fields, but still described the empty
+state as a blank chart and left loading behavior ambiguous; the template now
+calls for distinct applicable loading/empty/error/retry outcomes. This final
+wording has not had a further model or implementer run.
+
+Filled Q17 handoff smoke:
+`Routes/components: /projects/acme/insights; KPI/chart names UNKNOWN—locate in source | Locked/open: net-to-net math and distinct states locked; use existing loading/error patterns | Actions/data: last-7-day paid net = gross − refunds; compare prior net; retry request failure | Desktop→mobile: retain 3-column hierarchy at 1440px; stack at 390px | Accessibility: descriptive chart name, non-color cues, table/text equivalent, keyboard access | Acceptance: +14.3%, truthful loading/empty/error/retry, reachable 390px content | Visual verification: render loaded/loading/empty/error at 390/1440 and inspect pixels; none supplied yet`
+
+The source-text footprint of each **current** core + review template is a context
+proxy, not tokenizer telemetry: v0.6 **900 words / 6,980 characters**; v0.7
+**1,176 words / 9,532 characters**. This includes prior v0.7 guidance, excludes
+optional references, and is not the measured token count for either response.
+
+**Limits:** synthetic text only; no screenshot, source code, actual visual
+critique, user outcome or implementation was tested. Fixture arithmetic and
+criteria were checked against the supplied scenario, not by a blinded reviewer.
+The original eight-case suite and full Q01–Q17 suite remain **NOT RUN**.
+
 ## Next execution
 1. Package this skill and linked references into a local Claude skills directory in a nonproduction workspace after authorization.
 2. Give the model identical grounded task fixtures (use synthetic data; don't pretend they're actual user reports).
@@ -53,4 +93,4 @@ Pass candidate only after **actual** independent review of the paired outputs an
 4. Verify a selected repair in the actual local Nuxt app with screenshots and test flows.
 5. Update SKILL.md; repeat until the skill is shorter and more useful, not just more forceful.
 
-**Current state:** eight original fixtures authored, **zero formal benchmark runs**. Repository merges do not automatically install a skill. The active source is v0.7; older dated protocols and unexecuted benchmark fixtures are retained. See ../../docs/ELITE_UX_DIRECTOR_V07.md for qualitative probes, technical checks and field evidence, separately from unexecuted formal fixtures. The observed personal Codex installation was v0.6; no Claude invocation or installation is established by this release.
+**Current state:** eight original messaging/privacy fixtures authored, zero full-suite benchmark runs. Q17 has one exploratory matched comparison recorded above; it is not evidence that v0.7 improves effectiveness. Repository merges do not automatically install a skill. The active source is v0.7; older dated protocols and unexecuted benchmark fixtures are retained. See ../../docs/ELITE_UX_DIRECTOR_V07.md for qualitative probes, technical checks and field evidence, separately from unexecuted formal fixtures. The observed personal Codex installation was v0.6; no Claude invocation or installation is established by this release.

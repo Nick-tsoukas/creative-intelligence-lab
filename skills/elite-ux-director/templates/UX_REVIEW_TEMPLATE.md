@@ -16,11 +16,23 @@ For visual exploration/review, add two short independent judgments:
 behavior evidence and remaining uncertainty.
 
 **Creative quality:** strongest content-specific relationship; weakest decision
-and its effect on hierarchy/composition/type/images/rhythm; concrete next
-correction if needed. A behavior-test count is not an aesthetic verdict.
+and its effect on composition/hierarchy, typography/spacing, authentic imagery/art
+direction, interaction clarity and mobile transformation; concrete next correction.
+Name the captures actually opened (route/state/role/viewport) and separate
+OBSERVED pixels from INFERRED intent. Automated capture/overflow checks validate
+capture or geometry, not aesthetics or task success. A behavior-test count is not
+an aesthetic verdict.
 
 Each concept: `organizing idea → intended impression → task benefit → sacrifice`.
 Name self-review versus independent critique and who actually selected/approved.
+
+## Optional implementation handoff
+
+Use only when another agent will build. Fill every key once; summarize rather
+than repeat the review. Mark unknowns with a source check, and reserve reviewer/
+owner questions for choices the codebase cannot resolve:
+
+`Routes/components: [names or UNKNOWN + lookup] | Locked/open: [decisions] | Actions/data: [contracts and distinct state truth] | Desktop→mobile: [transformation] | Accessibility: [requirements] | Acceptance: [observable outcomes, including applicable loading/empty/error/retry states] | Visual verification: [states/viewports/screenshots to render and inspect]`
 
 After a meaningful task, optional field note: skill/version; decision changed or
 defect found; unnecessary work caused/prevented; actual owner/user response;

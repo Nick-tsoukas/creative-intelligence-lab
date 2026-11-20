@@ -1,7 +1,7 @@
 {
   "version": "0.7-prepared",
   "status": "NOT_RUN",
-  "instructions": "Synthetic activation/quality fixtures; not confirmed production defects. No user research claimed. Homepage fixtures added 2026-11-15; NOT RUN; no fabricated user comprehension or conversion results. v0.5 source-intelligence fixtures prepared only: book identity, actual reading, figure evidence, source conflicts, minimal retrieval. v0.7: interface concept/art-direction exploration is supported; standalone poster/brand research remains out of scope. Historical fixtures remain NOT_RUN; qualitative portability probes are reported separately.",
+  "instructions": "Synthetic activation/quality fixtures; not confirmed production defects. No user research claimed. Homepage fixtures added 2026-11-15; NOT RUN; no fabricated user comprehension or conversion results. v0.5 source-intelligence fixtures prepared only: book identity, actual reading, figure evidence, source conflicts, minimal retrieval. v0.7: interface concept/art-direction exploration is supported; standalone poster/brand research remains out of scope. Q17's single exploratory comparison, if recorded in skills/elite-ux-director/EVALUATION.md, does not mean the full quality suite ran. Historical fixtures remain NOT_RUN; qualitative portability probes are reported separately.",
   "activation_cases": [
     {
       "id": "A01",
@@ -362,6 +362,23 @@
         "present excerpt as original-language statement"
       ],
       "verifiable_by": "source title page and exact edition"
+    },
+    {
+      "id": "Q17",
+      "fixture": "Synthetic campaign dashboard mixes gross and net revenue in a comparison and obscures loading, empty, failure, mobile and chart-accessibility states",
+      "prompt": "Review a synthetic Nuxt dashboard at /projects/acme/insights. The header says “Campaign performance · Last 7 days.” Current paid gross is $42,180 including $2,180 in refunds, so net paid is $40,000. The previous period is $35,000 net paid. The UI displays “Revenue +20.5%” by comparing current gross to previous net. During fetch, old values remain under the new date label; an empty result is a blank chart; a failed fetch shows “No data” with no retry. At 390 CSS px, three 220px KPI cards remain side by side. The chart uses red/green alone, has the accessible name “Chart,” and no text/table alternative. No screenshot or source code is available. Provide a concise evidence-bounded UX review and implementation handoff.",
+      "must_detect": [
+        "gross/net mismatch; comparable net growth is 14.3%",
+        "loading, genuine empty and fetch failure need distinct truthful feedback",
+        "mobile KPI layout needs readable reachable content at 390 CSS px",
+        "chart needs a non-color cue and meaningful text/data equivalent",
+        "no screenshot/code means rendered craft and exact component names remain unverified"
+      ],
+      "must_not": [
+        "claim pixels, routes beyond the supplied route, user outcomes or implementation were inspected",
+        "treat an error as an empty result or report gross/net comparison as valid"
+      ],
+      "verifiable_by": "provided metric arithmetic, state contract, responsive and accessibility acceptance criteria"
     }
   ]
 }
